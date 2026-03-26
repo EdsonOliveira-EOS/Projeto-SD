@@ -5,14 +5,14 @@
 ------------------------------------------------------------------------------
 # Visão Geral
 - O Projeto de Sistemas Digitais se consistirá na formação de uma ULA que fará oito operações:
-1. | [0 0 0] | F = A + B
-2. | [0 0 1] | F = A - B 
-3. | [0 1 0] | F = Complemento a 2 de B
-4. | [0 1 1] | F = A = B
-5. | [1 0 0] | F = A > B
-6. | [1 0 1] | F = A < B
-7. | [1 1 0] | F = A AND B
-8. | [1 1 1] | F = A XOR B 
+1. [0 0 0]  |  F = A + B
+2. [0 0 1]  |  F = A - B 
+3. [0 1 0]  |  F = Complemento a 2 de B
+4. [0 1 1]  |  F = A = B
+5. [1 0 0]  |  F = A > B
+6. [1 0 1]  |  F = A < B
+7. [1 1 0]  |  F = A AND B
+8. [1 1 1]  |  F = A XOR B 
 ------------------------------------------------------------------------------
 - Entrada
 1. Dois vetores A e B de 5 bits (1 para o sinal e 4 para a magnitude)  representando os operandos. O formato é sempre este na entrada. O  usuário não deve ser preocupar com complemento de 2. Se o número for  negativo, o bit de sinal deve ser 1 caso contrário 0. 
