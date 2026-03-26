@@ -1,5 +1,5 @@
 # Projeto-SD
-------------------------------------------------------------------------------
+
 # Integrantes: 
 Edson Oliveira da Silva <eos>, 
 Eduardo Celestino Leal Belian <elcb>, 
