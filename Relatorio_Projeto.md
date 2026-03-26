@@ -1,7 +1,12 @@
 # Projeto-SD
 ------------------------------------------------------------------------------
-# Integrantes: Edson Oliveira da Silva <eos>, Eduardo Celestino Leal Belian <elcb>, Miguel Henrique Ramos da Silva <mhrs>, Renan Adson Feliciano de Melo Silva <rafms>
-# Professor: Abel Guilhermino
+# Integrantes: 
+Edson Oliveira da Silva <eos>, 
+Eduardo Celestino Leal Belian <elcb>, 
+Miguel Henrique Ramos da Silva <mhrs>, 
+Renan Adson Feliciano de Melo Silva <rafms>
+# Professor: 
+Abel Guilhermino
 ------------------------------------------------------------------------------
 # Visão Geral
 - O Projeto de Sistemas Digitais se consistirá na formação de uma ULA que fará oito operações:
