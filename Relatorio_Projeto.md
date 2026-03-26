@@ -5,7 +5,8 @@ Edson Oliveira da Silva <eos>,
 Eduardo Celestino Leal Belian <elcb>, 
 Miguel Henrique Ramos da Silva <mhrs>, 
 Renan Adson Feliciano de Melo Silva <rafms>
-# Professor: 
+# Professor:
+
 Abel Guilhermino
 ------------------------------------------------------------------------------
 # Visão Geral
