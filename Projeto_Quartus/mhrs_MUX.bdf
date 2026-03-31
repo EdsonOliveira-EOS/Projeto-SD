@@ -853,10 +853,6 @@ https://fpgasoftware.intel.com/eula.
 	(pt 592 480)
 )
 (connector
-	(pt 736 392)
-	(pt 592 392)
-)
-(connector
 	(pt 592 304)
 	(pt 736 304)
 )
@@ -867,10 +863,6 @@ https://fpgasoftware.intel.com/eula.
 (connector
 	(pt 736 464)
 	(pt 568 464)
-)
-(connector
-	(pt 736 360)
-	(pt 520 360)
 )
 (connector
 	(pt 736 288)
@@ -905,18 +897,6 @@ https://fpgasoftware.intel.com/eula.
 	(pt 296 152)
 )
 (connector
-	(pt 568 320)
-	(pt 296 320)
-)
-(connector
-	(pt 736 320)
-	(pt 616 320)
-)
-(connector
-	(pt 616 320)
-	(pt 568 320)
-)
-(connector
 	(pt 448 152)
 	(pt 496 152)
 )
@@ -943,14 +923,6 @@ https://fpgasoftware.intel.com/eula.
 (connector
 	(pt 616 920)
 	(pt 616 1008)
-)
-(connector
-	(pt 616 320)
-	(pt 616 376)
-)
-(connector
-	(pt 616 376)
-	(pt 616 656)
 )
 (connector
 	(pt 616 656)
@@ -981,28 +953,12 @@ https://fpgasoftware.intel.com/eula.
 	(pt 592 304)
 )
 (connector
-	(pt 592 304)
-	(pt 592 392)
-)
-(connector
-	(pt 592 392)
-	(pt 592 480)
-)
-(connector
 	(pt 592 480)
 	(pt 592 568)
 )
 (connector
 	(pt 496 800)
 	(pt 496 1008)
-)
-(connector
-	(pt 568 320)
-	(pt 568 376)
-)
-(connector
-	(pt 568 376)
-	(pt 568 464)
 )
 (connector
 	(pt 568 464)
@@ -1017,14 +973,6 @@ https://fpgasoftware.intel.com/eula.
 	(pt 568 904)
 )
 (connector
-	(pt 520 152)
-	(pt 520 360)
-)
-(connector
-	(pt 520 360)
-	(pt 520 536)
-)
-(connector
 	(pt 520 536)
 	(pt 520 712)
 )
@@ -1037,20 +985,8 @@ https://fpgasoftware.intel.com/eula.
 	(pt 544 1008)
 )
 (connector
-	(pt 544 376)
-	(pt 568 376)
-)
-(connector
 	(pt 544 152)
 	(pt 544 288)
-)
-(connector
-	(pt 544 288)
-	(pt 544 376)
-)
-(connector
-	(pt 544 376)
-	(pt 544 640)
 )
 (connector
 	(pt 544 640)
@@ -1081,23 +1017,53 @@ https://fpgasoftware.intel.com/eula.
 	(pt 1080 600)
 )
 (connector
-	(pt 568 96)
-	(pt 568 320)
+	(pt 736 320)
+	(pt 296 320)
 )
 (connector
 	(pt 616 40)
-	(pt 616 320)
+	(pt 616 656)
 )
 (connector
-	(pt 568 376)
-	(pt 616 376)
+	(pt 568 96)
+	(pt 568 464)
 )
 (connector
-	(pt 616 376)
+	(pt 736 360)
+	(pt 520 360)
+)
+(connector
+	(pt 520 152)
+	(pt 520 360)
+)
+(connector
+	(pt 520 360)
+	(pt 520 536)
+)
+(connector
 	(pt 736 376)
+	(pt 544 376)
 )
-(junction (pt 568 320))
-(junction (pt 616 320))
+(connector
+	(pt 544 288)
+	(pt 544 376)
+)
+(connector
+	(pt 544 376)
+	(pt 544 640)
+)
+(connector
+	(pt 736 392)
+	(pt 592 392)
+)
+(connector
+	(pt 592 304)
+	(pt 592 392)
+)
+(connector
+	(pt 592 392)
+	(pt 592 480)
+)
 (junction (pt 496 152))
 (junction (pt 544 96))
 (junction (pt 592 40))
@@ -1108,26 +1074,24 @@ https://fpgasoftware.intel.com/eula.
 (junction (pt 496 800))
 (junction (pt 544 728))
 (junction (pt 616 656))
-(junction (pt 616 376))
 (junction (pt 616 744))
 (junction (pt 520 712))
 (junction (pt 568 816))
 (junction (pt 592 568))
 (junction (pt 592 480))
 (junction (pt 592 304))
-(junction (pt 592 392))
 (junction (pt 496 624))
 (junction (pt 568 464))
-(junction (pt 568 376))
 (junction (pt 568 552))
-(junction (pt 520 360))
 (junction (pt 520 536))
 (junction (pt 544 640))
 (junction (pt 544 288))
-(junction (pt 544 376))
 (junction (pt 496 272))
 (junction (pt 496 448))
 (junction (pt 1048 600))
+(junction (pt 520 360))
+(junction (pt 544 376))
+(junction (pt 592 392))
 (text "S2" (rect 624 952 642 969)(font "Intel Clear" (color 255 0 4)(font_size 8)))
 (text "S2'" (rect 600 952 621 969)(font "Intel Clear" (color 255 0 4)(font_size 8)))
 (text "S1" (rect 576 952 594 969)(font "Intel Clear" (color 255 0 4)(font_size 8)))
@@ -1146,3 +1110,16 @@ https://fpgasoftware.intel.com/eula.
 (text "S1'" (rect 552 240 573 257)(font "Intel Clear" (color 255 0 4)(font_size 8)))
 (text "S0" (rect 528 240 546 257)(font "Intel Clear" (color 255 0 4)(font_size 8)))
 (text "S0'" (rect 504 240 525 257)(font "Intel Clear" (color 255 0 4)(font_size 8)))
+(text "S0" (rect 312 136 330 153)(font "Intel Clear" (font_size 8)))
+(text "S1" (rect 312 80 330 97)(font "Intel Clear" (font_size 8)))
+(text "S2" (rect 312 24 330 41)(font "Intel Clear" (font_size 8)))
+(text "I0[4..0]" (rect 304 920 353 937)(font "Intel Clear" (font_size 8)))
+(text "I1[4..0]" (rect 304 832 353 849)(font "Intel Clear" (font_size 8)))
+(text "I2[4..0]" (rect 304 744 353 761)(font "Intel Clear" (font_size 8)))
+(text "I3[4..0]" (rect 304 656 353 673)(font "Intel Clear" (font_size 8)))
+(text "I4[4..0]" (rect 304 568 353 585)(font "Intel Clear" (font_size 8)))
+(text "I5[4..0]" (rect 304 480 353 497)(font "Intel Clear" (font_size 8)))
+(text "I6[4..0]" (rect 304 392 353 409)(font "Intel Clear" (font_size 8)))
+(text "I7[4..0]" (rect 304 304 353 321)(font "Intel Clear" (font_size 8)))
+(text "In[4..0]" (rect 1176 584 1225 601)(font "Intel Clear" (font_size 8)))
+(text "In'[4..0]" (rect 1176 632 1227 649)(font "Intel Clear" (font_size 8)))
