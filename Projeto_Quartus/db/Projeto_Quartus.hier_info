@@ -1,0 +1,16 @@
+|mhrs_MUX_8x1
+In <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+S0 => inst5.IN0
+S1 => inst4.IN0
+S2 => inst3.IN0
+I7 => inst9.IN3
+I5 => inst11.IN3
+I6 => inst10.IN3
+I4 => inst12.IN3
+I2 => inst14.IN3
+I3 => inst13.IN3
+I1 => inst15.IN3
+I0 => inst16.IN3
+NOTIn <= inst17.DB_MAX_OUTPUT_PORT_TYPE
+
+
