@@ -1,0 +1,122 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 2022  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+*/
+(header "symbol" (version "1.2"))
+(symbol
+	(rect 64 64 216 288)
+	(text "mhrs_Mux_total_8x1" (rect 5 0 150 17)(font "Intel Clear" (font_size 8)))
+	(text "inst" (rect 8 204 31 220)(font "Intel Clear" ))
+	(port
+		(pt 80 224)
+		(input)
+		(text "S2" (rect 0 0 18 17)(font "Intel Clear" (font_size 8)))
+		(text "S2" (rect 72 184 89 202)(font "Intel Clear" (font_size 8))(vertical))
+		(line (pt 80 224)(pt 80 208))
+	)
+	(port
+		(pt 96 224)
+		(input)
+		(text "S1" (rect 0 0 18 17)(font "Intel Clear" (font_size 8)))
+		(text "S1" (rect 88 184 105 202)(font "Intel Clear" (font_size 8))(vertical))
+		(line (pt 96 224)(pt 96 208))
+	)
+	(port
+		(pt 112 224)
+		(input)
+		(text "S0" (rect 0 0 18 17)(font "Intel Clear" (font_size 8)))
+		(text "S0" (rect 104 184 121 202)(font "Intel Clear" (font_size 8))(vertical))
+		(line (pt 112 224)(pt 112 208))
+	)
+	(port
+		(pt 0 56)
+		(input)
+		(text "I7[5..0]" (rect 0 0 49 17)(font "Intel Clear" (font_size 8)))
+		(text "I7[5..0]" (rect 24 48 73 65)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 56)(pt 16 56)(line_width 3))
+	)
+	(port
+		(pt 0 72)
+		(input)
+		(text "I6[5..0]" (rect 0 0 49 17)(font "Intel Clear" (font_size 8)))
+		(text "I6[5..0]" (rect 24 64 73 81)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 72)(pt 16 72)(line_width 3))
+	)
+	(port
+		(pt 0 88)
+		(input)
+		(text "I5[5..0]" (rect 0 0 49 17)(font "Intel Clear" (font_size 8)))
+		(text "I5[5..0]" (rect 24 80 73 97)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 88)(pt 16 88)(line_width 3))
+	)
+	(port
+		(pt 0 104)
+		(input)
+		(text "I4[5..0]" (rect 0 0 49 17)(font "Intel Clear" (font_size 8)))
+		(text "I4[5..0]" (rect 24 96 73 113)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 104)(pt 16 104)(line_width 3))
+	)
+	(port
+		(pt 0 120)
+		(input)
+		(text "I3[5..0]" (rect 0 0 49 17)(font "Intel Clear" (font_size 8)))
+		(text "I3[5..0]" (rect 24 112 73 129)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 120)(pt 16 120)(line_width 3))
+	)
+	(port
+		(pt 0 136)
+		(input)
+		(text "I2[5..0]" (rect 0 0 49 17)(font "Intel Clear" (font_size 8)))
+		(text "I2[5..0]" (rect 24 128 73 145)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 136)(pt 16 136)(line_width 3))
+	)
+	(port
+		(pt 0 152)
+		(input)
+		(text "I1[5..0]" (rect 0 0 49 17)(font "Intel Clear" (font_size 8)))
+		(text "I1[5..0]" (rect 24 144 73 161)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 152)(pt 16 152)(line_width 3))
+	)
+	(port
+		(pt 0 168)
+		(input)
+		(text "I0[5..0]" (rect 0 0 49 17)(font "Intel Clear" (font_size 8)))
+		(text "I0[5..0]" (rect 24 160 73 177)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 168)(pt 16 168)(line_width 3))
+	)
+	(port
+		(pt 152 32)
+		(output)
+		(text "In[5..0]" (rect 0 0 49 17)(font "Intel Clear" (font_size 8)))
+		(text "In[5..0]" (rect 88 24 137 41)(font "Intel Clear" (font_size 8)))
+		(line (pt 152 32)(pt 136 32)(line_width 3))
+	)
+	(drawing
+		(text "CD2DB" (rect 73 128 122 145)(font "Intel Clear" (font_size 8)))
+		(text "A+B" (rect 73 160 102 177)(font "Intel Clear" (font_size 8)))
+		(text "A-B" (rect 73 144 98 161)(font "Intel Clear" (font_size 8)))
+		(text "A=B" (rect 73 112 102 129)(font "Intel Clear" (font_size 8)))
+		(text "A>B" (rect 73 96 102 113)(font "Intel Clear" (font_size 8)))
+		(text "A<B" (rect 73 80 102 97)(font "Intel Clear" (font_size 8)))
+		(text "A AND B" (rect 73 64 132 81)(font "Intel Clear" (font_size 8)))
+		(text "A XOR B" (rect 73 48 130 65)(font "Intel Clear" (font_size 8)))
+		(rectangle (rect 16 16 136 208))
+	)
+)

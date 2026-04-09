@@ -4,6 +4,10 @@
 			"name" : "Top",
 			"pins" : [
 				{
+					"name" : "In[5]",
+					"strict" : false
+				},
+				{
 					"name" : "In[4]",
 					"strict" : false
 				},
@@ -32,15 +36,47 @@
 					"strict" : false
 				},
 				{
+					"name" : "I7[5]",
+					"strict" : false
+				},
+				{
+					"name" : "I6[5]",
+					"strict" : false
+				},
+				{
+					"name" : "S0",
+					"strict" : false
+				},
+				{
+					"name" : "I5[5]",
+					"strict" : false
+				},
+				{
+					"name" : "I4[5]",
+					"strict" : false
+				},
+				{
+					"name" : "I3[5]",
+					"strict" : false
+				},
+				{
+					"name" : "I2[5]",
+					"strict" : false
+				},
+				{
+					"name" : "I1[5]",
+					"strict" : false
+				},
+				{
+					"name" : "I0[5]",
+					"strict" : false
+				},
+				{
 					"name" : "I7[4]",
 					"strict" : false
 				},
 				{
 					"name" : "I6[4]",
-					"strict" : false
-				},
-				{
-					"name" : "S0",
 					"strict" : false
 				},
 				{
