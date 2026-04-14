@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Projeto_Quartus
-Wed Apr  8 22:34:51 2026
+Tue Apr 14 14:01:59 2026
 Quartus Prime Version 21.1.1 Build 850 06/23/2022 SJ Lite Edition
 
 
@@ -10,13 +10,7 @@ Quartus Prime Version 21.1.1 Build 850 06/23/2022 SJ Lite Edition
   2. Analysis & Synthesis Summary
   3. Analysis & Synthesis Settings
   4. Parallel Compilation
-  5. Analysis & Synthesis Source Files Read
-  6. Analysis & Synthesis Resource Usage Summary
-  7. Analysis & Synthesis Resource Utilization by Entity
-  8. General Register Statistics
-  9. Post-Synthesis Netlist Statistics for Top Partition
- 10. Elapsed Time Per Partition
- 11. Analysis & Synthesis Messages
+  5. Analysis & Synthesis Messages
 
 
 
@@ -43,20 +37,20 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Wed Apr  8 22:34:51 2026       ;
+; Analysis & Synthesis Status        ; Failed - Tue Apr 14 14:01:59 2026           ;
 ; Quartus Prime Version              ; 21.1.1 Build 850 06/23/2022 SJ Lite Edition ;
 ; Revision Name                      ; Projeto_Quartus                             ;
-; Top-level Entity Name              ; temp                                        ;
+; Top-level Entity Name              ; Projeto_Quartus                             ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 34                                          ;
-;     Total combinational functions  ; 34                                          ;
-;     Dedicated logic registers      ; 0                                           ;
-; Total registers                    ; 0                                           ;
-; Total pins                         ; 57                                          ;
-; Total virtual pins                 ; 0                                           ;
-; Total memory bits                  ; 0                                           ;
-; Embedded Multiplier 9-bit elements ; 0                                           ;
-; Total PLLs                         ; 0                                           ;
+; Total logic elements               ; N/A until Partition Merge                   ;
+;     Total combinational functions  ; N/A until Partition Merge                   ;
+;     Dedicated logic registers      ; N/A until Partition Merge                   ;
+; Total registers                    ; N/A until Partition Merge                   ;
+; Total pins                         ; N/A until Partition Merge                   ;
+; Total virtual pins                 ; N/A until Partition Merge                   ;
+; Total memory bits                  ; N/A until Partition Merge                   ;
+; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                   ;
+; Total PLLs                         ; N/A until Partition Merge                   ;
 +------------------------------------+---------------------------------------------+
 
 
@@ -66,7 +60,7 @@ https://fpgasoftware.intel.com/eula.
 ; Option                                                           ; Setting            ; Default Value      ;
 +------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                           ; EP4CE115F29C7      ;                    ;
-; Top-level entity name                                            ; temp               ; Projeto_Quartus    ;
+; Top-level entity name                                            ; Projeto_Quartus    ; Projeto_Quartus    ;
 ; Family name                                                      ; Cyclone IV E       ; Cyclone V          ;
 ; Use smart compilation                                            ; Off                ; Off                ;
 ; Enable parallel Assembler and Timing Analyzer during compilation ; On                 ; On                 ;
@@ -151,8 +145,8 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 8           ;
-; Maximum allowed            ; 4           ;
+; Number detected on machine ; 16          ;
+; Maximum allowed            ; 16          ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
 ; Maximum used               ; 1           ;
@@ -162,150 +156,45 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                           ;
-+----------------------------------+-----------------+------------------------------------+------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                 ; Library ;
-+----------------------------------+-----------------+------------------------------------+------------------------------------------------------------------------------+---------+
-; mhrs_MUX_8x1.bdf                 ; yes             ; User Block Diagram/Schematic File  ; /home/mig/Documents/C-CODE/Projeto-SD/Projeto_Quartus/mhrs_MUX_8x1.bdf       ;         ;
-; mhrs_Mux_total_8x1.bdf           ; yes             ; User Block Diagram/Schematic File  ; /home/mig/Documents/C-CODE/Projeto-SD/Projeto_Quartus/mhrs_Mux_total_8x1.bdf ;         ;
-; temp.bdf                         ; yes             ; User Block Diagram/Schematic File  ; /home/mig/Documents/C-CODE/Projeto-SD/Projeto_Quartus/temp.bdf               ;         ;
-+----------------------------------+-----------------+------------------------------------+------------------------------------------------------------------------------+---------+
-
-
-+--------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary            ;
-+---------------------------------------------+----------+
-; Resource                                    ; Usage    ;
-+---------------------------------------------+----------+
-; Estimated Total logic elements              ; 34       ;
-;                                             ;          ;
-; Total combinational functions               ; 34       ;
-; Logic element usage by number of LUT inputs ;          ;
-;     -- 4 input functions                    ; 30       ;
-;     -- 3 input functions                    ; 0        ;
-;     -- <=2 input functions                  ; 4        ;
-;                                             ;          ;
-; Logic elements by mode                      ;          ;
-;     -- normal mode                          ; 34       ;
-;     -- arithmetic mode                      ; 0        ;
-;                                             ;          ;
-; Total registers                             ; 0        ;
-;     -- Dedicated logic registers            ; 0        ;
-;     -- I/O registers                        ; 0        ;
-;                                             ;          ;
-; I/O pins                                    ; 57       ;
-;                                             ;          ;
-; Embedded Multiplier 9-bit elements          ; 0        ;
-;                                             ;          ;
-; Maximum fan-out node                        ; S0~input ;
-; Maximum fan-out                             ; 24       ;
-; Total fan-out                               ; 191      ;
-; Average fan-out                             ; 1.29     ;
-+---------------------------------------------+----------+
-
-
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                            ;
-+------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------+--------------------+--------------+
-; Compilation Hierarchy Node   ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                              ; Entity Name        ; Library Name ;
-+------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------+--------------------+--------------+
-; |temp                        ; 34 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 57   ; 0            ; |temp                                            ; temp               ; work         ;
-;    |mhrs_Mux_total_8x1:inst| ; 34 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |temp|mhrs_Mux_total_8x1:inst                    ; mhrs_Mux_total_8x1 ; work         ;
-;       |mhrs_MUX_8x1:inst3|   ; 5 (5)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |temp|mhrs_Mux_total_8x1:inst|mhrs_MUX_8x1:inst3 ; mhrs_MUX_8x1       ; work         ;
-;       |mhrs_MUX_8x1:inst4|   ; 5 (5)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |temp|mhrs_Mux_total_8x1:inst|mhrs_MUX_8x1:inst4 ; mhrs_MUX_8x1       ; work         ;
-;       |mhrs_MUX_8x1:inst5|   ; 5 (5)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |temp|mhrs_Mux_total_8x1:inst|mhrs_MUX_8x1:inst5 ; mhrs_MUX_8x1       ; work         ;
-;       |mhrs_MUX_8x1:inst6|   ; 5 (5)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |temp|mhrs_Mux_total_8x1:inst|mhrs_MUX_8x1:inst6 ; mhrs_MUX_8x1       ; work         ;
-;       |mhrs_MUX_8x1:inst7|   ; 9 (9)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |temp|mhrs_Mux_total_8x1:inst|mhrs_MUX_8x1:inst7 ; mhrs_MUX_8x1       ; work         ;
-;       |mhrs_MUX_8x1:inst|    ; 5 (5)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |temp|mhrs_Mux_total_8x1:inst|mhrs_MUX_8x1:inst  ; mhrs_MUX_8x1       ; work         ;
-+------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------+--------------------+--------------+
-Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
-
-
-+------------------------------------------------------+
-; General Register Statistics                          ;
-+----------------------------------------------+-------+
-; Statistic                                    ; Value ;
-+----------------------------------------------+-------+
-; Total registers                              ; 0     ;
-; Number of registers using Synchronous Clear  ; 0     ;
-; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 0     ;
-; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 0     ;
-; Number of registers using Preset             ; 0     ;
-+----------------------------------------------+-------+
-
-
-+-----------------------------------------------------+
-; Post-Synthesis Netlist Statistics for Top Partition ;
-+-----------------------+-----------------------------+
-; Type                  ; Count                       ;
-+-----------------------+-----------------------------+
-; boundary_port         ; 57                          ;
-; cycloneiii_lcell_comb ; 34                          ;
-;     normal            ; 34                          ;
-;         2 data inputs ; 4                           ;
-;         4 data inputs ; 30                          ;
-;                       ;                             ;
-; Max LUT depth         ; 3.00                        ;
-; Average LUT depth     ; 2.42                        ;
-+-----------------------+-----------------------------+
-
-
-+-------------------------------+
-; Elapsed Time Per Partition    ;
-+----------------+--------------+
-; Partition Name ; Elapsed Time ;
-+----------------+--------------+
-; Top            ; 00:00:00     ;
-+----------------+--------------+
-
-
 +-------------------------------+
 ; Analysis & Synthesis Messages ;
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 21.1.1 Build 850 06/23/2022 SJ Lite Edition
-    Info: Processing started: Wed Apr  8 22:34:44 2026
+    Info: Processing started: Tue Apr 14 14:01:53 2026
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Projeto_Quartus -c Projeto_Quartus
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
-Info (12021): Found 1 design units, including 1 entities, in source file Projeto_Quartus.bdf
+Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file projeto_quartus.bdf
     Info (12023): Found entity 1: Projeto_Quartus
 Info (12021): Found 1 design units, including 1 entities, in source file mux 2x1.bdf
     Info (12023): Found entity 1: mux 2x1
-Info (12021): Found 1 design units, including 1 entities, in source file mhrs_MUX_8x1.bdf
+Info (12021): Found 1 design units, including 1 entities, in source file mhrs_mux_8x1.bdf
     Info (12023): Found entity 1: mhrs_MUX_8x1
 Info (12021): Found 1 design units, including 1 entities, in source file eos_somadores.bdf
     Info (12023): Found entity 1: eos_somadores
-Info (12021): Found 1 design units, including 1 entities, in source file eos_A=B.bdf
-    Info (12023): Found entity 1: eos_A=B
-Info (12021): Found 1 design units, including 1 entities, in source file eclb_XOR.bdf
+Info (12021): Found 1 design units, including 1 entities, in source file eclb_xor.bdf
     Info (12023): Found entity 1: eclb_XOR
-Info (12021): Found 1 design units, including 1 entities, in source file eclb_AND.bdf
+Info (12021): Found 1 design units, including 1 entities, in source file eclb_and.bdf
     Info (12023): Found entity 1: eclb_AND
 Info (12021): Found 1 design units, including 1 entities, in source file complementador de 2.bdf
     Info (12023): Found entity 1: complementador de 2
-Info (12021): Found 1 design units, including 1 entities, in source file mhrs_Mux_total_8x1.bdf
+Info (12021): Found 1 design units, including 1 entities, in source file mhrs_mux_total_8x1.bdf
     Info (12023): Found entity 1: mhrs_Mux_total_8x1
-Info (12021): Found 1 design units, including 1 entities, in source file temp.bdf
-    Info (12023): Found entity 1: temp
-Info (12127): Elaborating entity "temp" for the top level hierarchy
-Info (12128): Elaborating entity "mhrs_Mux_total_8x1" for hierarchy "mhrs_Mux_total_8x1:inst"
-Info (12128): Elaborating entity "mhrs_MUX_8x1" for hierarchy "mhrs_Mux_total_8x1:inst|mhrs_MUX_8x1:inst"
-Info (286030): Timing-Driven Synthesis is running
-Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
-    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 91 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 51 input pins
-    Info (21059): Implemented 6 output pins
-    Info (21061): Implemented 34 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 411 megabytes
-    Info: Processing ended: Wed Apr  8 22:34:51 2026
-    Info: Elapsed time: 00:00:07
-    Info: Total CPU time (on all processors): 00:00:16
+Info (12021): Found 1 design units, including 1 entities, in source file eos_a_igual_b.bdf
+    Info (12023): Found entity 1: eos_A_igual_B
+Info (12127): Elaborating entity "Projeto_Quartus" for the top level hierarchy
+Error (275044): Port "I5[5..0]" of type mhrs_Mux_total_8x1 of instance "inst" is missing source signal
+Error (275044): Port "I4[5..0]" of type mhrs_Mux_total_8x1 of instance "inst" is missing source signal
+Error (275044): Port "I2[5..0]" of type mhrs_Mux_total_8x1 of instance "inst" is missing source signal
+Error (275044): Port "I1[5..0]" of type mhrs_Mux_total_8x1 of instance "inst" is missing source signal
+Error (275044): Port "I0[5..0]" of type mhrs_Mux_total_8x1 of instance "inst" is missing source signal
+Error (12153): Can't elaborate top-level user hierarchy
+Error: Quartus Prime Analysis & Synthesis was unsuccessful. 6 errors, 1 warning
+    Error: Peak virtual memory: 4736 megabytes
+    Error: Processing ended: Tue Apr 14 14:01:59 2026
+    Error: Elapsed time: 00:00:06
+    Error: Total CPU time (on all processors): 00:00:17
 
 
