@@ -56,7 +56,7 @@ https://fpgasoftware.intel.com/eula.
 )
 (pin
 	(output)
-	(rect 1240 240 1416 256)
+	(rect 1264 240 1440 256)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "F[5..0]" (rect 90 0 123 12)(font "Arial" ))
 	(pt 0 8)
@@ -232,7 +232,7 @@ https://fpgasoftware.intel.com/eula.
 )
 (connector
 	(pt 1224 248)
-	(pt 1240 248)
+	(pt 1264 248)
 	(bus)
 )
 (junction (pt 360 152))
