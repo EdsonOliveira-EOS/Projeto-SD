@@ -624,15 +624,15 @@ https://fpgasoftware.intel.com/eula.
 	(port
 		(pt 0 32)
 		(input)
-		(text "A[4..0]" (rect 0 0 38 19)(font "Intel Clear" (font_size 8)))
-		(text "A[4..0]" (rect 21 27 59 46)(font "Intel Clear" (font_size 8)))
+		(text "B[4..0]" (rect 0 0 38 19)(font "Intel Clear" (font_size 8)))
+		(text "B[4..0]" (rect 24 24 62 43)(font "Intel Clear" (font_size 8)))
 		(line (pt 0 32)(pt 16 32)(line_width 3))
 	)
 	(port
 		(pt 224 32)
 		(output)
-		(text "Acomplementado[4..0]" (rect 0 0 135 19)(font "Intel Clear" (font_size 8)))
-		(text "Acomplementado[4..0]" (rect 68 27 203 46)(font "Intel Clear" (font_size 8)))
+		(text "Bcomplementado[5..0]" (rect 0 0 135 19)(font "Intel Clear" (font_size 8)))
+		(text "Bcomplementado[5..0]" (rect 88 24 223 43)(font "Intel Clear" (font_size 8)))
 		(line (pt 224 32)(pt 208 32)(line_width 3))
 	)
 	(drawing
@@ -1202,7 +1202,17 @@ https://fpgasoftware.intel.com/eula.
 	(pt 688 -24)
 )
 (connector
+	(pt 56 400)
+	(pt 88 400)
+	(bus)
+)
+(connector
 	(pt 56 312)
+	(pt 56 400)
+	(bus)
+)
+(connector
+	(pt 56 400)
 	(pt 56 624)
 	(bus)
 )
@@ -1278,3 +1288,4 @@ https://fpgasoftware.intel.com/eula.
 (junction (pt -96 672))
 (junction (pt -96 584))
 (junction (pt -96 624))
+(junction (pt 56 400))

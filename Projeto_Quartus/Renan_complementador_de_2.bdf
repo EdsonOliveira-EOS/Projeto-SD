@@ -24,7 +24,7 @@ https://fpgasoftware.intel.com/eula.
 	(input)
 	(rect 376 424 392 592)
 	(text "INPUT" (rect 0 15 10 43)(font "Arial" (font_size 6))(vertical))
-	(text "A[4..0]" (rect 1 113 13 146)(font "Arial" )(vertical))
+	(text "A[4..0]" (rect 3 111 15 144)(font "Arial" )(vertical))
 	(pt 8 0)
 	(drawing
 		(line (pt 12 84)(pt 12 59))
@@ -39,9 +39,9 @@ https://fpgasoftware.intel.com/eula.
 )
 (pin
 	(output)
-	(rect 1088 360 1292 376)
+	(rect 1208 584 1412 600)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
-	(text "Acomplementado[4..0]" (rect 90 0 198 17)(font "Intel Clear" ))
+	(text "Acomplementado[5..0]" (rect 90 0 198 17)(font "Intel Clear" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 0 8)(pt 52 8))
@@ -424,11 +424,6 @@ https://fpgasoftware.intel.com/eula.
 	(pt 928 320)
 )
 (connector
-	(text "Acomplementado[4]" (rect 868 256 965 273)(font "Intel Clear" ))
-	(pt 864 272)
-	(pt 928 272)
-)
-(connector
 	(pt 800 288)
 	(pt 800 280)
 )
@@ -510,12 +505,7 @@ https://fpgasoftware.intel.com/eula.
 	(pt 536 416)
 )
 (connector
-	(pt 928 272)
-	(pt 928 320)
-	(bus)
-)
-(connector
-	(text "Acomplementado[4..0]" (rect 908 304 925 412)(font "Intel Clear" )(vertical))
+	(text "Acomplementado[4..0]" (rect 907 303 924 411)(font "Intel Clear" )(vertical))
 	(pt 928 320)
 	(pt 928 368)
 	(bus)
@@ -556,9 +546,52 @@ https://fpgasoftware.intel.com/eula.
 	(bus)
 )
 (connector
-	(text "Acomplementado[4..0]" (rect 971 352 1079 369)(font "Intel Clear" ))
+	(pt 1184 592)
+	(pt 1208 592)
+	(bus)
+)
+(connector
+	(pt 928 272)
+	(pt 928 320)
+	(bus)
+)
+(connector
+	(pt 928 192)
+	(pt 928 224)
+	(bus)
+)
+(connector
+	(pt 928 224)
+	(pt 928 272)
+	(bus)
+)
+(connector
+	(pt 880 224)
+	(pt 880 272)
+)
+(connector
+	(pt 864 272)
+	(pt 880 272)
+)
+(connector
+	(text "Acomplementado[4]" (rect 868 256 965 273)(font "Intel Clear" ))
+	(pt 880 272)
+	(pt 928 272)
+)
+(connector
+	(text "Acomplementado[5]" (rect 872 208 969 225)(font "Intel Clear" ))
+	(pt 928 224)
+	(pt 880 224)
+)
+(connector
+	(pt 1184 368)
+	(pt 1184 592)
+	(bus)
+)
+(connector
+	(text "Acomplementado[5..0]" (rect 971 352 1079 369)(font "Intel Clear" ))
 	(pt 928 368)
-	(pt 1088 368)
+	(pt 1184 368)
 	(bus)
 )
 (junction (pt 544 464))
@@ -575,3 +608,6 @@ https://fpgasoftware.intel.com/eula.
 (junction (pt 928 368))
 (junction (pt 928 320))
 (junction (pt 928 416))
+(junction (pt 928 272))
+(junction (pt 928 224))
+(junction (pt 880 272))
