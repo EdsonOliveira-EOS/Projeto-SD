@@ -1,7 +1,7 @@
-Analysis & Synthesis Status : Successful - Wed Apr 15 23:39:34 2026
+Analysis & Synthesis Status : Successful - Thu Apr 16 10:43:58 2026
 Quartus Prime Version : 21.1.1 Build 850 06/23/2022 SJ Lite Edition
 Revision Name : Projeto_Quartus
-Top-level Entity Name : mhrs_B_maior_A
+Top-level Entity Name : eos_a_maiorque_b
 Family : Cyclone IV E
 Total logic elements : 4
     Total combinational functions : 4

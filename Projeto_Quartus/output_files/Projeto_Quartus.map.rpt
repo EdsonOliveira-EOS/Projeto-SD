@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Projeto_Quartus
-Wed Apr 15 23:39:34 2026
+Thu Apr 16 10:43:58 2026
 Quartus Prime Version 21.1.1 Build 850 06/23/2022 SJ Lite Edition
 
 
@@ -43,10 +43,10 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Wed Apr 15 23:39:34 2026       ;
+; Analysis & Synthesis Status        ; Successful - Thu Apr 16 10:43:58 2026       ;
 ; Quartus Prime Version              ; 21.1.1 Build 850 06/23/2022 SJ Lite Edition ;
 ; Revision Name                      ; Projeto_Quartus                             ;
-; Top-level Entity Name              ; mhrs_B_maior_A                              ;
+; Top-level Entity Name              ; eos_a_maiorque_b                            ;
 ; Family                             ; Cyclone IV E                                ;
 ; Total logic elements               ; 4                                           ;
 ;     Total combinational functions  ; 4                                           ;
@@ -66,7 +66,7 @@ https://fpgasoftware.intel.com/eula.
 ; Option                                                           ; Setting            ; Default Value      ;
 +------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                           ; EP4CE115F29C7      ;                    ;
-; Top-level entity name                                            ; mhrs_B_maior_A     ; Projeto_Quartus    ;
+; Top-level entity name                                            ; eos_a_maiorque_b   ; Projeto_Quartus    ;
 ; Family name                                                      ; Cyclone IV E       ; Cyclone V          ;
 ; Use smart compilation                                            ; Off                ; Off                ;
 ; Enable parallel Assembler and Timing Analyzer during compilation ; On                 ; On                 ;
@@ -151,8 +151,8 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 8           ;
-; Maximum allowed            ; 4           ;
+; Number detected on machine ; 16          ;
+; Maximum allowed            ; 16          ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
 ; Maximum used               ; 1           ;
@@ -162,13 +162,13 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                       ;
-+----------------------------------+-----------------+------------------------------------+--------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                             ; Library ;
-+----------------------------------+-----------------+------------------------------------+--------------------------------------------------------------------------+---------+
-; mhrs_B_maior_A.bdf               ; yes             ; User Block Diagram/Schematic File  ; /home/mig/Documents/C-CODE/Projeto-SD/Projeto_Quartus/mhrs_B_maior_A.bdf ;         ;
-+----------------------------------+-----------------+------------------------------------+--------------------------------------------------------------------------+---------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                           ;
++----------------------------------+-----------------+------------------------------------+------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                 ; Library ;
++----------------------------------+-----------------+------------------------------------+------------------------------------------------------------------------------+---------+
+; eos_a_maiorque_b.bdf             ; yes             ; User Block Diagram/Schematic File  ; C:/Users/mhrs/Documents/Code/Projeto-SD/Projeto_Quartus/eos_a_maiorque_b.bdf ;         ;
++----------------------------------+-----------------+------------------------------------+------------------------------------------------------------------------------+---------+
 
 
 +--------------------------------------------------------+
@@ -196,20 +196,20 @@ https://fpgasoftware.intel.com/eula.
 ;                                             ;          ;
 ; Embedded Multiplier 9-bit elements          ; 0        ;
 ;                                             ;          ;
-; Maximum fan-out node                        ; inst17~0 ;
+; Maximum fan-out node                        ; inst11~0 ;
 ; Maximum fan-out                             ; 1        ;
 ; Total fan-out                               ; 30       ;
 ; Average fan-out                             ; 0.83     ;
 +---------------------------------------------+----------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                         ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+----------------+--------------+
-; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name    ; Library Name ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+----------------+--------------+
-; |mhrs_B_maior_A            ; 4 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 16   ; 0            ; |mhrs_B_maior_A     ; mhrs_B_maior_A ; work         ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+----------------+--------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                           ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+------------------+--------------+
+; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name      ; Library Name ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+------------------+--------------+
+; |eos_a_maiorque_b          ; 4 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 16   ; 0            ; |eos_a_maiorque_b   ; eos_a_maiorque_b ; work         ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -234,14 +234,15 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; boundary_port         ; 16                          ;
-; cycloneiii_lcell_comb ; 5                           ;
-;     normal            ; 5                           ;
+; cycloneiii_lcell_comb ; 6                           ;
+;     normal            ; 6                           ;
 ;         0 data inputs ; 1                           ;
+;         1 data inputs ; 1                           ;
 ;         3 data inputs ; 3                           ;
 ;         4 data inputs ; 1                           ;
 ;                       ;                             ;
-; Max LUT depth         ; 4.00                        ;
-; Average LUT depth     ; 2.93                        ;
+; Max LUT depth         ; 5.00                        ;
+; Average LUT depth     ; 3.94                        ;
 +-----------------------+-----------------------------+
 
 
@@ -260,45 +261,45 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 21.1.1 Build 850 06/23/2022 SJ Lite Edition
-    Info: Processing started: Wed Apr 15 23:39:26 2026
+    Info: Processing started: Thu Apr 16 10:43:50 2026
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Projeto_Quartus -c Projeto_Quartus
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
-Info (12021): Found 1 design units, including 1 entities, in source file Main.bdf
+Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file main.bdf
     Info (12023): Found entity 1: Main
-Info (12021): Found 1 design units, including 1 entities, in source file Projeto_Quartus.bdf
+Info (12021): Found 1 design units, including 1 entities, in source file projeto_quartus.bdf
     Info (12023): Found entity 1: Projeto_Quartus
-Info (12021): Found 1 design units, including 1 entities, in source file mhrs_MUX_8x1.bdf
+Info (12021): Found 1 design units, including 1 entities, in source file mhrs_mux_8x1.bdf
     Info (12023): Found entity 1: mhrs_MUX_8x1
-Info (12021): Found 1 design units, including 1 entities, in source file eclb_XOR.bdf
+Info (12021): Found 1 design units, including 1 entities, in source file eclb_xor.bdf
     Info (12023): Found entity 1: eclb_XOR
 Info (12021): Found 1 design units, including 1 entities, in source file complementador de 2.bdf
     Info (12023): Found entity 1: complementador de 2
 Info (12021): Found 1 design units, including 1 entities, in source file eos_a_maiorque_b.bdf
     Info (12023): Found entity 1: eos_a_maiorque_b
-Info (12021): Found 1 design units, including 1 entities, in source file mhrs_B_maior_A.bdf
+Info (12021): Found 1 design units, including 1 entities, in source file mhrs_b_maior_a.bdf
     Info (12023): Found entity 1: mhrs_B_maior_A
 Info (12021): Found 1 design units, including 1 entities, in source file eos_somadores.bdf
     Info (12023): Found entity 1: eos_somadores
-Info (12021): Found 1 design units, including 1 entities, in source file eos_A=B.bdf
+Info (12021): Found 1 design units, including 1 entities, in source file eos_a=b.bdf
     Info (12023): Found entity 1: eos_A=B
 Info (12021): Found 1 design units, including 1 entities, in source file mux 2x1.bdf
     Info (12023): Found entity 1: mux 2x1
-Info (12021): Found 1 design units, including 1 entities, in source file eclb_AND.bdf
+Info (12021): Found 1 design units, including 1 entities, in source file eclb_and.bdf
     Info (12023): Found entity 1: eclb_AND
-Info (12021): Found 1 design units, including 1 entities, in source file mhrs_Mux_total_8x1.bdf
+Info (12021): Found 1 design units, including 1 entities, in source file mhrs_mux_total_8x1.bdf
     Info (12023): Found entity 1: mhrs_Mux_total_8x1
-Info (12021): Found 1 design units, including 1 entities, in source file eos_A_igual_B.bdf
+Info (12021): Found 1 design units, including 1 entities, in source file eos_a_igual_b.bdf
     Info (12023): Found entity 1: eos_A_igual_B
-Info (12021): Found 1 design units, including 1 entities, in source file Renan_complementador_de_2.bdf
+Info (12021): Found 1 design units, including 1 entities, in source file renan_complementador_de_2.bdf
     Info (12023): Found entity 1: Renan_complementador_de_2
-Info (12127): Elaborating entity "mhrs_B_maior_A" for the top level hierarchy
+Info (12127): Elaborating entity "eos_a_maiorque_b" for the top level hierarchy
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "B_maior_A[5]" is stuck at GND
-    Warning (13410): Pin "B_maior_A[4]" is stuck at GND
-    Warning (13410): Pin "B_maior_A[3]" is stuck at GND
-    Warning (13410): Pin "B_maior_A[2]" is stuck at GND
-    Warning (13410): Pin "B_maior_A[1]" is stuck at GND
+    Warning (13410): Pin "a_maior_b[5]" is stuck at GND
+    Warning (13410): Pin "a_maior_b[4]" is stuck at GND
+    Warning (13410): Pin "a_maior_b[3]" is stuck at GND
+    Warning (13410): Pin "a_maior_b[2]" is stuck at GND
+    Warning (13410): Pin "a_maior_b[1]" is stuck at GND
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
@@ -307,9 +308,9 @@ Info (21057): Implemented 20 device resources after synthesis - the final resour
     Info (21059): Implemented 6 output pins
     Info (21061): Implemented 4 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 7 warnings
-    Info: Peak virtual memory: 410 megabytes
-    Info: Processing ended: Wed Apr 15 23:39:34 2026
+    Info: Peak virtual memory: 4810 megabytes
+    Info: Processing ended: Thu Apr 16 10:43:58 2026
     Info: Elapsed time: 00:00:08
-    Info: Total CPU time (on all processors): 00:00:17
+    Info: Total CPU time (on all processors): 00:00:19
 
 
