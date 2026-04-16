@@ -4,11 +4,35 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "a_maior_b[0]",
+					"name" : "STATUS",
 					"strict" : false
 				},
 				{
-					"name" : "A[4]",
+					"name" : "F[5]",
+					"strict" : false
+				},
+				{
+					"name" : "F[4]",
+					"strict" : false
+				},
+				{
+					"name" : "F[3]",
+					"strict" : false
+				},
+				{
+					"name" : "F[2]",
+					"strict" : false
+				},
+				{
+					"name" : "F[1]",
+					"strict" : false
+				},
+				{
+					"name" : "F[0]",
+					"strict" : false
+				},
+				{
+					"name" : "S[2]",
 					"strict" : false
 				},
 				{
@@ -16,7 +40,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "B[3]",
+					"name" : "A[4]",
 					"strict" : false
 				},
 				{
@@ -24,7 +48,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "B[2]",
+					"name" : "B[3]",
 					"strict" : false
 				},
 				{
@@ -32,11 +56,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "B[1]",
+					"name" : "B[2]",
 					"strict" : false
 				},
 				{
-					"name" : "B[0]",
+					"name" : "A[1]",
 					"strict" : false
 				},
 				{
@@ -44,7 +68,91 @@
 					"strict" : false
 				},
 				{
-					"name" : "A[1]",
+					"name" : "B[0]",
+					"strict" : false
+				},
+				{
+					"name" : "B[1]",
+					"strict" : false
+				},
+				{
+					"name" : "S[1]",
+					"strict" : false
+				},
+				{
+					"name" : "S[0]",
+					"strict" : false
+				},
+				{
+					"name" : "I1[0]",
+					"strict" : false
+				},
+				{
+					"name" : "I0[0]",
+					"strict" : false
+				},
+				{
+					"name" : "I2[0]",
+					"strict" : false
+				},
+				{
+					"name" : "I1[5]",
+					"strict" : false
+				},
+				{
+					"name" : "I0[5]",
+					"strict" : false
+				},
+				{
+					"name" : "I2[5]",
+					"strict" : false
+				},
+				{
+					"name" : "I1[4]",
+					"strict" : false
+				},
+				{
+					"name" : "I0[4]",
+					"strict" : false
+				},
+				{
+					"name" : "I2[4]",
+					"strict" : false
+				},
+				{
+					"name" : "I2[3]",
+					"strict" : false
+				},
+				{
+					"name" : "I0[3]",
+					"strict" : false
+				},
+				{
+					"name" : "I1[3]",
+					"strict" : false
+				},
+				{
+					"name" : "I2[2]",
+					"strict" : false
+				},
+				{
+					"name" : "I0[2]",
+					"strict" : false
+				},
+				{
+					"name" : "I1[2]",
+					"strict" : false
+				},
+				{
+					"name" : "I2[1]",
+					"strict" : false
+				},
+				{
+					"name" : "I0[1]",
+					"strict" : false
+				},
+				{
+					"name" : "I1[1]",
 					"strict" : false
 				}
 			]

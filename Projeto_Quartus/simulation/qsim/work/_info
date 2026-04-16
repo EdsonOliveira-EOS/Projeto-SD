@@ -316,6 +316,54 @@ R19
 R11
 R12
 nmhrs_@mux_total_8x1_vlg_vec_tst
+vProjeto_Quartus
+Z29 !s110 1776349629
+!i10b 1
+!s100 N0BCS5;ii>I0LO6T]aIPP2
+R2
+I;Fj09oIm`Y[TCU7jF`dN53
+R3
+R14
+Z30 w1776349628
+R5
+R6
+!i122 92
+L0 32 1025
+R7
+r1
+!s85 0
+31
+Z31 !s108 1776349629.000000
+R9
+R10
+!i113 1
+R11
+R12
+n@projeto_@quartus
+vProjeto_Quartus_vlg_vec_tst
+R29
+!i10b 1
+!s100 oMM[jSkeeP5X8L9Y:cM3C2
+R2
+IJBEFU=f2l@@lSOZd;8g<12
+R3
+R14
+R30
+R16
+R17
+!i122 93
+L0 30 145
+R7
+r1
+!s85 0
+31
+R31
+R18
+R19
+!i113 1
+R11
+R12
+n@projeto_@quartus_vlg_vec_tst
 vtemp
 !s110 1775698548
 !i10b 1
@@ -333,7 +381,7 @@ R7
 r1
 !s85 0
 31
-Z29 !s108 1775698548.000000
+Z32 !s108 1775698548.000000
 R9
 R10
 !i113 1
@@ -356,7 +404,7 @@ R7
 r1
 !s85 0
 31
-R29
+R32
 R18
 R19
 !i113 1
