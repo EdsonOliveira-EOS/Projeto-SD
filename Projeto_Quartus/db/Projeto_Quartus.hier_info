@@ -1,19 +1,28 @@
-|eos_A_igual_B
-F[0] <= inst5.DB_MAX_OUTPUT_PORT_TYPE
-F[1] <= <GND>
-F[2] <= <GND>
-F[3] <= <GND>
-F[4] <= <GND>
-F[5] <= <GND>
+|mhrs_B_maior_A
+B_maior_A[0] <= inst17.DB_MAX_OUTPUT_PORT_TYPE
+B_maior_A[1] <= <GND>
+B_maior_A[2] <= <GND>
+B_maior_A[3] <= <GND>
+B_maior_A[4] <= <GND>
+B_maior_A[5] <= <GND>
 A[0] => inst.IN0
-A[1] => inst1.IN0
-A[2] => inst2.IN0
-A[3] => inst3.IN0
-A[4] => inst4.IN0
-B[0] => inst.IN1
-B[1] => inst1.IN1
-B[2] => inst2.IN1
-B[3] => inst3.IN1
-B[4] => inst4.IN1
+A[1] => inst6.IN0
+A[1] => inst7.IN0
+A[2] => inst11.IN0
+A[2] => inst9.IN0
+A[3] => inst15.IN0
+A[3] => inst13.IN0
+A[4] => inst16.IN0
+A[4] => inst27.IN0
+B[0] => inst23.IN1
+B[1] => inst24.IN1
+B[1] => inst7.IN1
+B[2] => inst11.IN1
+B[2] => inst25.IN1
+B[3] => inst15.IN1
+B[3] => inst26.IN1
+B[4] => inst16.IN1
+B[4] => inst14.IN0
+B[4] => inst12.IN0
 
 

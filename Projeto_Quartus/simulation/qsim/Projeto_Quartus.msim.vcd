@@ -3,7 +3,7 @@ $comment
 		vcd file Projeto_Quartus.msim.vcd -direction
 $end
 $date
-	Wed Apr  8 22:35:49 2026
+	Wed Apr 15 23:24:33 2026
 $end
 $version
 	ModelSim Version 2020.1
@@ -12,241 +12,66 @@ $timescale
 	1ps
 $end
 
-$scope module temp_vlg_vec_tst $end
-$var reg 6 ! I0 [5:0] $end
-$var reg 6 " I1 [5:0] $end
-$var reg 6 # I2 [5:0] $end
-$var reg 6 $ I3 [5:0] $end
-$var reg 6 % I4 [5:0] $end
-$var reg 6 & I5 [5:0] $end
-$var reg 6 ' I6 [5:0] $end
-$var reg 6 ( I7 [5:0] $end
-$var reg 1 ) S0 $end
-$var reg 1 * S1 $end
-$var reg 1 + S2 $end
-$var wire 1 , In [5] $end
-$var wire 1 - In [4] $end
-$var wire 1 . In [3] $end
-$var wire 1 / In [2] $end
-$var wire 1 0 In [1] $end
-$var wire 1 1 In [0] $end
+$scope module a_maiorque_b_vlg_vec_tst $end
+$var reg 4 ! A [3:0] $end
+$var reg 4 " B [3:0] $end
+$var wire 1 # a_maior_b $end
 
 $scope module i1 $end
-$var wire 1 2 gnd $end
-$var wire 1 3 vcc $end
-$var wire 1 4 unknown $end
-$var tri1 1 5 devclrn $end
-$var tri1 1 6 devpor $end
-$var tri1 1 7 devoe $end
-$var wire 1 8 In[5]~output_o $end
-$var wire 1 9 In[4]~output_o $end
-$var wire 1 : In[3]~output_o $end
-$var wire 1 ; In[2]~output_o $end
-$var wire 1 < In[1]~output_o $end
-$var wire 1 = In[0]~output_o $end
-$var wire 1 > S2~input_o $end
-$var wire 1 ? S1~input_o $end
-$var wire 1 @ inst|inst7|inst17~0_combout $end
-$var wire 1 A I7[5]~input_o $end
-$var wire 1 B I6[5]~input_o $end
-$var wire 1 C S0~input_o $end
-$var wire 1 D inst|inst7|inst17~1_combout $end
-$var wire 1 E inst|inst7|inst17~2_combout $end
-$var wire 1 F I5[5]~input_o $end
-$var wire 1 G I4[5]~input_o $end
-$var wire 1 H inst|inst7|inst17~3_combout $end
-$var wire 1 I inst|inst7|inst17~4_combout $end
-$var wire 1 J I3[5]~input_o $end
-$var wire 1 K I2[5]~input_o $end
-$var wire 1 L inst|inst7|inst17~5_combout $end
-$var wire 1 M inst|inst7|inst17~6_combout $end
-$var wire 1 N I1[5]~input_o $end
-$var wire 1 O I0[5]~input_o $end
-$var wire 1 P inst|inst7|inst17~7_combout $end
-$var wire 1 Q inst|inst7|inst17~8_combout $end
-$var wire 1 R I7[4]~input_o $end
-$var wire 1 S I6[4]~input_o $end
-$var wire 1 T inst|inst6|inst17~0_combout $end
-$var wire 1 U I5[4]~input_o $end
-$var wire 1 V I4[4]~input_o $end
-$var wire 1 W inst|inst6|inst17~1_combout $end
-$var wire 1 X I3[4]~input_o $end
-$var wire 1 Y I2[4]~input_o $end
-$var wire 1 Z inst|inst6|inst17~2_combout $end
-$var wire 1 [ I1[4]~input_o $end
-$var wire 1 \ I0[4]~input_o $end
-$var wire 1 ] inst|inst6|inst17~3_combout $end
-$var wire 1 ^ inst|inst6|inst17~4_combout $end
-$var wire 1 _ I7[3]~input_o $end
-$var wire 1 ` I6[3]~input_o $end
-$var wire 1 a inst|inst5|inst17~0_combout $end
-$var wire 1 b I5[3]~input_o $end
-$var wire 1 c I4[3]~input_o $end
-$var wire 1 d inst|inst5|inst17~1_combout $end
-$var wire 1 e I3[3]~input_o $end
-$var wire 1 f I2[3]~input_o $end
-$var wire 1 g inst|inst5|inst17~2_combout $end
-$var wire 1 h I1[3]~input_o $end
-$var wire 1 i I0[3]~input_o $end
-$var wire 1 j inst|inst5|inst17~3_combout $end
-$var wire 1 k inst|inst5|inst17~4_combout $end
-$var wire 1 l I7[2]~input_o $end
-$var wire 1 m I6[2]~input_o $end
-$var wire 1 n inst|inst4|inst17~0_combout $end
-$var wire 1 o I5[2]~input_o $end
-$var wire 1 p I4[2]~input_o $end
-$var wire 1 q inst|inst4|inst17~1_combout $end
-$var wire 1 r I3[2]~input_o $end
-$var wire 1 s I2[2]~input_o $end
-$var wire 1 t inst|inst4|inst17~2_combout $end
-$var wire 1 u I1[2]~input_o $end
-$var wire 1 v I0[2]~input_o $end
-$var wire 1 w inst|inst4|inst17~3_combout $end
-$var wire 1 x inst|inst4|inst17~4_combout $end
-$var wire 1 y I7[1]~input_o $end
-$var wire 1 z I6[1]~input_o $end
-$var wire 1 { inst|inst3|inst17~0_combout $end
-$var wire 1 | I5[1]~input_o $end
-$var wire 1 } I4[1]~input_o $end
-$var wire 1 ~ inst|inst3|inst17~1_combout $end
-$var wire 1 !! I3[1]~input_o $end
-$var wire 1 "! I2[1]~input_o $end
-$var wire 1 #! inst|inst3|inst17~2_combout $end
-$var wire 1 $! I1[1]~input_o $end
-$var wire 1 %! I0[1]~input_o $end
-$var wire 1 &! inst|inst3|inst17~3_combout $end
-$var wire 1 '! inst|inst3|inst17~4_combout $end
-$var wire 1 (! I7[0]~input_o $end
-$var wire 1 )! I6[0]~input_o $end
-$var wire 1 *! inst|inst|inst17~0_combout $end
-$var wire 1 +! I5[0]~input_o $end
-$var wire 1 ,! I4[0]~input_o $end
-$var wire 1 -! inst|inst|inst17~1_combout $end
-$var wire 1 .! I3[0]~input_o $end
-$var wire 1 /! I2[0]~input_o $end
-$var wire 1 0! inst|inst|inst17~2_combout $end
-$var wire 1 1! I1[0]~input_o $end
-$var wire 1 2! I0[0]~input_o $end
-$var wire 1 3! inst|inst|inst17~3_combout $end
-$var wire 1 4! inst|inst|inst17~4_combout $end
+$var wire 1 $ gnd $end
+$var wire 1 % vcc $end
+$var wire 1 & unknown $end
+$var tri1 1 ' devclrn $end
+$var tri1 1 ( devpor $end
+$var tri1 1 ) devoe $end
+$var wire 1 * a_maior_b~output_o $end
+$var wire 1 + A[1]~input_o $end
+$var wire 1 , A[2]~input_o $end
+$var wire 1 - B[2]~input_o $end
+$var wire 1 . B[1]~input_o $end
+$var wire 1 / inst45~0_combout $end
+$var wire 1 0 A[0]~input_o $end
+$var wire 1 1 B[0]~input_o $end
+$var wire 1 2 inst46~0_combout $end
+$var wire 1 3 A[3]~input_o $end
+$var wire 1 4 B[3]~input_o $end
+$var wire 1 5 inst42~0_combout $end
+$var wire 1 6 inst42~1_combout $end
 $upscope $end
 $upscope $end
 $enddefinitions $end
 #0
 $dumpvars
+b10 !
+b1000 "
+1#
+0$
+1%
+x&
+1'
+1(
+1)
+1*
+1+
+0,
+0-
+0.
+1/
+00
+01
+02
+03
+14
+05
+16
+$end
+#10000
 b0 !
 b0 "
-b0 #
-b100001 $
-b0 %
-b111010 &
-b0 '
-b0 (
-1)
-0*
-1+
-01
-10
+04
+0+
 0/
-1.
-1-
-1,
-02
-13
-x4
-15
-16
-17
-18
-19
-1:
-0;
-1<
-0=
-1>
-0?
-0@
-0A
-0B
-1C
-0D
-1E
-1F
-0G
-1H
-0I
-1J
-0K
-0L
-0M
-0N
-0O
-0P
-1Q
-0R
-0S
-0T
-1U
-0V
-1W
-0X
-0Y
-0Z
-0[
-0\
-0]
-1^
-0_
-0`
-0a
-1b
-0c
-1d
-0e
-0f
-0g
-0h
-0i
-0j
-1k
-0l
-0m
-0n
-0o
-0p
-0q
-0r
-0s
-0t
-0u
-0v
-0w
-0x
-0y
-0z
-0{
-1|
-0}
-1~
-0!!
-0"!
-0#!
-0$!
-0%!
-0&!
-1'!
-0(!
-0)!
-0*!
-0+!
-0,!
-0-!
-1.!
-0/!
-00!
-01!
-02!
-03!
-04!
-$end
+06
+0*
+0#
 #1000000
