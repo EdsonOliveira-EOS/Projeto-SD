@@ -3,7 +3,7 @@ $comment
 		vcd file Projeto_Quartus.msim.vcd -direction
 $end
 $date
-	Thu Apr 16 11:27:09 2026
+	Thu Apr 16 17:02:30 2026
 $end
 $version
 	ModelSim Version 2020.1
@@ -12,121 +12,84 @@ $timescale
 	1ps
 $end
 
-$scope module Projeto_Quartus_vlg_vec_tst $end
+$scope module eos_A_mais_B_vlg_vec_tst $end
 $var reg 5 ! A [4:0] $end
 $var reg 5 " B [4:0] $end
-$var reg 6 # I0 [5:0] $end
-$var reg 6 $ I1 [5:0] $end
-$var reg 6 % I2 [5:0] $end
-$var reg 3 & S [2:0] $end
-$var wire 1 ' F [5] $end
-$var wire 1 ( F [4] $end
-$var wire 1 ) F [3] $end
-$var wire 1 * F [2] $end
-$var wire 1 + F [1] $end
-$var wire 1 , F [0] $end
-$var wire 1 - STATUS $end
+$var wire 1 # F [5] $end
+$var wire 1 $ F [4] $end
+$var wire 1 % F [3] $end
+$var wire 1 & F [2] $end
+$var wire 1 ' F [1] $end
+$var wire 1 ( F [0] $end
 
 $scope module i1 $end
-$var wire 1 . gnd $end
-$var wire 1 / vcc $end
-$var wire 1 0 unknown $end
-$var tri1 1 1 devclrn $end
-$var tri1 1 2 devpor $end
-$var tri1 1 3 devoe $end
-$var wire 1 4 STATUS~output_o $end
-$var wire 1 5 F[5]~output_o $end
-$var wire 1 6 F[4]~output_o $end
-$var wire 1 7 F[3]~output_o $end
-$var wire 1 8 F[2]~output_o $end
-$var wire 1 9 F[1]~output_o $end
-$var wire 1 : F[0]~output_o $end
-$var wire 1 ; S[0]~input_o $end
-$var wire 1 < B[4]~input_o $end
-$var wire 1 = A[4]~input_o $end
-$var wire 1 > A[3]~input_o $end
-$var wire 1 ? B[3]~input_o $end
-$var wire 1 @ A[2]~input_o $end
-$var wire 1 A B[2]~input_o $end
-$var wire 1 B A[1]~input_o $end
+$var wire 1 ) gnd $end
+$var wire 1 * vcc $end
+$var wire 1 + unknown $end
+$var tri1 1 , devclrn $end
+$var tri1 1 - devpor $end
+$var tri1 1 . devoe $end
+$var wire 1 / F[5]~output_o $end
+$var wire 1 0 F[4]~output_o $end
+$var wire 1 1 F[3]~output_o $end
+$var wire 1 2 F[2]~output_o $end
+$var wire 1 3 F[1]~output_o $end
+$var wire 1 4 F[0]~output_o $end
+$var wire 1 5 A[4]~input_o $end
+$var wire 1 6 B[4]~input_o $end
+$var wire 1 7 B[3]~input_o $end
+$var wire 1 8 B[2]~input_o $end
+$var wire 1 9 B[1]~input_o $end
+$var wire 1 : B[0]~input_o $end
+$var wire 1 ; inst4|inst3|inst4~combout $end
+$var wire 1 < inst4|inst|inst3|inst~combout $end
+$var wire 1 = inst4|inst3|inst2~combout $end
+$var wire 1 > inst4|inst|inst3|inst2~combout $end
+$var wire 1 ? inst4|inst|inst2|inst~combout $end
+$var wire 1 @ inst4|inst|inst2|inst2~combout $end
+$var wire 1 A inst4|inst|inst1|inst~combout $end
+$var wire 1 B inst4|inst|inst1|inst2~combout $end
 $var wire 1 C A[0]~input_o $end
-$var wire 1 D B[0]~input_o $end
-$var wire 1 E B[1]~input_o $end
-$var wire 1 F inst3|inst11~0_combout $end
-$var wire 1 G inst3|inst11~1_combout $end
-$var wire 1 H inst3|inst11~2_combout $end
-$var wire 1 I inst3|inst11~3_combout $end
-$var wire 1 J S[2]~input_o $end
-$var wire 1 K inst12|inst1~1_combout $end
-$var wire 1 L inst12|inst3~0_combout $end
-$var wire 1 M inst12|inst1~2_combout $end
-$var wire 1 N inst12|inst1~3_combout $end
-$var wire 1 O inst12|inst17~combout $end
-$var wire 1 P inst|inst|inst17~6_combout $end
-$var wire 1 Q S[1]~input_o $end
-$var wire 1 R I1[0]~input_o $end
-$var wire 1 S I0[0]~input_o $end
-$var wire 1 T inst|inst|inst17~0_combout $end
-$var wire 1 U inst12|inst1~0_combout $end
-$var wire 1 V inst|inst|inst17~1_combout $end
-$var wire 1 W inst|inst|inst17~2_combout $end
-$var wire 1 X I2[0]~input_o $end
-$var wire 1 Y inst|inst|inst17~3_combout $end
-$var wire 1 Z inst|inst|inst17~4_combout $end
-$var wire 1 [ inst|inst|inst17~5_combout $end
-$var wire 1 \ inst|inst|inst17~7_combout $end
-$var wire 1 ] inst4|inst17~0_combout $end
-$var wire 1 ^ I1[5]~input_o $end
-$var wire 1 _ I0[5]~input_o $end
-$var wire 1 ` inst8|inst7|inst17~0_combout $end
-$var wire 1 a I2[5]~input_o $end
-$var wire 1 b inst8|inst7|inst17~1_combout $end
-$var wire 1 c inst8|inst7|inst17~2_combout $end
-$var wire 1 d I1[4]~input_o $end
-$var wire 1 e I0[4]~input_o $end
-$var wire 1 f inst8|inst6|inst17~0_combout $end
-$var wire 1 g I2[4]~input_o $end
-$var wire 1 h inst8|inst6|inst17~1_combout $end
-$var wire 1 i I2[3]~input_o $end
-$var wire 1 j I0[3]~input_o $end
-$var wire 1 k I1[3]~input_o $end
-$var wire 1 l inst8|inst5|inst17~0_combout $end
-$var wire 1 m inst8|inst5|inst17~1_combout $end
-$var wire 1 n inst8|inst5|inst17~2_combout $end
-$var wire 1 o I2[2]~input_o $end
-$var wire 1 p I0[2]~input_o $end
-$var wire 1 q I1[2]~input_o $end
-$var wire 1 r inst8|inst4|inst17~0_combout $end
-$var wire 1 s inst8|inst4|inst17~1_combout $end
-$var wire 1 t inst8|inst4|inst17~2_combout $end
-$var wire 1 u I2[1]~input_o $end
-$var wire 1 v I0[1]~input_o $end
-$var wire 1 w I1[1]~input_o $end
-$var wire 1 x inst8|inst3|inst17~0_combout $end
-$var wire 1 y inst8|inst3|inst17~1_combout $end
-$var wire 1 z inst8|inst3|inst17~2_combout $end
-$var wire 1 { inst8|inst|inst17~0_combout $end
+$var wire 1 D inst|inst1|inst2~combout $end
+$var wire 1 E A[1]~input_o $end
+$var wire 1 F inst3|inst|inst1|inst4~0_combout $end
+$var wire 1 G inst|inst2|inst3~0_combout $end
+$var wire 1 H A[2]~input_o $end
+$var wire 1 I inst3|inst|inst2|inst4~0_combout $end
+$var wire 1 J inst|inst3|inst3~0_combout $end
+$var wire 1 K A[3]~input_o $end
+$var wire 1 L inst3|inst3|inst5~combout $end
+$var wire 1 M inst3|inst|inst3|inst4~0_combout $end
+$var wire 1 N inst|inst4|inst3~0_combout $end
+$var wire 1 O inst3|inst|inst4|inst2~0_combout $end
+$var wire 1 P inst|inst5|inst3~0_combout $end
+$var wire 1 Q inst|inst7|inst4~0_combout $end
+$var wire 1 R inst|inst5|inst4~combout $end
+$var wire 1 S inst|inst4|inst4~combout $end
+$var wire 1 T inst|inst3|inst4~0_combout $end
+$var wire 1 U inst|inst2|inst4~combout $end
+$var wire 1 V inst|inst1|inst~combout $end
 $upscope $end
 $upscope $end
 $enddefinitions $end
 #0
 $dumpvars
-b10000 !
-b10000 "
-bx #
-bx $
-bx %
-b11 &
-0,
-0+
-0*
+b1010 !
+b101 "
+1(
+1'
+1&
+1%
+0$
+0#
 0)
-0(
-0'
+1*
+x+
+1,
 1-
-0.
-1/
-x0
+1.
+0/
+00
 11
 12
 13
@@ -134,434 +97,214 @@ x0
 05
 06
 07
-08
+18
 09
-0:
+1:
 1;
-1<
+0<
 1=
 0>
-0?
+1?
 0@
 0A
 0B
 0C
 0D
-0E
-0F
+1E
+1F
 0G
 0H
-1I
+0I
 0J
-0K
+1K
 1L
-0M
+1M
 0N
-1O
+0O
 0P
-1Q
-xR
-xS
-xT
+0Q
+0R
+1S
+1T
 1U
 1V
-1W
-xX
-0Y
-0Z
-1[
-1\
-1]
-x^
-x_
-0`
-xa
-0b
-0c
-xd
-xe
-0f
-xg
-0h
-xi
-xj
-xk
-1l
-1m
-0n
-xo
-xp
-xq
-1r
-1s
-0t
-xu
-xv
-xw
-1x
-1y
-0z
-0{
 $end
 #10000
-b0 !
-b1 !
-b0 "
-b1000 "
-1?
-0<
-1C
-0=
-0L
-1K
-0O
-0I
-1Y
-0V
-1F
-0U
-1O
-0W
-1G
-0[
-0\
-0]
-04
-0-
-#20000
-b1001 !
-b1001 "
-b111 &
-b101 &
-b100 &
-b1000 !
-b1 "
-0;
-0Q
-1J
-1D
+b10101 "
+16
+1B
 0?
-0C
 1>
-0x
-0r
-0l
-xf
-x`
-1Z
-0Y
-0T
-xy
-xs
-xm
-x[
-1M
-0F
-0K
-1H
-0[
-0Z
-x\
-0G
-0O
-1I
-0\
-1P
-x]
-x4
-1\
-x-
-0]
-04
-0-
-1]
-14
-1-
-#30000
-b0 !
-b0 "
-b1 !
-b1000 "
-0D
-1?
-1C
-0>
-0M
-1F
-1K
-0H
-1G
-1O
-0I
-0P
-0\
-0]
-04
-0-
-#40000
-b101 &
-b1001 !
-b1001 "
-b1000 !
-b1 "
-1D
-0?
-0C
-1>
-1;
-1Y
-1M
-0F
-1l
-0K
-1H
-1P
-1Z
-0G
-0O
-1I
-1\
-0P
-1]
-14
-0\
-1-
-0]
-04
-0-
-#50000
-b0 !
-b0 "
-b1 !
-b1000 "
-0D
-1?
-1C
-0>
-0M
-1F
-1K
-0H
-1G
-1O
-0I
-1P
-1\
-1]
-14
-1-
-#60000
-b101 !
-b10101 !
-b11000 "
-b111 &
-b110 &
-b11001 "
-b10001 "
-0;
+1R
 1Q
-1D
-0?
-1<
-1@
-1=
-0l
-0f
-1b
-0`
-0P
-0y
-0s
-1m
-0\
-1[
-1V
-0F
-1L
-0K
-1H
-0O
-1I
-1{
-0]
-xz
-xt
-xn
-x7
-x8
-x9
-04
-1:
-0m
-1\
-1O
-0I
-1P
-1,
-0-
-x+
-x*
-x)
-0z
-0t
-1n
-0{
-0:
-17
-08
-09
-0P
-0+
-0*
-1)
-0,
-0n
-1{
-1:
-07
-0)
-1,
-#70000
-b10100 !
-b10000 !
-b0 !
-b1 "
-b0 "
-0D
-0<
-0C
-0@
-0=
-0Y
-0O
-1I
-1U
-0G
-0Z
-1P
-0H
-0[
-0I
-0\
-0P
-0{
-0:
-0,
-#80000
-b10 "
-b111 &
-b1 !
-b101 !
-b10101 !
-b10010 "
-1C
-1@
-1=
-1;
-1E
-1<
-1Y
-0V
-1M
-1r
-0U
+1/
+10
 1G
-1O
-1I
-1x
-0b
-1Z
-1s
-1H
+1N
+1$
+1#
+0U
+0T
+0S
+01
+02
+03
 1P
-1y
-1[
-0I
-1t
-1z
-19
-18
-1\
-1*
-1+
-1{
-1:
-1,
-#90000
-b10000 "
-b10100 !
+0'
+0&
+0%
+1T
+0R
+00
+12
+1&
+0$
+0Q
+0/
+0#
+#20000
+b11010 !
+b101 "
+06
+15
+0P
+0B
+1?
+0>
+1O
+0M
+1I
+1R
+10
+0G
+1J
+0N
+1P
+1$
+1Q
+1U
+0R
+00
+13
+1/
+0P
+1#
+1'
+0$
+0T
+1S
+1R
+0Q
+0/
+10
+11
+02
+0&
+1%
+1$
+0#
+1Q
+1/
+1#
+#30000
+b10101 "
+16
+1P
+1B
+0?
+1>
+0R
+0Q
+0/
+00
+1G
+0J
+1N
+0$
+0#
+1Q
+0U
+1T
+0S
+01
+12
+03
+1/
+1J
+0N
+1#
+0'
+1&
+0%
+0T
+1S
+1R
+10
+11
+02
+1N
+0&
+1%
+1$
+0S
+0R
+00
+01
+0%
+0$
+1R
+10
+1$
+#40000
+b10010 !
 b10000 !
+b10001 "
+b10000 "
 b0 !
 b0 "
-0C
-0@
-0=
-0E
-0<
-0Y
-1V
-0M
-0r
-1U
-1N
-0G
-0O
-1I
-0x
-0Z
-0N
-0s
-1O
-0H
-0P
-0y
-0[
-0O
-1P
-0I
-0t
-0z
-09
-08
-0\
-0P
-0*
-0+
-0{
 0:
-0,
-#100000
-b11 &
-b1 &
-b0 &
+08
+06
+0E
+0K
+05
+0B
+0=
 0;
-0Q
+0>
+0L
+0I
+0F
+0O
+0V
+0R
+00
+04
+0G
+0P
+0N
 0J
-xf
-x`
-xZ
-xT
-xy
-xs
-xm
-x[
-xh
-xc
-xz
-xt
-xn
-x7
-x8
-x9
-x5
-x6
-x\
-x(
-x'
-x+
-x*
-x)
-x{
-x:
-x,
+0(
+0$
+1R
+1S
+1T
+12
+11
+10
+1$
+1%
+1&
+0T
+0Q
+0R
+0S
+01
+00
+0/
+02
+0&
+0#
+0$
+0%
 #1000000

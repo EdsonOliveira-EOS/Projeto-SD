@@ -101,6 +101,100 @@ Z19 !s90 -work|work|Waveform.vwf.vt|
 !i113 1
 R11
 R12
+veos_A_mais_B
+!s110 1776369749
+!i10b 1
+!s100 Ak:_K^N5TEj:Cd?C:]6mY0
+R2
+I:Z_3<=:zf0X>5LiQFeic=3
+R3
+Z20 dE:/Projeto SD/Projeto-SD/Projeto_Quartus/simulation/qsim
+Z21 w1776369744
+R5
+R6
+!i122 118
+L0 32 624
+R7
+r1
+!s85 0
+31
+!s108 1776369744.000000
+R9
+R10
+!i113 1
+R11
+R12
+neos_@a_mais_@b
+veos_A_mais_B_vlg_vec_tst
+!s110 1776369750
+!i10b 1
+!s100 `bM:XWaID;Dz:;TfZ1[K10
+R2
+IeDfRhmZ>7i;zWY5;H03eT0
+R3
+R20
+R21
+R16
+R17
+!i122 119
+L0 30 80
+R7
+r1
+!s85 0
+31
+!s108 1776369749.000000
+R18
+R19
+!i113 1
+R11
+R12
+neos_@a_mais_@b_vlg_vec_tst
+veos_somadores
+!s110 1776366481
+!i10b 1
+!s100 gR_o[3In=QAc>o_;0I;TC2
+R2
+InUGK`8o[8GT?C[b2aTGXj3
+R3
+R20
+Z22 w1776366480
+R5
+R6
+!i122 114
+L0 32 365
+R7
+r1
+!s85 0
+31
+!s108 1776366480.000000
+R9
+R10
+!i113 1
+R11
+R12
+veos_somadores_vlg_vec_tst
+!s110 1776366483
+!i10b 1
+!s100 eGJaPza7H3RgLmlTBHOPU0
+R2
+I16Yn1BZkGAV7[H8Dbl]bd1
+R3
+R20
+R22
+R16
+R17
+!i122 115
+L0 30 84
+R7
+r1
+!s85 0
+31
+!s108 1776366482.000000
+R18
+R19
+!i113 1
+R11
+R12
 vhard_block
 !s110 1775698387
 !i10b 1
@@ -125,7 +219,7 @@ R10
 R11
 R12
 vmhrs_B_maior_A
-Z20 !s110 1776305532
+Z23 !s110 1776305532
 !i10b 1
 !s100 :mXH81R0OJ`LijOb;0SX=1
 R2
@@ -141,7 +235,7 @@ R7
 r1
 !s85 0
 31
-Z21 !s108 1776305532.000000
+Z24 !s108 1776305532.000000
 R9
 R10
 !i113 1
@@ -149,7 +243,7 @@ R11
 R12
 nmhrs_@b_maior_@a
 vmhrs_B_maior_A_vlg_vec_tst
-R20
+R23
 !i10b 1
 !s100 C@ELVkJkS83OD3lM1a4HD0
 R2
@@ -165,7 +259,7 @@ R7
 r1
 !s85 0
 31
-R21
+R24
 R18
 R19
 !i113 1
@@ -173,23 +267,23 @@ R11
 R12
 nmhrs_@b_maior_@a_vlg_vec_tst
 vmhrs_MUX_8x1
-Z22 !s110 1775660047
+Z25 !s110 1775660047
 !i10b 1
 !s100 @6z5]f^OOlQA2?mQI29M<0
 R2
 I;U^]_@zX;_N8KT50;e2A40
 R3
 R0
-Z23 w1775660046
+Z26 w1775660046
 R5
 R6
 !i122 16
-Z24 L0 32 324
+Z27 L0 32 324
 R7
 r1
 !s85 0
 31
-Z25 !s108 1775660047.000000
+Z28 !s108 1775660047.000000
 R9
 R10
 !i113 1
@@ -197,23 +291,23 @@ R11
 R12
 nmhrs_@m@u@x_8x1
 vmhrs_MUX_8x1_vlg_vec_tst
-R22
+R25
 !i10b 1
 !s100 Ub7jcQVRT5B][^oT1z2CS0
 R2
 I`D>EG<dMX;dO9oQ8ofG@I0
 R3
 R0
-R23
+R26
 R16
 R17
 !i122 17
-Z26 L0 30 106
+Z29 L0 30 106
 R7
 r1
 !s85 0
 31
-R25
+R28
 R18
 R19
 !i113 1
@@ -221,7 +315,7 @@ R11
 R12
 nmhrs_@m@u@x_8x1_vlg_vec_tst
 vmhrs_MUX_Final
-Z27 !s110 1775659765
+Z30 !s110 1775659765
 !i10b 1
 !s100 E3K^QemE5BT9<PV[VJIWW2
 R2
@@ -232,12 +326,12 @@ w1775659765
 R5
 R6
 !i122 6
-R24
+R27
 R7
 r1
 !s85 0
 31
-Z28 !s108 1775659765.000000
+Z31 !s108 1775659765.000000
 R9
 R10
 !i113 1
@@ -245,7 +339,7 @@ R11
 R12
 nmhrs_@m@u@x_@final
 vmhrs_MUX_Final_vlg_vec_tst
-R27
+R30
 !i10b 1
 !s100 ^Pl5g74gFYeHZn6nN;0aP1
 R2
@@ -256,12 +350,12 @@ w1775659764
 R16
 R17
 !i122 7
-R26
+R29
 R7
 r1
 !s85 0
 31
-R28
+R31
 R18
 R19
 !i113 1
@@ -316,24 +410,72 @@ R19
 R11
 R12
 nmhrs_@mux_total_8x1_vlg_vec_tst
-vProjeto_Quartus
-Z29 !s110 1776349629
+vmhrs_Selecionador_de_cmp2
+!s110 1776364937
 !i10b 1
-!s100 N0BCS5;ii>I0LO6T]aIPP2
+!s100 _@[gnnMR;ZJ?z0h`1YRDo1
 R2
-I;Fj09oIm`Y[TCU7jF`dN53
+I]VkNfQX?MB6:jL3iBi>VP3
 R3
-R14
-Z30 w1776349628
+R20
+Z32 w1776364936
 R5
 R6
-!i122 92
-L0 32 1025
+!i122 102
+L0 32 213
 R7
 r1
 !s85 0
 31
-Z31 !s108 1776349629.000000
+!s108 1776364936.000000
+R9
+R10
+!i113 1
+R11
+R12
+nmhrs_@selecionador_de_cmp2
+vmhrs_Selecionador_de_cmp2_vlg_vec_tst
+!s110 1776364938
+!i10b 1
+!s100 ea>Wa>V6R9?QezXQ2J5Qm2
+R2
+ITIB:BEEL>HNR4nYmAJizC3
+R3
+R20
+R32
+R16
+R17
+!i122 103
+L0 30 47
+R7
+r1
+!s85 0
+31
+!s108 1776364937.000000
+R18
+R19
+!i113 1
+R11
+R12
+nmhrs_@selecionador_de_cmp2_vlg_vec_tst
+vProjeto_Quartus
+!s110 1776360782
+!i10b 1
+!s100 MO0H3BojD5T9S?@4;=@3l1
+R2
+IHacmLLHo5?RRNdeKSg56o3
+R3
+R20
+w1776360782
+R5
+R6
+!i122 96
+L0 32 1085
+R7
+r1
+!s85 0
+31
+!s108 1776360782.000000
 R9
 R10
 !i113 1
@@ -341,23 +483,23 @@ R11
 R12
 n@projeto_@quartus
 vProjeto_Quartus_vlg_vec_tst
-R29
+!s110 1776360783
 !i10b 1
-!s100 oMM[jSkeeP5X8L9Y:cM3C2
+!s100 HXIkmO4=Pak1^:^ih8aBZ0
 R2
-IJBEFU=f2l@@lSOZd;8g<12
+I>]ED6<;0B2@DBeG`GoHQ[2
 R3
-R14
-R30
+R20
+w1776360780
 R16
 R17
-!i122 93
-L0 30 145
+!i122 97
+L0 30 133
 R7
 r1
 !s85 0
 31
-R31
+!s108 1776360783.000000
 R18
 R19
 !i113 1
@@ -381,7 +523,7 @@ R7
 r1
 !s85 0
 31
-Z32 !s108 1775698548.000000
+Z33 !s108 1775698548.000000
 R9
 R10
 !i113 1
@@ -404,7 +546,7 @@ R7
 r1
 !s85 0
 31
-R32
+R33
 R18
 R19
 !i113 1

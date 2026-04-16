@@ -39,7 +39,7 @@
 
 set_global_assignment -name FAMILY "Cyclone IV E"
 set_global_assignment -name DEVICE EP4CE115F29C7
-set_global_assignment -name TOP_LEVEL_ENTITY Projeto_Quartus
+set_global_assignment -name TOP_LEVEL_ENTITY eos_A_mais_B
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 21.1.1
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "14:00:37  MARCH 26, 2026"
 set_global_assignment -name LAST_QUARTUS_VERSION "21.1.1 Lite Edition"
@@ -50,21 +50,28 @@ set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 1
 set_global_assignment -name NOMINAL_CORE_SUPPLY_VOLTAGE 1.2V
 set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
 set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
-set_global_assignment -name BDF_FILE Main.bdf
-set_global_assignment -name BDF_FILE Projeto_Quartus.bdf
+set_global_assignment -name BDF_FILE eos_halfadder.bdf
+set_global_assignment -name BDF_FILE mhrs_Selecionador_de_cmp2.bdf
+set_global_assignment -name BDF_FILE Renan_mux_2x1.bdf
+set_global_assignment -name BDF_FILE eos_A_mais_B.bdf
+set_global_assignment -name BDF_FILE "mux 2x1.bdf"
+set_global_assignment -name BDF_FILE mhrs_Mux_total_8x1.bdf
 set_global_assignment -name BDF_FILE mhrs_MUX_8x1.bdf
-set_global_assignment -name BDF_FILE eclb_XOR.bdf
-set_global_assignment -name BDF_FILE "complementador de 2.bdf"
-set_global_assignment -name BDF_FILE eos_a_maiorque_b.bdf
 set_global_assignment -name BDF_FILE mhrs_B_maior_A.bdf
 set_global_assignment -name BDF_FILE eos_somadores.bdf
-set_global_assignment -name BDF_FILE "eos_A=B.bdf"
-set_global_assignment -name BDF_FILE "mux 2x1.bdf"
-set_global_assignment -name BDF_FILE eclb_AND.bdf
-set_global_assignment -name BDF_FILE mhrs_Mux_total_8x1.bdf
+set_global_assignment -name BDF_FILE eos_a_maiorque_b.bdf
 set_global_assignment -name BDF_FILE eos_A_igual_B.bdf
+set_global_assignment -name BDF_FILE "eos_A=B.bdf"
+set_global_assignment -name BDF_FILE eclb_XOR.bdf
+set_global_assignment -name BDF_FILE eclb_AND.bdf
+set_global_assignment -name BDF_FILE "complementador de 2.bdf"
 set_global_assignment -name BDF_FILE Renan_complementador_de_2.bdf
+set_global_assignment -name BDF_FILE mhrs_renan_2x1_total.bdf
+set_global_assignment -name BDF_FILE Projeto_Quartus.bdf
+set_global_assignment -name BDF_FILE Main.bdf
+set_global_assignment -name BDF_FILE Renan_mhrs_complementador_de_2_somador.bdf
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform.vwf
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
