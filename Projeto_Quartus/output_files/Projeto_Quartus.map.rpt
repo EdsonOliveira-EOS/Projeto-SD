@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Projeto_Quartus
-Fri Apr 17 12:00:33 2026
+Fri Apr 17 14:12:38 2026
 Quartus Prime Version 21.1.1 Build 850 06/23/2022 SJ Lite Edition
 
 
@@ -43,13 +43,13 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Apr 17 12:00:33 2026       ;
+; Analysis & Synthesis Status        ; Successful - Fri Apr 17 14:12:38 2026       ;
 ; Quartus Prime Version              ; 21.1.1 Build 850 06/23/2022 SJ Lite Edition ;
 ; Revision Name                      ; Projeto_Quartus                             ;
 ; Top-level Entity Name              ; Main                                        ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 86                                          ;
-;     Total combinational functions  ; 86                                          ;
+; Total logic elements               ; 89                                          ;
+;     Total combinational functions  ; 89                                          ;
 ;     Dedicated logic registers      ; 0                                           ;
 ; Total registers                    ; 0                                           ;
 ; Total pins                         ; 33                                          ;
@@ -162,32 +162,32 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                                           ;
-+--------------------------------------------+-----------------+------------------------------------+----------------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path           ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                                       ; Library ;
-+--------------------------------------------+-----------------+------------------------------------+----------------------------------------------------------------------------------------------------+---------+
-; Renan_mux_2x1.bdf                          ; yes             ; User Block Diagram/Schematic File  ; C:/Users/mhrs/Documents/Code/Projeto-SD/Projeto_Quartus/Renan_mux_2x1.bdf                          ;         ;
-; Renan_mhrs_complementador_de_2_somador.bdf ; yes             ; User Block Diagram/Schematic File  ; C:/Users/mhrs/Documents/Code/Projeto-SD/Projeto_Quartus/Renan_mhrs_complementador_de_2_somador.bdf ;         ;
-; Renan_complementador_de_2.bdf              ; yes             ; User Block Diagram/Schematic File  ; C:/Users/mhrs/Documents/Code/Projeto-SD/Projeto_Quartus/Renan_complementador_de_2.bdf              ;         ;
-; Projeto_Quartus.bdf                        ; yes             ; User Block Diagram/Schematic File  ; C:/Users/mhrs/Documents/Code/Projeto-SD/Projeto_Quartus/Projeto_Quartus.bdf                        ;         ;
-; mhrs_Selecionador_de_cmp2.bdf              ; yes             ; User Block Diagram/Schematic File  ; C:/Users/mhrs/Documents/Code/Projeto-SD/Projeto_Quartus/mhrs_Selecionador_de_cmp2.bdf              ;         ;
-; mhrs_renan_eos_A_mais_B.bdf                ; yes             ; User Block Diagram/Schematic File  ; C:/Users/mhrs/Documents/Code/Projeto-SD/Projeto_Quartus/mhrs_renan_eos_A_mais_B.bdf                ;         ;
-; mhrs_renan_2x1_total.bdf                   ; yes             ; User Block Diagram/Schematic File  ; C:/Users/mhrs/Documents/Code/Projeto-SD/Projeto_Quartus/mhrs_renan_2x1_total.bdf                   ;         ;
-; mhrs_Mux_total_8x1.bdf                     ; yes             ; User Block Diagram/Schematic File  ; C:/Users/mhrs/Documents/Code/Projeto-SD/Projeto_Quartus/mhrs_Mux_total_8x1.bdf                     ;         ;
-; mhrs_MUX_8x1.bdf                           ; yes             ; User Block Diagram/Schematic File  ; C:/Users/mhrs/Documents/Code/Projeto-SD/Projeto_Quartus/mhrs_MUX_8x1.bdf                           ;         ;
-; mhrs_B_maior_A.bdf                         ; yes             ; User Block Diagram/Schematic File  ; C:/Users/mhrs/Documents/Code/Projeto-SD/Projeto_Quartus/mhrs_B_maior_A.bdf                         ;         ;
-; mhrs_A_menos_B.bdf                         ; yes             ; User Block Diagram/Schematic File  ; C:/Users/mhrs/Documents/Code/Projeto-SD/Projeto_Quartus/mhrs_A_menos_B.bdf                         ;         ;
-; mhrs_5bits_seletor_cmp2.bdf                ; yes             ; User Block Diagram/Schematic File  ; C:/Users/mhrs/Documents/Code/Projeto-SD/Projeto_Quartus/mhrs_5bits_seletor_cmp2.bdf                ;         ;
-; mhrs_5bits_complementador2_somador.bdf     ; yes             ; User Block Diagram/Schematic File  ; C:/Users/mhrs/Documents/Code/Projeto-SD/Projeto_Quartus/mhrs_5bits_complementador2_somador.bdf     ;         ;
-; Main.bdf                                   ; yes             ; User Block Diagram/Schematic File  ; C:/Users/mhrs/Documents/Code/Projeto-SD/Projeto_Quartus/Main.bdf                                   ;         ;
-; eos_somadores.bdf                          ; yes             ; User Block Diagram/Schematic File  ; C:/Users/mhrs/Documents/Code/Projeto-SD/Projeto_Quartus/eos_somadores.bdf                          ;         ;
-; eos_halfadder.bdf                          ; yes             ; User Block Diagram/Schematic File  ; C:/Users/mhrs/Documents/Code/Projeto-SD/Projeto_Quartus/eos_halfadder.bdf                          ;         ;
-; eos_a_maiorque_b.bdf                       ; yes             ; User Block Diagram/Schematic File  ; C:/Users/mhrs/Documents/Code/Projeto-SD/Projeto_Quartus/eos_a_maiorque_b.bdf                       ;         ;
-; eos_A_igual_B.bdf                          ; yes             ; User Block Diagram/Schematic File  ; C:/Users/mhrs/Documents/Code/Projeto-SD/Projeto_Quartus/eos_A_igual_B.bdf                          ;         ;
-; eclb_XOR.bdf                               ; yes             ; User Block Diagram/Schematic File  ; C:/Users/mhrs/Documents/Code/Projeto-SD/Projeto_Quartus/eclb_XOR.bdf                               ;         ;
-; eclb_AND.bdf                               ; yes             ; User Block Diagram/Schematic File  ; C:/Users/mhrs/Documents/Code/Projeto-SD/Projeto_Quartus/eclb_AND.bdf                               ;         ;
-+--------------------------------------------+-----------------+------------------------------------+----------------------------------------------------------------------------------------------------+---------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                      ;
++--------------------------------------------+-----------------+------------------------------------+-----------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path           ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                                  ; Library ;
++--------------------------------------------+-----------------+------------------------------------+-----------------------------------------------------------------------------------------------+---------+
+; Renan_mux_2x1.bdf                          ; yes             ; User Block Diagram/Schematic File  ; C:/Users/mhrs/Documents/Projeto-SD/Projeto_Quartus/Renan_mux_2x1.bdf                          ;         ;
+; Renan_mhrs_complementador_de_2_somador.bdf ; yes             ; User Block Diagram/Schematic File  ; C:/Users/mhrs/Documents/Projeto-SD/Projeto_Quartus/Renan_mhrs_complementador_de_2_somador.bdf ;         ;
+; Renan_complementador_de_2.bdf              ; yes             ; User Block Diagram/Schematic File  ; C:/Users/mhrs/Documents/Projeto-SD/Projeto_Quartus/Renan_complementador_de_2.bdf              ;         ;
+; Projeto_Quartus.bdf                        ; yes             ; User Block Diagram/Schematic File  ; C:/Users/mhrs/Documents/Projeto-SD/Projeto_Quartus/Projeto_Quartus.bdf                        ;         ;
+; mhrs_Selecionador_de_cmp2.bdf              ; yes             ; User Block Diagram/Schematic File  ; C:/Users/mhrs/Documents/Projeto-SD/Projeto_Quartus/mhrs_Selecionador_de_cmp2.bdf              ;         ;
+; mhrs_renan_eos_A_mais_B.bdf                ; yes             ; User Block Diagram/Schematic File  ; C:/Users/mhrs/Documents/Projeto-SD/Projeto_Quartus/mhrs_renan_eos_A_mais_B.bdf                ;         ;
+; mhrs_renan_2x1_total.bdf                   ; yes             ; User Block Diagram/Schematic File  ; C:/Users/mhrs/Documents/Projeto-SD/Projeto_Quartus/mhrs_renan_2x1_total.bdf                   ;         ;
+; mhrs_Mux_total_8x1.bdf                     ; yes             ; User Block Diagram/Schematic File  ; C:/Users/mhrs/Documents/Projeto-SD/Projeto_Quartus/mhrs_Mux_total_8x1.bdf                     ;         ;
+; mhrs_MUX_8x1.bdf                           ; yes             ; User Block Diagram/Schematic File  ; C:/Users/mhrs/Documents/Projeto-SD/Projeto_Quartus/mhrs_MUX_8x1.bdf                           ;         ;
+; mhrs_B_maior_A.bdf                         ; yes             ; User Block Diagram/Schematic File  ; C:/Users/mhrs/Documents/Projeto-SD/Projeto_Quartus/mhrs_B_maior_A.bdf                         ;         ;
+; mhrs_A_menos_B.bdf                         ; yes             ; User Block Diagram/Schematic File  ; C:/Users/mhrs/Documents/Projeto-SD/Projeto_Quartus/mhrs_A_menos_B.bdf                         ;         ;
+; mhrs_5bits_seletor_cmp2.bdf                ; yes             ; User Block Diagram/Schematic File  ; C:/Users/mhrs/Documents/Projeto-SD/Projeto_Quartus/mhrs_5bits_seletor_cmp2.bdf                ;         ;
+; mhrs_5bits_complementador2_somador.bdf     ; yes             ; User Block Diagram/Schematic File  ; C:/Users/mhrs/Documents/Projeto-SD/Projeto_Quartus/mhrs_5bits_complementador2_somador.bdf     ;         ;
+; Main.bdf                                   ; yes             ; User Block Diagram/Schematic File  ; C:/Users/mhrs/Documents/Projeto-SD/Projeto_Quartus/Main.bdf                                   ;         ;
+; eos_somadores.bdf                          ; yes             ; User Block Diagram/Schematic File  ; C:/Users/mhrs/Documents/Projeto-SD/Projeto_Quartus/eos_somadores.bdf                          ;         ;
+; eos_halfadder.bdf                          ; yes             ; User Block Diagram/Schematic File  ; C:/Users/mhrs/Documents/Projeto-SD/Projeto_Quartus/eos_halfadder.bdf                          ;         ;
+; eos_a_maiorque_b.bdf                       ; yes             ; User Block Diagram/Schematic File  ; C:/Users/mhrs/Documents/Projeto-SD/Projeto_Quartus/eos_a_maiorque_b.bdf                       ;         ;
+; eos_A_igual_B.bdf                          ; yes             ; User Block Diagram/Schematic File  ; C:/Users/mhrs/Documents/Projeto-SD/Projeto_Quartus/eos_A_igual_B.bdf                          ;         ;
+; eclb_XOR.bdf                               ; yes             ; User Block Diagram/Schematic File  ; C:/Users/mhrs/Documents/Projeto-SD/Projeto_Quartus/eclb_XOR.bdf                               ;         ;
+; eclb_AND.bdf                               ; yes             ; User Block Diagram/Schematic File  ; C:/Users/mhrs/Documents/Projeto-SD/Projeto_Quartus/eclb_AND.bdf                               ;         ;
++--------------------------------------------+-----------------+------------------------------------+-----------------------------------------------------------------------------------------------+---------+
 
 
 +----------------------------------------------------------+
@@ -195,16 +195,16 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+------------+
 ; Resource                                    ; Usage      ;
 +---------------------------------------------+------------+
-; Estimated Total logic elements              ; 86         ;
+; Estimated Total logic elements              ; 89         ;
 ;                                             ;            ;
-; Total combinational functions               ; 86         ;
+; Total combinational functions               ; 89         ;
 ; Logic element usage by number of LUT inputs ;            ;
-;     -- 4 input functions                    ; 60         ;
-;     -- 3 input functions                    ; 16         ;
-;     -- <=2 input functions                  ; 10         ;
+;     -- 4 input functions                    ; 64         ;
+;     -- 3 input functions                    ; 14         ;
+;     -- <=2 input functions                  ; 11         ;
 ;                                             ;            ;
 ; Logic elements by mode                      ;            ;
-;     -- normal mode                          ; 86         ;
+;     -- normal mode                          ; 89         ;
 ;     -- arithmetic mode                      ; 0          ;
 ;                                             ;            ;
 ; Total registers                             ; 0          ;
@@ -215,10 +215,10 @@ https://fpgasoftware.intel.com/eula.
 ;                                             ;            ;
 ; Embedded Multiplier 9-bit elements          ; 0          ;
 ;                                             ;            ;
-; Maximum fan-out node                        ; B[4]~input ;
-; Maximum fan-out                             ; 21         ;
-; Total fan-out                               ; 361        ;
-; Average fan-out                             ; 2.38       ;
+; Maximum fan-out node                        ; S[0]~input ;
+; Maximum fan-out                             ; 23         ;
+; Total fan-out                               ; 373        ;
+; Average fan-out                             ; 2.41       ;
 +---------------------------------------------+------------+
 
 
@@ -227,10 +227,10 @@ https://fpgasoftware.intel.com/eula.
 +------------------------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------+--------------+
 ; Compilation Hierarchy Node                                 ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                     ; Entity Name                            ; Library Name ;
 +------------------------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------+--------------+
-; |Main                                                      ; 86 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 33   ; 0            ; |Main                                                                                                                                   ; Main                                   ; work         ;
-;    |Projeto_Quartus:inst|                                  ; 86 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Main|Projeto_Quartus:inst                                                                                                              ; Projeto_Quartus                        ; work         ;
+; |Main                                                      ; 89 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 33   ; 0            ; |Main                                                                                                                                   ; Main                                   ; work         ;
+;    |Projeto_Quartus:inst|                                  ; 89 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Main|Projeto_Quartus:inst                                                                                                              ; Projeto_Quartus                        ; work         ;
 ;       |eclb_XOR:inst2|                                     ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Main|Projeto_Quartus:inst|eclb_XOR:inst2                                                                                               ; eclb_XOR                               ; work         ;
-;       |eos_a_maiorque_b:inst3|                             ; 3 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Main|Projeto_Quartus:inst|eos_a_maiorque_b:inst3                                                                                       ; eos_a_maiorque_b                       ; work         ;
+;       |eos_a_maiorque_b:inst3|                             ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Main|Projeto_Quartus:inst|eos_a_maiorque_b:inst3                                                                                       ; eos_a_maiorque_b                       ; work         ;
 ;       |mhrs_A_menos_B:inst13|                              ; 20 (3)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Main|Projeto_Quartus:inst|mhrs_A_menos_B:inst13                                                                                        ; mhrs_A_menos_B                         ; work         ;
 ;          |eos_somadores:inst|                              ; 7 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Main|Projeto_Quartus:inst|mhrs_A_menos_B:inst13|eos_somadores:inst                                                                     ; eos_somadores                          ; work         ;
 ;             |eos_halfadder:inst2|                          ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Main|Projeto_Quartus:inst|mhrs_A_menos_B:inst13|eos_somadores:inst|eos_halfadder:inst2                                                 ; eos_halfadder                          ; work         ;
@@ -248,17 +248,18 @@ https://fpgasoftware.intel.com/eula.
 ;                |Renan_mux_2x1:inst1|                       ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Main|Projeto_Quartus:inst|mhrs_A_menos_B:inst13|mhrs_Selecionador_de_cmp2:inst4|mhrs_renan_2x1_total:inst|Renan_mux_2x1:inst1          ; Renan_mux_2x1                          ; work         ;
 ;                |Renan_mux_2x1:inst2|                       ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Main|Projeto_Quartus:inst|mhrs_A_menos_B:inst13|mhrs_Selecionador_de_cmp2:inst4|mhrs_renan_2x1_total:inst|Renan_mux_2x1:inst2          ; Renan_mux_2x1                          ; work         ;
 ;                |Renan_mux_2x1:inst3|                       ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Main|Projeto_Quartus:inst|mhrs_A_menos_B:inst13|mhrs_Selecionador_de_cmp2:inst4|mhrs_renan_2x1_total:inst|Renan_mux_2x1:inst3          ; Renan_mux_2x1                          ; work         ;
-;       |mhrs_B_maior_A:inst12|                              ; 4 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Main|Projeto_Quartus:inst|mhrs_B_maior_A:inst12                                                                                        ; mhrs_B_maior_A                         ; work         ;
+;       |mhrs_B_maior_A:inst12|                              ; 5 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Main|Projeto_Quartus:inst|mhrs_B_maior_A:inst12                                                                                        ; mhrs_B_maior_A                         ; work         ;
+;          |eos_A_igual_B:inst5|                             ; 3 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Main|Projeto_Quartus:inst|mhrs_B_maior_A:inst12|eos_A_igual_B:inst5                                                                    ; eos_A_igual_B                          ; work         ;
 ;       |mhrs_MUX_8x1:inst4|                                 ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Main|Projeto_Quartus:inst|mhrs_MUX_8x1:inst4                                                                                           ; mhrs_MUX_8x1                           ; work         ;
-;       |mhrs_Mux_total_8x1:inst8|                           ; 35 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Main|Projeto_Quartus:inst|mhrs_Mux_total_8x1:inst8                                                                                     ; mhrs_Mux_total_8x1                     ; work         ;
+;       |mhrs_Mux_total_8x1:inst8|                           ; 34 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Main|Projeto_Quartus:inst|mhrs_Mux_total_8x1:inst8                                                                                     ; mhrs_Mux_total_8x1                     ; work         ;
 ;          |mhrs_MUX_8x1:inst3|                              ; 8 (8)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Main|Projeto_Quartus:inst|mhrs_Mux_total_8x1:inst8|mhrs_MUX_8x1:inst3                                                                  ; mhrs_MUX_8x1                           ; work         ;
 ;          |mhrs_MUX_8x1:inst4|                              ; 6 (6)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Main|Projeto_Quartus:inst|mhrs_Mux_total_8x1:inst8|mhrs_MUX_8x1:inst4                                                                  ; mhrs_MUX_8x1                           ; work         ;
 ;          |mhrs_MUX_8x1:inst5|                              ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Main|Projeto_Quartus:inst|mhrs_Mux_total_8x1:inst8|mhrs_MUX_8x1:inst5                                                                  ; mhrs_MUX_8x1                           ; work         ;
 ;          |mhrs_MUX_8x1:inst6|                              ; 8 (8)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Main|Projeto_Quartus:inst|mhrs_Mux_total_8x1:inst8|mhrs_MUX_8x1:inst6                                                                  ; mhrs_MUX_8x1                           ; work         ;
-;          |mhrs_MUX_8x1:inst7|                              ; 5 (5)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Main|Projeto_Quartus:inst|mhrs_Mux_total_8x1:inst8|mhrs_MUX_8x1:inst7                                                                  ; mhrs_MUX_8x1                           ; work         ;
+;          |mhrs_MUX_8x1:inst7|                              ; 4 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Main|Projeto_Quartus:inst|mhrs_Mux_total_8x1:inst8|mhrs_MUX_8x1:inst7                                                                  ; mhrs_MUX_8x1                           ; work         ;
 ;          |mhrs_MUX_8x1:inst|                               ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Main|Projeto_Quartus:inst|mhrs_Mux_total_8x1:inst8|mhrs_MUX_8x1:inst                                                                   ; mhrs_MUX_8x1                           ; work         ;
-;       |mhrs_Mux_total_8x1:inst|                            ; 9 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Main|Projeto_Quartus:inst|mhrs_Mux_total_8x1:inst                                                                                      ; mhrs_Mux_total_8x1                     ; work         ;
-;          |mhrs_MUX_8x1:inst|                               ; 9 (9)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Main|Projeto_Quartus:inst|mhrs_Mux_total_8x1:inst|mhrs_MUX_8x1:inst                                                                    ; mhrs_MUX_8x1                           ; work         ;
+;       |mhrs_Mux_total_8x1:inst|                            ; 14 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Main|Projeto_Quartus:inst|mhrs_Mux_total_8x1:inst                                                                                      ; mhrs_Mux_total_8x1                     ; work         ;
+;          |mhrs_MUX_8x1:inst|                               ; 14 (14)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Main|Projeto_Quartus:inst|mhrs_Mux_total_8x1:inst|mhrs_MUX_8x1:inst                                                                    ; mhrs_MUX_8x1                           ; work         ;
 ;       |mhrs_renan_eos_A_mais_B:inst11|                     ; 13 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Main|Projeto_Quartus:inst|mhrs_renan_eos_A_mais_B:inst11                                                                               ; mhrs_renan_eos_A_mais_B                ; work         ;
 ;          |eos_somadores:inst|                              ; 7 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Main|Projeto_Quartus:inst|mhrs_renan_eos_A_mais_B:inst11|eos_somadores:inst                                                            ; eos_somadores                          ; work         ;
 ;             |eos_halfadder:inst2|                          ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Main|Projeto_Quartus:inst|mhrs_renan_eos_A_mais_B:inst11|eos_somadores:inst|eos_halfadder:inst2                                        ; eos_halfadder                          ; work         ;
@@ -295,14 +296,14 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; boundary_port         ; 33                          ;
-; cycloneiii_lcell_comb ; 86                          ;
-;     normal            ; 86                          ;
-;         2 data inputs ; 10                          ;
-;         3 data inputs ; 16                          ;
-;         4 data inputs ; 60                          ;
+; cycloneiii_lcell_comb ; 89                          ;
+;     normal            ; 89                          ;
+;         2 data inputs ; 11                          ;
+;         3 data inputs ; 14                          ;
+;         4 data inputs ; 64                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 10.00                       ;
-; Average LUT depth     ; 7.70                        ;
+; Average LUT depth     ; 8.04                        ;
 +-----------------------+-----------------------------+
 
 
@@ -321,7 +322,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 21.1.1 Build 850 06/23/2022 SJ Lite Edition
-    Info: Processing started: Fri Apr 17 12:00:26 2026
+    Info: Processing started: Fri Apr 17 14:12:31 2026
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Projeto_Quartus -c Projeto_Quartus
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
@@ -441,14 +442,14 @@ Info (12128): Elaborating entity "eclb_XOR" for hierarchy "Projeto_Quartus:inst|
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 119 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 122 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 13 input pins
     Info (21059): Implemented 20 output pins
-    Info (21061): Implemented 86 logic cells
+    Info (21061): Implemented 89 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 46 warnings
     Info: Peak virtual memory: 4810 megabytes
-    Info: Processing ended: Fri Apr 17 12:00:33 2026
+    Info: Processing ended: Fri Apr 17 14:12:38 2026
     Info: Elapsed time: 00:00:07
-    Info: Total CPU time (on all processors): 00:00:17
+    Info: Total CPU time (on all processors): 00:00:18
 
 
