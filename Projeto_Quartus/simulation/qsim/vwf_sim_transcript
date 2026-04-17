@@ -28,17 +28,10 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details, at
     Info: https://fpgasoftware.intel.com/eula.
-    Info: Processing started: Fri Apr 17 14:17:51 2026
+    Info: Processing started: Fri Apr 17 14:33:14 2026
 Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off Projeto_Quartus -c Projeto_Quartus --vector_source=C:/Users/mhrs/Documents/Projeto-SD/Projeto_Quartus/Waveform.vwf --testbench_file=C:/Users/mhrs/Documents/Projeto-SD/Projeto_Quartus/simulation/qsim/Waveform.vwf.vt
+Info (119006): Selected device EP4CE115F29C7 for design "Projeto_Quartus"
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-
-g test bench files
-Info (201000): Generated Verilog Test Bench File C:/Users/mhrs/Documents/Projeto-SD/Projeto_Quartus/simulation/qsim/Waveform.vwf.vt for simulation
-Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 25 warnings
-    Info: Peak virtual memory: 4670 megabytes
-    Info: Processing ended: Fri Apr 17 14:17:51 2026
-    Info: Elapsed time: 00:00:00
-    Info: Total CPU time (on all processors): 00:00:00
 
 Completed successfully. 
 
@@ -67,14 +60,15 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details, at
     Info: https://fpgasoftware.intel.com/eula.
-    Info: Processing started: Fri Apr 17 14:17:51 2026
+    Info: Processing started: Fri Apr 17 14:33:15 2026
 Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=C:/Users/mhrs/Documents/Projeto-SD/Projeto_Quartus/simulation/qsim/ Projeto_Quartus -c Projeto_Quartus
+Info (119006): Selected device EP4CE115F29C7 for design "Projeto_Quartus"
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (204019): Generated file Projeto_Quartus.vo in folder "C:/Users/mhrs/Documents/Projeto-SD/Projeto_Quartus/simulation/qsim//" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4687 megabytes
-    Info: Processing ended: Fri Apr 17 14:17:52 2026
-    Info: Elapsed time: 00:00:01
+    Info: Peak virtual memory: 4686 megabytes
+    Info: Processing ended: Fri Apr 17 14:33:15 2026
+    Info: Elapsed time: 00:00:00
     Info: Total CPU time (on all processors): 00:00:00
 
 Completed successfully. 
@@ -101,52 +95,50 @@ Reading pref.tcl
 
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
 
-# Start time: 14:17:53 on Apr 17,2026
+# Start time: 14:33:16 on Apr 17,2026
 # vlog -work work Projeto_Quartus.vo 
 
-# -- Compiling module Main
-
-# -- Compiling module hard_block
+# -- Compiling module Analisador_7seg
 
 # 
 
 # Top level modules:
-# 	Main
+# 	Analisador_7seg
 
-# End time: 14:17:53 on Apr 17,2026, Elapsed time: 0:00:00
+# End time: 14:33:16 on Apr 17,2026, Elapsed time: 0:00:00
 
 # Errors: 0, Warnings: 0
 
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
 
-# Start time: 14:17:53 on Apr 17,2026
+# Start time: 14:33:16 on Apr 17,2026
 # vlog -work work Waveform.vwf.vt 
 
-# -- Compiling module Main_vlg_vec_tst
+# -- Compiling module Analisador_7seg_vlg_vec_tst
 
 # 
+
 # Top level modules:
+# 	Analisador_7seg_vlg_vec_tst
 
-# 	Main_vlg_vec_tst
+# End time: 14:33:16 on Apr 17,2026, Elapsed time: 0:00:00
 
-# End time: 14:17:53 on Apr 17,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 
-# vsim -c -t 1ps -L cycloneive_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.Main_vlg_vec_tst 
-# Start time: 14:17:53 on Apr 17,2026
-# Loading work.Main_vlg_vec_tst
-# Loading work.Main
-# Loading work.hard_block
+# vsim -c -t 1ps -L cycloneive_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.Analisador_7seg_vlg_vec_tst 
+# Start time: 14:33:16 on Apr 17,2026
+# Loading work.Analisador_7seg_vlg_vec_tst
+# Loading work.Analisador_7seg
 # Loading cycloneive_ver.cycloneive_io_obuf
 # Loading cycloneive_ver.cycloneive_io_ibuf
 # Loading cycloneive_ver.cycloneive_lcell_comb
 
-# after#26
+# after#25
 
-# ** Note: $finish    : Waveform.vwf.vt(57)
-#    Time: 1 us  Iteration: 0  Instance: /Main_vlg_vec_tst
+# ** Note: $finish    : Waveform.vwf.vt(51)
+#    Time: 1 us  Iteration: 0  Instance: /Analisador_7seg_vlg_vec_tst
 
-# End time: 14:17:53 on Apr 17,2026, Elapsed time: 0:00:00
+# End time: 14:33:17 on Apr 17,2026, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 
 Completed successfully. 
@@ -159,7 +151,7 @@ Reading C:/Users/mhrs/Documents/Projeto-SD/Projeto_Quartus/simulation/qsim/Proje
 
 Processing channel transitions... 
 
-Writing the resulting VWF to C:/Users/mhrs/Documents/Projeto-SD/Projeto_Quartus/simulation/qsim/Projeto_Quartus_20260417141753.sim.vwf
+Writing the resulting VWF to C:/Users/mhrs/Documents/Projeto-SD/Projeto_Quartus/simulation/qsim/Projeto_Quartus_20260417143317.sim.vwf
 
 Finished VCD to VWF conversion.
 

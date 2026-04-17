@@ -19,127 +19,88 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "04/17/2026 14:17:51"
+// Generated on "04/17/2026 14:33:15"
                                                                                 
-// Verilog Test Bench (with test vectors) for design :                          Main
+// Verilog Test Bench (with test vectors) for design :                          Analisador_7seg
 // 
 // Simulation tool : 3rd Party
 // 
 
 `timescale 1 ps/ 1 ps
-module Main_vlg_vec_tst();
+module Analisador_7seg_vlg_vec_tst();
 // constants                                           
 // general purpose registers
-reg [4:0] A;
-reg [4:0] B;
-reg [2:0] S;
+reg [5:0] In;
 // wires                                               
-wire [4:0] S_A;
-wire [4:0] S_B;
-wire [5:0] S_F;
-wire [2:0] S_S;
-wire STATUS;
+wire SAA;
+wire [3:0] SAIDA;
+wire SBB;
+wire SCC;
 
 // assign statements (if any)                          
-Main i1 (
+Analisador_7seg i1 (
 // port map - connection between master ports and signals/registers   
-	.A(A),
-	.B(B),
-	.S(S),
-	.S_A(S_A),
-	.S_B(S_B),
-	.S_F(S_F),
-	.S_S(S_S),
-	.STATUS(STATUS)
+	.In(In),
+	.SAA(SAA),
+	.SAIDA(SAIDA),
+	.SBB(SBB),
+	.SCC(SCC)
 );
 initial 
 begin 
 #1000000 $finish;
 end 
-// A[ 4 ]
+// In[ 5 ]
 initial
 begin
-	A[4] = 1'b0;
-	A[4] = #30000 1'b1;
-	A[4] = #30000 1'b0;
+	In[5] = 1'b0;
 end 
-// A[ 3 ]
+// In[ 4 ]
 initial
 begin
-	A[3] = 1'b1;
-	A[3] = #60000 1'b0;
+	repeat(3)
+	begin
+		In[4] = 1'b0;
+		In[4] = #160000 1'b1;
+		# 160000;
+	end
+	In[4] = 1'b0;
 end 
-// A[ 2 ]
+// In[ 3 ]
 initial
 begin
-	A[2] = 1'b0;
+	repeat(6)
+	begin
+		In[3] = 1'b0;
+		In[3] = #80000 1'b1;
+		# 80000;
+	end
+	In[3] = 1'b0;
 end 
-// A[ 1 ]
+// In[ 2 ]
 initial
 begin
-	A[1] = 1'b0;
+	repeat(12)
+	begin
+		In[2] = 1'b0;
+		In[2] = #40000 1'b1;
+		# 40000;
+	end
+	In[2] = 1'b0;
 end 
-// A[ 0 ]
-initial
+// In[ 1 ]
+always
 begin
-	A[0] = 1'b0;
+	In[1] = 1'b0;
+	In[1] = #20000 1'b1;
+	#20000;
 end 
-// B[ 4 ]
-initial
+// In[ 0 ]
+always
 begin
-	B[4] = 1'b0;
-	B[4] = #30000 1'b1;
-	B[4] = #30000 1'b0;
-end 
-// B[ 3 ]
-initial
-begin
-	B[3] = 1'b1;
-	B[3] = #10000 1'b0;
-	B[3] = #10000 1'b1;
-	B[3] = #20000 1'b0;
-	B[3] = #10000 1'b1;
-	B[3] = #10000 1'b0;
-end 
-// B[ 2 ]
-initial
-begin
-	B[2] = 1'b0;
-	B[2] = #20000 1'b1;
-	B[2] = #10000 1'b0;
-	B[2] = #20000 1'b1;
-	B[2] = #10000 1'b0;
-end 
-// B[ 1 ]
-initial
-begin
-	B[1] = 1'b0;
-end 
-// B[ 0 ]
-initial
-begin
-	B[0] = 1'b0;
-	B[0] = #10000 1'b1;
-	B[0] = #10000 1'b0;
-	B[0] = #20000 1'b1;
-	B[0] = #10000 1'b0;
-end 
-// S[ 2 ]
-initial
-begin
-	S[2] = 1'b1;
-	S[2] = #60000 1'b0;
-	S[2] = #10000 1'b1;
-end 
-// S[ 1 ]
-initial
-begin
-	S[1] = 1'b0;
-end 
-// S[ 0 ]
-initial
-begin
-	S[0] = 1'b0;
+	In[0] = 1'b0;
+	In[0] = #10000 1'b1;
+	#10000;
 end 
 endmodule
 

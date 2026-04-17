@@ -79,61 +79,109 @@ R13
 !i113 1
 R9
 R10
+vAnalisador_7seg
+Z14 !s110 1776447196
+!i10b 1
+!s100 FiO]1>[D_M>I4I8Ff6VM30
+R1
+IME1=bSS6KH1cee@fZ58?J0
+R2
+Z15 dC:/Users/mhrs/Documents/Projeto-SD/Projeto_Quartus/simulation/qsim
+Z16 w1776447195
+R3
+R4
+!i122 185
+L0 32 259
+R6
+r1
+!s85 0
+31
+Z17 !s108 1776447196.000000
+R7
+R8
+!i113 1
+R9
+R10
+n@analisador_7seg
+vAnalisador_7seg_vlg_vec_tst
+R14
+!i10b 1
+!s100 VaU5W72Hd<h3U640HVJ8W1
+R1
+I^PRPTMbEa8^a9SaQETmF52
+R2
+R15
+R16
+Z18 8Waveform.vwf.vt
+Z19 FWaveform.vwf.vt
+!i122 186
+L0 30 76
+R6
+r1
+!s85 0
+31
+R17
+Z20 !s107 Waveform.vwf.vt|
+Z21 !s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R9
+R10
+n@analisador_7seg_vlg_vec_tst
 veos_a_maiorque_b
-Z14 !s110 1776445121
+Z22 !s110 1776445121
 !i10b 1
 !s100 6F`kPZ?d[LZAn`_47KhNi0
 R1
 IJ]ifRC@3V^Go`4Ol]iAJo1
 R2
-Z15 dC:/Users/mhrs/Documents/Projeto-SD/Projeto_Quartus/simulation/qsim
-Z16 w1776445119
+R15
+Z23 w1776445119
 R3
 R4
 !i122 171
-Z17 L0 32 297
+Z24 L0 32 297
 R6
 r1
 !s85 0
 31
-Z18 !s108 1776445121.000000
+Z25 !s108 1776445121.000000
 R7
 R8
 !i113 1
 R9
 R10
 veos_a_maiorque_b_vlg_vec_tst
-R14
+R22
 !i10b 1
 !s100 AZY;WgMc^3_[hoDi>Mh783
 R1
 IFmzZFKmf3=KNkda?fWSc20
 R2
 R15
-R16
-Z19 8Waveform.vwf.vt
-Z20 FWaveform.vwf.vt
+R23
+R18
+R19
 !i122 172
 L0 30 88
 R6
 r1
 !s85 0
 31
-R18
-Z21 !s107 Waveform.vwf.vt|
-Z22 !s90 -work|work|Waveform.vwf.vt|
+R25
+R20
+R21
 !i113 1
 R9
 R10
 veos_A_mais_B
-Z23 !s110 1776385364
+Z26 !s110 1776385364
 !i10b 1
 !s100 Ak:_K^N5TEj:Cd?C:]6mY0
 R1
 I:Z_3<=:zf0X>5LiQFeic=3
 R2
 R0
-Z24 w1776385363
+Z27 w1776385363
 R3
 R4
 !i122 120
@@ -142,7 +190,7 @@ R6
 r1
 !s85 0
 31
-Z25 !s108 1776385364.000000
+Z28 !s108 1776385364.000000
 R7
 R8
 !i113 1
@@ -150,25 +198,25 @@ R9
 R10
 neos_@a_mais_@b
 veos_A_mais_B_vlg_vec_tst
-R23
+R26
 !i10b 1
 !s100 `bM:XWaID;Dz:;TfZ1[K10
 R1
 IeDfRhmZ>7i;zWY5;H03eT0
 R2
 R0
-R24
+R27
+R18
 R19
-R20
 !i122 121
-Z26 L0 30 80
+Z29 L0 30 80
 R6
 r1
 !s85 0
 31
-R25
+R28
+R20
 R21
-R22
 !i113 1
 R9
 R10
@@ -180,8 +228,8 @@ veos_somadores
 R1
 InUGK`8o[8GT?C[b2aTGXj3
 R2
-Z27 dE:/Projeto SD/Projeto-SD/Projeto_Quartus/simulation/qsim
-Z28 w1776366480
+Z30 dE:/Projeto SD/Projeto-SD/Projeto_Quartus/simulation/qsim
+Z31 w1776366480
 R3
 R4
 !i122 114
@@ -203,10 +251,10 @@ veos_somadores_vlg_vec_tst
 R1
 I16Yn1BZkGAV7[H8Dbl]bd1
 R2
-R27
-R28
+R30
+R31
+R18
 R19
-R20
 !i122 115
 L0 30 84
 R6
@@ -214,20 +262,20 @@ r1
 !s85 0
 31
 !s108 1776366482.000000
+R20
 R21
-R22
 !i113 1
 R9
 R10
 vhard_block
-Z29 !s110 1776446273
+Z32 !s110 1776446273
 !i10b 1
 !s100 gM>l;I`:2R]bPaNokDBff0
 R1
 I^]C3^?I[ZC>:Vk7f:6I2;2
 R2
 R15
-Z30 w1776446272
+Z33 w1776446272
 R3
 R4
 !i122 179
@@ -236,21 +284,21 @@ R6
 r1
 !s85 0
 31
-Z31 !s108 1776446273.000000
+Z34 !s108 1776446273.000000
 R7
 R8
 !i113 1
 R9
 R10
 vMain
-R29
+R32
 !i10b 1
 !s100 Hk<?YLP=b_8SNZZLcm>_K0
 R1
 I6Q`;UJMV3@B?LKP]aVMD93
 R2
 R15
-R30
+R33
 R3
 R4
 !i122 179
@@ -259,7 +307,7 @@ R6
 r1
 !s85 0
 31
-R31
+R34
 R7
 R8
 !i113 1
@@ -267,7 +315,7 @@ R9
 R10
 n@main
 vMain_vlg_vec_tst
-R29
+R32
 !i10b 1
 !s100 4F19?Oj_DVZjT7S[Qnfd81
 R1
@@ -275,23 +323,23 @@ I9aWkZBmOAVJ_F<Vo4N`GL1
 R2
 R15
 w1776446271
+R18
 R19
-R20
 !i122 180
 L0 30 115
 R6
 r1
 !s85 0
 31
-R31
+R34
+R20
 R21
-R22
 !i113 1
 R9
 R10
 n@main_vlg_vec_tst
 vmhrs_5bits_seletor_cmp2
-Z32 !s110 1776387123
+Z35 !s110 1776387123
 !i10b 1
 !s100 z?=0dbo>WVRnlUJ8V>`_G1
 R1
@@ -307,14 +355,14 @@ R6
 r1
 !s85 0
 31
-Z33 !s108 1776387123.000000
+Z36 !s108 1776387123.000000
 R7
 R8
 !i113 1
 R9
 R10
 vmhrs_5bits_seletor_cmp2_vlg_vec_tst
-R32
+R35
 !i10b 1
 !s100 O68]BNm6boLZV_S0dU>BL0
 R1
@@ -322,22 +370,22 @@ IUn9]MR5P<@<OAU48IPcKg0
 R2
 R0
 w1776387122
+R18
 R19
-R20
 !i122 128
 L0 30 61
 R6
 r1
 !s85 0
 31
-R33
+R36
+R20
 R21
-R22
 !i113 1
 R9
 R10
 vmhrs_A_menos_B
-Z34 !s110 1776389797
+Z37 !s110 1776389797
 !i10b 1
 !s100 R2M4GIZaAdm11lKFcE>g12
 R1
@@ -348,12 +396,12 @@ w1776389796
 R3
 R4
 !i122 155
-Z35 L0 32 709
+Z38 L0 32 709
 R6
 r1
 !s85 0
 31
-Z36 !s108 1776389797.000000
+Z39 !s108 1776389797.000000
 R7
 R8
 !i113 1
@@ -361,7 +409,7 @@ R9
 R10
 nmhrs_@a_menos_@b
 vmhrs_A_menos_B_vlg_vec_tst
-R34
+R37
 !i10b 1
 !s100 FTPW^R3Zd`kNG=7[RU?Y^0
 R1
@@ -369,23 +417,23 @@ IDz_o[bo6_GI?;ZG`3NGLF1
 R2
 R0
 w1776389795
+R18
 R19
-R20
 !i122 156
-R26
+R29
 R6
 r1
 !s85 0
 31
-R36
+R39
+R20
 R21
-R22
 !i113 1
 R9
 R10
 nmhrs_@a_menos_@b_vlg_vec_tst
 vmhrs_B_maior_A
-Z37 !s110 1776445784
+Z40 !s110 1776445784
 !i10b 1
 !s100 inVIjm6FAKiNHV`[Z3:6=2
 R1
@@ -396,7 +444,7 @@ w1776445783
 R3
 R4
 !i122 177
-R17
+R24
 R6
 r1
 !s85 0
@@ -409,7 +457,7 @@ R9
 R10
 nmhrs_@b_maior_@a
 vmhrs_B_maior_A_vlg_vec_tst
-R37
+R40
 !i10b 1
 !s100 mY8a0MfDaVE`dEM;GJC@z1
 R1
@@ -417,8 +465,8 @@ IBnQ;hhUoHFX`zPkg<O4;M0
 R2
 R15
 w1776445782
+R18
 R19
-R20
 !i122 178
 L0 30 86
 R6
@@ -426,30 +474,30 @@ r1
 !s85 0
 31
 !s108 1776445784.000000
+R20
 R21
-R22
 !i113 1
 R9
 R10
 nmhrs_@b_maior_@a_vlg_vec_tst
 vmhrs_MUX_8x1
-Z38 !s110 1775660047
+Z41 !s110 1775660047
 !i10b 1
 !s100 @6z5]f^OOlQA2?mQI29M<0
 R1
 I;U^]_@zX;_N8KT50;e2A40
 R2
 R0
-Z39 w1775660046
+Z42 w1775660046
 R3
 R4
 !i122 16
-Z40 L0 32 324
+Z43 L0 32 324
 R6
 r1
 !s85 0
 31
-Z41 !s108 1775660047.000000
+Z44 !s108 1775660047.000000
 R7
 R8
 !i113 1
@@ -457,31 +505,31 @@ R9
 R10
 nmhrs_@m@u@x_8x1
 vmhrs_MUX_8x1_vlg_vec_tst
-R38
+R41
 !i10b 1
 !s100 Ub7jcQVRT5B][^oT1z2CS0
 R1
 I`D>EG<dMX;dO9oQ8ofG@I0
 R2
 R0
-R39
+R42
+R18
 R19
-R20
 !i122 17
-Z42 L0 30 106
+Z45 L0 30 106
 R6
 r1
 !s85 0
 31
-R41
+R44
+R20
 R21
-R22
 !i113 1
 R9
 R10
 nmhrs_@m@u@x_8x1_vlg_vec_tst
 vmhrs_MUX_Final
-Z43 !s110 1775659765
+Z46 !s110 1775659765
 !i10b 1
 !s100 E3K^QemE5BT9<PV[VJIWW2
 R1
@@ -492,12 +540,12 @@ w1775659765
 R3
 R4
 !i122 6
-R40
+R43
 R6
 r1
 !s85 0
 31
-Z44 !s108 1775659765.000000
+Z47 !s108 1775659765.000000
 R7
 R8
 !i113 1
@@ -505,7 +553,7 @@ R9
 R10
 nmhrs_@m@u@x_@final
 vmhrs_MUX_Final_vlg_vec_tst
-R43
+R46
 !i10b 1
 !s100 ^Pl5g74gFYeHZn6nN;0aP1
 R1
@@ -513,17 +561,17 @@ IW]M][eL97k>UYAW2?kceo0
 R2
 R0
 w1775659764
+R18
 R19
-R20
 !i122 7
-R42
+R45
 R6
 r1
 !s85 0
 31
-R44
+R47
+R20
 R21
-R22
 !i113 1
 R9
 R10
@@ -561,8 +609,8 @@ In8MFTZH<hYZSN?IWAe>Go1
 R2
 R0
 w1775696311
+R18
 R19
-R20
 !i122 61
 L0 30 256
 R6
@@ -570,14 +618,14 @@ r1
 !s85 0
 31
 !s108 1775696313.000000
+R20
 R21
-R22
 !i113 1
 R9
 R10
 nmhrs_@mux_total_8x1_vlg_vec_tst
 vmhrs_renan_eos_A_mais_B
-Z45 !s110 1776388340
+Z48 !s110 1776388340
 !i10b 1
 !s100 KEE3=`ZY<_9jAhVXST6h73
 R1
@@ -588,12 +636,12 @@ w1776388340
 R3
 R4
 !i122 141
-R35
+R38
 R6
 r1
 !s85 0
 31
-Z46 !s108 1776388340.000000
+Z49 !s108 1776388340.000000
 R7
 R8
 !i113 1
@@ -601,7 +649,7 @@ R9
 R10
 nmhrs_renan_eos_@a_mais_@b
 vmhrs_renan_eos_A_mais_B_vlg_vec_tst
-R45
+R48
 !i10b 1
 !s100 W]>80<dmh]^YeJ<DSz57f3
 R1
@@ -609,17 +657,17 @@ Ie0^SMa<MGd6c]liRbRWnA2
 R2
 R0
 w1776388339
+R18
 R19
-R20
 !i122 142
-R26
+R29
 R6
 r1
 !s85 0
 31
-R46
+R49
+R20
 R21
-R22
 !i113 1
 R9
 R10
@@ -631,8 +679,8 @@ vmhrs_Selecionador_de_cmp2
 R1
 I]VkNfQX?MB6:jL3iBi>VP3
 R2
-R27
-Z47 w1776364936
+R30
+Z50 w1776364936
 R3
 R4
 !i122 102
@@ -655,31 +703,31 @@ vmhrs_Selecionador_de_cmp2_vlg_vec_tst
 R1
 ITIB:BEEL>HNR4nYmAJizC3
 R2
-R27
-R47
+R30
+R50
+R18
 R19
-R20
 !i122 103
-Z48 L0 30 47
+Z51 L0 30 47
 R6
 r1
 !s85 0
 31
 !s108 1776364937.000000
+R20
 R21
-R22
 !i113 1
 R9
 R10
 nmhrs_@selecionador_de_cmp2_vlg_vec_tst
 vProjeto_Quartus
-Z49 !s110 1776434908
+Z52 !s110 1776434908
 !i10b 1
 !s100 N`6^U5l0D`fQjl_e1@CHE0
 R1
 I;RF1zNfoK0;MPWEC<d=DN0
 R2
-Z50 dC:/Users/mhrs/Documents/Code/Projeto-SD/Projeto_Quartus/simulation/qsim
+Z53 dC:/Users/mhrs/Documents/Code/Projeto-SD/Projeto_Quartus/simulation/qsim
 w1776434907
 R3
 R4
@@ -689,7 +737,7 @@ R6
 r1
 !s85 0
 31
-Z51 !s108 1776434908.000000
+Z54 !s108 1776434908.000000
 R7
 R8
 !i113 1
@@ -697,38 +745,38 @@ R9
 R10
 n@projeto_@quartus
 vProjeto_Quartus_vlg_vec_tst
-R49
+R52
 !i10b 1
 !s100 L02zk2Ua=hS=BlPXf2kJH3
 R1
 I@b04Ga=`K>gKT3QKG]4lf2
 R2
-R50
+R53
 w1776434906
+R18
 R19
-R20
 !i122 168
 L0 30 89
 R6
 r1
 !s85 0
 31
-R51
+R54
+R20
 R21
-R22
 !i113 1
 R9
 R10
 n@projeto_@quartus_vlg_vec_tst
 vRenan_complementador_de_2
-Z52 !s110 1776387492
+Z55 !s110 1776387492
 !i10b 1
 !s100 XjOWdFbgKkb]j;`0aK<_Y3
 R1
 IFPeZ@E2aZKZoSGJedLe=Q3
 R2
 R0
-Z53 w1776387491
+Z56 w1776387491
 R3
 R4
 !i122 137
@@ -737,7 +785,7 @@ R6
 r1
 !s85 0
 31
-Z54 !s108 1776387492.000000
+Z57 !s108 1776387492.000000
 R7
 R8
 !i113 1
@@ -745,25 +793,25 @@ R9
 R10
 n@renan_complementador_de_2
 vRenan_complementador_de_2_vlg_vec_tst
-R52
+R55
 !i10b 1
 !s100 [PJCl`23c^K>l1]X^5Cea3
 R1
 I2K;gNGeTPSToG6OQ4N=XW2
 R2
 R0
-R53
+R56
+R18
 R19
-R20
 !i122 138
-R48
+R51
 R6
 r1
 !s85 0
 31
-R54
+R57
+R20
 R21
-R22
 !i113 1
 R9
 R10
@@ -785,7 +833,7 @@ R6
 r1
 !s85 0
 31
-Z55 !s108 1775698548.000000
+Z58 !s108 1775698548.000000
 R7
 R8
 !i113 1
@@ -800,17 +848,17 @@ IU<FNYl==bj8RChjaJljH>1
 R2
 R0
 w1775698547
+R18
 R19
-R20
 !i122 69
 L0 30 296
 R6
 r1
 !s85 0
 31
-R55
+R58
+R20
 R21
-R22
 !i113 1
 R9
 R10

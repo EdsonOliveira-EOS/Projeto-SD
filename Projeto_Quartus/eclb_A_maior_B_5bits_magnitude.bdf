@@ -747,72 +747,6 @@ https://fpgasoftware.intel.com/eula.
 	(rotate180)
 )
 (symbol
-	(rect 1064 688 1128 736)
-	(text "XOR" (rect 1 0 21 10)(font "Arial" (font_size 6)))
-	(text "inst11" (rect 3 37 31 54)(font "Intel Clear" ))
-	(port
-		(pt 0 16)
-		(input)
-		(text "IN1" (rect 2 7 19 19)(font "Courier New" (bold))(invisible))
-		(text "IN1" (rect 2 7 19 19)(font "Courier New" (bold))(invisible))
-		(line (pt 0 16)(pt 11 16))
-	)
-	(port
-		(pt 0 32)
-		(input)
-		(text "IN2" (rect 2 23 19 35)(font "Courier New" (bold))(invisible))
-		(text "IN2" (rect 2 23 19 35)(font "Courier New" (bold))(invisible))
-		(line (pt 0 32)(pt 11 32))
-	)
-	(port
-		(pt 64 24)
-		(output)
-		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
-		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
-		(line (pt 49 24)(pt 64 24))
-	)
-	(drawing
-		(line (pt 14 13)(pt 25 13))
-		(line (pt 14 36)(pt 25 36))
-		(arc (pt 7 29)(pt 7 19)(rect -14 8 19 41))
-		(arc (pt 49 24)(pt 25 13)(rect -6 13 57 76))
-		(arc (pt 25 35)(pt 49 24)(rect -6 -27 57 36))
-		(arc (pt 8 36)(pt 8 12)(rect -21 7 14 42))
-	)
-)
-(symbol
-	(rect 912 464 976 512)
-	(text "AND2" (rect 1 0 25 10)(font "Arial" (font_size 6)))
-	(text "inst13" (rect 3 37 31 54)(font "Intel Clear" ))
-	(port
-		(pt 0 16)
-		(input)
-		(text "IN1" (rect 2 7 19 19)(font "Courier New" (bold))(invisible))
-		(text "IN1" (rect 2 7 19 19)(font "Courier New" (bold))(invisible))
-		(line (pt 0 16)(pt 14 16))
-	)
-	(port
-		(pt 0 32)
-		(input)
-		(text "IN2" (rect 2 23 19 35)(font "Courier New" (bold))(invisible))
-		(text "IN2" (rect 2 23 19 35)(font "Courier New" (bold))(invisible))
-		(line (pt 0 32)(pt 14 32))
-	)
-	(port
-		(pt 64 24)
-		(output)
-		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
-		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
-		(line (pt 42 24)(pt 64 24))
-	)
-	(drawing
-		(line (pt 14 12)(pt 30 12))
-		(line (pt 14 37)(pt 31 37))
-		(line (pt 14 12)(pt 14 37))
-		(arc (pt 31 37)(pt 30 12)(rect 18 12 43 37))
-	)
-)
-(symbol
 	(rect 1256 888 1288 920)
 	(text "GND" (rect 8 16 29 26)(font "Arial" (font_size 6)))
 	(text "inst14" (rect 3 21 31 38)(font "Intel Clear" )(invisible))
@@ -1043,33 +977,12 @@ https://fpgasoftware.intel.com/eula.
 	(pt 664 976)
 )
 (connector
-	(pt 888 464)
-	(pt 888 480)
-)
-(connector
-	(pt 888 480)
-	(pt 912 480)
-)
-(connector
-	(text "B[4]" (rect 645 448 665 465)(font "Intel Clear" ))
-	(pt 288 464)
-	(pt 888 464)
-)
-(connector
 	(pt 1064 720)
 	(pt 1000 720)
 )
 (connector
 	(pt 1000 720)
 	(pt 1000 816)
-)
-(connector
-	(pt 1008 488)
-	(pt 1008 704)
-)
-(connector
-	(pt 1008 704)
-	(pt 1064 704)
 )
 (connector
 	(pt 1432 712)
@@ -1256,11 +1169,6 @@ https://fpgasoftware.intel.com/eula.
 	(bus)
 )
 (connector
-	(pt 288 464)
-	(pt 288 504)
-	(bus)
-)
-(connector
 	(pt 288 504)
 	(pt 288 584)
 	(bus)
@@ -1299,10 +1207,6 @@ https://fpgasoftware.intel.com/eula.
 	(pt 288 984)
 	(pt 288 1016)
 	(bus)
-)
-(connector
-	(pt 624 496)
-	(pt 912 496)
 )
 (connector
 	(pt 400 984)
@@ -1377,21 +1281,8 @@ https://fpgasoftware.intel.com/eula.
 	(pt 808 968)
 )
 (connector
-	(pt 1128 712)
-	(pt 1208 712)
-)
-(connector
-	(pt 976 488)
-	(pt 1008 488)
-)
-(connector
 	(pt 288 280)
 	(pt 288 440)
-	(bus)
-)
-(connector
-	(pt 288 440)
-	(pt 288 464)
 	(bus)
 )
 (connector
@@ -1408,6 +1299,19 @@ https://fpgasoftware.intel.com/eula.
 	(text "B[4]" (rect 313 424 333 441)(font "Intel Clear" ))
 	(pt 288 440)
 	(pt 352 440)
+)
+(connector
+	(pt 288 440)
+	(pt 288 504)
+	(bus)
+)
+(connector
+	(pt 1064 712)
+	(pt 1064 720)
+)
+(connector
+	(pt 1064 712)
+	(pt 1208 712)
 )
 (junction (pt 648 688))
 (junction (pt 648 560))
@@ -1434,7 +1338,6 @@ https://fpgasoftware.intel.com/eula.
 (junction (pt 240 824))
 (junction (pt 240 880))
 (junction (pt 240 968))
-(junction (pt 288 464))
 (junction (pt 288 504))
 (junction (pt 288 584))
 (junction (pt 288 648))
@@ -1443,5 +1346,4 @@ https://fpgasoftware.intel.com/eula.
 (junction (pt 288 840))
 (junction (pt 288 896))
 (junction (pt 288 984))
-(junction (pt 624 496))
 (junction (pt 288 440))

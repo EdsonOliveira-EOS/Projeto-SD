@@ -4,135 +4,39 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "STATUS",
+					"name" : "SAA",
 					"strict" : false
 				},
 				{
-					"name" : "S_A[4]",
+					"name" : "SBB",
 					"strict" : false
 				},
 				{
-					"name" : "S_A[3]",
+					"name" : "SCC",
 					"strict" : false
 				},
 				{
-					"name" : "S_A[2]",
+					"name" : "SAIDA[1]",
 					"strict" : false
 				},
 				{
-					"name" : "S_A[1]",
+					"name" : "SAIDA[0]",
 					"strict" : false
 				},
 				{
-					"name" : "S_A[0]",
+					"name" : "In[4]",
 					"strict" : false
 				},
 				{
-					"name" : "S_B[4]",
+					"name" : "In[3]",
 					"strict" : false
 				},
 				{
-					"name" : "S_B[3]",
+					"name" : "In[2]",
 					"strict" : false
 				},
 				{
-					"name" : "S_B[2]",
-					"strict" : false
-				},
-				{
-					"name" : "S_B[1]",
-					"strict" : false
-				},
-				{
-					"name" : "S_B[0]",
-					"strict" : false
-				},
-				{
-					"name" : "S_F[5]",
-					"strict" : false
-				},
-				{
-					"name" : "S_F[4]",
-					"strict" : false
-				},
-				{
-					"name" : "S_F[3]",
-					"strict" : false
-				},
-				{
-					"name" : "S_F[2]",
-					"strict" : false
-				},
-				{
-					"name" : "S_F[1]",
-					"strict" : false
-				},
-				{
-					"name" : "S_F[0]",
-					"strict" : false
-				},
-				{
-					"name" : "S_S[2]",
-					"strict" : false
-				},
-				{
-					"name" : "S_S[1]",
-					"strict" : false
-				},
-				{
-					"name" : "S_S[0]",
-					"strict" : false
-				},
-				{
-					"name" : "S[2]",
-					"strict" : false
-				},
-				{
-					"name" : "A[4]",
-					"strict" : false
-				},
-				{
-					"name" : "B[4]",
-					"strict" : false
-				},
-				{
-					"name" : "S[0]",
-					"strict" : false
-				},
-				{
-					"name" : "B[3]",
-					"strict" : false
-				},
-				{
-					"name" : "A[3]",
-					"strict" : false
-				},
-				{
-					"name" : "B[2]",
-					"strict" : false
-				},
-				{
-					"name" : "A[2]",
-					"strict" : false
-				},
-				{
-					"name" : "B[1]",
-					"strict" : false
-				},
-				{
-					"name" : "B[0]",
-					"strict" : false
-				},
-				{
-					"name" : "A[0]",
-					"strict" : false
-				},
-				{
-					"name" : "A[1]",
-					"strict" : false
-				},
-				{
-					"name" : "S[1]",
+					"name" : "In[1]",
 					"strict" : false
 				}
 			]
