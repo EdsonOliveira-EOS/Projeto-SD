@@ -64,6 +64,94 @@
 					"strict" : false
 				},
 				{
+					"name" : "ADEZA",
+					"strict" : false
+				},
+				{
+					"name" : "ADEZD",
+					"strict" : false
+				},
+				{
+					"name" : "ADEZE",
+					"strict" : false
+				},
+				{
+					"name" : "ADEZF",
+					"strict" : false
+				},
+				{
+					"name" : "BDEZA",
+					"strict" : false
+				},
+				{
+					"name" : "BDEZD",
+					"strict" : false
+				},
+				{
+					"name" : "BDEZE",
+					"strict" : false
+				},
+				{
+					"name" : "BDEZF",
+					"strict" : false
+				},
+				{
+					"name" : "AUNIA",
+					"strict" : false
+				},
+				{
+					"name" : "AUNIB",
+					"strict" : false
+				},
+				{
+					"name" : "AUNIC",
+					"strict" : false
+				},
+				{
+					"name" : "AUNID",
+					"strict" : false
+				},
+				{
+					"name" : "AUNIE",
+					"strict" : false
+				},
+				{
+					"name" : "AUNIF",
+					"strict" : false
+				},
+				{
+					"name" : "AUNIG",
+					"strict" : false
+				},
+				{
+					"name" : "BUNIA",
+					"strict" : false
+				},
+				{
+					"name" : "BUNIB",
+					"strict" : false
+				},
+				{
+					"name" : "BUNIC",
+					"strict" : false
+				},
+				{
+					"name" : "BUNID",
+					"strict" : false
+				},
+				{
+					"name" : "BUNIE",
+					"strict" : false
+				},
+				{
+					"name" : "BUNIF",
+					"strict" : false
+				},
+				{
+					"name" : "BUNIG",
+					"strict" : false
+				},
+				{
 					"name" : "S_A[4]",
 					"strict" : false
 				},

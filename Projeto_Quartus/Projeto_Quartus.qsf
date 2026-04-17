@@ -116,4 +116,47 @@ set_global_assignment -name BDF_FILE mhrs_subtrator_10.bdf
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_location_assignment PIN_G18 -to UNIA
+set_location_assignment PIN_F22 -to UNIB
+set_location_assignment PIN_E17 -to UNIC
+set_location_assignment PIN_L26 -to UNID
+set_location_assignment PIN_L25 -to UNIE
+set_location_assignment PIN_J22 -to UNIF
+set_location_assignment PIN_H22 -to UNIG
+set_location_assignment PIN_W28 -to SINAL
+set_location_assignment PIN_M24 -to DEZA
+set_location_assignment PIN_Y22 -to DEZB
+set_location_assignment PIN_W21 -to DEZC
+set_location_assignment PIN_W22 -to DEZD
+set_location_assignment PIN_W25 -to DEZE
+set_location_assignment PIN_U23 -to DEZF
+set_location_assignment PIN_U24 -to DEZG
+set_location_assignment PIN_AD17 -to ADEZA
+set_location_assignment PIN_AE17 -to ADEZB
+set_location_assignment PIN_AG17 -to ADEZC
+set_location_assignment PIN_AH17 -to ADEZD
+set_location_assignment PIN_AF17 -to ADEZE
+set_location_assignment PIN_AG18 -to ADEZF
+set_location_assignment PIN_AA14 -to ADEZG
+set_location_assignment PIN_AA17 -to AUNIA
+set_location_assignment PIN_AB16 -to AUNIB
+set_location_assignment PIN_AA16 -to AUNIC
+set_location_assignment PIN_AB17 -to AUNID
+set_location_assignment PIN_AB15 -to AUNIE
+set_location_assignment PIN_AA15 -to AUNIF
+set_location_assignment PIN_AC17 -to AUNIG
+set_location_assignment PIN_AD18 -to BDEZA
+set_location_assignment PIN_AC18 -to BDEZB
+set_location_assignment PIN_AB18 -to BDEZC
+set_location_assignment PIN_AH19 -to BDEZD
+set_location_assignment PIN_AG19 -to BDEZE
+set_location_assignment PIN_AF18 -to BDEZF
+set_location_assignment PIN_AH18 -to BDEZG
+set_location_assignment PIN_AB19 -to BUNIA
+set_location_assignment PIN_AA19 -to BUNIB
+set_location_assignment PIN_AG21 -to BUNIC
+set_location_assignment PIN_AH21 -to BUNID
+set_location_assignment PIN_AE19 -to BUNIE
+set_location_assignment PIN_AF19 -to BUNIF
+set_location_assignment PIN_AE18 -to BUNIG
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
