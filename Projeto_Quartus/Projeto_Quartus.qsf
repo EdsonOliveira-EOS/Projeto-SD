@@ -39,7 +39,7 @@
 
 set_global_assignment -name FAMILY "Cyclone IV E"
 set_global_assignment -name DEVICE EP4CE115F29C7
-set_global_assignment -name TOP_LEVEL_ENTITY Analisador_7seg
+set_global_assignment -name TOP_LEVEL_ENTITY Main
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 21.1.1
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "14:00:37  MARCH 26, 2026"
 set_global_assignment -name LAST_QUARTUS_VERSION "21.1.1 Lite Edition"
@@ -110,6 +110,9 @@ set_global_assignment -name BDF_FILE eclb_A_maior_B_5bits_magnitude.bdf
 set_global_assignment -name BDF_FILE Decod_2x.bdf
 set_global_assignment -name BDF_FILE complementador_de_2_antigo.bdf
 set_global_assignment -name BDF_FILE Analisador_7seg.bdf
+set_global_assignment -name BDF_FILE mhrs_subtrator_30.bdf
+set_global_assignment -name BDF_FILE mhrs_subtrator_20.bdf
+set_global_assignment -name BDF_FILE mhrs_subtrator_10.bdf
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top

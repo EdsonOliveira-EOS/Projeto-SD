@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Projeto_Quartus
-Fri Apr 17 14:27:28 2026
+Fri Apr 17 16:21:53 2026
 Quartus Prime Version 21.1.1 Build 850 06/23/2022 SJ Lite Edition
 
 
@@ -43,16 +43,16 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Apr 17 14:27:28 2026       ;
+; Analysis & Synthesis Status        ; Successful - Fri Apr 17 16:21:53 2026       ;
 ; Quartus Prime Version              ; 21.1.1 Build 850 06/23/2022 SJ Lite Edition ;
 ; Revision Name                      ; Projeto_Quartus                             ;
-; Top-level Entity Name              ; Analisador_7seg                             ;
+; Top-level Entity Name              ; Main                                        ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 4                                           ;
-;     Total combinational functions  ; 4                                           ;
+; Total logic elements               ; 115                                         ;
+;     Total combinational functions  ; 115                                         ;
 ;     Dedicated logic registers      ; 0                                           ;
 ; Total registers                    ; 0                                           ;
-; Total pins                         ; 13                                          ;
+; Total pins                         ; 48                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
@@ -66,7 +66,7 @@ https://fpgasoftware.intel.com/eula.
 ; Option                                                           ; Setting            ; Default Value      ;
 +------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                           ; EP4CE115F29C7      ;                    ;
-; Top-level entity name                                            ; Analisador_7seg    ; Projeto_Quartus    ;
+; Top-level entity name                                            ; Main               ; Projeto_Quartus    ;
 ; Family name                                                      ; Cyclone IV E       ; Cyclone V          ;
 ; Use smart compilation                                            ; Off                ; Off                ;
 ; Enable parallel Assembler and Timing Analyzer during compilation ; On                 ; On                 ;
@@ -162,62 +162,136 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                      ;
-+------------------------------------+-----------------+------------------------------------+---------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path   ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                          ; Library ;
-+------------------------------------+-----------------+------------------------------------+---------------------------------------------------------------------------------------+---------+
-; mhrs_MUX_8x1.bdf                   ; yes             ; User Block Diagram/Schematic File  ; C:/Users/mhrs/Documents/Projeto-SD/Projeto_Quartus/mhrs_MUX_8x1.bdf                   ;         ;
-; eclb_Mux_8x1_4bits.bdf             ; yes             ; User Block Diagram/Schematic File  ; C:/Users/mhrs/Documents/Projeto-SD/Projeto_Quartus/eclb_Mux_8x1_4bits.bdf             ;         ;
-; eclb_A_maior_B_5bits_magnitude.bdf ; yes             ; User Block Diagram/Schematic File  ; C:/Users/mhrs/Documents/Projeto-SD/Projeto_Quartus/eclb_A_maior_B_5bits_magnitude.bdf ;         ;
-; Analisador_7seg.bdf                ; yes             ; User Block Diagram/Schematic File  ; C:/Users/mhrs/Documents/Projeto-SD/Projeto_Quartus/Analisador_7seg.bdf                ;         ;
-+------------------------------------+-----------------+------------------------------------+---------------------------------------------------------------------------------------+---------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                      ;
++--------------------------------------------+-----------------+------------------------------------+-----------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path           ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                                  ; Library ;
++--------------------------------------------+-----------------+------------------------------------+-----------------------------------------------------------------------------------------------+---------+
+; Renan_mux_2x1.bdf                          ; yes             ; User Block Diagram/Schematic File  ; C:/Users/mhrs/Documents/Projeto-SD/Projeto_Quartus/Renan_mux_2x1.bdf                          ;         ;
+; Renan_mhrs_complementador_de_2_somador.bdf ; yes             ; User Block Diagram/Schematic File  ; C:/Users/mhrs/Documents/Projeto-SD/Projeto_Quartus/Renan_mhrs_complementador_de_2_somador.bdf ;         ;
+; Renan_complementador_de_2.bdf              ; yes             ; User Block Diagram/Schematic File  ; C:/Users/mhrs/Documents/Projeto-SD/Projeto_Quartus/Renan_complementador_de_2.bdf              ;         ;
+; Projeto_Quartus.bdf                        ; yes             ; User Block Diagram/Schematic File  ; C:/Users/mhrs/Documents/Projeto-SD/Projeto_Quartus/Projeto_Quartus.bdf                        ;         ;
+; mhrs_Selecionador_de_cmp2.bdf              ; yes             ; User Block Diagram/Schematic File  ; C:/Users/mhrs/Documents/Projeto-SD/Projeto_Quartus/mhrs_Selecionador_de_cmp2.bdf              ;         ;
+; mhrs_renan_eos_A_mais_B.bdf                ; yes             ; User Block Diagram/Schematic File  ; C:/Users/mhrs/Documents/Projeto-SD/Projeto_Quartus/mhrs_renan_eos_A_mais_B.bdf                ;         ;
+; mhrs_renan_2x1_total.bdf                   ; yes             ; User Block Diagram/Schematic File  ; C:/Users/mhrs/Documents/Projeto-SD/Projeto_Quartus/mhrs_renan_2x1_total.bdf                   ;         ;
+; mhrs_Mux_total_8x1.bdf                     ; yes             ; User Block Diagram/Schematic File  ; C:/Users/mhrs/Documents/Projeto-SD/Projeto_Quartus/mhrs_Mux_total_8x1.bdf                     ;         ;
+; mhrs_MUX_8x1.bdf                           ; yes             ; User Block Diagram/Schematic File  ; C:/Users/mhrs/Documents/Projeto-SD/Projeto_Quartus/mhrs_MUX_8x1.bdf                           ;         ;
+; mhrs_B_maior_A.bdf                         ; yes             ; User Block Diagram/Schematic File  ; C:/Users/mhrs/Documents/Projeto-SD/Projeto_Quartus/mhrs_B_maior_A.bdf                         ;         ;
+; mhrs_A_menos_B.bdf                         ; yes             ; User Block Diagram/Schematic File  ; C:/Users/mhrs/Documents/Projeto-SD/Projeto_Quartus/mhrs_A_menos_B.bdf                         ;         ;
+; mhrs_5bits_seletor_cmp2.bdf                ; yes             ; User Block Diagram/Schematic File  ; C:/Users/mhrs/Documents/Projeto-SD/Projeto_Quartus/mhrs_5bits_seletor_cmp2.bdf                ;         ;
+; mhrs_5bits_complementador2_somador.bdf     ; yes             ; User Block Diagram/Schematic File  ; C:/Users/mhrs/Documents/Projeto-SD/Projeto_Quartus/mhrs_5bits_complementador2_somador.bdf     ;         ;
+; Main.bdf                                   ; yes             ; User Block Diagram/Schematic File  ; C:/Users/mhrs/Documents/Projeto-SD/Projeto_Quartus/Main.bdf                                   ;         ;
+; eos_somadores.bdf                          ; yes             ; User Block Diagram/Schematic File  ; C:/Users/mhrs/Documents/Projeto-SD/Projeto_Quartus/eos_somadores.bdf                          ;         ;
+; eos_halfadder.bdf                          ; yes             ; User Block Diagram/Schematic File  ; C:/Users/mhrs/Documents/Projeto-SD/Projeto_Quartus/eos_halfadder.bdf                          ;         ;
+; eos_a_maiorque_b.bdf                       ; yes             ; User Block Diagram/Schematic File  ; C:/Users/mhrs/Documents/Projeto-SD/Projeto_Quartus/eos_a_maiorque_b.bdf                       ;         ;
+; eos_A_igual_B.bdf                          ; yes             ; User Block Diagram/Schematic File  ; C:/Users/mhrs/Documents/Projeto-SD/Projeto_Quartus/eos_A_igual_B.bdf                          ;         ;
+; eclb_XOR.bdf                               ; yes             ; User Block Diagram/Schematic File  ; C:/Users/mhrs/Documents/Projeto-SD/Projeto_Quartus/eclb_XOR.bdf                               ;         ;
+; eclb_Mux_8x1_4bits.bdf                     ; yes             ; User Block Diagram/Schematic File  ; C:/Users/mhrs/Documents/Projeto-SD/Projeto_Quartus/eclb_Mux_8x1_4bits.bdf                     ;         ;
+; eclb_AND.bdf                               ; yes             ; User Block Diagram/Schematic File  ; C:/Users/mhrs/Documents/Projeto-SD/Projeto_Quartus/eclb_AND.bdf                               ;         ;
+; eclb_A_maior_B_5bits_magnitude.bdf         ; yes             ; User Block Diagram/Schematic File  ; C:/Users/mhrs/Documents/Projeto-SD/Projeto_Quartus/eclb_A_maior_B_5bits_magnitude.bdf         ;         ;
+; Decod_2x.bdf                               ; yes             ; User Block Diagram/Schematic File  ; C:/Users/mhrs/Documents/Projeto-SD/Projeto_Quartus/Decod_2x.bdf                               ;         ;
+; Analisador_7seg.bdf                        ; yes             ; User Block Diagram/Schematic File  ; C:/Users/mhrs/Documents/Projeto-SD/Projeto_Quartus/Analisador_7seg.bdf                        ;         ;
+; mhrs_subtrator_30.bdf                      ; yes             ; User Block Diagram/Schematic File  ; C:/Users/mhrs/Documents/Projeto-SD/Projeto_Quartus/mhrs_subtrator_30.bdf                      ;         ;
+; mhrs_subtrator_20.bdf                      ; yes             ; User Block Diagram/Schematic File  ; C:/Users/mhrs/Documents/Projeto-SD/Projeto_Quartus/mhrs_subtrator_20.bdf                      ;         ;
+; mhrs_subtrator_10.bdf                      ; yes             ; User Block Diagram/Schematic File  ; C:/Users/mhrs/Documents/Projeto-SD/Projeto_Quartus/mhrs_subtrator_10.bdf                      ;         ;
++--------------------------------------------+-----------------+------------------------------------+-----------------------------------------------------------------------------------------------+---------+
 
 
-+-----------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary               ;
-+---------------------------------------------+-------------+
-; Resource                                    ; Usage       ;
-+---------------------------------------------+-------------+
-; Estimated Total logic elements              ; 4           ;
-;                                             ;             ;
-; Total combinational functions               ; 4           ;
-; Logic element usage by number of LUT inputs ;             ;
-;     -- 4 input functions                    ; 3           ;
-;     -- 3 input functions                    ; 1           ;
-;     -- <=2 input functions                  ; 0           ;
-;                                             ;             ;
-; Logic elements by mode                      ;             ;
-;     -- normal mode                          ; 4           ;
-;     -- arithmetic mode                      ; 0           ;
-;                                             ;             ;
-; Total registers                             ; 0           ;
-;     -- Dedicated logic registers            ; 0           ;
-;     -- I/O registers                        ; 0           ;
-;                                             ;             ;
-; I/O pins                                    ; 13          ;
-;                                             ;             ;
-; Embedded Multiplier 9-bit elements          ; 0           ;
-;                                             ;             ;
-; Maximum fan-out node                        ; In[4]~input ;
-; Maximum fan-out                             ; 4           ;
-; Total fan-out                               ; 33          ;
-; Average fan-out                             ; 1.10        ;
-+---------------------------------------------+-------------+
++----------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary              ;
++---------------------------------------------+------------+
+; Resource                                    ; Usage      ;
++---------------------------------------------+------------+
+; Estimated Total logic elements              ; 115        ;
+;                                             ;            ;
+; Total combinational functions               ; 115        ;
+; Logic element usage by number of LUT inputs ;            ;
+;     -- 4 input functions                    ; 85         ;
+;     -- 3 input functions                    ; 19         ;
+;     -- <=2 input functions                  ; 11         ;
+;                                             ;            ;
+; Logic elements by mode                      ;            ;
+;     -- normal mode                          ; 115        ;
+;     -- arithmetic mode                      ; 0          ;
+;                                             ;            ;
+; Total registers                             ; 0          ;
+;     -- Dedicated logic registers            ; 0          ;
+;     -- I/O registers                        ; 0          ;
+;                                             ;            ;
+; I/O pins                                    ; 48         ;
+;                                             ;            ;
+; Embedded Multiplier 9-bit elements          ; 0          ;
+;                                             ;            ;
+; Maximum fan-out node                        ; S[0]~input ;
+; Maximum fan-out                             ; 26         ;
+; Total fan-out                               ; 501        ;
+; Average fan-out                             ; 2.37       ;
++---------------------------------------------+------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                ;
-+-------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------+--------------------------------+--------------+
-; Compilation Hierarchy Node                ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                         ; Entity Name                    ; Library Name ;
-+-------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------+--------------------------------+--------------+
-; |Analisador_7seg                          ; 4 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 13   ; 0            ; |Analisador_7seg                                            ; Analisador_7seg                ; work         ;
-;    |eclb_A_maior_B_5bits_magnitude:inst2| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Analisador_7seg|eclb_A_maior_B_5bits_magnitude:inst2       ; eclb_A_maior_B_5bits_magnitude ; work         ;
-;    |eclb_A_maior_B_5bits_magnitude:inst7| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Analisador_7seg|eclb_A_maior_B_5bits_magnitude:inst7       ; eclb_A_maior_B_5bits_magnitude ; work         ;
-;    |eclb_A_maior_B_5bits_magnitude:inst9| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Analisador_7seg|eclb_A_maior_B_5bits_magnitude:inst9       ; eclb_A_maior_B_5bits_magnitude ; work         ;
-;    |eclb_Mux_8x1_4bits:inst1|             ; 1 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Analisador_7seg|eclb_Mux_8x1_4bits:inst1                   ; eclb_Mux_8x1_4bits             ; work         ;
-;       |mhrs_MUX_8x1:inst|                 ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Analisador_7seg|eclb_Mux_8x1_4bits:inst1|mhrs_MUX_8x1:inst ; mhrs_MUX_8x1                   ; work         ;
-+-------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------+--------------------------------+--------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                                                                                                     ;
++------------------------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------+--------------+
+; Compilation Hierarchy Node                                 ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                     ; Entity Name                            ; Library Name ;
++------------------------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------+--------------+
+; |Main                                                      ; 115 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 48   ; 0            ; |Main                                                                                                                                   ; Main                                   ; work         ;
+;    |Analisador_7seg:inst1|                                 ; 15 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Main|Analisador_7seg:inst1                                                                                                             ; Analisador_7seg                        ; work         ;
+;       |eclb_A_maior_B_5bits_magnitude:inst2|               ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Main|Analisador_7seg:inst1|eclb_A_maior_B_5bits_magnitude:inst2                                                                        ; eclb_A_maior_B_5bits_magnitude         ; work         ;
+;       |eclb_A_maior_B_5bits_magnitude:inst9|               ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Main|Analisador_7seg:inst1|eclb_A_maior_B_5bits_magnitude:inst9                                                                        ; eclb_A_maior_B_5bits_magnitude         ; work         ;
+;       |eclb_Mux_8x1_4bits:inst10|                          ; 11 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Main|Analisador_7seg:inst1|eclb_Mux_8x1_4bits:inst10                                                                                   ; eclb_Mux_8x1_4bits                     ; work         ;
+;          |mhrs_MUX_8x1:inst3|                              ; 5 (5)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Main|Analisador_7seg:inst1|eclb_Mux_8x1_4bits:inst10|mhrs_MUX_8x1:inst3                                                                ; mhrs_MUX_8x1                           ; work         ;
+;          |mhrs_MUX_8x1:inst4|                              ; 6 (6)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Main|Analisador_7seg:inst1|eclb_Mux_8x1_4bits:inst10|mhrs_MUX_8x1:inst4                                                                ; mhrs_MUX_8x1                           ; work         ;
+;       |eclb_Mux_8x1_4bits:inst1|                           ; 2 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Main|Analisador_7seg:inst1|eclb_Mux_8x1_4bits:inst1                                                                                    ; eclb_Mux_8x1_4bits                     ; work         ;
+;          |mhrs_MUX_8x1:inst3|                              ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Main|Analisador_7seg:inst1|eclb_Mux_8x1_4bits:inst1|mhrs_MUX_8x1:inst3                                                                 ; mhrs_MUX_8x1                           ; work         ;
+;          |mhrs_MUX_8x1:inst|                               ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Main|Analisador_7seg:inst1|eclb_Mux_8x1_4bits:inst1|mhrs_MUX_8x1:inst                                                                  ; mhrs_MUX_8x1                           ; work         ;
+;    |Decod_2x:inst2|                                        ; 8 (8)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Main|Decod_2x:inst2                                                                                                                    ; Decod_2x                               ; work         ;
+;    |Decod_2x:inst3|                                        ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Main|Decod_2x:inst3                                                                                                                    ; Decod_2x                               ; work         ;
+;    |Projeto_Quartus:inst|                                  ; 90 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Main|Projeto_Quartus:inst                                                                                                              ; Projeto_Quartus                        ; work         ;
+;       |Renan_complementador_de_2:inst10|                   ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Main|Projeto_Quartus:inst|Renan_complementador_de_2:inst10                                                                             ; Renan_complementador_de_2              ; work         ;
+;       |eclb_XOR:inst2|                                     ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Main|Projeto_Quartus:inst|eclb_XOR:inst2                                                                                               ; eclb_XOR                               ; work         ;
+;       |eos_a_maiorque_b:inst3|                             ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Main|Projeto_Quartus:inst|eos_a_maiorque_b:inst3                                                                                       ; eos_a_maiorque_b                       ; work         ;
+;       |mhrs_A_menos_B:inst13|                              ; 17 (1)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Main|Projeto_Quartus:inst|mhrs_A_menos_B:inst13                                                                                        ; mhrs_A_menos_B                         ; work         ;
+;          |eos_somadores:inst|                              ; 7 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Main|Projeto_Quartus:inst|mhrs_A_menos_B:inst13|eos_somadores:inst                                                                     ; eos_somadores                          ; work         ;
+;             |eos_halfadder:inst2|                          ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Main|Projeto_Quartus:inst|mhrs_A_menos_B:inst13|eos_somadores:inst|eos_halfadder:inst2                                                 ; eos_halfadder                          ; work         ;
+;             |eos_halfadder:inst3|                          ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Main|Projeto_Quartus:inst|mhrs_A_menos_B:inst13|eos_somadores:inst|eos_halfadder:inst3                                                 ; eos_halfadder                          ; work         ;
+;             |eos_halfadder:inst4|                          ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Main|Projeto_Quartus:inst|mhrs_A_menos_B:inst13|eos_somadores:inst|eos_halfadder:inst4                                                 ; eos_halfadder                          ; work         ;
+;             |eos_halfadder:inst7|                          ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Main|Projeto_Quartus:inst|mhrs_A_menos_B:inst13|eos_somadores:inst|eos_halfadder:inst7                                                 ; eos_halfadder                          ; work         ;
+;          |mhrs_Selecionador_de_cmp2:inst3|                 ; 3 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Main|Projeto_Quartus:inst|mhrs_A_menos_B:inst13|mhrs_Selecionador_de_cmp2:inst3                                                        ; mhrs_Selecionador_de_cmp2              ; work         ;
+;             |mhrs_renan_2x1_total:inst|                    ; 3 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Main|Projeto_Quartus:inst|mhrs_A_menos_B:inst13|mhrs_Selecionador_de_cmp2:inst3|mhrs_renan_2x1_total:inst                              ; mhrs_renan_2x1_total                   ; work         ;
+;                |Renan_mux_2x1:inst1|                       ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Main|Projeto_Quartus:inst|mhrs_A_menos_B:inst13|mhrs_Selecionador_de_cmp2:inst3|mhrs_renan_2x1_total:inst|Renan_mux_2x1:inst1          ; Renan_mux_2x1                          ; work         ;
+;                |Renan_mux_2x1:inst2|                       ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Main|Projeto_Quartus:inst|mhrs_A_menos_B:inst13|mhrs_Selecionador_de_cmp2:inst3|mhrs_renan_2x1_total:inst|Renan_mux_2x1:inst2          ; Renan_mux_2x1                          ; work         ;
+;                |Renan_mux_2x1:inst3|                       ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Main|Projeto_Quartus:inst|mhrs_A_menos_B:inst13|mhrs_Selecionador_de_cmp2:inst3|mhrs_renan_2x1_total:inst|Renan_mux_2x1:inst3          ; Renan_mux_2x1                          ; work         ;
+;          |mhrs_Selecionador_de_cmp2:inst4|                 ; 6 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Main|Projeto_Quartus:inst|mhrs_A_menos_B:inst13|mhrs_Selecionador_de_cmp2:inst4                                                        ; mhrs_Selecionador_de_cmp2              ; work         ;
+;             |mhrs_renan_2x1_total:inst|                    ; 6 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Main|Projeto_Quartus:inst|mhrs_A_menos_B:inst13|mhrs_Selecionador_de_cmp2:inst4|mhrs_renan_2x1_total:inst                              ; mhrs_renan_2x1_total                   ; work         ;
+;                |Renan_mux_2x1:inst1|                       ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Main|Projeto_Quartus:inst|mhrs_A_menos_B:inst13|mhrs_Selecionador_de_cmp2:inst4|mhrs_renan_2x1_total:inst|Renan_mux_2x1:inst1          ; Renan_mux_2x1                          ; work         ;
+;                |Renan_mux_2x1:inst2|                       ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Main|Projeto_Quartus:inst|mhrs_A_menos_B:inst13|mhrs_Selecionador_de_cmp2:inst4|mhrs_renan_2x1_total:inst|Renan_mux_2x1:inst2          ; Renan_mux_2x1                          ; work         ;
+;                |Renan_mux_2x1:inst3|                       ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Main|Projeto_Quartus:inst|mhrs_A_menos_B:inst13|mhrs_Selecionador_de_cmp2:inst4|mhrs_renan_2x1_total:inst|Renan_mux_2x1:inst3          ; Renan_mux_2x1                          ; work         ;
+;       |mhrs_B_maior_A:inst12|                              ; 5 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Main|Projeto_Quartus:inst|mhrs_B_maior_A:inst12                                                                                        ; mhrs_B_maior_A                         ; work         ;
+;          |eos_A_igual_B:inst5|                             ; 3 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Main|Projeto_Quartus:inst|mhrs_B_maior_A:inst12|eos_A_igual_B:inst5                                                                    ; eos_A_igual_B                          ; work         ;
+;       |mhrs_MUX_8x1:inst4|                                 ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Main|Projeto_Quartus:inst|mhrs_MUX_8x1:inst4                                                                                           ; mhrs_MUX_8x1                           ; work         ;
+;       |mhrs_Mux_total_8x1:inst8|                           ; 38 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Main|Projeto_Quartus:inst|mhrs_Mux_total_8x1:inst8                                                                                     ; mhrs_Mux_total_8x1                     ; work         ;
+;          |mhrs_MUX_8x1:inst3|                              ; 9 (9)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Main|Projeto_Quartus:inst|mhrs_Mux_total_8x1:inst8|mhrs_MUX_8x1:inst3                                                                  ; mhrs_MUX_8x1                           ; work         ;
+;          |mhrs_MUX_8x1:inst4|                              ; 8 (8)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Main|Projeto_Quartus:inst|mhrs_Mux_total_8x1:inst8|mhrs_MUX_8x1:inst4                                                                  ; mhrs_MUX_8x1                           ; work         ;
+;          |mhrs_MUX_8x1:inst5|                              ; 6 (6)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Main|Projeto_Quartus:inst|mhrs_Mux_total_8x1:inst8|mhrs_MUX_8x1:inst5                                                                  ; mhrs_MUX_8x1                           ; work         ;
+;          |mhrs_MUX_8x1:inst6|                              ; 11 (11)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Main|Projeto_Quartus:inst|mhrs_Mux_total_8x1:inst8|mhrs_MUX_8x1:inst6                                                                  ; mhrs_MUX_8x1                           ; work         ;
+;          |mhrs_MUX_8x1:inst7|                              ; 3 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Main|Projeto_Quartus:inst|mhrs_Mux_total_8x1:inst8|mhrs_MUX_8x1:inst7                                                                  ; mhrs_MUX_8x1                           ; work         ;
+;          |mhrs_MUX_8x1:inst|                               ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Main|Projeto_Quartus:inst|mhrs_Mux_total_8x1:inst8|mhrs_MUX_8x1:inst                                                                   ; mhrs_MUX_8x1                           ; work         ;
+;       |mhrs_Mux_total_8x1:inst|                            ; 12 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Main|Projeto_Quartus:inst|mhrs_Mux_total_8x1:inst                                                                                      ; mhrs_Mux_total_8x1                     ; work         ;
+;          |mhrs_MUX_8x1:inst|                               ; 12 (12)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Main|Projeto_Quartus:inst|mhrs_Mux_total_8x1:inst|mhrs_MUX_8x1:inst                                                                    ; mhrs_MUX_8x1                           ; work         ;
+;       |mhrs_renan_eos_A_mais_B:inst11|                     ; 14 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Main|Projeto_Quartus:inst|mhrs_renan_eos_A_mais_B:inst11                                                                               ; mhrs_renan_eos_A_mais_B                ; work         ;
+;          |eos_somadores:inst|                              ; 7 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Main|Projeto_Quartus:inst|mhrs_renan_eos_A_mais_B:inst11|eos_somadores:inst                                                            ; eos_somadores                          ; work         ;
+;             |eos_halfadder:inst2|                          ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Main|Projeto_Quartus:inst|mhrs_renan_eos_A_mais_B:inst11|eos_somadores:inst|eos_halfadder:inst2                                        ; eos_halfadder                          ; work         ;
+;             |eos_halfadder:inst3|                          ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Main|Projeto_Quartus:inst|mhrs_renan_eos_A_mais_B:inst11|eos_somadores:inst|eos_halfadder:inst3                                        ; eos_halfadder                          ; work         ;
+;             |eos_halfadder:inst4|                          ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Main|Projeto_Quartus:inst|mhrs_renan_eos_A_mais_B:inst11|eos_somadores:inst|eos_halfadder:inst4                                        ; eos_halfadder                          ; work         ;
+;             |eos_halfadder:inst7|                          ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Main|Projeto_Quartus:inst|mhrs_renan_eos_A_mais_B:inst11|eos_somadores:inst|eos_halfadder:inst7                                        ; eos_halfadder                          ; work         ;
+;          |mhrs_Selecionador_de_cmp2:inst3|                 ; 1 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Main|Projeto_Quartus:inst|mhrs_renan_eos_A_mais_B:inst11|mhrs_Selecionador_de_cmp2:inst3                                               ; mhrs_Selecionador_de_cmp2              ; work         ;
+;             |Renan_mhrs_complementador_de_2_somador:inst3| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Main|Projeto_Quartus:inst|mhrs_renan_eos_A_mais_B:inst11|mhrs_Selecionador_de_cmp2:inst3|Renan_mhrs_complementador_de_2_somador:inst3  ; Renan_mhrs_complementador_de_2_somador ; work         ;
+;          |mhrs_Selecionador_de_cmp2:inst4|                 ; 6 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Main|Projeto_Quartus:inst|mhrs_renan_eos_A_mais_B:inst11|mhrs_Selecionador_de_cmp2:inst4                                               ; mhrs_Selecionador_de_cmp2              ; work         ;
+;             |mhrs_renan_2x1_total:inst|                    ; 6 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Main|Projeto_Quartus:inst|mhrs_renan_eos_A_mais_B:inst11|mhrs_Selecionador_de_cmp2:inst4|mhrs_renan_2x1_total:inst                     ; mhrs_renan_2x1_total                   ; work         ;
+;                |Renan_mux_2x1:inst1|                       ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Main|Projeto_Quartus:inst|mhrs_renan_eos_A_mais_B:inst11|mhrs_Selecionador_de_cmp2:inst4|mhrs_renan_2x1_total:inst|Renan_mux_2x1:inst1 ; Renan_mux_2x1                          ; work         ;
+;                |Renan_mux_2x1:inst2|                       ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Main|Projeto_Quartus:inst|mhrs_renan_eos_A_mais_B:inst11|mhrs_Selecionador_de_cmp2:inst4|mhrs_renan_2x1_total:inst|Renan_mux_2x1:inst2 ; Renan_mux_2x1                          ; work         ;
+;                |Renan_mux_2x1:inst3|                       ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Main|Projeto_Quartus:inst|mhrs_renan_eos_A_mais_B:inst11|mhrs_Selecionador_de_cmp2:inst4|mhrs_renan_2x1_total:inst|Renan_mux_2x1:inst3 ; Renan_mux_2x1                          ; work         ;
++------------------------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -241,16 +315,17 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 13                          ;
-; cycloneiii_lcell_comb ; 6                           ;
-;     normal            ; 6                           ;
+; boundary_port         ; 48                          ;
+; cycloneiii_lcell_comb ; 119                         ;
+;     normal            ; 119                         ;
 ;         0 data inputs ; 1                           ;
-;         1 data inputs ; 1                           ;
-;         3 data inputs ; 1                           ;
-;         4 data inputs ; 3                           ;
+;         1 data inputs ; 3                           ;
+;         2 data inputs ; 11                          ;
+;         3 data inputs ; 19                          ;
+;         4 data inputs ; 85                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 2.00                        ;
-; Average LUT depth     ; 1.40                        ;
+; Max LUT depth         ; 14.00                       ;
+; Average LUT depth     ; 11.38                       ;
 +-----------------------+-----------------------------+
 
 
@@ -269,7 +344,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 21.1.1 Build 850 06/23/2022 SJ Lite Edition
-    Info: Processing started: Fri Apr 17 14:27:21 2026
+    Info: Processing started: Fri Apr 17 16:21:45 2026
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Projeto_Quartus -c Projeto_Quartus
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
@@ -327,27 +402,184 @@ Info (12021): Found 1 design units, including 1 entities, in source file complem
     Info (12023): Found entity 1: complementador_de_2_antigo
 Info (12021): Found 1 design units, including 1 entities, in source file analisador_7seg.bdf
     Info (12023): Found entity 1: Analisador_7seg
-Info (12127): Elaborating entity "Analisador_7seg" for the top level hierarchy
-Info (12128): Elaborating entity "eclb_A_maior_B_5bits_magnitude" for hierarchy "eclb_A_maior_B_5bits_magnitude:inst2"
-Info (12128): Elaborating entity "eclb_Mux_8x1_4bits" for hierarchy "eclb_Mux_8x1_4bits:inst1"
-Info (12128): Elaborating entity "mhrs_MUX_8x1" for hierarchy "eclb_Mux_8x1_4bits:inst1|mhrs_MUX_8x1:inst"
+Info (12021): Found 1 design units, including 1 entities, in source file mhrs_subtrator_30.bdf
+    Info (12023): Found entity 1: mhrs_subtrator_30
+Info (12021): Found 1 design units, including 1 entities, in source file mhrs_subtrator_20.bdf
+    Info (12023): Found entity 1: mhrs_subtrator_20
+Info (12021): Found 1 design units, including 1 entities, in source file mhrs_subtrator_10.bdf
+    Info (12023): Found entity 1: mhrs_subtrator_10
+Info (12127): Elaborating entity "Main" for the top level hierarchy
+Info (12128): Elaborating entity "Projeto_Quartus" for hierarchy "Projeto_Quartus:inst"
+Warning (275011): Block or symbol "Renan_complementador_de_2" of instance "inst10" overlaps another block or symbol
+Warning (275011): Block or symbol "mhrs_renan_eos_A_mais_B" of instance "inst11" overlaps another block or symbol
+Info (12128): Elaborating entity "mhrs_MUX_8x1" for hierarchy "Projeto_Quartus:inst|mhrs_MUX_8x1:inst4"
+Info (12128): Elaborating entity "mhrs_Mux_total_8x1" for hierarchy "Projeto_Quartus:inst|mhrs_Mux_total_8x1:inst"
+Info (12128): Elaborating entity "mhrs_renan_eos_A_mais_B" for hierarchy "Projeto_Quartus:inst|mhrs_renan_eos_A_mais_B:inst11"
+Warning (275083): Bus "Z2[4..0]" found using same base name as "Z", which might lead to a name conflict.
+Warning (275083): Bus "Z2[4]" found using same base name as "Z", which might lead to a name conflict.
+Warning (275083): Bus "Z2[3]" found using same base name as "Z", which might lead to a name conflict.
+Warning (275083): Bus "Z2[2]" found using same base name as "Z", which might lead to a name conflict.
+Warning (275083): Bus "Z2[1]" found using same base name as "Z", which might lead to a name conflict.
+Warning (275083): Bus "Z2[0]" found using same base name as "Z", which might lead to a name conflict.
+Warning (275080): Converted elements in bus name "Z" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "Z[3]" to "Z3"
+    Warning (275081): Converted element name(s) from "Z[2]" to "Z2"
+    Warning (275081): Converted element name(s) from "Z[1]" to "Z1"
+    Warning (275081): Converted element name(s) from "Z[0]" to "Z0"
+    Warning (275081): Converted element name(s) from "Z[4]" to "Z4"
+    Warning (275081): Converted element name(s) from "Z[4..0]" to "Z4..0"
+Warning (275080): Converted elements in bus name "Z2" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "Z2[4..0]" to "Z24..0"
+    Warning (275081): Converted element name(s) from "Z2[4]" to "Z24"
+    Warning (275081): Converted element name(s) from "Z2[3]" to "Z23"
+    Warning (275081): Converted element name(s) from "Z2[2]" to "Z22"
+    Warning (275081): Converted element name(s) from "Z2[1]" to "Z21"
+    Warning (275081): Converted element name(s) from "Z2[0]" to "Z20"
+Warning (275002): No superset bus at connection
+Info (12128): Elaborating entity "mhrs_5bits_seletor_cmp2" for hierarchy "Projeto_Quartus:inst|mhrs_renan_eos_A_mais_B:inst11|mhrs_5bits_seletor_cmp2:inst2"
+Info (12128): Elaborating entity "mhrs_renan_2x1_total" for hierarchy "Projeto_Quartus:inst|mhrs_renan_eos_A_mais_B:inst11|mhrs_5bits_seletor_cmp2:inst2|mhrs_renan_2x1_total:inst"
+Info (12128): Elaborating entity "Renan_mux_2x1" for hierarchy "Projeto_Quartus:inst|mhrs_renan_eos_A_mais_B:inst11|mhrs_5bits_seletor_cmp2:inst2|mhrs_renan_2x1_total:inst|Renan_mux_2x1:inst3"
+Info (12128): Elaborating entity "mhrs_5bits_complementador2_somador" for hierarchy "Projeto_Quartus:inst|mhrs_renan_eos_A_mais_B:inst11|mhrs_5bits_seletor_cmp2:inst2|mhrs_5bits_complementador2_somador:inst2"
+Info (12128): Elaborating entity "eos_somadores" for hierarchy "Projeto_Quartus:inst|mhrs_renan_eos_A_mais_B:inst11|eos_somadores:inst"
+Info (12128): Elaborating entity "eos_halfadder" for hierarchy "Projeto_Quartus:inst|mhrs_renan_eos_A_mais_B:inst11|eos_somadores:inst|eos_halfadder:inst1"
+Info (12128): Elaborating entity "mhrs_Selecionador_de_cmp2" for hierarchy "Projeto_Quartus:inst|mhrs_renan_eos_A_mais_B:inst11|mhrs_Selecionador_de_cmp2:inst3"
+Warning (275008): Primitive "GND" of instance "inst4" not used
+Info (12128): Elaborating entity "Renan_mhrs_complementador_de_2_somador" for hierarchy "Projeto_Quartus:inst|mhrs_renan_eos_A_mais_B:inst11|mhrs_Selecionador_de_cmp2:inst3|Renan_mhrs_complementador_de_2_somador:inst3"
+Info (12128): Elaborating entity "mhrs_A_menos_B" for hierarchy "Projeto_Quartus:inst|mhrs_A_menos_B:inst13"
+Warning (275083): Bus "Z2[4]" found using same base name as "Z", which might lead to a name conflict.
+Warning (275083): Bus "Z2[3]" found using same base name as "Z", which might lead to a name conflict.
+Warning (275083): Bus "Z2[2]" found using same base name as "Z", which might lead to a name conflict.
+Warning (275083): Bus "Z2[1]" found using same base name as "Z", which might lead to a name conflict.
+Warning (275083): Bus "Z2[0]" found using same base name as "Z", which might lead to a name conflict.
+Warning (275083): Bus "Z2[4..0]" found using same base name as "Z", which might lead to a name conflict.
+Warning (275080): Converted elements in bus name "Z" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "Z[3]" to "Z3"
+    Warning (275081): Converted element name(s) from "Z[2]" to "Z2"
+    Warning (275081): Converted element name(s) from "Z[1]" to "Z1"
+    Warning (275081): Converted element name(s) from "Z[0]" to "Z0"
+    Warning (275081): Converted element name(s) from "Z[4]" to "Z4"
+    Warning (275081): Converted element name(s) from "Z[4..0]" to "Z4..0"
+Warning (275080): Converted elements in bus name "Z2" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "Z2[4]" to "Z24"
+    Warning (275081): Converted element name(s) from "Z2[3]" to "Z23"
+    Warning (275081): Converted element name(s) from "Z2[2]" to "Z22"
+    Warning (275081): Converted element name(s) from "Z2[1]" to "Z21"
+    Warning (275081): Converted element name(s) from "Z2[0]" to "Z20"
+    Warning (275081): Converted element name(s) from "Z2[4..0]" to "Z24..0"
+Warning (275002): No superset bus at connection
+Info (12128): Elaborating entity "Renan_complementador_de_2" for hierarchy "Projeto_Quartus:inst|Renan_complementador_de_2:inst10"
+Info (12128): Elaborating entity "eos_A_igual_B" for hierarchy "Projeto_Quartus:inst|eos_A_igual_B:inst5"
+Info (12128): Elaborating entity "eos_a_maiorque_b" for hierarchy "Projeto_Quartus:inst|eos_a_maiorque_b:inst3"
+Info (12128): Elaborating entity "mhrs_B_maior_A" for hierarchy "Projeto_Quartus:inst|mhrs_B_maior_A:inst12"
+Info (12128): Elaborating entity "eclb_AND" for hierarchy "Projeto_Quartus:inst|eclb_AND:inst1"
+Info (12128): Elaborating entity "eclb_XOR" for hierarchy "Projeto_Quartus:inst|eclb_XOR:inst2"
+Info (12128): Elaborating entity "Analisador_7seg" for hierarchy "Analisador_7seg:inst1"
+Info (12128): Elaborating entity "eclb_Mux_8x1_4bits" for hierarchy "Analisador_7seg:inst1|eclb_Mux_8x1_4bits:inst1"
+Info (12128): Elaborating entity "eclb_A_maior_B_5bits_magnitude" for hierarchy "Analisador_7seg:inst1|eclb_A_maior_B_5bits_magnitude:inst2"
+Info (12128): Elaborating entity "mhrs_subtrator_30" for hierarchy "Analisador_7seg:inst1|mhrs_subtrator_30:inst17"
+Warning (275083): Bus "Z2[5..0]" found using same base name as "Z2", which might lead to a name conflict.
+Warning (275083): Bus "Z2[5]" found using same base name as "Z2", which might lead to a name conflict.
+Warning (275083): Bus "Z3[5..0]" found using same base name as "Z", which might lead to a name conflict.
+Warning (275083): Bus "Z3[3]" found using same base name as "Z", which might lead to a name conflict.
+Warning (275083): Bus "Z3[2]" found using same base name as "Z", which might lead to a name conflict.
+Warning (275083): Bus "Z3[1]" found using same base name as "Z", which might lead to a name conflict.
+Warning (275083): Bus "Z3[0]" found using same base name as "Z", which might lead to a name conflict.
+Warning (275080): Converted elements in bus name "Z" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "Z[1]" to "Z1"
+    Warning (275081): Converted element name(s) from "Z[2]" to "Z2"
+    Warning (275081): Converted element name(s) from "Z[3]" to "Z3"
+    Warning (275081): Converted element name(s) from "Z[0]" to "Z0"
+    Warning (275081): Converted element name(s) from "Z[4]" to "Z4"
+    Warning (275081): Converted element name(s) from "Z[5..0]" to "Z5..0"
+    Warning (275081): Converted element name(s) from "Z[5]" to "Z5"
+Warning (275080): Converted elements in bus name "Z2" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "Z2[3]" to "Z23"
+    Warning (275081): Converted element name(s) from "Z2[2]" to "Z22"
+    Warning (275081): Converted element name(s) from "Z2[1]" to "Z21"
+    Warning (275081): Converted element name(s) from "Z2[0]" to "Z20"
+    Warning (275081): Converted element name(s) from "Z2[4]" to "Z24"
+    Warning (275081): Converted element name(s) from "Z2[5..0]" to "Z25..0"
+    Warning (275081): Converted element name(s) from "Z2[5]" to "Z25"
+Warning (275080): Converted elements in bus name "Z3" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "Z3[5..0]" to "Z35..0"
+    Warning (275081): Converted element name(s) from "Z3[3]" to "Z33"
+    Warning (275081): Converted element name(s) from "Z3[2]" to "Z32"
+    Warning (275081): Converted element name(s) from "Z3[1]" to "Z31"
+    Warning (275081): Converted element name(s) from "Z3[0]" to "Z30"
+Info (12128): Elaborating entity "mhrs_subtrator_20" for hierarchy "Analisador_7seg:inst1|mhrs_subtrator_20:inst21"
+Warning (275083): Bus "Z2[5]" found using same base name as "Z2", which might lead to a name conflict.
+Warning (275083): Bus "Z3[5..0]" found using same base name as "Z", which might lead to a name conflict.
+Warning (275083): Bus "Z3[3]" found using same base name as "Z", which might lead to a name conflict.
+Warning (275083): Bus "Z3[2]" found using same base name as "Z", which might lead to a name conflict.
+Warning (275083): Bus "Z3[1]" found using same base name as "Z", which might lead to a name conflict.
+Warning (275083): Bus "Z3[0]" found using same base name as "Z", which might lead to a name conflict.
+Warning (275083): Bus "Z2[5..0]" found using same base name as "Z2", which might lead to a name conflict.
+Warning (275080): Converted elements in bus name "Z" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "Z[1]" to "Z1"
+    Warning (275081): Converted element name(s) from "Z[2]" to "Z2"
+    Warning (275081): Converted element name(s) from "Z[3]" to "Z3"
+    Warning (275081): Converted element name(s) from "Z[0]" to "Z0"
+    Warning (275081): Converted element name(s) from "Z[4]" to "Z4"
+    Warning (275081): Converted element name(s) from "Z[5..0]" to "Z5..0"
+    Warning (275081): Converted element name(s) from "Z[5]" to "Z5"
+Warning (275080): Converted elements in bus name "Z2" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "Z2[3]" to "Z23"
+    Warning (275081): Converted element name(s) from "Z2[2]" to "Z22"
+    Warning (275081): Converted element name(s) from "Z2[1]" to "Z21"
+    Warning (275081): Converted element name(s) from "Z2[0]" to "Z20"
+    Warning (275081): Converted element name(s) from "Z2[4]" to "Z24"
+    Warning (275081): Converted element name(s) from "Z2[5]" to "Z25"
+    Warning (275081): Converted element name(s) from "Z2[5..0]" to "Z25..0"
+Warning (275080): Converted elements in bus name "Z3" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "Z3[5..0]" to "Z35..0"
+    Warning (275081): Converted element name(s) from "Z3[3]" to "Z33"
+    Warning (275081): Converted element name(s) from "Z3[2]" to "Z32"
+    Warning (275081): Converted element name(s) from "Z3[1]" to "Z31"
+    Warning (275081): Converted element name(s) from "Z3[0]" to "Z30"
+Info (12128): Elaborating entity "mhrs_subtrator_10" for hierarchy "Analisador_7seg:inst1|mhrs_subtrator_10:inst29"
+Warning (275083): Bus "Z2[5]" found using same base name as "Z2", which might lead to a name conflict.
+Warning (275083): Bus "Z3[5..0]" found using same base name as "Z", which might lead to a name conflict.
+Warning (275083): Bus "Z3[3]" found using same base name as "Z", which might lead to a name conflict.
+Warning (275083): Bus "Z3[2]" found using same base name as "Z", which might lead to a name conflict.
+Warning (275083): Bus "Z3[1]" found using same base name as "Z", which might lead to a name conflict.
+Warning (275083): Bus "Z3[0]" found using same base name as "Z", which might lead to a name conflict.
+Warning (275083): Bus "Z2[5..0]" found using same base name as "Z2", which might lead to a name conflict.
+Warning (275080): Converted elements in bus name "Z" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "Z[1]" to "Z1"
+    Warning (275081): Converted element name(s) from "Z[2]" to "Z2"
+    Warning (275081): Converted element name(s) from "Z[3]" to "Z3"
+    Warning (275081): Converted element name(s) from "Z[0]" to "Z0"
+    Warning (275081): Converted element name(s) from "Z[4]" to "Z4"
+    Warning (275081): Converted element name(s) from "Z[5..0]" to "Z5..0"
+    Warning (275081): Converted element name(s) from "Z[5]" to "Z5"
+Warning (275080): Converted elements in bus name "Z2" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "Z2[3]" to "Z23"
+    Warning (275081): Converted element name(s) from "Z2[2]" to "Z22"
+    Warning (275081): Converted element name(s) from "Z2[1]" to "Z21"
+    Warning (275081): Converted element name(s) from "Z2[0]" to "Z20"
+    Warning (275081): Converted element name(s) from "Z2[4]" to "Z24"
+    Warning (275081): Converted element name(s) from "Z2[5]" to "Z25"
+    Warning (275081): Converted element name(s) from "Z2[5..0]" to "Z25..0"
+Warning (275080): Converted elements in bus name "Z3" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "Z3[5..0]" to "Z35..0"
+    Warning (275081): Converted element name(s) from "Z3[3]" to "Z33"
+    Warning (275081): Converted element name(s) from "Z3[2]" to "Z32"
+    Warning (275081): Converted element name(s) from "Z3[1]" to "Z31"
+    Warning (275081): Converted element name(s) from "Z3[0]" to "Z30"
+Info (12128): Elaborating entity "Decod_2x" for hierarchy "Decod_2x:inst3"
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "SAIDA[3]" is stuck at GND
-    Warning (13410): Pin "SAIDA[2]" is stuck at GND
+    Warning (13410): Pin "DEZB" is stuck at GND
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 2 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "In[5]"
-    Warning (15610): No output dependent on input pin "In[0]"
-Info (21057): Implemented 17 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 6 input pins
-    Info (21059): Implemented 7 output pins
-    Info (21061): Implemented 4 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 7 warnings
+Info (21057): Implemented 163 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 13 input pins
+    Info (21059): Implemented 35 output pins
+    Info (21061): Implemented 115 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 135 warnings
     Info: Peak virtual memory: 4810 megabytes
-    Info: Processing ended: Fri Apr 17 14:27:28 2026
-    Info: Elapsed time: 00:00:07
-    Info: Total CPU time (on all processors): 00:00:18
+    Info: Processing ended: Fri Apr 17 16:21:53 2026
+    Info: Elapsed time: 00:00:08
+    Info: Total CPU time (on all processors): 00:00:19
 
 

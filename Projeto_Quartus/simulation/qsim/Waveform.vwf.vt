@@ -19,7 +19,7 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "04/17/2026 14:33:15"
+// Generated on "04/17/2026 16:06:13"
                                                                                 
 // Verilog Test Bench (with test vectors) for design :                          Analisador_7seg
 // 
@@ -32,19 +32,17 @@ module Analisador_7seg_vlg_vec_tst();
 // general purpose registers
 reg [5:0] In;
 // wires                                               
-wire SAA;
 wire [3:0] SAIDA;
-wire SBB;
-wire SCC;
+wire [3:0] SAIDA_UNIDADE;
+wire SINAL;
 
 // assign statements (if any)                          
 Analisador_7seg i1 (
 // port map - connection between master ports and signals/registers   
 	.In(In),
-	.SAA(SAA),
 	.SAIDA(SAIDA),
-	.SBB(SBB),
-	.SCC(SCC)
+	.SAIDA_UNIDADE(SAIDA_UNIDADE),
+	.SINAL(SINAL)
 );
 initial 
 begin 
@@ -54,6 +52,9 @@ end
 initial
 begin
 	In[5] = 1'b0;
+	In[5] = #320000 1'b1;
+	In[5] = #320000 1'b0;
+	In[5] = #320000 1'b1;
 end 
 // In[ 4 ]
 initial
