@@ -19,28 +19,32 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "04/16/2026 17:02:21"
+// Generated on "04/16/2026 23:02:11"
                                                                                 
-// Verilog Test Bench (with test vectors) for design :                          eos_A_mais_B
+// Verilog Test Bench (with test vectors) for design :                          Projeto_Quartus
 // 
 // Simulation tool : 3rd Party
 // 
 
 `timescale 1 ps/ 1 ps
-module eos_A_mais_B_vlg_vec_tst();
+module Projeto_Quartus_vlg_vec_tst();
 // constants                                           
 // general purpose registers
 reg [4:0] A;
 reg [4:0] B;
+reg [2:0] S;
 // wires                                               
 wire [5:0] F;
+wire STATUS;
 
 // assign statements (if any)                          
-eos_A_mais_B i1 (
+Projeto_Quartus i1 (
 // port map - connection between master ports and signals/registers   
 	.A(A),
 	.B(B),
-	.F(F)
+	.F(F),
+	.S(S),
+	.STATUS(STATUS)
 );
 initial 
 begin 
@@ -52,23 +56,29 @@ begin
 	A[4] = 1'b0;
 	A[4] = #20000 1'b1;
 	A[4] = #20000 1'b0;
+	A[4] = #20000 1'b1;
+	A[4] = #10000 1'b0;
 end 
 // A[ 3 ]
 initial
 begin
 	A[3] = 1'b1;
-	A[3] = #40000 1'b0;
+	A[3] = #80000 1'b0;
 end 
 // A[ 2 ]
 initial
 begin
 	A[2] = 1'b0;
+	A[2] = #20000 1'b1;
+	A[2] = #10000 1'b0;
+	A[2] = #30000 1'b1;
+	A[2] = #20000 1'b0;
 end 
 // A[ 1 ]
 initial
 begin
 	A[1] = 1'b1;
-	A[1] = #40000 1'b0;
+	A[1] = #20000 1'b0;
 end 
 // A[ 0 ]
 initial
@@ -79,32 +89,98 @@ end
 initial
 begin
 	B[4] = 1'b0;
-	B[4] = #10000 1'b1;
+	B[4] = #30000 1'b1;
 	B[4] = #10000 1'b0;
-	B[4] = #10000 1'b1;
+	B[4] = #30000 1'b1;
 	B[4] = #10000 1'b0;
 end 
 // B[ 3 ]
 initial
 begin
 	B[3] = 1'b0;
+	B[3] = #30000 1'b1;
+	B[3] = #10000 1'b0;
+	B[3] = #20000 1'b1;
+	B[3] = #20000 1'b0;
 end 
 // B[ 2 ]
 initial
 begin
 	B[2] = 1'b1;
-	B[2] = #40000 1'b0;
+	B[2] = #30000 1'b0;
+	B[2] = #30000 1'b1;
+	B[2] = #20000 1'b0;
 end 
 // B[ 1 ]
 initial
 begin
 	B[1] = 1'b0;
+	B[1] = #20000 1'b1;
+	B[1] = #10000 1'b0;
+	B[1] = #30000 1'b1;
+	B[1] = #10000 1'b0;
 end 
 // B[ 0 ]
 initial
 begin
 	B[0] = 1'b1;
+	B[0] = #30000 1'b0;
+	B[0] = #10000 1'b1;
 	B[0] = #40000 1'b0;
+end 
+// S[ 2 ]
+initial
+begin
+	S[2] = 1'b0;
+	S[2] = #40000 1'b1;
+	S[2] = #40000 1'b0;
+	S[2] = #440000 1'b1;
+	# 40000;
+	repeat(5)
+	begin
+		S[2] = 1'b0;
+		S[2] = #40000 1'b1;
+		# 40000;
+	end
+	S[2] = 1'b0;
+end 
+// S[ 1 ]
+initial
+begin
+	repeat(2)
+	begin
+		S[1] = 1'b0;
+		S[1] = #20000 1'b1;
+		# 20000;
+	end
+	S[1] = 1'b0;
+	S[1] = #420000 1'b1;
+	# 20000;
+	repeat(12)
+	begin
+		S[1] = 1'b0;
+		S[1] = #20000 1'b1;
+		# 20000;
+	end
+end 
+// S[ 0 ]
+initial
+begin
+	repeat(4)
+	begin
+		S[0] = 1'b0;
+		S[0] = #10000 1'b1;
+		# 10000;
+	end
+	S[0] = 1'b0;
+	S[0] = #410000 1'b1;
+	# 10000;
+	repeat(25)
+	begin
+		S[0] = 1'b0;
+		S[0] = #10000 1'b1;
+		# 10000;
+	end
 end 
 endmodule
 
