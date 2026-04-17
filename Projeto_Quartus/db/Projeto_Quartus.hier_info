@@ -1,4 +1,53 @@
-|Projeto_Quartus
+|Main
+STATUS <= Projeto_Quartus:inst.STATUS
+A[0] => Projeto_Quartus:inst.A[0]
+A[0] => S_A[0].DATAIN
+A[1] => Projeto_Quartus:inst.A[1]
+A[1] => S_A[1].DATAIN
+A[2] => Projeto_Quartus:inst.A[2]
+A[2] => S_A[2].DATAIN
+A[3] => Projeto_Quartus:inst.A[3]
+A[3] => S_A[3].DATAIN
+A[4] => Projeto_Quartus:inst.A[4]
+A[4] => S_A[4].DATAIN
+B[0] => Projeto_Quartus:inst.B[0]
+B[0] => S_B[0].DATAIN
+B[1] => Projeto_Quartus:inst.B[1]
+B[1] => S_B[1].DATAIN
+B[2] => Projeto_Quartus:inst.B[2]
+B[2] => S_B[2].DATAIN
+B[3] => Projeto_Quartus:inst.B[3]
+B[3] => S_B[3].DATAIN
+B[4] => Projeto_Quartus:inst.B[4]
+B[4] => S_B[4].DATAIN
+S[0] => Projeto_Quartus:inst.S[0]
+S[0] => S_S[0].DATAIN
+S[1] => Projeto_Quartus:inst.S[1]
+S[1] => S_S[1].DATAIN
+S[2] => Projeto_Quartus:inst.S[2]
+S[2] => S_S[2].DATAIN
+S_A[0] <= A[0].DB_MAX_OUTPUT_PORT_TYPE
+S_A[1] <= A[1].DB_MAX_OUTPUT_PORT_TYPE
+S_A[2] <= A[2].DB_MAX_OUTPUT_PORT_TYPE
+S_A[3] <= A[3].DB_MAX_OUTPUT_PORT_TYPE
+S_A[4] <= A[4].DB_MAX_OUTPUT_PORT_TYPE
+S_B[0] <= B[0].DB_MAX_OUTPUT_PORT_TYPE
+S_B[1] <= B[1].DB_MAX_OUTPUT_PORT_TYPE
+S_B[2] <= B[2].DB_MAX_OUTPUT_PORT_TYPE
+S_B[3] <= B[3].DB_MAX_OUTPUT_PORT_TYPE
+S_B[4] <= B[4].DB_MAX_OUTPUT_PORT_TYPE
+S_F[0] <= Projeto_Quartus:inst.F[0]
+S_F[1] <= Projeto_Quartus:inst.F[1]
+S_F[2] <= Projeto_Quartus:inst.F[2]
+S_F[3] <= Projeto_Quartus:inst.F[3]
+S_F[4] <= Projeto_Quartus:inst.F[4]
+S_F[5] <= Projeto_Quartus:inst.F[5]
+S_S[0] <= S[0].DB_MAX_OUTPUT_PORT_TYPE
+S_S[1] <= S[1].DB_MAX_OUTPUT_PORT_TYPE
+S_S[2] <= S[2].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|Projeto_Quartus:inst
 STATUS <= mhrs_MUX_8x1:inst4.In
 S[0] => mhrs_MUX_8x1:inst4.S0
 S[0] => mhrs_Mux_total_8x1:inst.S0
@@ -89,7 +138,7 @@ F[4] <= mhrs_Mux_total_8x1:inst8.In[4]
 F[5] <= mhrs_Mux_total_8x1:inst8.In[5]
 
 
-|Projeto_Quartus|mhrs_MUX_8x1:inst4
+|Main|Projeto_Quartus:inst|mhrs_MUX_8x1:inst4
 In <= inst6.DB_MAX_OUTPUT_PORT_TYPE
 S0 => inst5.IN0
 S1 => inst4.IN0
@@ -108,7 +157,7 @@ S1out <= inst7.DB_MAX_OUTPUT_PORT_TYPE
 S0out <= inst.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Projeto_Quartus|mhrs_Mux_total_8x1:inst
+|Main|Projeto_Quartus:inst|mhrs_Mux_total_8x1:inst
 In[0] <= mhrs_MUX_8x1:inst.In
 In[1] <= mhrs_MUX_8x1:inst3.In
 In[2] <= mhrs_MUX_8x1:inst4.In
@@ -168,7 +217,7 @@ I0[4] => mhrs_MUX_8x1:inst6.I0
 I0[5] => mhrs_MUX_8x1:inst7.I0
 
 
-|Projeto_Quartus|mhrs_Mux_total_8x1:inst|mhrs_MUX_8x1:inst
+|Main|Projeto_Quartus:inst|mhrs_Mux_total_8x1:inst|mhrs_MUX_8x1:inst
 In <= inst6.DB_MAX_OUTPUT_PORT_TYPE
 S0 => inst5.IN0
 S1 => inst4.IN0
@@ -187,7 +236,7 @@ S1out <= inst7.DB_MAX_OUTPUT_PORT_TYPE
 S0out <= inst.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Projeto_Quartus|mhrs_Mux_total_8x1:inst|mhrs_MUX_8x1:inst3
+|Main|Projeto_Quartus:inst|mhrs_Mux_total_8x1:inst|mhrs_MUX_8x1:inst3
 In <= inst6.DB_MAX_OUTPUT_PORT_TYPE
 S0 => inst5.IN0
 S1 => inst4.IN0
@@ -206,7 +255,7 @@ S1out <= inst7.DB_MAX_OUTPUT_PORT_TYPE
 S0out <= inst.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Projeto_Quartus|mhrs_Mux_total_8x1:inst|mhrs_MUX_8x1:inst4
+|Main|Projeto_Quartus:inst|mhrs_Mux_total_8x1:inst|mhrs_MUX_8x1:inst4
 In <= inst6.DB_MAX_OUTPUT_PORT_TYPE
 S0 => inst5.IN0
 S1 => inst4.IN0
@@ -225,7 +274,7 @@ S1out <= inst7.DB_MAX_OUTPUT_PORT_TYPE
 S0out <= inst.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Projeto_Quartus|mhrs_Mux_total_8x1:inst|mhrs_MUX_8x1:inst5
+|Main|Projeto_Quartus:inst|mhrs_Mux_total_8x1:inst|mhrs_MUX_8x1:inst5
 In <= inst6.DB_MAX_OUTPUT_PORT_TYPE
 S0 => inst5.IN0
 S1 => inst4.IN0
@@ -244,7 +293,7 @@ S1out <= inst7.DB_MAX_OUTPUT_PORT_TYPE
 S0out <= inst.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Projeto_Quartus|mhrs_Mux_total_8x1:inst|mhrs_MUX_8x1:inst6
+|Main|Projeto_Quartus:inst|mhrs_Mux_total_8x1:inst|mhrs_MUX_8x1:inst6
 In <= inst6.DB_MAX_OUTPUT_PORT_TYPE
 S0 => inst5.IN0
 S1 => inst4.IN0
@@ -263,7 +312,7 @@ S1out <= inst7.DB_MAX_OUTPUT_PORT_TYPE
 S0out <= inst.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Projeto_Quartus|mhrs_Mux_total_8x1:inst|mhrs_MUX_8x1:inst7
+|Main|Projeto_Quartus:inst|mhrs_Mux_total_8x1:inst|mhrs_MUX_8x1:inst7
 In <= inst6.DB_MAX_OUTPUT_PORT_TYPE
 S0 => inst5.IN0
 S1 => inst4.IN0
@@ -282,26 +331,42 @@ S1out <= inst7.DB_MAX_OUTPUT_PORT_TYPE
 S0out <= inst.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Projeto_Quartus|mhrs_renan_eos_A_mais_B:inst11
+|Main|Projeto_Quartus:inst|mhrs_renan_eos_A_mais_B:inst11
 F[0] <= mhrs_5bits_seletor_cmp2:inst2.F2[0]
 F[1] <= mhrs_5bits_seletor_cmp2:inst2.F2[1]
 F[2] <= mhrs_5bits_seletor_cmp2:inst2.F2[2]
 F[3] <= mhrs_5bits_seletor_cmp2:inst2.F2[3]
 F[4] <= mhrs_5bits_seletor_cmp2:inst2.F2[4]
 F[5] <= mhrs_5bits_seletor_cmp2:inst2.F2[5]
-A[0] => mhrs_Selecionador_de_cmp2:inst3.A[0]
-A[1] => mhrs_Selecionador_de_cmp2:inst3.A[1]
-A[2] => mhrs_Selecionador_de_cmp2:inst3.A[2]
-A[3] => mhrs_Selecionador_de_cmp2:inst3.A[3]
-A[4] => mhrs_Selecionador_de_cmp2:inst3.A[4]
-B[0] => mhrs_Selecionador_de_cmp2:inst4.A[0]
-B[1] => mhrs_Selecionador_de_cmp2:inst4.A[1]
-B[2] => mhrs_Selecionador_de_cmp2:inst4.A[2]
-B[3] => mhrs_Selecionador_de_cmp2:inst4.A[3]
-B[4] => mhrs_Selecionador_de_cmp2:inst4.A[4]
+A[0] => inst17.IN2
+A[0] => inst15.IN0
+A[0] => inst15.IN1
+A[1] => inst17.IN1
+A[1] => inst14.IN0
+A[1] => inst14.IN1
+A[2] => inst17.IN3
+A[2] => inst13.IN0
+A[2] => inst13.IN1
+A[3] => inst17.IN0
+A[3] => inst12.IN0
+A[3] => inst12.IN1
+A[4] => inst16.IN1
+B[0] => inst5.IN2
+B[0] => inst10.IN0
+B[0] => inst10.IN1
+B[1] => inst5.IN1
+B[1] => inst9.IN0
+B[1] => inst9.IN1
+B[2] => inst5.IN3
+B[2] => inst8.IN0
+B[2] => inst8.IN1
+B[3] => inst5.IN0
+B[3] => inst7.IN0
+B[3] => inst7.IN1
+B[4] => inst1.IN1
 
 
-|Projeto_Quartus|mhrs_renan_eos_A_mais_B:inst11|mhrs_5bits_seletor_cmp2:inst2
+|Main|Projeto_Quartus:inst|mhrs_renan_eos_A_mais_B:inst11|mhrs_5bits_seletor_cmp2:inst2
 F2[0] <= mhrs_renan_2x1_total:inst.F[0]
 F2[1] <= mhrs_renan_2x1_total:inst.F[1]
 F2[2] <= mhrs_renan_2x1_total:inst.F[2]
@@ -323,7 +388,7 @@ A[5] => inst1.IN0
 A[5] => inst1.IN1
 
 
-|Projeto_Quartus|mhrs_renan_eos_A_mais_B:inst11|mhrs_5bits_seletor_cmp2:inst2|mhrs_renan_2x1_total:inst
+|Main|Projeto_Quartus:inst|mhrs_renan_eos_A_mais_B:inst11|mhrs_5bits_seletor_cmp2:inst2|mhrs_renan_2x1_total:inst
 F[0] <= Renan_mux_2x1:inst.F
 F[1] <= Renan_mux_2x1:inst1.F
 F[2] <= Renan_mux_2x1:inst2.F
@@ -342,7 +407,7 @@ B[4] => Renan_mux_2x1:inst4.B
 S => Renan_mux_2x1:inst.S
 
 
-|Projeto_Quartus|mhrs_renan_eos_A_mais_B:inst11|mhrs_5bits_seletor_cmp2:inst2|mhrs_renan_2x1_total:inst|Renan_mux_2x1:inst3
+|Main|Projeto_Quartus:inst|mhrs_renan_eos_A_mais_B:inst11|mhrs_5bits_seletor_cmp2:inst2|mhrs_renan_2x1_total:inst|Renan_mux_2x1:inst3
 Sout <= S.DB_MAX_OUTPUT_PORT_TYPE
 S => Sout.DATAIN
 S => inst2.IN1
@@ -352,7 +417,7 @@ B => inst2.IN0
 A => inst.IN0
 
 
-|Projeto_Quartus|mhrs_renan_eos_A_mais_B:inst11|mhrs_5bits_seletor_cmp2:inst2|mhrs_renan_2x1_total:inst|Renan_mux_2x1:inst2
+|Main|Projeto_Quartus:inst|mhrs_renan_eos_A_mais_B:inst11|mhrs_5bits_seletor_cmp2:inst2|mhrs_renan_2x1_total:inst|Renan_mux_2x1:inst2
 Sout <= S.DB_MAX_OUTPUT_PORT_TYPE
 S => Sout.DATAIN
 S => inst2.IN1
@@ -362,7 +427,7 @@ B => inst2.IN0
 A => inst.IN0
 
 
-|Projeto_Quartus|mhrs_renan_eos_A_mais_B:inst11|mhrs_5bits_seletor_cmp2:inst2|mhrs_renan_2x1_total:inst|Renan_mux_2x1:inst1
+|Main|Projeto_Quartus:inst|mhrs_renan_eos_A_mais_B:inst11|mhrs_5bits_seletor_cmp2:inst2|mhrs_renan_2x1_total:inst|Renan_mux_2x1:inst1
 Sout <= S.DB_MAX_OUTPUT_PORT_TYPE
 S => Sout.DATAIN
 S => inst2.IN1
@@ -372,7 +437,7 @@ B => inst2.IN0
 A => inst.IN0
 
 
-|Projeto_Quartus|mhrs_renan_eos_A_mais_B:inst11|mhrs_5bits_seletor_cmp2:inst2|mhrs_renan_2x1_total:inst|Renan_mux_2x1:inst
+|Main|Projeto_Quartus:inst|mhrs_renan_eos_A_mais_B:inst11|mhrs_5bits_seletor_cmp2:inst2|mhrs_renan_2x1_total:inst|Renan_mux_2x1:inst
 Sout <= S.DB_MAX_OUTPUT_PORT_TYPE
 S => Sout.DATAIN
 S => inst2.IN1
@@ -382,7 +447,7 @@ B => inst2.IN0
 A => inst.IN0
 
 
-|Projeto_Quartus|mhrs_renan_eos_A_mais_B:inst11|mhrs_5bits_seletor_cmp2:inst2|mhrs_renan_2x1_total:inst|Renan_mux_2x1:inst4
+|Main|Projeto_Quartus:inst|mhrs_renan_eos_A_mais_B:inst11|mhrs_5bits_seletor_cmp2:inst2|mhrs_renan_2x1_total:inst|Renan_mux_2x1:inst4
 Sout <= S.DB_MAX_OUTPUT_PORT_TYPE
 S => Sout.DATAIN
 S => inst2.IN1
@@ -392,7 +457,7 @@ B => inst2.IN0
 A => inst.IN0
 
 
-|Projeto_Quartus|mhrs_renan_eos_A_mais_B:inst11|mhrs_5bits_seletor_cmp2:inst2|mhrs_5bits_complementador2_somador:inst2
+|Main|Projeto_Quartus:inst|mhrs_renan_eos_A_mais_B:inst11|mhrs_5bits_seletor_cmp2:inst2|mhrs_5bits_complementador2_somador:inst2
 Acomplementado[0] <= inst11.DB_MAX_OUTPUT_PORT_TYPE
 Acomplementado[1] <= inst.DB_MAX_OUTPUT_PORT_TYPE
 Acomplementado[2] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
@@ -413,7 +478,7 @@ A[4] => inst3.IN0
 A[4] => inst10.IN0
 
 
-|Projeto_Quartus|mhrs_renan_eos_A_mais_B:inst11|eos_somadores:inst
+|Main|Projeto_Quartus:inst|mhrs_renan_eos_A_mais_B:inst11|eos_somadores:inst
 F[0] <= eos_halfadder:inst1.S
 F[1] <= eos_halfadder:inst2.S
 F[2] <= eos_halfadder:inst3.S
@@ -434,7 +499,7 @@ B[4] => eos_halfadder:inst5.B
 B[5] => eos_halfadder:inst7.B
 
 
-|Projeto_Quartus|mhrs_renan_eos_A_mais_B:inst11|eos_somadores:inst|eos_halfadder:inst1
+|Main|Projeto_Quartus:inst|mhrs_renan_eos_A_mais_B:inst11|eos_somadores:inst|eos_halfadder:inst1
 CN1 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 CN => inst5.IN0
 CN => inst4.IN1
@@ -445,7 +510,7 @@ B => inst2.IN0
 S <= inst4.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Projeto_Quartus|mhrs_renan_eos_A_mais_B:inst11|eos_somadores:inst|eos_halfadder:inst2
+|Main|Projeto_Quartus:inst|mhrs_renan_eos_A_mais_B:inst11|eos_somadores:inst|eos_halfadder:inst2
 CN1 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 CN => inst5.IN0
 CN => inst4.IN1
@@ -456,7 +521,7 @@ B => inst2.IN0
 S <= inst4.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Projeto_Quartus|mhrs_renan_eos_A_mais_B:inst11|eos_somadores:inst|eos_halfadder:inst3
+|Main|Projeto_Quartus:inst|mhrs_renan_eos_A_mais_B:inst11|eos_somadores:inst|eos_halfadder:inst3
 CN1 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 CN => inst5.IN0
 CN => inst4.IN1
@@ -467,7 +532,7 @@ B => inst2.IN0
 S <= inst4.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Projeto_Quartus|mhrs_renan_eos_A_mais_B:inst11|eos_somadores:inst|eos_halfadder:inst4
+|Main|Projeto_Quartus:inst|mhrs_renan_eos_A_mais_B:inst11|eos_somadores:inst|eos_halfadder:inst4
 CN1 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 CN => inst5.IN0
 CN => inst4.IN1
@@ -478,7 +543,7 @@ B => inst2.IN0
 S <= inst4.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Projeto_Quartus|mhrs_renan_eos_A_mais_B:inst11|eos_somadores:inst|eos_halfadder:inst5
+|Main|Projeto_Quartus:inst|mhrs_renan_eos_A_mais_B:inst11|eos_somadores:inst|eos_halfadder:inst5
 CN1 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 CN => inst5.IN0
 CN => inst4.IN1
@@ -489,7 +554,7 @@ B => inst2.IN0
 S <= inst4.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Projeto_Quartus|mhrs_renan_eos_A_mais_B:inst11|eos_somadores:inst|eos_halfadder:inst7
+|Main|Projeto_Quartus:inst|mhrs_renan_eos_A_mais_B:inst11|eos_somadores:inst|eos_halfadder:inst7
 CN1 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 CN => inst5.IN0
 CN => inst4.IN1
@@ -500,7 +565,7 @@ B => inst2.IN0
 S <= inst4.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Projeto_Quartus|mhrs_renan_eos_A_mais_B:inst11|mhrs_Selecionador_de_cmp2:inst3
+|Main|Projeto_Quartus:inst|mhrs_renan_eos_A_mais_B:inst11|mhrs_Selecionador_de_cmp2:inst3
 F2[0] <= mhrs_renan_2x1_total:inst.F[0]
 F2[1] <= mhrs_renan_2x1_total:inst.F[1]
 F2[2] <= mhrs_renan_2x1_total:inst.F[2]
@@ -522,7 +587,7 @@ A[4] => inst1.IN0
 A[4] => inst1.IN1
 
 
-|Projeto_Quartus|mhrs_renan_eos_A_mais_B:inst11|mhrs_Selecionador_de_cmp2:inst3|mhrs_renan_2x1_total:inst
+|Main|Projeto_Quartus:inst|mhrs_renan_eos_A_mais_B:inst11|mhrs_Selecionador_de_cmp2:inst3|mhrs_renan_2x1_total:inst
 F[0] <= Renan_mux_2x1:inst.F
 F[1] <= Renan_mux_2x1:inst1.F
 F[2] <= Renan_mux_2x1:inst2.F
@@ -541,7 +606,7 @@ B[4] => Renan_mux_2x1:inst4.B
 S => Renan_mux_2x1:inst.S
 
 
-|Projeto_Quartus|mhrs_renan_eos_A_mais_B:inst11|mhrs_Selecionador_de_cmp2:inst3|mhrs_renan_2x1_total:inst|Renan_mux_2x1:inst3
+|Main|Projeto_Quartus:inst|mhrs_renan_eos_A_mais_B:inst11|mhrs_Selecionador_de_cmp2:inst3|mhrs_renan_2x1_total:inst|Renan_mux_2x1:inst3
 Sout <= S.DB_MAX_OUTPUT_PORT_TYPE
 S => Sout.DATAIN
 S => inst2.IN1
@@ -551,7 +616,7 @@ B => inst2.IN0
 A => inst.IN0
 
 
-|Projeto_Quartus|mhrs_renan_eos_A_mais_B:inst11|mhrs_Selecionador_de_cmp2:inst3|mhrs_renan_2x1_total:inst|Renan_mux_2x1:inst2
+|Main|Projeto_Quartus:inst|mhrs_renan_eos_A_mais_B:inst11|mhrs_Selecionador_de_cmp2:inst3|mhrs_renan_2x1_total:inst|Renan_mux_2x1:inst2
 Sout <= S.DB_MAX_OUTPUT_PORT_TYPE
 S => Sout.DATAIN
 S => inst2.IN1
@@ -561,7 +626,7 @@ B => inst2.IN0
 A => inst.IN0
 
 
-|Projeto_Quartus|mhrs_renan_eos_A_mais_B:inst11|mhrs_Selecionador_de_cmp2:inst3|mhrs_renan_2x1_total:inst|Renan_mux_2x1:inst1
+|Main|Projeto_Quartus:inst|mhrs_renan_eos_A_mais_B:inst11|mhrs_Selecionador_de_cmp2:inst3|mhrs_renan_2x1_total:inst|Renan_mux_2x1:inst1
 Sout <= S.DB_MAX_OUTPUT_PORT_TYPE
 S => Sout.DATAIN
 S => inst2.IN1
@@ -571,7 +636,7 @@ B => inst2.IN0
 A => inst.IN0
 
 
-|Projeto_Quartus|mhrs_renan_eos_A_mais_B:inst11|mhrs_Selecionador_de_cmp2:inst3|mhrs_renan_2x1_total:inst|Renan_mux_2x1:inst
+|Main|Projeto_Quartus:inst|mhrs_renan_eos_A_mais_B:inst11|mhrs_Selecionador_de_cmp2:inst3|mhrs_renan_2x1_total:inst|Renan_mux_2x1:inst
 Sout <= S.DB_MAX_OUTPUT_PORT_TYPE
 S => Sout.DATAIN
 S => inst2.IN1
@@ -581,7 +646,7 @@ B => inst2.IN0
 A => inst.IN0
 
 
-|Projeto_Quartus|mhrs_renan_eos_A_mais_B:inst11|mhrs_Selecionador_de_cmp2:inst3|mhrs_renan_2x1_total:inst|Renan_mux_2x1:inst4
+|Main|Projeto_Quartus:inst|mhrs_renan_eos_A_mais_B:inst11|mhrs_Selecionador_de_cmp2:inst3|mhrs_renan_2x1_total:inst|Renan_mux_2x1:inst4
 Sout <= S.DB_MAX_OUTPUT_PORT_TYPE
 S => Sout.DATAIN
 S => inst2.IN1
@@ -591,7 +656,7 @@ B => inst2.IN0
 A => inst.IN0
 
 
-|Projeto_Quartus|mhrs_renan_eos_A_mais_B:inst11|mhrs_Selecionador_de_cmp2:inst3|Renan_mhrs_complementador_de_2_somador:inst3
+|Main|Projeto_Quartus:inst|mhrs_renan_eos_A_mais_B:inst11|mhrs_Selecionador_de_cmp2:inst3|Renan_mhrs_complementador_de_2_somador:inst3
 Acomplementado[0] <= inst11.DB_MAX_OUTPUT_PORT_TYPE
 Acomplementado[1] <= inst.DB_MAX_OUTPUT_PORT_TYPE
 Acomplementado[2] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
@@ -611,7 +676,7 @@ A[3] => inst4.IN1
 A[4] => inst10.IN0
 
 
-|Projeto_Quartus|mhrs_renan_eos_A_mais_B:inst11|mhrs_Selecionador_de_cmp2:inst4
+|Main|Projeto_Quartus:inst|mhrs_renan_eos_A_mais_B:inst11|mhrs_Selecionador_de_cmp2:inst4
 F2[0] <= mhrs_renan_2x1_total:inst.F[0]
 F2[1] <= mhrs_renan_2x1_total:inst.F[1]
 F2[2] <= mhrs_renan_2x1_total:inst.F[2]
@@ -633,7 +698,7 @@ A[4] => inst1.IN0
 A[4] => inst1.IN1
 
 
-|Projeto_Quartus|mhrs_renan_eos_A_mais_B:inst11|mhrs_Selecionador_de_cmp2:inst4|mhrs_renan_2x1_total:inst
+|Main|Projeto_Quartus:inst|mhrs_renan_eos_A_mais_B:inst11|mhrs_Selecionador_de_cmp2:inst4|mhrs_renan_2x1_total:inst
 F[0] <= Renan_mux_2x1:inst.F
 F[1] <= Renan_mux_2x1:inst1.F
 F[2] <= Renan_mux_2x1:inst2.F
@@ -652,7 +717,7 @@ B[4] => Renan_mux_2x1:inst4.B
 S => Renan_mux_2x1:inst.S
 
 
-|Projeto_Quartus|mhrs_renan_eos_A_mais_B:inst11|mhrs_Selecionador_de_cmp2:inst4|mhrs_renan_2x1_total:inst|Renan_mux_2x1:inst3
+|Main|Projeto_Quartus:inst|mhrs_renan_eos_A_mais_B:inst11|mhrs_Selecionador_de_cmp2:inst4|mhrs_renan_2x1_total:inst|Renan_mux_2x1:inst3
 Sout <= S.DB_MAX_OUTPUT_PORT_TYPE
 S => Sout.DATAIN
 S => inst2.IN1
@@ -662,7 +727,7 @@ B => inst2.IN0
 A => inst.IN0
 
 
-|Projeto_Quartus|mhrs_renan_eos_A_mais_B:inst11|mhrs_Selecionador_de_cmp2:inst4|mhrs_renan_2x1_total:inst|Renan_mux_2x1:inst2
+|Main|Projeto_Quartus:inst|mhrs_renan_eos_A_mais_B:inst11|mhrs_Selecionador_de_cmp2:inst4|mhrs_renan_2x1_total:inst|Renan_mux_2x1:inst2
 Sout <= S.DB_MAX_OUTPUT_PORT_TYPE
 S => Sout.DATAIN
 S => inst2.IN1
@@ -672,7 +737,7 @@ B => inst2.IN0
 A => inst.IN0
 
 
-|Projeto_Quartus|mhrs_renan_eos_A_mais_B:inst11|mhrs_Selecionador_de_cmp2:inst4|mhrs_renan_2x1_total:inst|Renan_mux_2x1:inst1
+|Main|Projeto_Quartus:inst|mhrs_renan_eos_A_mais_B:inst11|mhrs_Selecionador_de_cmp2:inst4|mhrs_renan_2x1_total:inst|Renan_mux_2x1:inst1
 Sout <= S.DB_MAX_OUTPUT_PORT_TYPE
 S => Sout.DATAIN
 S => inst2.IN1
@@ -682,7 +747,7 @@ B => inst2.IN0
 A => inst.IN0
 
 
-|Projeto_Quartus|mhrs_renan_eos_A_mais_B:inst11|mhrs_Selecionador_de_cmp2:inst4|mhrs_renan_2x1_total:inst|Renan_mux_2x1:inst
+|Main|Projeto_Quartus:inst|mhrs_renan_eos_A_mais_B:inst11|mhrs_Selecionador_de_cmp2:inst4|mhrs_renan_2x1_total:inst|Renan_mux_2x1:inst
 Sout <= S.DB_MAX_OUTPUT_PORT_TYPE
 S => Sout.DATAIN
 S => inst2.IN1
@@ -692,7 +757,7 @@ B => inst2.IN0
 A => inst.IN0
 
 
-|Projeto_Quartus|mhrs_renan_eos_A_mais_B:inst11|mhrs_Selecionador_de_cmp2:inst4|mhrs_renan_2x1_total:inst|Renan_mux_2x1:inst4
+|Main|Projeto_Quartus:inst|mhrs_renan_eos_A_mais_B:inst11|mhrs_Selecionador_de_cmp2:inst4|mhrs_renan_2x1_total:inst|Renan_mux_2x1:inst4
 Sout <= S.DB_MAX_OUTPUT_PORT_TYPE
 S => Sout.DATAIN
 S => inst2.IN1
@@ -702,7 +767,7 @@ B => inst2.IN0
 A => inst.IN0
 
 
-|Projeto_Quartus|mhrs_renan_eos_A_mais_B:inst11|mhrs_Selecionador_de_cmp2:inst4|Renan_mhrs_complementador_de_2_somador:inst3
+|Main|Projeto_Quartus:inst|mhrs_renan_eos_A_mais_B:inst11|mhrs_Selecionador_de_cmp2:inst4|Renan_mhrs_complementador_de_2_somador:inst3
 Acomplementado[0] <= inst11.DB_MAX_OUTPUT_PORT_TYPE
 Acomplementado[1] <= inst.DB_MAX_OUTPUT_PORT_TYPE
 Acomplementado[2] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
@@ -722,30 +787,42 @@ A[3] => inst4.IN1
 A[4] => inst10.IN0
 
 
-|Projeto_Quartus|mhrs_A_menos_B:inst13
+|Main|Projeto_Quartus:inst|mhrs_A_menos_B:inst13
 F[0] <= mhrs_5bits_seletor_cmp2:inst2.F2[0]
 F[1] <= mhrs_5bits_seletor_cmp2:inst2.F2[1]
 F[2] <= mhrs_5bits_seletor_cmp2:inst2.F2[2]
 F[3] <= mhrs_5bits_seletor_cmp2:inst2.F2[3]
 F[4] <= mhrs_5bits_seletor_cmp2:inst2.F2[4]
 F[5] <= mhrs_5bits_seletor_cmp2:inst2.F2[5]
-A[0] => mhrs_Selecionador_de_cmp2:inst3.A[0]
-A[1] => mhrs_Selecionador_de_cmp2:inst3.A[1]
-A[2] => mhrs_Selecionador_de_cmp2:inst3.A[2]
-A[3] => mhrs_Selecionador_de_cmp2:inst3.A[3]
-A[4] => mhrs_Selecionador_de_cmp2:inst3.A[4]
+A[0] => inst17.IN2
+A[0] => inst15.IN0
+A[0] => inst15.IN1
+A[1] => inst17.IN1
+A[1] => inst14.IN0
+A[1] => inst14.IN1
+A[2] => inst17.IN3
+A[2] => inst13.IN0
+A[2] => inst13.IN1
+A[3] => inst17.IN0
+A[3] => inst12.IN0
+A[3] => inst12.IN1
+A[4] => inst16.IN1
+B[0] => inst5.IN2
 B[0] => inst10.IN0
 B[0] => inst10.IN1
+B[1] => inst5.IN1
 B[1] => inst9.IN0
 B[1] => inst9.IN1
+B[2] => inst5.IN3
 B[2] => inst8.IN0
 B[2] => inst8.IN1
+B[3] => inst5.IN0
 B[3] => inst7.IN0
 B[3] => inst7.IN1
 B[4] => inst6.IN0
 
 
-|Projeto_Quartus|mhrs_A_menos_B:inst13|mhrs_5bits_seletor_cmp2:inst2
+|Main|Projeto_Quartus:inst|mhrs_A_menos_B:inst13|mhrs_5bits_seletor_cmp2:inst2
 F2[0] <= mhrs_renan_2x1_total:inst.F[0]
 F2[1] <= mhrs_renan_2x1_total:inst.F[1]
 F2[2] <= mhrs_renan_2x1_total:inst.F[2]
@@ -767,7 +844,7 @@ A[5] => inst1.IN0
 A[5] => inst1.IN1
 
 
-|Projeto_Quartus|mhrs_A_menos_B:inst13|mhrs_5bits_seletor_cmp2:inst2|mhrs_renan_2x1_total:inst
+|Main|Projeto_Quartus:inst|mhrs_A_menos_B:inst13|mhrs_5bits_seletor_cmp2:inst2|mhrs_renan_2x1_total:inst
 F[0] <= Renan_mux_2x1:inst.F
 F[1] <= Renan_mux_2x1:inst1.F
 F[2] <= Renan_mux_2x1:inst2.F
@@ -786,7 +863,7 @@ B[4] => Renan_mux_2x1:inst4.B
 S => Renan_mux_2x1:inst.S
 
 
-|Projeto_Quartus|mhrs_A_menos_B:inst13|mhrs_5bits_seletor_cmp2:inst2|mhrs_renan_2x1_total:inst|Renan_mux_2x1:inst3
+|Main|Projeto_Quartus:inst|mhrs_A_menos_B:inst13|mhrs_5bits_seletor_cmp2:inst2|mhrs_renan_2x1_total:inst|Renan_mux_2x1:inst3
 Sout <= S.DB_MAX_OUTPUT_PORT_TYPE
 S => Sout.DATAIN
 S => inst2.IN1
@@ -796,7 +873,7 @@ B => inst2.IN0
 A => inst.IN0
 
 
-|Projeto_Quartus|mhrs_A_menos_B:inst13|mhrs_5bits_seletor_cmp2:inst2|mhrs_renan_2x1_total:inst|Renan_mux_2x1:inst2
+|Main|Projeto_Quartus:inst|mhrs_A_menos_B:inst13|mhrs_5bits_seletor_cmp2:inst2|mhrs_renan_2x1_total:inst|Renan_mux_2x1:inst2
 Sout <= S.DB_MAX_OUTPUT_PORT_TYPE
 S => Sout.DATAIN
 S => inst2.IN1
@@ -806,7 +883,7 @@ B => inst2.IN0
 A => inst.IN0
 
 
-|Projeto_Quartus|mhrs_A_menos_B:inst13|mhrs_5bits_seletor_cmp2:inst2|mhrs_renan_2x1_total:inst|Renan_mux_2x1:inst1
+|Main|Projeto_Quartus:inst|mhrs_A_menos_B:inst13|mhrs_5bits_seletor_cmp2:inst2|mhrs_renan_2x1_total:inst|Renan_mux_2x1:inst1
 Sout <= S.DB_MAX_OUTPUT_PORT_TYPE
 S => Sout.DATAIN
 S => inst2.IN1
@@ -816,7 +893,7 @@ B => inst2.IN0
 A => inst.IN0
 
 
-|Projeto_Quartus|mhrs_A_menos_B:inst13|mhrs_5bits_seletor_cmp2:inst2|mhrs_renan_2x1_total:inst|Renan_mux_2x1:inst
+|Main|Projeto_Quartus:inst|mhrs_A_menos_B:inst13|mhrs_5bits_seletor_cmp2:inst2|mhrs_renan_2x1_total:inst|Renan_mux_2x1:inst
 Sout <= S.DB_MAX_OUTPUT_PORT_TYPE
 S => Sout.DATAIN
 S => inst2.IN1
@@ -826,7 +903,7 @@ B => inst2.IN0
 A => inst.IN0
 
 
-|Projeto_Quartus|mhrs_A_menos_B:inst13|mhrs_5bits_seletor_cmp2:inst2|mhrs_renan_2x1_total:inst|Renan_mux_2x1:inst4
+|Main|Projeto_Quartus:inst|mhrs_A_menos_B:inst13|mhrs_5bits_seletor_cmp2:inst2|mhrs_renan_2x1_total:inst|Renan_mux_2x1:inst4
 Sout <= S.DB_MAX_OUTPUT_PORT_TYPE
 S => Sout.DATAIN
 S => inst2.IN1
@@ -836,7 +913,7 @@ B => inst2.IN0
 A => inst.IN0
 
 
-|Projeto_Quartus|mhrs_A_menos_B:inst13|mhrs_5bits_seletor_cmp2:inst2|mhrs_5bits_complementador2_somador:inst2
+|Main|Projeto_Quartus:inst|mhrs_A_menos_B:inst13|mhrs_5bits_seletor_cmp2:inst2|mhrs_5bits_complementador2_somador:inst2
 Acomplementado[0] <= inst11.DB_MAX_OUTPUT_PORT_TYPE
 Acomplementado[1] <= inst.DB_MAX_OUTPUT_PORT_TYPE
 Acomplementado[2] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
@@ -857,7 +934,7 @@ A[4] => inst3.IN0
 A[4] => inst10.IN0
 
 
-|Projeto_Quartus|mhrs_A_menos_B:inst13|eos_somadores:inst
+|Main|Projeto_Quartus:inst|mhrs_A_menos_B:inst13|eos_somadores:inst
 F[0] <= eos_halfadder:inst1.S
 F[1] <= eos_halfadder:inst2.S
 F[2] <= eos_halfadder:inst3.S
@@ -878,7 +955,7 @@ B[4] => eos_halfadder:inst5.B
 B[5] => eos_halfadder:inst7.B
 
 
-|Projeto_Quartus|mhrs_A_menos_B:inst13|eos_somadores:inst|eos_halfadder:inst1
+|Main|Projeto_Quartus:inst|mhrs_A_menos_B:inst13|eos_somadores:inst|eos_halfadder:inst1
 CN1 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 CN => inst5.IN0
 CN => inst4.IN1
@@ -889,7 +966,7 @@ B => inst2.IN0
 S <= inst4.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Projeto_Quartus|mhrs_A_menos_B:inst13|eos_somadores:inst|eos_halfadder:inst2
+|Main|Projeto_Quartus:inst|mhrs_A_menos_B:inst13|eos_somadores:inst|eos_halfadder:inst2
 CN1 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 CN => inst5.IN0
 CN => inst4.IN1
@@ -900,7 +977,7 @@ B => inst2.IN0
 S <= inst4.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Projeto_Quartus|mhrs_A_menos_B:inst13|eos_somadores:inst|eos_halfadder:inst3
+|Main|Projeto_Quartus:inst|mhrs_A_menos_B:inst13|eos_somadores:inst|eos_halfadder:inst3
 CN1 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 CN => inst5.IN0
 CN => inst4.IN1
@@ -911,7 +988,7 @@ B => inst2.IN0
 S <= inst4.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Projeto_Quartus|mhrs_A_menos_B:inst13|eos_somadores:inst|eos_halfadder:inst4
+|Main|Projeto_Quartus:inst|mhrs_A_menos_B:inst13|eos_somadores:inst|eos_halfadder:inst4
 CN1 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 CN => inst5.IN0
 CN => inst4.IN1
@@ -922,7 +999,7 @@ B => inst2.IN0
 S <= inst4.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Projeto_Quartus|mhrs_A_menos_B:inst13|eos_somadores:inst|eos_halfadder:inst5
+|Main|Projeto_Quartus:inst|mhrs_A_menos_B:inst13|eos_somadores:inst|eos_halfadder:inst5
 CN1 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 CN => inst5.IN0
 CN => inst4.IN1
@@ -933,7 +1010,7 @@ B => inst2.IN0
 S <= inst4.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Projeto_Quartus|mhrs_A_menos_B:inst13|eos_somadores:inst|eos_halfadder:inst7
+|Main|Projeto_Quartus:inst|mhrs_A_menos_B:inst13|eos_somadores:inst|eos_halfadder:inst7
 CN1 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 CN => inst5.IN0
 CN => inst4.IN1
@@ -944,7 +1021,7 @@ B => inst2.IN0
 S <= inst4.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Projeto_Quartus|mhrs_A_menos_B:inst13|mhrs_Selecionador_de_cmp2:inst3
+|Main|Projeto_Quartus:inst|mhrs_A_menos_B:inst13|mhrs_Selecionador_de_cmp2:inst3
 F2[0] <= mhrs_renan_2x1_total:inst.F[0]
 F2[1] <= mhrs_renan_2x1_total:inst.F[1]
 F2[2] <= mhrs_renan_2x1_total:inst.F[2]
@@ -966,7 +1043,7 @@ A[4] => inst1.IN0
 A[4] => inst1.IN1
 
 
-|Projeto_Quartus|mhrs_A_menos_B:inst13|mhrs_Selecionador_de_cmp2:inst3|mhrs_renan_2x1_total:inst
+|Main|Projeto_Quartus:inst|mhrs_A_menos_B:inst13|mhrs_Selecionador_de_cmp2:inst3|mhrs_renan_2x1_total:inst
 F[0] <= Renan_mux_2x1:inst.F
 F[1] <= Renan_mux_2x1:inst1.F
 F[2] <= Renan_mux_2x1:inst2.F
@@ -985,7 +1062,7 @@ B[4] => Renan_mux_2x1:inst4.B
 S => Renan_mux_2x1:inst.S
 
 
-|Projeto_Quartus|mhrs_A_menos_B:inst13|mhrs_Selecionador_de_cmp2:inst3|mhrs_renan_2x1_total:inst|Renan_mux_2x1:inst3
+|Main|Projeto_Quartus:inst|mhrs_A_menos_B:inst13|mhrs_Selecionador_de_cmp2:inst3|mhrs_renan_2x1_total:inst|Renan_mux_2x1:inst3
 Sout <= S.DB_MAX_OUTPUT_PORT_TYPE
 S => Sout.DATAIN
 S => inst2.IN1
@@ -995,7 +1072,7 @@ B => inst2.IN0
 A => inst.IN0
 
 
-|Projeto_Quartus|mhrs_A_menos_B:inst13|mhrs_Selecionador_de_cmp2:inst3|mhrs_renan_2x1_total:inst|Renan_mux_2x1:inst2
+|Main|Projeto_Quartus:inst|mhrs_A_menos_B:inst13|mhrs_Selecionador_de_cmp2:inst3|mhrs_renan_2x1_total:inst|Renan_mux_2x1:inst2
 Sout <= S.DB_MAX_OUTPUT_PORT_TYPE
 S => Sout.DATAIN
 S => inst2.IN1
@@ -1005,7 +1082,7 @@ B => inst2.IN0
 A => inst.IN0
 
 
-|Projeto_Quartus|mhrs_A_menos_B:inst13|mhrs_Selecionador_de_cmp2:inst3|mhrs_renan_2x1_total:inst|Renan_mux_2x1:inst1
+|Main|Projeto_Quartus:inst|mhrs_A_menos_B:inst13|mhrs_Selecionador_de_cmp2:inst3|mhrs_renan_2x1_total:inst|Renan_mux_2x1:inst1
 Sout <= S.DB_MAX_OUTPUT_PORT_TYPE
 S => Sout.DATAIN
 S => inst2.IN1
@@ -1015,7 +1092,7 @@ B => inst2.IN0
 A => inst.IN0
 
 
-|Projeto_Quartus|mhrs_A_menos_B:inst13|mhrs_Selecionador_de_cmp2:inst3|mhrs_renan_2x1_total:inst|Renan_mux_2x1:inst
+|Main|Projeto_Quartus:inst|mhrs_A_menos_B:inst13|mhrs_Selecionador_de_cmp2:inst3|mhrs_renan_2x1_total:inst|Renan_mux_2x1:inst
 Sout <= S.DB_MAX_OUTPUT_PORT_TYPE
 S => Sout.DATAIN
 S => inst2.IN1
@@ -1025,7 +1102,7 @@ B => inst2.IN0
 A => inst.IN0
 
 
-|Projeto_Quartus|mhrs_A_menos_B:inst13|mhrs_Selecionador_de_cmp2:inst3|mhrs_renan_2x1_total:inst|Renan_mux_2x1:inst4
+|Main|Projeto_Quartus:inst|mhrs_A_menos_B:inst13|mhrs_Selecionador_de_cmp2:inst3|mhrs_renan_2x1_total:inst|Renan_mux_2x1:inst4
 Sout <= S.DB_MAX_OUTPUT_PORT_TYPE
 S => Sout.DATAIN
 S => inst2.IN1
@@ -1035,7 +1112,7 @@ B => inst2.IN0
 A => inst.IN0
 
 
-|Projeto_Quartus|mhrs_A_menos_B:inst13|mhrs_Selecionador_de_cmp2:inst3|Renan_mhrs_complementador_de_2_somador:inst3
+|Main|Projeto_Quartus:inst|mhrs_A_menos_B:inst13|mhrs_Selecionador_de_cmp2:inst3|Renan_mhrs_complementador_de_2_somador:inst3
 Acomplementado[0] <= inst11.DB_MAX_OUTPUT_PORT_TYPE
 Acomplementado[1] <= inst.DB_MAX_OUTPUT_PORT_TYPE
 Acomplementado[2] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
@@ -1055,7 +1132,7 @@ A[3] => inst4.IN1
 A[4] => inst10.IN0
 
 
-|Projeto_Quartus|mhrs_A_menos_B:inst13|mhrs_Selecionador_de_cmp2:inst4
+|Main|Projeto_Quartus:inst|mhrs_A_menos_B:inst13|mhrs_Selecionador_de_cmp2:inst4
 F2[0] <= mhrs_renan_2x1_total:inst.F[0]
 F2[1] <= mhrs_renan_2x1_total:inst.F[1]
 F2[2] <= mhrs_renan_2x1_total:inst.F[2]
@@ -1077,7 +1154,7 @@ A[4] => inst1.IN0
 A[4] => inst1.IN1
 
 
-|Projeto_Quartus|mhrs_A_menos_B:inst13|mhrs_Selecionador_de_cmp2:inst4|mhrs_renan_2x1_total:inst
+|Main|Projeto_Quartus:inst|mhrs_A_menos_B:inst13|mhrs_Selecionador_de_cmp2:inst4|mhrs_renan_2x1_total:inst
 F[0] <= Renan_mux_2x1:inst.F
 F[1] <= Renan_mux_2x1:inst1.F
 F[2] <= Renan_mux_2x1:inst2.F
@@ -1096,7 +1173,7 @@ B[4] => Renan_mux_2x1:inst4.B
 S => Renan_mux_2x1:inst.S
 
 
-|Projeto_Quartus|mhrs_A_menos_B:inst13|mhrs_Selecionador_de_cmp2:inst4|mhrs_renan_2x1_total:inst|Renan_mux_2x1:inst3
+|Main|Projeto_Quartus:inst|mhrs_A_menos_B:inst13|mhrs_Selecionador_de_cmp2:inst4|mhrs_renan_2x1_total:inst|Renan_mux_2x1:inst3
 Sout <= S.DB_MAX_OUTPUT_PORT_TYPE
 S => Sout.DATAIN
 S => inst2.IN1
@@ -1106,7 +1183,7 @@ B => inst2.IN0
 A => inst.IN0
 
 
-|Projeto_Quartus|mhrs_A_menos_B:inst13|mhrs_Selecionador_de_cmp2:inst4|mhrs_renan_2x1_total:inst|Renan_mux_2x1:inst2
+|Main|Projeto_Quartus:inst|mhrs_A_menos_B:inst13|mhrs_Selecionador_de_cmp2:inst4|mhrs_renan_2x1_total:inst|Renan_mux_2x1:inst2
 Sout <= S.DB_MAX_OUTPUT_PORT_TYPE
 S => Sout.DATAIN
 S => inst2.IN1
@@ -1116,7 +1193,7 @@ B => inst2.IN0
 A => inst.IN0
 
 
-|Projeto_Quartus|mhrs_A_menos_B:inst13|mhrs_Selecionador_de_cmp2:inst4|mhrs_renan_2x1_total:inst|Renan_mux_2x1:inst1
+|Main|Projeto_Quartus:inst|mhrs_A_menos_B:inst13|mhrs_Selecionador_de_cmp2:inst4|mhrs_renan_2x1_total:inst|Renan_mux_2x1:inst1
 Sout <= S.DB_MAX_OUTPUT_PORT_TYPE
 S => Sout.DATAIN
 S => inst2.IN1
@@ -1126,7 +1203,7 @@ B => inst2.IN0
 A => inst.IN0
 
 
-|Projeto_Quartus|mhrs_A_menos_B:inst13|mhrs_Selecionador_de_cmp2:inst4|mhrs_renan_2x1_total:inst|Renan_mux_2x1:inst
+|Main|Projeto_Quartus:inst|mhrs_A_menos_B:inst13|mhrs_Selecionador_de_cmp2:inst4|mhrs_renan_2x1_total:inst|Renan_mux_2x1:inst
 Sout <= S.DB_MAX_OUTPUT_PORT_TYPE
 S => Sout.DATAIN
 S => inst2.IN1
@@ -1136,7 +1213,7 @@ B => inst2.IN0
 A => inst.IN0
 
 
-|Projeto_Quartus|mhrs_A_menos_B:inst13|mhrs_Selecionador_de_cmp2:inst4|mhrs_renan_2x1_total:inst|Renan_mux_2x1:inst4
+|Main|Projeto_Quartus:inst|mhrs_A_menos_B:inst13|mhrs_Selecionador_de_cmp2:inst4|mhrs_renan_2x1_total:inst|Renan_mux_2x1:inst4
 Sout <= S.DB_MAX_OUTPUT_PORT_TYPE
 S => Sout.DATAIN
 S => inst2.IN1
@@ -1146,7 +1223,7 @@ B => inst2.IN0
 A => inst.IN0
 
 
-|Projeto_Quartus|mhrs_A_menos_B:inst13|mhrs_Selecionador_de_cmp2:inst4|Renan_mhrs_complementador_de_2_somador:inst3
+|Main|Projeto_Quartus:inst|mhrs_A_menos_B:inst13|mhrs_Selecionador_de_cmp2:inst4|Renan_mhrs_complementador_de_2_somador:inst3
 Acomplementado[0] <= inst11.DB_MAX_OUTPUT_PORT_TYPE
 Acomplementado[1] <= inst.DB_MAX_OUTPUT_PORT_TYPE
 Acomplementado[2] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
@@ -1166,7 +1243,7 @@ A[3] => inst4.IN1
 A[4] => inst10.IN0
 
 
-|Projeto_Quartus|Renan_complementador_de_2:inst10
+|Main|Projeto_Quartus:inst|Renan_complementador_de_2:inst10
 Acomplementado[0] <= inst11.DB_MAX_OUTPUT_PORT_TYPE
 Acomplementado[1] <= inst.DB_MAX_OUTPUT_PORT_TYPE
 Acomplementado[2] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
@@ -1186,7 +1263,7 @@ A[3] => inst4.IN1
 A[4] => inst3.IN0
 
 
-|Projeto_Quartus|eos_A_igual_B:inst5
+|Main|Projeto_Quartus:inst|eos_A_igual_B:inst5
 F[0] <= inst5.DB_MAX_OUTPUT_PORT_TYPE
 F[1] <= <GND>
 F[2] <= <GND>
@@ -1205,7 +1282,7 @@ B[3] => inst3.IN1
 B[4] => inst4.IN1
 
 
-|Projeto_Quartus|eos_a_maiorque_b:inst3
+|Main|Projeto_Quartus:inst|eos_a_maiorque_b:inst3
 a_maior_b[0] <= inst11.DB_MAX_OUTPUT_PORT_TYPE
 a_maior_b[1] <= <GND>
 a_maior_b[2] <= <GND>
@@ -1233,7 +1310,7 @@ A[4] => inst49.IN0
 A[4] => inst29.IN0
 
 
-|Projeto_Quartus|mhrs_B_maior_A:inst12
+|Main|Projeto_Quartus:inst|mhrs_B_maior_A:inst12
 B_maior_A[0] <= inst17.DB_MAX_OUTPUT_PORT_TYPE
 B_maior_A[1] <= <GND>
 B_maior_A[2] <= <GND>
@@ -1261,7 +1338,7 @@ B[4] => inst14.IN0
 B[4] => inst12.IN0
 
 
-|Projeto_Quartus|eclb_AND:inst1
+|Main|Projeto_Quartus:inst|eclb_AND:inst1
 F[0] <= inst4.DB_MAX_OUTPUT_PORT_TYPE
 F[1] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 F[2] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
@@ -1280,7 +1357,7 @@ B[3] => inst1.IN1
 B[4] => ~NO_FANOUT~
 
 
-|Projeto_Quartus|eclb_XOR:inst2
+|Main|Projeto_Quartus:inst|eclb_XOR:inst2
 F[0] <= inst8.DB_MAX_OUTPUT_PORT_TYPE
 F[1] <= inst7.DB_MAX_OUTPUT_PORT_TYPE
 F[2] <= inst6.DB_MAX_OUTPUT_PORT_TYPE
@@ -1299,7 +1376,7 @@ B[3] => inst5.IN1
 B[4] => ~NO_FANOUT~
 
 
-|Projeto_Quartus|mhrs_Mux_total_8x1:inst8
+|Main|Projeto_Quartus:inst|mhrs_Mux_total_8x1:inst8
 In[0] <= mhrs_MUX_8x1:inst.In
 In[1] <= mhrs_MUX_8x1:inst3.In
 In[2] <= mhrs_MUX_8x1:inst4.In
@@ -1359,7 +1436,7 @@ I0[4] => mhrs_MUX_8x1:inst6.I0
 I0[5] => mhrs_MUX_8x1:inst7.I0
 
 
-|Projeto_Quartus|mhrs_Mux_total_8x1:inst8|mhrs_MUX_8x1:inst
+|Main|Projeto_Quartus:inst|mhrs_Mux_total_8x1:inst8|mhrs_MUX_8x1:inst
 In <= inst6.DB_MAX_OUTPUT_PORT_TYPE
 S0 => inst5.IN0
 S1 => inst4.IN0
@@ -1378,7 +1455,7 @@ S1out <= inst7.DB_MAX_OUTPUT_PORT_TYPE
 S0out <= inst.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Projeto_Quartus|mhrs_Mux_total_8x1:inst8|mhrs_MUX_8x1:inst3
+|Main|Projeto_Quartus:inst|mhrs_Mux_total_8x1:inst8|mhrs_MUX_8x1:inst3
 In <= inst6.DB_MAX_OUTPUT_PORT_TYPE
 S0 => inst5.IN0
 S1 => inst4.IN0
@@ -1397,7 +1474,7 @@ S1out <= inst7.DB_MAX_OUTPUT_PORT_TYPE
 S0out <= inst.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Projeto_Quartus|mhrs_Mux_total_8x1:inst8|mhrs_MUX_8x1:inst4
+|Main|Projeto_Quartus:inst|mhrs_Mux_total_8x1:inst8|mhrs_MUX_8x1:inst4
 In <= inst6.DB_MAX_OUTPUT_PORT_TYPE
 S0 => inst5.IN0
 S1 => inst4.IN0
@@ -1416,7 +1493,7 @@ S1out <= inst7.DB_MAX_OUTPUT_PORT_TYPE
 S0out <= inst.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Projeto_Quartus|mhrs_Mux_total_8x1:inst8|mhrs_MUX_8x1:inst5
+|Main|Projeto_Quartus:inst|mhrs_Mux_total_8x1:inst8|mhrs_MUX_8x1:inst5
 In <= inst6.DB_MAX_OUTPUT_PORT_TYPE
 S0 => inst5.IN0
 S1 => inst4.IN0
@@ -1435,7 +1512,7 @@ S1out <= inst7.DB_MAX_OUTPUT_PORT_TYPE
 S0out <= inst.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Projeto_Quartus|mhrs_Mux_total_8x1:inst8|mhrs_MUX_8x1:inst6
+|Main|Projeto_Quartus:inst|mhrs_Mux_total_8x1:inst8|mhrs_MUX_8x1:inst6
 In <= inst6.DB_MAX_OUTPUT_PORT_TYPE
 S0 => inst5.IN0
 S1 => inst4.IN0
@@ -1454,7 +1531,7 @@ S1out <= inst7.DB_MAX_OUTPUT_PORT_TYPE
 S0out <= inst.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Projeto_Quartus|mhrs_Mux_total_8x1:inst8|mhrs_MUX_8x1:inst7
+|Main|Projeto_Quartus:inst|mhrs_Mux_total_8x1:inst8|mhrs_MUX_8x1:inst7
 In <= inst6.DB_MAX_OUTPUT_PORT_TYPE
 S0 => inst5.IN0
 S1 => inst4.IN0

@@ -1,5 +1,5 @@
 Assembler report for Projeto_Quartus
-Tue Apr 14 13:50:49 2026
+Fri Apr 17 12:00:44 2026
 Quartus Prime Version 21.1.1 Build 850 06/23/2022 SJ Lite Edition
 
 
@@ -10,7 +10,7 @@ Quartus Prime Version 21.1.1 Build 850 06/23/2022 SJ Lite Edition
   2. Assembler Summary
   3. Assembler Settings
   4. Assembler Generated Files
-  5. Assembler Device Options: C:/Users/eclb/Desktop/Projeto-SD/Projeto_Quartus/output_files/Projeto_Quartus.sof
+  5. Assembler Device Options: C:/Users/mhrs/Documents/Code/Projeto-SD/Projeto_Quartus/output_files/Projeto_Quartus.sof
   6. Assembler Messages
 
 
@@ -38,9 +38,9 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Tue Apr 14 13:50:49 2026 ;
+; Assembler Status      ; Successful - Fri Apr 17 12:00:44 2026 ;
 ; Revision Name         ; Projeto_Quartus                       ;
-; Top-level Entity Name ; eos_A_igual_B                         ;
+; Top-level Entity Name ; Main                                  ;
 ; Family                ; Cyclone IV E                          ;
 ; Device                ; EP4CE115F29C7                         ;
 +-----------------------+---------------------------------------+
@@ -53,23 +53,23 @@ https://fpgasoftware.intel.com/eula.
 +--------+---------+---------------+
 
 
-+-----------------------------------------------------------------------------------+
-; Assembler Generated Files                                                         ;
-+-----------------------------------------------------------------------------------+
-; File Name                                                                         ;
-+-----------------------------------------------------------------------------------+
-; C:/Users/eclb/Desktop/Projeto-SD/Projeto_Quartus/output_files/Projeto_Quartus.sof ;
-+-----------------------------------------------------------------------------------+
++------------------------------------------------------------------------------------------+
+; Assembler Generated Files                                                                ;
++------------------------------------------------------------------------------------------+
+; File Name                                                                                ;
++------------------------------------------------------------------------------------------+
+; C:/Users/mhrs/Documents/Code/Projeto-SD/Projeto_Quartus/output_files/Projeto_Quartus.sof ;
++------------------------------------------------------------------------------------------+
 
 
-+-------------------------------------------------------------------------------------------------------------+
-; Assembler Device Options: C:/Users/eclb/Desktop/Projeto-SD/Projeto_Quartus/output_files/Projeto_Quartus.sof ;
-+----------------+--------------------------------------------------------------------------------------------+
-; Option         ; Setting                                                                                    ;
-+----------------+--------------------------------------------------------------------------------------------+
-; JTAG usercode  ; 0x00563779                                                                                 ;
-; Checksum       ; 0x00563779                                                                                 ;
-+----------------+--------------------------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------+
+; Assembler Device Options: C:/Users/mhrs/Documents/Code/Projeto-SD/Projeto_Quartus/output_files/Projeto_Quartus.sof ;
++----------------+---------------------------------------------------------------------------------------------------+
+; Option         ; Setting                                                                                           ;
++----------------+---------------------------------------------------------------------------------------------------+
+; JTAG usercode  ; 0x00571C26                                                                                        ;
+; Checksum       ; 0x00571C26                                                                                        ;
++----------------+---------------------------------------------------------------------------------------------------+
 
 
 +--------------------+
@@ -78,15 +78,15 @@ https://fpgasoftware.intel.com/eula.
 Info: *******************************************************************
 Info: Running Quartus Prime Assembler
     Info: Version 21.1.1 Build 850 06/23/2022 SJ Lite Edition
-    Info: Processing started: Tue Apr 14 13:50:47 2026
+    Info: Processing started: Fri Apr 17 12:00:42 2026
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off Projeto_Quartus -c Projeto_Quartus
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (115031): Writing out detailed assembly data for power analysis
 Info (115030): Assembler is generating device programming files
 Info: Quartus Prime Assembler was successful. 0 errors, 1 warning
     Info: Peak virtual memory: 5009 megabytes
-    Info: Processing ended: Tue Apr 14 13:50:49 2026
-    Info: Elapsed time: 00:00:02
+    Info: Processing ended: Fri Apr 17 12:00:45 2026
+    Info: Elapsed time: 00:00:03
     Info: Total CPU time (on all processors): 00:00:02
 
 
