@@ -89,6 +89,8 @@ BUNID <= Decod_2x:inst10.D
 BUNIE <= Decod_2x:inst10.E
 BUNIF <= Decod_2x:inst10.F
 BUNIG <= Decod_2x:inst10.G
+SINAL_A <= Analisador_7seg:inst5.SINAL
+SINAL_B <= Analisador_7seg:inst8.SINAL
 S_A[0] <= A[0].DB_MAX_OUTPUT_PORT_TYPE
 S_A[1] <= A[1].DB_MAX_OUTPUT_PORT_TYPE
 S_A[2] <= A[2].DB_MAX_OUTPUT_PORT_TYPE
@@ -114,10 +116,13 @@ S_S[2] <= S[2].DB_MAX_OUTPUT_PORT_TYPE
 STATUS <= mhrs_MUX_8x1:inst4.In
 S[0] => mhrs_MUX_8x1:inst4.S0
 S[0] => mhrs_Mux_total_8x1:inst.S0
+S[0] => mhrs_MUX_8x1:inst14.S0
 S[1] => mhrs_MUX_8x1:inst4.S1
 S[1] => mhrs_Mux_total_8x1:inst.S1
+S[1] => mhrs_MUX_8x1:inst14.S1
 S[2] => mhrs_MUX_8x1:inst4.S2
 S[2] => mhrs_Mux_total_8x1:inst.S2
+S[2] => mhrs_MUX_8x1:inst14.S2
 A[0] => mhrs_renan_eos_A_mais_B:inst11.A[0]
 A[0] => mhrs_A_menos_B:inst13.A[0]
 A[0] => eos_A_igual_B:inst5.A[0]
@@ -193,6 +198,7 @@ B[4] => eos_a_maiorque_b:inst3.B[4]
 B[4] => mhrs_B_maior_A:inst12.B[4]
 B[4] => eclb_AND:inst1.B[4]
 B[4] => eclb_XOR:inst2.B[4]
+Enable_7seg <= mhrs_MUX_8x1:inst14.In
 F[0] <= mhrs_Mux_total_8x1:inst8.In[0]
 F[1] <= mhrs_Mux_total_8x1:inst8.In[1]
 F[2] <= mhrs_Mux_total_8x1:inst8.In[2]
@@ -1497,6 +1503,25 @@ B[3] => inst5.IN1
 B[4] => ~NO_FANOUT~
 
 
+|Main|Projeto_Quartus:inst|mhrs_MUX_8x1:inst14
+In <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+S0 => inst5.IN0
+S1 => inst4.IN0
+S2 => inst3.IN0
+I7 => inst9.IN3
+I5 => inst11.IN3
+I6 => inst10.IN3
+I4 => inst12.IN3
+I2 => inst14.IN3
+I3 => inst13.IN3
+I1 => inst15.IN3
+I0 => inst16.IN3
+NOTIn <= inst17.DB_MAX_OUTPUT_PORT_TYPE
+S2out <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+S1out <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+S0out <= inst.DB_MAX_OUTPUT_PORT_TYPE
+
+
 |Main|Projeto_Quartus:inst|mhrs_Mux_total_8x1:inst8
 In[0] <= mhrs_MUX_8x1:inst.In
 In[1] <= mhrs_MUX_8x1:inst3.In
@@ -2660,7 +2685,8 @@ S <= inst4.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |Main|Decod_2x:inst3
-A <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+A <= inst26.DB_MAX_OUTPUT_PORT_TYPE
+Enable => inst.IN0
 Dec[0] => inst3.IN0
 Dec[0] => inst7.IN0
 Dec[0] => inst9.IN0
@@ -2686,16 +2712,17 @@ Dec[2] => inst12.IN2
 Dec[2] => inst4.IN1
 Dec[2] => inst22.IN2
 Dec[3] => inst24.IN0
-B <= inst8.DB_MAX_OUTPUT_PORT_TYPE
-C <= inst11.DB_MAX_OUTPUT_PORT_TYPE
-D <= inst16.DB_MAX_OUTPUT_PORT_TYPE
-E <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-F <= inst17.DB_MAX_OUTPUT_PORT_TYPE
-G <= inst21.DB_MAX_OUTPUT_PORT_TYPE
+B <= inst27.DB_MAX_OUTPUT_PORT_TYPE
+C <= inst28.DB_MAX_OUTPUT_PORT_TYPE
+D <= inst29.DB_MAX_OUTPUT_PORT_TYPE
+E <= inst30.DB_MAX_OUTPUT_PORT_TYPE
+F <= inst31.DB_MAX_OUTPUT_PORT_TYPE
+G <= inst32.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |Main|Decod_2x:inst2
-A <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+A <= inst26.DB_MAX_OUTPUT_PORT_TYPE
+Enable => inst.IN0
 Dec[0] => inst3.IN0
 Dec[0] => inst7.IN0
 Dec[0] => inst9.IN0
@@ -2721,16 +2748,17 @@ Dec[2] => inst12.IN2
 Dec[2] => inst4.IN1
 Dec[2] => inst22.IN2
 Dec[3] => inst24.IN0
-B <= inst8.DB_MAX_OUTPUT_PORT_TYPE
-C <= inst11.DB_MAX_OUTPUT_PORT_TYPE
-D <= inst16.DB_MAX_OUTPUT_PORT_TYPE
-E <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-F <= inst17.DB_MAX_OUTPUT_PORT_TYPE
-G <= inst21.DB_MAX_OUTPUT_PORT_TYPE
+B <= inst27.DB_MAX_OUTPUT_PORT_TYPE
+C <= inst28.DB_MAX_OUTPUT_PORT_TYPE
+D <= inst29.DB_MAX_OUTPUT_PORT_TYPE
+E <= inst30.DB_MAX_OUTPUT_PORT_TYPE
+F <= inst31.DB_MAX_OUTPUT_PORT_TYPE
+G <= inst32.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |Main|Decod_2x:inst6
-A <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+A <= inst26.DB_MAX_OUTPUT_PORT_TYPE
+Enable => inst.IN0
 Dec[0] => inst3.IN0
 Dec[0] => inst7.IN0
 Dec[0] => inst9.IN0
@@ -2756,12 +2784,12 @@ Dec[2] => inst12.IN2
 Dec[2] => inst4.IN1
 Dec[2] => inst22.IN2
 Dec[3] => inst24.IN0
-B <= inst8.DB_MAX_OUTPUT_PORT_TYPE
-C <= inst11.DB_MAX_OUTPUT_PORT_TYPE
-D <= inst16.DB_MAX_OUTPUT_PORT_TYPE
-E <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-F <= inst17.DB_MAX_OUTPUT_PORT_TYPE
-G <= inst21.DB_MAX_OUTPUT_PORT_TYPE
+B <= inst27.DB_MAX_OUTPUT_PORT_TYPE
+C <= inst28.DB_MAX_OUTPUT_PORT_TYPE
+D <= inst29.DB_MAX_OUTPUT_PORT_TYPE
+E <= inst30.DB_MAX_OUTPUT_PORT_TYPE
+F <= inst31.DB_MAX_OUTPUT_PORT_TYPE
+G <= inst32.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |Main|Analisador_7seg:inst5
@@ -3753,7 +3781,8 @@ S <= inst4.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |Main|Decod_2x:inst9
-A <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+A <= inst26.DB_MAX_OUTPUT_PORT_TYPE
+Enable => inst.IN0
 Dec[0] => inst3.IN0
 Dec[0] => inst7.IN0
 Dec[0] => inst9.IN0
@@ -3779,12 +3808,12 @@ Dec[2] => inst12.IN2
 Dec[2] => inst4.IN1
 Dec[2] => inst22.IN2
 Dec[3] => inst24.IN0
-B <= inst8.DB_MAX_OUTPUT_PORT_TYPE
-C <= inst11.DB_MAX_OUTPUT_PORT_TYPE
-D <= inst16.DB_MAX_OUTPUT_PORT_TYPE
-E <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-F <= inst17.DB_MAX_OUTPUT_PORT_TYPE
-G <= inst21.DB_MAX_OUTPUT_PORT_TYPE
+B <= inst27.DB_MAX_OUTPUT_PORT_TYPE
+C <= inst28.DB_MAX_OUTPUT_PORT_TYPE
+D <= inst29.DB_MAX_OUTPUT_PORT_TYPE
+E <= inst30.DB_MAX_OUTPUT_PORT_TYPE
+F <= inst31.DB_MAX_OUTPUT_PORT_TYPE
+G <= inst32.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |Main|Analisador_7seg:inst8
@@ -4776,7 +4805,8 @@ S <= inst4.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |Main|Decod_2x:inst7
-A <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+A <= inst26.DB_MAX_OUTPUT_PORT_TYPE
+Enable => inst.IN0
 Dec[0] => inst3.IN0
 Dec[0] => inst7.IN0
 Dec[0] => inst9.IN0
@@ -4802,16 +4832,17 @@ Dec[2] => inst12.IN2
 Dec[2] => inst4.IN1
 Dec[2] => inst22.IN2
 Dec[3] => inst24.IN0
-B <= inst8.DB_MAX_OUTPUT_PORT_TYPE
-C <= inst11.DB_MAX_OUTPUT_PORT_TYPE
-D <= inst16.DB_MAX_OUTPUT_PORT_TYPE
-E <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-F <= inst17.DB_MAX_OUTPUT_PORT_TYPE
-G <= inst21.DB_MAX_OUTPUT_PORT_TYPE
+B <= inst27.DB_MAX_OUTPUT_PORT_TYPE
+C <= inst28.DB_MAX_OUTPUT_PORT_TYPE
+D <= inst29.DB_MAX_OUTPUT_PORT_TYPE
+E <= inst30.DB_MAX_OUTPUT_PORT_TYPE
+F <= inst31.DB_MAX_OUTPUT_PORT_TYPE
+G <= inst32.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |Main|Decod_2x:inst10
-A <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+A <= inst26.DB_MAX_OUTPUT_PORT_TYPE
+Enable => inst.IN0
 Dec[0] => inst3.IN0
 Dec[0] => inst7.IN0
 Dec[0] => inst9.IN0
@@ -4837,11 +4868,11 @@ Dec[2] => inst12.IN2
 Dec[2] => inst4.IN1
 Dec[2] => inst22.IN2
 Dec[3] => inst24.IN0
-B <= inst8.DB_MAX_OUTPUT_PORT_TYPE
-C <= inst11.DB_MAX_OUTPUT_PORT_TYPE
-D <= inst16.DB_MAX_OUTPUT_PORT_TYPE
-E <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-F <= inst17.DB_MAX_OUTPUT_PORT_TYPE
-G <= inst21.DB_MAX_OUTPUT_PORT_TYPE
+B <= inst27.DB_MAX_OUTPUT_PORT_TYPE
+C <= inst28.DB_MAX_OUTPUT_PORT_TYPE
+D <= inst29.DB_MAX_OUTPUT_PORT_TYPE
+E <= inst30.DB_MAX_OUTPUT_PORT_TYPE
+F <= inst31.DB_MAX_OUTPUT_PORT_TYPE
+G <= inst32.DB_MAX_OUTPUT_PORT_TYPE
 
 

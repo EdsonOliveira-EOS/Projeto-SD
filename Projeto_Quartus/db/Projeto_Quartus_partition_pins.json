@@ -16,6 +16,10 @@
 					"strict" : false
 				},
 				{
+					"name" : "DEZB",
+					"strict" : false
+				},
+				{
 					"name" : "DEZC",
 					"strict" : false
 				},
@@ -68,6 +72,14 @@
 					"strict" : false
 				},
 				{
+					"name" : "ADEZB",
+					"strict" : false
+				},
+				{
+					"name" : "ADEZC",
+					"strict" : false
+				},
+				{
 					"name" : "ADEZD",
 					"strict" : false
 				},
@@ -81,6 +93,14 @@
 				},
 				{
 					"name" : "BDEZA",
+					"strict" : false
+				},
+				{
+					"name" : "BDEZB",
+					"strict" : false
+				},
+				{
+					"name" : "BDEZC",
 					"strict" : false
 				},
 				{
@@ -149,6 +169,14 @@
 				},
 				{
 					"name" : "BUNIG",
+					"strict" : false
+				},
+				{
+					"name" : "SINAL_A",
+					"strict" : false
+				},
+				{
+					"name" : "SINAL_B",
 					"strict" : false
 				},
 				{

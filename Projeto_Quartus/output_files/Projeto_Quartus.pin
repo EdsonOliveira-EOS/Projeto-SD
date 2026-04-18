@@ -446,7 +446,7 @@ RESERVED_INPUT_WITH_WEAK_PULLUP : F14       :        :                   :      
 S_A[1]                       : F15       : output : 2.5 V             :         : 7         : Y              
 GND                          : F16       : gnd    :                   :         :           :                
 STATUS                       : F17       : output : 2.5 V             :         : 7         : Y              
-RESERVED_INPUT_WITH_WEAK_PULLUP : F18       :        :                   :         : 7         :                
+SINAL_B                      : F18       : output : 2.5 V             :         : 7         : Y              
 S_S[1]                       : F19       : output : 2.5 V             :         : 7         : Y              
 GND                          : F20       : gnd    :                   :         :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : F21       :        :                   :         : 7         :                
@@ -531,7 +531,7 @@ S_B[2]                       : J15       : output : 2.5 V             :         
 S_B[4]                       : J16       : output : 2.5 V             :         : 7         : Y              
 S_B[0]                       : J17       : output : 2.5 V             :         : 7         : Y              
 GND                          : J18       : gnd    :                   :         :           :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : J19       :        :                   :         : 7         :                
+SINAL_A                      : J19       : output : 2.5 V             :         : 7         : Y              
 VCCD_PLL2                    : J20       : power  :                   : 1.2V    :           :                
 VCCA2                        : J21       : power  :                   : 2.5V    :           :                
 UNIF                         : J22       : output : 2.5 V             :         : 6         : Y              

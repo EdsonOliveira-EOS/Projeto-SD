@@ -1,0 +1,38 @@
+OUTPUTS:
+
+LEDR17 - SA
+LEDR16 - A[3]
+LEDR15 - A[2]
+LEDR14 - A[1]
+LEDR13 - A[0]
+
+LEDR12 - SB
+LEDR11 - B[3]
+LEDR10 - B[2]
+LEDR09 - B[1]
+LEDR08 - B[0]
+
+LEDR02 - S[2]
+LEDR01 - S[1]
+LEDR00 - S[0]
+
+LEDG05 - SF
+LEDG04 - F[4]
+LEDG03 - F[3]
+LEDG02 - F[2]
+LEDG01 - F[1]
+LEDG00 - F[0]
+
+LEDG08 - Status
+
+HEX7 - Dezena de A
+HEX6 - Unidade de A
+LEDR06 - Sinal de A
+
+HEX5 - Dezena de B
+HEX4 - Unidade de B
+LEDR04 - Sinal de B
+
+HEX1 - Dezena de F
+HEX0 - Unidade de F
+HEX2[6] - Sinal de F
