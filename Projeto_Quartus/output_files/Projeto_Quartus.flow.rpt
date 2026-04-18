@@ -1,5 +1,5 @@
 Flow report for Projeto_Quartus
-Sat Apr 18 07:57:38 2026
+Sat Apr 18 13:47:27 2026
 Quartus Prime Version 21.1.1 Build 850 06/23/2022 SJ Lite Edition
 
 
@@ -41,15 +41,15 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Sat Apr 18 07:57:36 2026       ;
+; Flow Status                        ; Successful - Sat Apr 18 13:47:24 2026       ;
 ; Quartus Prime Version              ; 21.1.1 Build 850 06/23/2022 SJ Lite Edition ;
 ; Revision Name                      ; Projeto_Quartus                             ;
 ; Top-level Entity Name              ; Main                                        ;
 ; Family                             ; Cyclone IV E                                ;
 ; Device                             ; EP4CE115F29C7                               ;
 ; Timing Models                      ; Final                                       ;
-; Total logic elements               ; 157 / 114,480 ( < 1 % )                     ;
-;     Total combinational functions  ; 157 / 114,480 ( < 1 % )                     ;
+; Total logic elements               ; 159 / 114,480 ( < 1 % )                     ;
+;     Total combinational functions  ; 159 / 114,480 ( < 1 % )                     ;
 ;     Dedicated logic registers      ; 0 / 114,480 ( 0 % )                         ;
 ; Total registers                    ; 0                                           ;
 ; Total pins                         ; 78 / 529 ( 15 % )                           ;
@@ -65,7 +65,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 04/18/2026 07:57:17 ;
+; Start date & time ; 04/18/2026 13:47:06 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; Projeto_Quartus     ;
 +-------------------+---------------------+
@@ -76,7 +76,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------+----------------------------------------+-----------------+-------------+------------+
 ; Assignment Name                     ; Value                                  ; Default Value   ; Entity Name ; Section Id ;
 +-------------------------------------+----------------------------------------+-----------------+-------------+------------+
-; COMPILER_SIGNATURE_ID               ; 238368719731782.177650983702680        ; --              ; --          ; --         ;
+; COMPILER_SIGNATURE_ID               ; 238368719731943.177653082503588        ; --              ; --          ; --         ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --              ; --          ; --         ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --              ; --          ; --         ;
 ; NOMINAL_CORE_SUPPLY_VOLTAGE         ; 1.2V                                   ; --              ; --          ; --         ;
@@ -95,11 +95,11 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:07     ; 1.0                     ; 4810 MB             ; 00:00:18                           ;
+; Analysis & Synthesis ; 00:00:08     ; 1.0                     ; 4810 MB             ; 00:00:19                           ;
 ; Fitter               ; 00:00:07     ; 1.0                     ; 6861 MB             ; 00:00:15                           ;
 ; Assembler            ; 00:00:02     ; 1.0                     ; 5008 MB             ; 00:00:02                           ;
-; Timing Analyzer      ; 00:00:01     ; 1.1                     ; 5016 MB             ; 00:00:01                           ;
-; Total                ; 00:00:17     ; --                      ; --                  ; 00:00:36                           ;
+; Timing Analyzer      ; 00:00:02     ; 1.1                     ; 5016 MB             ; 00:00:01                           ;
+; Total                ; 00:00:19     ; --                      ; --                  ; 00:00:37                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -108,10 +108,10 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+------------------+------------+------------+----------------+
 ; Module Name          ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
 +----------------------+------------------+------------+------------+----------------+
-; Analysis & Synthesis ; G1C33            ; Windows 10 ; 10.0       ; x86_64         ;
-; Fitter               ; G1C33            ; Windows 10 ; 10.0       ; x86_64         ;
-; Assembler            ; G1C33            ; Windows 10 ; 10.0       ; x86_64         ;
-; Timing Analyzer      ; G1C33            ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis ; HWC02            ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter               ; HWC02            ; Windows 10 ; 10.0       ; x86_64         ;
+; Assembler            ; HWC02            ; Windows 10 ; 10.0       ; x86_64         ;
+; Timing Analyzer      ; HWC02            ; Windows 10 ; 10.0       ; x86_64         ;
 +----------------------+------------------+------------+------------+----------------+
 
 

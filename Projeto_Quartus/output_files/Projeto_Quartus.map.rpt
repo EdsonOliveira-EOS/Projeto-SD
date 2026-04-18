@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Projeto_Quartus
-Sat Apr 18 07:57:25 2026
+Sat Apr 18 13:47:13 2026
 Quartus Prime Version 21.1.1 Build 850 06/23/2022 SJ Lite Edition
 
 
@@ -44,13 +44,13 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sat Apr 18 07:57:24 2026       ;
+; Analysis & Synthesis Status        ; Successful - Sat Apr 18 13:47:13 2026       ;
 ; Quartus Prime Version              ; 21.1.1 Build 850 06/23/2022 SJ Lite Edition ;
 ; Revision Name                      ; Projeto_Quartus                             ;
 ; Top-level Entity Name              ; Main                                        ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 157                                         ;
-;     Total combinational functions  ; 157                                         ;
+; Total logic elements               ; 159                                         ;
+;     Total combinational functions  ; 159                                         ;
 ;     Dedicated logic registers      ; 0                                           ;
 ; Total registers                    ; 0                                           ;
 ; Total pins                         ; 78                                          ;
@@ -198,36 +198,36 @@ https://fpgasoftware.intel.com/eula.
 +--------------------------------------------+-----------------+------------------------------------+---------------------------------------------------------------------------------------------+---------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                                                                             ;
-+---------------------------------------------+---------------------------------------------------------------------------+
-; Resource                                    ; Usage                                                                     ;
-+---------------------------------------------+---------------------------------------------------------------------------+
-; Estimated Total logic elements              ; 157                                                                       ;
-;                                             ;                                                                           ;
-; Total combinational functions               ; 157                                                                       ;
-; Logic element usage by number of LUT inputs ;                                                                           ;
-;     -- 4 input functions                    ; 110                                                                       ;
-;     -- 3 input functions                    ; 34                                                                        ;
-;     -- <=2 input functions                  ; 13                                                                        ;
-;                                             ;                                                                           ;
-; Logic elements by mode                      ;                                                                           ;
-;     -- normal mode                          ; 157                                                                       ;
-;     -- arithmetic mode                      ; 0                                                                         ;
-;                                             ;                                                                           ;
-; Total registers                             ; 0                                                                         ;
-;     -- Dedicated logic registers            ; 0                                                                         ;
-;     -- I/O registers                        ; 0                                                                         ;
-;                                             ;                                                                           ;
-; I/O pins                                    ; 78                                                                        ;
-;                                             ;                                                                           ;
-; Embedded Multiplier 9-bit elements          ; 0                                                                         ;
-;                                             ;                                                                           ;
-; Maximum fan-out node                        ; Projeto_Quartus:inst|mhrs_Mux_total_8x1:inst8|mhrs_MUX_8x1:inst6|inst17~6 ;
-; Maximum fan-out                             ; 28                                                                        ;
-; Total fan-out                               ; 709                                                                       ;
-; Average fan-out                             ; 2.27                                                                      ;
-+---------------------------------------------+---------------------------------------------------------------------------+
++----------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary              ;
++---------------------------------------------+------------+
+; Resource                                    ; Usage      ;
++---------------------------------------------+------------+
+; Estimated Total logic elements              ; 159        ;
+;                                             ;            ;
+; Total combinational functions               ; 159        ;
+; Logic element usage by number of LUT inputs ;            ;
+;     -- 4 input functions                    ; 110        ;
+;     -- 3 input functions                    ; 36         ;
+;     -- <=2 input functions                  ; 13         ;
+;                                             ;            ;
+; Logic elements by mode                      ;            ;
+;     -- normal mode                          ; 159        ;
+;     -- arithmetic mode                      ; 0          ;
+;                                             ;            ;
+; Total registers                             ; 0          ;
+;     -- Dedicated logic registers            ; 0          ;
+;     -- I/O registers                        ; 0          ;
+;                                             ;            ;
+; I/O pins                                    ; 78         ;
+;                                             ;            ;
+; Embedded Multiplier 9-bit elements          ; 0          ;
+;                                             ;            ;
+; Maximum fan-out node                        ; S[2]~input ;
+; Maximum fan-out                             ; 30         ;
+; Total fan-out                               ; 715        ;
+; Average fan-out                             ; 2.27       ;
++---------------------------------------------+------------+
 
 
 +-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -235,7 +235,7 @@ https://fpgasoftware.intel.com/eula.
 +------------------------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------+--------------+
 ; Compilation Hierarchy Node                                 ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                     ; Entity Name                            ; Library Name ;
 +------------------------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------+--------------+
-; |Main                                                      ; 157 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 78   ; 0            ; |Main                                                                                                                                   ; Main                                   ; work         ;
+; |Main                                                      ; 159 (2)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 78   ; 0            ; |Main                                                                                                                                   ; Main                                   ; work         ;
 ;    |Analisador_7seg:inst1|                                 ; 15 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Main|Analisador_7seg:inst1                                                                                                             ; Analisador_7seg                        ; work         ;
 ;       |eclb_A_maior_B_5bits_magnitude:inst2|               ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Main|Analisador_7seg:inst1|eclb_A_maior_B_5bits_magnitude:inst2                                                                        ; eclb_A_maior_B_5bits_magnitude         ; work         ;
 ;       |eclb_A_maior_B_5bits_magnitude:inst9|               ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Main|Analisador_7seg:inst1|eclb_A_maior_B_5bits_magnitude:inst9                                                                        ; eclb_A_maior_B_5bits_magnitude         ; work         ;
@@ -341,16 +341,16 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; boundary_port         ; 78                          ;
-; cycloneiii_lcell_comb ; 161                         ;
-;     normal            ; 161                         ;
+; cycloneiii_lcell_comb ; 163                         ;
+;     normal            ; 163                         ;
 ;         0 data inputs ; 1                           ;
 ;         1 data inputs ; 3                           ;
 ;         2 data inputs ; 13                          ;
-;         3 data inputs ; 34                          ;
+;         3 data inputs ; 36                          ;
 ;         4 data inputs ; 110                         ;
 ;                       ;                             ;
 ; Max LUT depth         ; 15.00                       ;
-; Average LUT depth     ; 11.16                       ;
+; Average LUT depth     ; 11.05                       ;
 +-----------------------+-----------------------------+
 
 
@@ -369,7 +369,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 21.1.1 Build 850 06/23/2022 SJ Lite Edition
-    Info: Processing started: Sat Apr 18 07:57:17 2026
+    Info: Processing started: Sat Apr 18 13:47:05 2026
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Projeto_Quartus -c Projeto_Quartus
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
@@ -598,14 +598,14 @@ Warning (13024): Output pins are stuck at VCC or GND
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 235 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 237 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 13 input pins
     Info (21059): Implemented 65 output pins
-    Info (21061): Implemented 157 logic cells
+    Info (21061): Implemented 159 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 136 warnings
     Info: Peak virtual memory: 4810 megabytes
-    Info: Processing ended: Sat Apr 18 07:57:25 2026
+    Info: Processing ended: Sat Apr 18 13:47:13 2026
     Info: Elapsed time: 00:00:08
-    Info: Total CPU time (on all processors): 00:00:18
+    Info: Total CPU time (on all processors): 00:00:19
 
 
