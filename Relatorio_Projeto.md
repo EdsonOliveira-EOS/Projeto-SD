@@ -42,8 +42,8 @@ O sistema foi projetado com a seguinte arquitetura em blocos:
 
 ```
 ┌─────────────┐     ┌─────────────┐     ┌─────────────┐
-│  MÓDULO A   │────▶│  MÓDULO B   │────▶│  MÓDULO C   │
-│  (entrada)  │     │ (processo)  │     │  (saída)    │
+│  MÓDULO A   │────▶│  MÓDULO B  │────▶│  MÓDULO C   │
+│ (entradas)  │     │    (ULA)    │     │  ( Saídas ) │
 └─────────────┘     └─────────────┘     └─────────────┘
 ```
 ---
@@ -51,7 +51,7 @@ O sistema foi projetado com a seguinte arquitetura em blocos:
 ### 📦 Módulos Desenvolvidos
 
 <details>
-<summary><strong>🔷 Módulo A — Nome do Módulo</strong></summary>
+<summary><strong>🔷 Módulo A — Entradas</strong></summary>
 
 <br>
 
@@ -75,7 +75,7 @@ Qualquer detalhe relevante sobre o funcionamento interno deste módulo.
 ---
 
 <details>
-<summary><strong>🔷 Módulo B — Nome do Módulo</strong></summary>
+<summary><strong>🔷 Módulo B — ULA</strong></summary>
 
 <br>
 
@@ -99,7 +99,7 @@ Qualquer detalhe relevante sobre o funcionamento interno deste módulo.
 ---
 
 <details>
-<summary><strong>🔷 Módulo C — Nome do Módulo</strong></summary>
+<summary><strong>🔷 Módulo C — Saídas</strong></summary>
 
 <br>
 
