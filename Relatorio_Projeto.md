@@ -43,7 +43,7 @@ O sistema foi projetado com a seguinte arquitetura em blocos:
 ```
 ┌─────────────┐     ┌─────────────┐     ┌─────────────┐
 │  MÓDULO A   │────▶│  MÓDULO B  │────▶│  MÓDULO C   │
-│ (entradas)  │     │    (ULA)    │     │  ( Saídas ) │
+│ (Entradas)  │     │    (ULA)    │     │  (Saídas)   │
 └─────────────┘     └─────────────┘     └─────────────┘
 ```
 ---
