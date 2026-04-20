@@ -226,53 +226,17 @@ Qualquer detalhe relevante sobre o funcionamento interno deste módulo.
 
 ## 📊 Tabelas da Verdade e Cálculos
 
-### Módulo A — Tabela da Verdade
-
-| Entrada A | Entrada B | Saída Y |
-|:---------:|:---------:|:-------:|
-| 0 | 0 | 0 |
-| 0 | 1 | 1 |
-| 1 | 0 | 1 |
-| 1 | 1 | 0 |
-
-> 🗒️ *Adicione ou remova colunas/linhas conforme a necessidade do módulo.*
+### Tabelas Verdade
 
 ---
 
-### Mapa de Karnaugh — Módulo A
+### Mapas de Karnaugh 
 
 ```
-        B=0   B=1
-  A=0 |  0  |  1  |
-  A=1 |  1  |  0  |
-```
-
-**Equação simplificada:**
 
 ```
-Y = A'B + AB'  →  Y = A ⊕ B
-```
 
----
-
-### Módulo B — Tabela da Verdade
-
-| Entrada A | Entrada B | Entrada C | Saída Y |
-|:---------:|:---------:|:---------:|:-------:|
-| 0 | 0 | 0 | 0 |
-| 0 | 0 | 1 | 0 |
-| 0 | 1 | 0 | 0 |
-| 0 | 1 | 1 | 1 |
-| 1 | 0 | 0 | 0 |
-| 1 | 0 | 1 | 1 |
-| 1 | 1 | 0 | 1 |
-| 1 | 1 | 1 | 1 |
-
-**Equação simplificada:**
-
-```
-Y = AB + AC + BC
-```
+**Equações simplificadas:**
 
 ---
 
