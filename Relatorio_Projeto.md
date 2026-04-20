@@ -37,15 +37,41 @@
 ---
 
 ## 🗺️ Visão Geral do Projeto
-
 O sistema foi projetado com a seguinte arquitetura em blocos:
 
+```mermaid
+flowchart LR
+    A["🔢 **Módulo A**\nEntradas / Main"]
+
+    subgraph B["⚙️ Módulo B — ULA"]
+        direction TB
+        F1["F = A + B"]
+        F2["F = A − B"]
+        F3["F = Complemento a 2 de B"]
+        F4["F = A = B"]
+        F5["F = A > B"]
+        F6["F = A < B"]
+        F7["F = A AND B"]
+        F8["F = A XOR B"]
+
+        F1 ~~~ F2 ~~~ F3 ~~~ F4
+        F5 ~~~ F6 ~~~ F7 ~~~ F8
+    end
+
+    A -- "sinais" --> B
+
+    style A fill:#1e3a5f,stroke:#4a9eff,color:#ffffff
+    style B fill:#1a1a2e,stroke:#7c5cbf,color:#ffffff
+    style F1 fill:#16213e,stroke:#4a9eff,color:#c9d1d9
+    style F2 fill:#16213e,stroke:#4a9eff,color:#c9d1d9
+    style F3 fill:#16213e,stroke:#4a9eff,color:#c9d1d9
+    style F4 fill:#16213e,stroke:#4a9eff,color:#c9d1d9
+    style F5 fill:#16213e,stroke:#4a9eff,color:#c9d1d9
+    style F6 fill:#16213e,stroke:#4a9eff,color:#c9d1d9
+    style F7 fill:#16213e,stroke:#4a9eff,color:#c9d1d9
+    style F8 fill:#16213e,stroke:#4a9eff,color:#c9d1d9
 ```
-┌───────────────┐      ┌─────────────┐      ┌─────────────┐
-│   MÓDULO A    │────▶│   MÓDULO B   │────▶│  MÓDULO C   │
-│(Entradas/Main)│      │    (ULA)    │      │  (Saídas)   │
-└───────────────┘      └─────────────┘      └─────────────┘
-```
+
 ---
 
 ### 📦 Módulos Desenvolvidos
@@ -180,31 +206,8 @@ Qualquer detalhe relevante sobre o funcionamento interno deste módulo.
 
 </details>
 
----
+---[Uploading diagrama_modulos.md…]()
 
-<details>
-<summary><strong>🔷 Módulo C — Saídas</strong></summary>
-
-<br>
-
-**Descrição:**  
-Explique aqui o que este módulo faz, qual sua função no sistema e como ele se integra com os demais.
-
-**Entradas:**
-- `entrada_1` — Descrição da entrada
-- `entrada_2` — Descrição da entrada
-
-**Saídas:**
-- `saida_1` — Descrição da saída
-
-**Observações:**  
-Qualquer detalhe relevante sobre o funcionamento interno deste módulo.
-
-<br>
-
-</details>
-
----
 
 ## 📊 Tabelas da Verdade e Cálculos
 
@@ -220,7 +223,7 @@ Qualquer detalhe relevante sobre o funcionamento interno deste módulo.
 
 ## 🔧 Circuitos e Simulações
 
-### Módulo A — Circuito Projetado
+### Módulo A — MAIN — Circuito Projetado
 
 <details>
 <summary>🖥️ Circuito Main</summary>
@@ -260,17 +263,18 @@ Qualquer detalhe relevante sobre o funcionamento interno deste módulo.
 <div align="center">
 <img width="1600" height="763" alt="image" src="https://github.com/user-attachments/assets/7581aba2-310f-481d-b20c-f0e0f4b4553c" />
 </div>
-- Logo no começo de 100 (A>B) eu forcei A > B para que a saída fosse 1, já que nos clocks que eu coloquei, acabou que nenhuma vez saiu 0.
 <br>
 </details>
 </div>
 
 <details>
-<summary>🖥️ Waveform STATUS A=B, A>B e A<B </summary>
+<summary>🖥️ Waveform STATUS </summary>
 <br>
 <div align="center">
-<img width="1895" height="167" alt="image" src="https://github.com/user-attachments/assets/8bb6c6f0-b18e-4e43-8f31-121ce31a2082" />
+<img width="1893" height="169" alt="image" src="https://github.com/user-attachments/assets/ec2c4fd8-5734-45ba-adef-799413673eba" />
 </div>
+  
+- Logo no começo do seletor 100 (A>B), eu forcei a saída 00000 em A pois como todos os valores de A estavam negativos, estava sempre dando 0, então eu forcei uma saída que desse 1.
 <br>
 </details>
 </div>
@@ -311,7 +315,7 @@ Qualquer detalhe relevante sobre o funcionamento interno deste módulo.
 
 ---
 
-### Módulo B — Circuito Projetado
+### Módulo B — ULA — Circuito Projetado
 
 <div align="center">
 
@@ -330,56 +334,6 @@ Qualquer detalhe relevante sobre o funcionamento interno deste módulo.
 ![Waveform Módulo B](./assets/waveform_modulo_b.png)
 
 *Figura 4 — Simulação do Módulo B: forma de onda das entradas e saídas*
-
-</div>
-
----
-
-### Módulo C — Circuito Projetado
-
-<div align="center">
-
-![Circuito Módulo C](./assets/circuito_modulo_c.png)
-
-*Figura 5 — Circuito lógico do Módulo C*
-
-</div>
-
----
-
-### Módulo C — Simulação (Waveform)
-
-<div align="center">
-
-![Waveform Módulo C](./assets/waveform_modulo_c.png)
-
-*Figura 6 — Simulação do Módulo C: forma de onda das entradas e saídas*
-
-</div>
-
----
-
-## 🔗 Sistema Completo Conectado
-
-### Circuito Integrado
-
-<div align="center">
-
-![Sistema Completo](./assets/sistema_completo.png)
-
-*Figura 7 — Todos os módulos integrados e conectados formando o sistema final*
-
-</div>
-
----
-
-### Simulação do Sistema Completo (Waveform)
-
-<div align="center">
-
-![Waveform Sistema Completo](./assets/waveform_sistema_completo.png)
-
-*Figura 8 — Simulação do sistema completo: verificação do comportamento integrado*
 
 </div>
 
