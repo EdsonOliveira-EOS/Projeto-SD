@@ -232,10 +232,6 @@ Qualquer detalhe relevante sobre o funcionamento interno deste módulo.
 
 ### Mapas de Karnaugh 
 
-```
-
-```
-
 **Equações simplificadas:**
 
 ---
