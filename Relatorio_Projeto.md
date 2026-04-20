@@ -176,17 +176,11 @@ Nesse módulo, vamos explicar como nossas entradas estão sendo configuradas e u
 
 </details>
 
-## 📊 Tabelas da Verdade e Cálculos
+## 📊 Tabelas da Verdade, Mapas K e Cálculos
 
-### Tabelas Verdade
+### Excel com as Tabelas, Mapas K e reduções:
 
-https://docs.google.com/spreadsheets/d/1GwQhS2KhMPrCed8Xh1fbPW_qNAjKwrB1wZnr1iYnCpg/edit?pli=1&gid=125472174#gid=125472174
-
----
-
-### Mapas de Karnaugh 
-
-**Equações simplificadas:**
+[Documento Tabelas](https://docs.google.com/spreadsheets/d/1GwQhS2KhMPrCed8Xh1fbPW_qNAjKwrB1wZnr1iYnCpg/edit?pli=1&gid=125472174#gid=125472174)
 
 ---
 
