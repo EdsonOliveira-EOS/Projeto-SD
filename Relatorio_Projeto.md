@@ -180,7 +180,7 @@ Nesse módulo, vamos explicar como nossas entradas estão sendo configuradas e u
 
 ### Excel com as Tabelas, Mapas K e reduções:
 
-[Documento Tabelas](https://docs.google.com/spreadsheets/d/1GwQhS2KhMPrCed8Xh1fbPW_qNAjKwrB1wZnr1iYnCpg/edit?pli=1&gid=125472174#gid=125472174)
+[Tabelas-MapasK-Reduções](https://docs.google.com/spreadsheets/d/1GwQhS2KhMPrCed8Xh1fbPW_qNAjKwrB1wZnr1iYnCpg/edit?pli=1&gid=125472174#gid=125472174)
 
 ---
 
