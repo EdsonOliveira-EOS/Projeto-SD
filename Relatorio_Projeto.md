@@ -497,7 +497,7 @@ Nesse módulo, vamos explicar como nossas entradas estão sendo configuradas e u
 **Principais aprendizados:**
 - ✅ Aprendizado 1 — Reforçamos nosso aprendizado em Portas Lógicas, Tabelas da Verdade, Mapas K, já que precisamos usar das mais variadas portas lógicas e circuitos para conseguir fazer o projeto.
 - ✅ Aprendizado 2 — Nosso trabalho em equipe realmente melhorou bastante, cada um fez sua parte, se ajudamos, reestruturamos, testamos, tudo isso em equipe.
-- ✅ Aprendizado 3 — Aprendemos que quem faz circuitos sofre na vida.
+- ✅ Aprendizado 3 — Aprendemos que quem faz circuitos sofre na vida e que gambiarras sempre é a resposta.
 
 **Dificuldades encontradas:**  
 Tivemos muitos problemas que a gente encontrou pelo caminho tipo quando era A > B e ambos eram zero mas B tinha sinal negativo, isso fazia o progama ''entender'' que A era maior que B no nosso sistema, isso foi um errinho que a gente teve que corrigir.
