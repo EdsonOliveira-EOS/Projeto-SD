@@ -89,15 +89,6 @@ Nesse módulo, vamos explicar como nossas entradas estão sendo configuradas e u
 
 - `Manejo dos Vetores A e B com seleção pelo vetor S` — Dependendo do seletor configurado, o circuito executará a operação correspondente. Em nossa main possuímos três blocos principais: o `Projeto_Quartus` (nossa ULA), o `Analisador_7seg` e o `Decod_2x`, todos explicados abaixo com suas respectivas funções.
 
-<details>
-<summary>🖥️ Circuito Main</summary>
-<br>
-<div align="center">
-<img width="1469" height="812" alt="image" src="https://github.com/user-attachments/assets/20cae781-54b5-4fe6-8c83-e7bf66e6c900" />
-</div>
-<br>
-</details>
-
 <br>
 
 ---
@@ -144,15 +135,6 @@ Nesse módulo, vamos explicar como nossas entradas estão sendo configuradas e u
 
 - As Saídas do Analisador são: Um vetor SAIDA de 4 bits com o vetor em binário que representa a DEZENA que será enviada para o decodificador para ser mostrada no 7 segmentos, um bit de SINAL que será enviada diretamente para a pinagem do 7 segmentos para exibir o sinal do vetor analisado e por fim um vetor SAIDA com o vetor em binário que representa a UNIDADE que será enviada para o decodificador para ser mostrada nos 7 segmentos.
 
-<details>
-<summary>🖥️ Circuito do Analisador</summary>
-<br>
-<div align="center">
-<img width="1412" height="921" alt="image" src="https://github.com/user-attachments/assets/b19317a1-9a93-41c0-9509-9b2bd2f85caf" />
-</div>
-<br>
-</details>
-
 ---
 
 <br>
@@ -162,15 +144,6 @@ Nesse módulo, vamos explicar como nossas entradas estão sendo configuradas e u
 <div align="center">
 <img width="117" height="163" alt="image" src="https://github.com/user-attachments/assets/95badb6f-b7f8-4279-a86c-421a6eb585bf" />
 </div>
-
-<details>
-<summary>🖥️ Circuito do Decodificador</summary>
-<br>
-<div align="center">
-<img width="979" height="582" alt="image" src="https://github.com/user-attachments/assets/98e69589-a283-4ac8-bb0c-535e9f84d89c" />
-</div>
-<br>
-</details>
 
 </details>
 
@@ -240,23 +213,59 @@ Qualquer detalhe relevante sobre o funcionamento interno deste módulo.
 
 ### Módulo A — Circuito Projetado
 
+<details>
+<summary>🖥️ Circuito Main</summary>
+<br>
 <div align="center">
+<img width="1634" height="912" alt="image" src="https://github.com/user-attachments/assets/f95de27d-ba04-4842-a789-d8a230dbdc34" />
+</div>
+<br>
+</details>
 
-![Circuito Módulo A](./assets/circuito_modulo_a.png)
+<details>
+<summary>🖥️ Circuito do Analisador_7Seg</summary>
+<br>
+<div align="center">
+<img width="1403" height="922" alt="image" src="https://github.com/user-attachments/assets/af600fb8-b66b-40d3-9b64-e3fd30844160" />
+</div>
+<br>
+</details>
 
-*Figura 1 — Circuito lógico do Módulo A projetado no Logisim / Proteus / (software utilizado)*
-
+<details>
+<summary>🖥️ Circuito do Decodificador</summary>
+<br>
+<div align="center">
+<img width="979" height="582" alt="image" src="https://github.com/user-attachments/assets/98e69589-a283-4ac8-bb0c-535e9f84d89c" />
+</div>
+<br>
+</details>
 </div>
 
 ---
 
 ### Módulo A — Simulação (Waveform)
 
+<details>
+<summary>🖥️ Waveform Saídas S da Main</summary>
+<br>
 <div align="center">
+<img width="1600" height="763" alt="image" src="https://github.com/user-attachments/assets/7581aba2-310f-481d-b20c-f0e0f4b4553c" />
+</div>
+<br>
+</details>
+</div>
 
-![Waveform Módulo A](./assets/waveform_modulo_a.png)
+<details>
+<summary>🖥️ Waveform Saídas 7 segmentos</summary>
+<br>
+<div align="center">
+<img width="1282" height="648" alt="image" src="https://github.com/user-attachments/assets/92277ddf-9ec6-4888-bf00-0e9dbdd22b26" />
+</div>
+<br>
+</details>
+</div>
 
-*Figura 2 — Simulação do Módulo A: forma de onda das entradas e saídas*
+- *Há mais saídas de Segmento a 7 no nosso waveform, que são no total 9 (3 para sinal do vetor A, B e resultado e 6 com dois para A, B e resultado). Mas para não ficar algo absurdamente massivo, eu só deixei uma saída dos 7 segmentos no waveform junto da saída dos sinais (Que eu percebi agora que no fim nunca vão mudar porque na hora de colocar o clock, eu fiz o vetor A e B terem os mesmos valores)*
 
 </div>
 
