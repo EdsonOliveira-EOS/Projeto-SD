@@ -285,12 +285,165 @@ Qualquer detalhe relevante sobre o funcionamento interno deste módulo.
 
 ### Módulo B — ULA — Circuito Projetado
 
+<details>
+<summary>🖥️ Circuito Geral da ULA </summary>
+<br>
 <div align="center">
+<img width="1382" height="786" alt="image" src="https://github.com/user-attachments/assets/9819086c-67b4-4a68-b46f-b5e24242a2ca" />
+</div>
+<br>
+</details>
+</div>
 
-![Circuito Módulo B](./assets/circuito_modulo_b.png)
+<details>
+<summary>🖥️ Circuito A XOR B </summary>
+<br>
+<div align="center">
+<img width="1275" height="507" alt="image" src="https://github.com/user-attachments/assets/93368ee3-0795-436e-b10f-8dd98c4d29e0" />
+</div>
+<br>
+</details>
+</div>
 
-*Figura 3 — Circuito lógico do Módulo B projetado no Logisim / Proteus / (software utilizado)*
+<details>
+<summary>🖥️ Circuito A AND B </summary>
+<br>
+<div align="center">
+<img width="1281" height="459" alt="image" src="https://github.com/user-attachments/assets/28155895-996c-4198-b845-29fea67ce1c0" />
+</div>
+<br>
+</details>
+</div>
 
+<details>
+<summary>🖥️ Circuito A menor que B </summary>
+<br>
+<div align="center">
+<img width="1505" height="909" alt="image" src="https://github.com/user-attachments/assets/e07c9982-467a-401f-b178-9e7ef4c6aa43" />
+</div>
+<br>
+</details>
+</div>
+
+<details>
+<summary>🖥️ Circuito A maior que B </summary>
+<br>
+<div align="center">
+<img width="1160" height="820" alt="image" src="https://github.com/user-attachments/assets/53b0192e-7615-4ef7-aecc-d05e2a82ff69" />
+</div>
+<br>
+</details>
+</div>
+
+<details>
+<summary>🖥️ Circuito A igual B </summary>
+<br>
+<div align="center">
+<img width="1110" height="550" alt="image" src="https://github.com/user-attachments/assets/442ccc7a-08b7-4b40-8ce1-3d3506df4648" />
+</div>
+<br>
+</details>
+</div>
+
+<details>
+<summary>🖥️ Circuito complementador a 2 </summary>
+<br>
+<div align="center">
+<img width="1070" height="544" alt="image" src="https://github.com/user-attachments/assets/49a422d9-5d6c-4879-bb9f-5b3c2503a43d" />
+</div>
+<br>
+</details>
+</div>
+
+<details>
+<summary>🖥️ Circuito A mais B </summary>
+<br>
+<div align="center">
+<img width="1208" height="894" alt="image" src="https://github.com/user-attachments/assets/eb0afbe4-0d51-41f1-b198-f2568d80c4a2" />
+</div>
+<br>
+</details>
+</div>
+
+<details>
+<summary>🖥️ Circuito A menos B </summary>
+<br>
+<div align="center">
+<img width="1221" height="907" alt="image" src="https://github.com/user-attachments/assets/b0b0c388-4bb5-4bc0-9ed1-6b6fed06d0d2" />
+</div>
+<br>
+</details>
+</div>
+
+<details>
+<summary>🖥️ Circuito Selecionador de Complemento a 2 </summary>
+<br>
+<div align="center">
+<img width="1200" height="366" alt="image" src="https://github.com/user-attachments/assets/cbf8b0f3-174c-4c0d-8498-4a61ac01e0c8" />
+</div>
+<br>
+</details>
+</div>
+
+<details>
+<summary>🖥️ Circuito Complemento a 2 somador </summary>
+<br>
+<div align="center">
+<img width="1067" height="426" alt="image" src="https://github.com/user-attachments/assets/86d6aa69-052a-4b06-89e6-278a9d377a28" />
+</div>
+<br>
+</details>
+</div>
+
+
+<details>
+<summary>🖥️ 5 bits seletor </summary>
+<br>
+<div align="center">
+<img width="1215" height="372" alt="image" src="https://github.com/user-attachments/assets/cb0ab46c-3835-4a79-a64d-ee612b0926e0" />
+</div>
+<br>
+</details>
+</div>
+
+<details>
+<summary>🖥️ Circuito MUX 2x1 total </summary>
+<br>
+<div align="center">
+<img width="818" height="910" alt="image" src="https://github.com/user-attachments/assets/13cee370-b026-4369-818a-bc9f40fa3e63" />
+</div>
+<br>
+</details>
+</div>
+
+<details>
+<summary>🖥️ Circuito MUX 2x1 </summary>
+<br>
+<div align="center">
+<img width="744" height="550" alt="image" src="https://github.com/user-attachments/assets/ae17fb07-d854-4a76-a13f-b5f709841a46" />
+</div>
+<br>
+</details>
+</div>
+
+<details>
+<summary>🖥️ Circuito MUX total 8x1 </summary>
+<br>
+<div align="center">
+<img width="522" height="914" alt="image" src="https://github.com/user-attachments/assets/068f234e-2c69-43d3-9737-6527d921ef8f" />
+</div>
+<br>
+</details>
+</div>
+
+<details>
+<summary>🖥️ Circuito MUX 8x1 </summary>
+<br>
+<div align="center">
+<img width="1054" height="812" alt="image" src="https://github.com/user-attachments/assets/c9cd46a1-5546-4851-bde0-b74968b718d3" />
+</div>
+<br>
+</details>
 </div>
 
 ---
