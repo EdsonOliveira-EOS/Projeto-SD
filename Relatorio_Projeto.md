@@ -89,6 +89,15 @@ Nesse módulo, vamos explicar como nossas entradas estão sendo configuradas e u
 
 - `Manejo dos Vetores A e B com seleção pelo vetor S` — Dependendo do seletor configurado, o circuito executará a operação correspondente. Em nossa main possuímos três blocos principais: o `Projeto_Quartus` (nossa ULA), o `Analisador_7seg` e o `Decod_2x`, todos explicados abaixo com suas respectivas funções.
 
+<details>
+<summary>🖥️ Circuito Main</summary>
+<br>
+<div align="center">
+<img width="1634" height="912" alt="image" src="https://github.com/user-attachments/assets/f95de27d-ba04-4842-a789-d8a230dbdc34" />
+</div>
+<br>
+</details>
+
 <br>
 
 ---
@@ -251,6 +260,17 @@ Qualquer detalhe relevante sobre o funcionamento interno deste módulo.
 <div align="center">
 <img width="1600" height="763" alt="image" src="https://github.com/user-attachments/assets/7581aba2-310f-481d-b20c-f0e0f4b4553c" />
 </div>
+- Logo no começo de 100 (A>B) eu forcei A > B para que a saída fosse 1, já que nos clocks que eu coloquei, acabou que nenhuma vez saiu 0.
+<br>
+</details>
+</div>
+
+<details>
+<summary>🖥️ Waveform STATUS A=B, A>B e A<B </summary>
+<br>
+<div align="center">
+<img width="1895" height="167" alt="image" src="https://github.com/user-attachments/assets/8bb6c6f0-b18e-4e43-8f31-121ce31a2082" />
+</div>
 <br>
 </details>
 </div>
@@ -261,12 +281,32 @@ Qualquer detalhe relevante sobre o funcionamento interno deste módulo.
 <div align="center">
 <img width="1282" height="648" alt="image" src="https://github.com/user-attachments/assets/92277ddf-9ec6-4888-bf00-0e9dbdd22b26" />
 </div>
+  
+- Há mais saídas de Segmento a 7 no nosso waveform, que são no total 9 (3 para sinal do vetor A, B e resultado e 6 com dois para A, B e resultado). Mas para não ficar algo absurdamente massivo, eu só deixei uma saída dos 7 segmentos no waveform junto da saída dos sinais (Que eu percebi agora que no fim nunca vão mudar porque na hora de colocar o clock, eu fiz o vetor A e B terem os mesmos valores)
 <br>
 </details>
 </div>
 
-- *Há mais saídas de Segmento a 7 no nosso waveform, que são no total 9 (3 para sinal do vetor A, B e resultado e 6 com dois para A, B e resultado). Mas para não ficar algo absurdamente massivo, eu só deixei uma saída dos 7 segmentos no waveform junto da saída dos sinais (Que eu percebi agora que no fim nunca vão mudar porque na hora de colocar o clock, eu fiz o vetor A e B terem os mesmos valores)*
+</div>
 
+<details>
+<summary>🖥️ Waveform Analisador_7segmentos </summary>
+<br>
+<div align="center">
+<img width="1828" height="497" alt="image" src="https://github.com/user-attachments/assets/fa888724-cd1e-49fa-9f99-03f355b3bc5f" />
+</div>
+<br>
+</details>
+</div>
+
+<details>
+<summary>🖥️ Waveform Decodificador_2x</summary>
+<br>
+<div align="center">
+<img width="1899" height="869" alt="image" src="https://github.com/user-attachments/assets/cce11483-4dec-4a2b-9996-d8cd6bfb3e94" />
+</div>
+<br>
+</details>
 </div>
 
 ---
