@@ -160,17 +160,17 @@ Nesse módulo, vamos explicar como nossas entradas estão sendo configuradas e u
 <br>
 
 **Descrição:**  
-Explique aqui o que este módulo faz, qual sua função no sistema e como ele se integra com os demais.
+
 
 **Entradas:**
-- `entrada_1` — Descrição da entrada
-- `entrada_2` — Descrição da entrada
+- `entrada_1` — 
+- `entrada_2` — 
 
 **Saídas:**
-- `saida_1` — Descrição da saída
+- `saida_1` — 
 
 **Observações:**  
-Qualquer detalhe relevante sobre o funcionamento interno deste módulo.
+
 
 <br>
 
@@ -179,6 +179,8 @@ Qualquer detalhe relevante sobre o funcionamento interno deste módulo.
 ## 📊 Tabelas da Verdade e Cálculos
 
 ### Tabelas Verdade
+
+https://docs.google.com/spreadsheets/d/1GwQhS2KhMPrCed8Xh1fbPW_qNAjKwrB1wZnr1iYnCpg/edit?pli=1&gid=125472174#gid=125472174
 
 ---
 
@@ -209,6 +211,28 @@ Qualquer detalhe relevante sobre o funcionamento interno deste módulo.
 </div>
 <br>
 </details>
+
+<details>
+<summary>🖥️ Circuito A maior B cinco bits </summary>
+<br>
+<div align="center">
+<img width="1242" height="820" alt="image" src="https://github.com/user-attachments/assets/f3148e15-43da-4d41-a1e1-722000bd34c8" />
+</div>
+<br>
+</details>
+</div>
+
+<details>
+<summary>🖥️ Subtrator 10-20-30 </summary>
+<br>
+<div align="center">
+<img width="1381" height="901" alt="image" src="https://github.com/user-attachments/assets/db2c95a1-d520-4c25-820c-04da56565f72" />
+<img width="1332" height="911" alt="image" src="https://github.com/user-attachments/assets/b340abee-5e89-4b92-a8fd-13c3832fc0e2" />
+<img width="1385" height="895" alt="image" src="https://github.com/user-attachments/assets/a2875468-20c0-4e9c-89f6-9351f308ccac" />
+</div>
+<br>
+</details>
+</div>
 
 <details>
 <summary>🖥️ Circuito do Decodificador</summary>
@@ -469,13 +493,6 @@ Qualquer detalhe relevante sobre o funcionamento interno deste módulo.
 
 ### Módulo B — Simulação (Waveform)
 
-<div align="center">
-
-![Waveform Módulo B](./assets/waveform_modulo_b.png)
-
-*Figura 4 — Simulação do Módulo B: forma de onda das entradas e saídas*
-
-</div>
 
 ---
 
