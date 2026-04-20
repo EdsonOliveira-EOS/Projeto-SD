@@ -309,15 +309,17 @@ Qualquer detalhe relevante sobre o funcionamento interno deste módulo.
 
 ## 🏁 Conclusão
 
--
+- Esse foi realmente um projeto **muito interessante** de se fazer, teve muito trabalho em equipe, muita luta, muitas aulas perdidas (tivemos que ficar faltando um monte de aula de outras matérias para fazer esse projeto mas fazer o que né), mas no fim, tudo isso foi essencial para nosso aprendizado em Sistemas Digitais, que foi um projeto bem legal de se fazer e que rendeu muitos momentos de pensamento, companheirismo e assim vai. Se for para eu descrever a experiência de fazer esse projeto em uma palavra, eu diria... satisfatório, ver um circuito sendo feito realmente é muito legal.
 
 **Principais aprendizados:**
-- ✅ Aprendizado 1 — 
-- ✅ Aprendizado 2 — 
-- ✅ Aprendizado 3 — 
+- ✅ Aprendizado 1 — Reforçamos nosso aprendizado em Portas Lógicas, Tabelas da Verdade, Mapas K, já que precisamos usar das mais variadas portas lógicas e circuitos para conseguir fazer o projeto.
+- ✅ Aprendizado 2 — Nosso trabalho em equipe realmente melhorou bastante, cada um fez sua parte, se ajudamos, reestruturamos, testamos, tudo isso em equipe.
+- ✅ Aprendizado 3 — Aprendemos que quem faz circuitos sofre na vida.
 
 **Dificuldades encontradas:**  
+Tivemos muitos problemas que a gente encontrou pelo caminho tipo quando era A > B e ambos eram zero mas B tinha sinal negativo, isso fazia o progama ''entender'' que A era maior que B no nosso sistema, isso foi um errinho que a gente teve que corrigir.
 
+Outro problema que a gente encontrou também foi a **contagem de Bits**, muitos circuitos nossos estavam prontos só para uma bitagem específica, o que fez a gente precisar refazer vários blocos que já estavam feitos só para adicionar ou diminuir os bits, o que custou um tempo **enorme** para refazer tudo, mas no fim, deu para resolver né.
 
 ---
 
