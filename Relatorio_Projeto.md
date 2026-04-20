@@ -31,7 +31,6 @@
 - [Visão Geral do Projeto](#️-visão-geral-do-projeto)
 - [Tabelas da Verdade e Cálculos](#-tabelas-da-verdade-e-cálculos)
 - [Circuitos e Simulações](#-circuitos-e-simulações)
-- [Sistema Completo](#-sistema-completo-conectado)
 - [Conclusão](#-conclusão)
 
 ---
@@ -360,6 +359,26 @@ Qualquer detalhe relevante sobre o funcionamento interno deste módulo.
 <br>
 <div align="center">
 <img width="1208" height="894" alt="image" src="https://github.com/user-attachments/assets/eb0afbe4-0d51-41f1-b198-f2568d80c4a2" />
+</div>
+<br>
+</details>
+</div>
+
+<details>
+<summary>🖥️ Somadores </summary>
+<br>
+<div align="center">
+<img width="1240" height="411" alt="image" src="https://github.com/user-attachments/assets/2e010c02-e908-49f6-b8e4-54e2e8854a21" />
+</div>
+<br>
+</details>
+</div>
+
+<details>
+<summary>🖥️ Full Adder </summary>
+<br>
+<div align="center">
+<img width="704" height="577" alt="image" src="https://github.com/user-attachments/assets/12fce186-238b-43e6-b2b3-1a0b3ded4d68" />
 </div>
 <br>
 </details>
