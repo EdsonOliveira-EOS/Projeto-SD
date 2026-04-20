@@ -39,38 +39,9 @@
 ## 🗺️ Visão Geral do Projeto
 O sistema foi projetado com a seguinte arquitetura em blocos:
 
-```mermaid
-flowchart LR
-    A["🔢 **Módulo A**\nEntradas / Main"]
-
-    subgraph B["⚙️ Módulo B — ULA"]
-        direction TB
-        F1["F = A + B"]
-        F2["F = A − B"]
-        F3["F = Complemento a 2 de B"]
-        F4["F = A = B"]
-        F5["F = A > B"]
-        F6["F = A < B"]
-        F7["F = A AND B"]
-        F8["F = A XOR B"]
-
-        F1 ~~~ F2 ~~~ F3 ~~~ F4
-        F5 ~~~ F6 ~~~ F7 ~~~ F8
-    end
-
-    A -- "sinais" --> B
-
-    style A fill:#1e3a5f,stroke:#4a9eff,color:#ffffff
-    style B fill:#1a1a2e,stroke:#7c5cbf,color:#ffffff
-    style F1 fill:#16213e,stroke:#4a9eff,color:#c9d1d9
-    style F2 fill:#16213e,stroke:#4a9eff,color:#c9d1d9
-    style F3 fill:#16213e,stroke:#4a9eff,color:#c9d1d9
-    style F4 fill:#16213e,stroke:#4a9eff,color:#c9d1d9
-    style F5 fill:#16213e,stroke:#4a9eff,color:#c9d1d9
-    style F6 fill:#16213e,stroke:#4a9eff,color:#c9d1d9
-    style F7 fill:#16213e,stroke:#4a9eff,color:#c9d1d9
-    style F8 fill:#16213e,stroke:#4a9eff,color:#c9d1d9
-```
+<div align ="center">
+<img width="861" height="444" alt="image" src="https://github.com/user-attachments/assets/3a5d996c-4e34-45e5-aec4-4c3d962aa677" />
+</div>
 
 ---
 
@@ -205,9 +176,6 @@ Qualquer detalhe relevante sobre o funcionamento interno deste módulo.
 <br>
 
 </details>
-
----[Uploading diagrama_modulos.md…]()
-
 
 ## 📊 Tabelas da Verdade e Cálculos
 
