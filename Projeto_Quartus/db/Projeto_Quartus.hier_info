@@ -1340,15 +1340,23 @@ F[3] <= <GND>
 F[4] <= <GND>
 F[5] <= <GND>
 A[0] => inst.IN0
+A[0] => inst17.IN0
 A[1] => inst1.IN0
+A[1] => inst17.IN3
 A[2] => inst2.IN0
+A[2] => inst17.IN1
 A[3] => inst3.IN0
-A[4] => inst4.IN0
+A[3] => inst17.IN2
+A[4] => inst16.IN1
 B[0] => inst.IN1
+B[0] => inst19.IN0
 B[1] => inst1.IN1
+B[1] => inst19.IN3
 B[2] => inst2.IN1
+B[2] => inst19.IN1
 B[3] => inst3.IN1
-B[4] => inst4.IN1
+B[3] => inst19.IN2
+B[4] => inst18.IN1
 
 
 |Main|Projeto_Quartus:inst|eos_a_maiorque_b:inst3
@@ -1397,15 +1405,23 @@ F[3] <= <GND>
 F[4] <= <GND>
 F[5] <= <GND>
 A[0] => inst.IN0
+A[0] => inst17.IN0
 A[1] => inst1.IN0
+A[1] => inst17.IN3
 A[2] => inst2.IN0
+A[2] => inst17.IN1
 A[3] => inst3.IN0
-A[4] => inst4.IN0
+A[3] => inst17.IN2
+A[4] => inst16.IN1
 B[0] => inst.IN1
+B[0] => inst19.IN0
 B[1] => inst1.IN1
+B[1] => inst19.IN3
 B[2] => inst2.IN1
+B[2] => inst19.IN1
 B[3] => inst3.IN1
-B[4] => inst4.IN1
+B[3] => inst19.IN2
+B[4] => inst18.IN1
 
 
 |Main|Projeto_Quartus:inst|mhrs_B_maior_A:inst12
@@ -1454,15 +1470,23 @@ F[3] <= <GND>
 F[4] <= <GND>
 F[5] <= <GND>
 A[0] => inst.IN0
+A[0] => inst17.IN0
 A[1] => inst1.IN0
+A[1] => inst17.IN3
 A[2] => inst2.IN0
+A[2] => inst17.IN1
 A[3] => inst3.IN0
-A[4] => inst4.IN0
+A[3] => inst17.IN2
+A[4] => inst16.IN1
 B[0] => inst.IN1
+B[0] => inst19.IN0
 B[1] => inst1.IN1
+B[1] => inst19.IN3
 B[2] => inst2.IN1
+B[2] => inst19.IN1
 B[3] => inst3.IN1
-B[4] => inst4.IN1
+B[3] => inst19.IN2
+B[4] => inst18.IN1
 
 
 |Main|Projeto_Quartus:inst|eclb_AND:inst1
