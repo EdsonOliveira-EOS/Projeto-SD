@@ -1,5 +1,5 @@
 EDA Netlist Writer report for Projeto_Quartus
-Wed Apr 22 18:18:25 2026
+Wed Apr 22 18:23:59 2026
 Quartus Prime Version 21.1.1 Build 850 06/23/2022 SJ Lite Edition
 
 
@@ -37,7 +37,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Wed Apr 22 18:18:25 2026 ;
+; EDA Netlist Writer Status ; Successful - Wed Apr 22 18:23:59 2026 ;
 ; Revision Name             ; Projeto_Quartus                       ;
 ; Top-level Entity Name     ; Main                                  ;
 ; Family                    ; Cyclone IV E                          ;
@@ -95,15 +95,14 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details, at
     Info: https://fpgasoftware.intel.com/eula.
-    Info: Processing started: Wed Apr 22 18:18:25 2026
+    Info: Processing started: Wed Apr 22 18:23:58 2026
 Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=/home/mig/Documents/C-CODE/Projeto-SD/Projeto_Quartus/simulation/qsim/ Projeto_Quartus -c Projeto_Quartus
-Info (119006): Selected device EP4CE115F29C7 for design "Projeto_Quartus"
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (204019): Generated file Projeto_Quartus.vo in folder "/home/mig/Documents/C-CODE/Projeto-SD/Projeto_Quartus/simulation/qsim//" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 623 megabytes
-    Info: Processing ended: Wed Apr 22 18:18:25 2026
-    Info: Elapsed time: 00:00:00
+    Info: Peak virtual memory: 622 megabytes
+    Info: Processing ended: Wed Apr 22 18:23:59 2026
+    Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:00
 
 
