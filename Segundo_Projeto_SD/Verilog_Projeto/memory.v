@@ -10,7 +10,7 @@ module memory (
     // Outputs
     output wire [15:0] read_data_1,
     output wire [15:0] read_data_2
-);
+);  
 
     // Parametros e declaração para a FSM;
     reg estado_atual, proximo_estado;
@@ -70,7 +70,7 @@ module memory (
             endcase
         end
     end
-    
+
     assign read_data_1 = ram[read_addr_1];
     assign read_data_2 = ram[read_addr_2];
 endmodule
