@@ -14,14 +14,17 @@ module memory (
 
     // Parametros e declaração para a FSM;
     reg estado_atual, proximo_estado;
-    parameter IDLE = 1'b0, WRITE = 1'b1; // Meus estadinhos
-    reg [15:0] ram [0:15]; // Declaração da RAM
+    parameter IDLE = 1'b0, 
+              WRITE = 1'b1; // Meus estadinhos
 
+    reg [15:0] ram [0:15]; // Declaração da RAM
+    // Always que controla o fluxo dos estados
     always @(posedge enable or posedge reset or posedge clear) begin
         if (reset || clear) estado_atual <= IDLE;
         else estado_atual <= proximo_estado;
     end
 
+    // Always que controla a mudança dos estados
     always @(*)begin
         case(estado_atual)
 
@@ -37,7 +40,9 @@ module memory (
         endcase
     end
 
+    // Always da lógica e inserção de dados na RAM
     always @(posedge enable or posedge reset or posedge clear) begin
+        // Zerar a memória caso soltar o botão reset ou o comando CLEAR
         if (reset || clear) begin
             ram[0]  <= 16'b0;
             ram[1]  <= 16'b0;
@@ -58,19 +63,19 @@ module memory (
         end
         else begin
             case (estado_atual)
-
                 IDLE: begin
                 end
                 WRITE: begin
+                    // Aplicar a memória na RAM
                     ram[write_addr] <= write_data;
                 end
+
                 default: begin
                 end
-
             endcase
         end
     end
-
+    // Entregar a memória que o sistema pode pedir para a RAM
     assign read_data_1 = ram[read_addr_1];
     assign read_data_2 = ram[read_addr_2];
 endmodule
