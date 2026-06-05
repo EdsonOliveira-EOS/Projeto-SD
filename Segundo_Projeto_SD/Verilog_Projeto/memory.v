@@ -71,9 +71,7 @@ module memory (
             endcase
         end
     end
-
     // Entregar a memória que o sistema pode pedir para a RAM
     assign read_data_1 = ram[read_addr_1];
     assign read_data_2 = ram[read_addr_2];
-
 endmodule
