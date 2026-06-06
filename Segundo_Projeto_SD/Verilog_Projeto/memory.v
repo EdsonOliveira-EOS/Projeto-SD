@@ -3,6 +3,7 @@ module memory (
     input wire           clk,            // Clock da FPGA (50MHZ).
     input wire           reset,          // Reset.
     input wire           clear,          // INSTRUÇÃO CLEAR (Que age direto na memória, achei melhor deixar um input só para ele ao invés de fazer a lógica na CPU).
+    input wire           write_enabled,  // A memória SÓ deve agir caso a CPU deixar, sem isso os estados vão ficar alterando sem a CPU pedir.
     input wire [3:0]     write_addr,     // 4 bits   — qual registrador escrever.
     input wire [15:0]    write_data,     // 16 bits  — valor a escrever.
     input wire [3:0]     read_addr_1,    // 4 bits   — 1º endereço para um registrador.
@@ -10,24 +11,24 @@ module memory (
     // OUTPUTS
     output wire [15:0]   read_data_1,    // O valor de um registrador que a CPU precisar.
     output wire [15:0]   read_data_2,    // O valor de um segundo registrador que a CPU precisar.
-    output reg           memoryalocated  // Valor para dizer que as memórias foram alocadas, bom para deixar transparente.
+    output reg           writedone  // Valor para dizer que as memórias foram alocadas, bom para deixar transparente.
 );  
 // ————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
     // Parametros e declaração para a FSM;
     reg estado_atual, proximo_estado;
     parameter IDLE  = 1'b0, 
-              WRITE = 1'b1; // Meus estadinhos
-    reg [15:0] ram [0:15];  // Declaração da RAM
+              WRITE = 1'b1;   // Meus estadinhos
+    reg [15:0] ram [0:15];    // Declaração da RAM
 // ————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
-    // Always que controla o fluxo dos estados.
+    // Always que controla o fluxo dos estados. 
     always @(posedge clk or posedge reset) begin
-        if (reset || clear) estado_atual <= IDLE; // reset ou CLEAR volta pro IDLE, pronto pra escrever
+        if (reset || clear) estado_atual <= IDLE;            // reset ou CLEAR volta pro IDLE, pronto pra escrever
         else                estado_atual <= proximo_estado;
     end
     // Always que controla a mudança dos estados
     always @(*) begin
         case(estado_atual)
-            IDLE:     proximo_estado = WRITE;
+            IDLE:     proximo_estado = (write_enabled) ? WRITE : IDLE;
             WRITE:    proximo_estado = IDLE;
             default:  proximo_estado = IDLE;
         endcase
@@ -52,15 +53,16 @@ module memory (
             ram[13] <= 16'b0;
             ram[14] <= 16'b0;
             ram[15] <= 16'b0;
-            memoryalocated <= 0;
+            writedone <= 0;
         end
         else begin
             case (estado_atual)
+                IDLE: writedone       <= 0;
                 WRITE: begin
-                    ram[write_addr]      <= write_data;
-                    memoryalocated       <= 1;
+                    ram[write_addr]   <= write_data;
+                    writedone         <= 1;
                 end  
-                default: memoryalocated  <= 0;
+                default: writedone    <= 0;
             endcase
         end
     end
