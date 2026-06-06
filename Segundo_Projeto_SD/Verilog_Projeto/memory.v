@@ -1,5 +1,5 @@
 module memory (
-    // Inputs que eu vou receber na memória RAM
+    // INPUTS que eu vou receber na memória RAM
     input wire           reset,          // botão ligar
     input wire           clear,          // INSTRUÇÃO CLEAR (Que age direto na memória, achei melhor deixar um input só para ele)
     input wire           enable,         // botão enviar
@@ -7,41 +7,37 @@ module memory (
     input wire [15:0]    write_data,     // 16 bits — valor a escrever
     input wire [3:0]     read_addr_1,    // 4 bits  — leitura pra Src1
     input wire [3:0]     read_addr_2,    // 4 bits  — leitura pra Src2 (instruções reg x reg)
-    // Outputs
+    // OUTPUTS
     output wire [15:0] read_data_1,
     output wire [15:0] read_data_2
 );  
-
     // Parametros e declaração para a FSM;
     reg estado_atual, proximo_estado;
-    parameter WRITE = 1'b0, 
-              DONE  = 1'b1; // Meus estadinhos
-
+    parameter IDLE  = 1'b0, 
+              WRITE = 1'b1; // Meus estadinhos
     reg [15:0] ram [0:15]; // Declaração da RAM
 
-    // Always que controla o fluxo dos estados
-    always @(posedge enable or posedge reset or posedge clear) begin
-        if (reset || clear) estado_atual <= WRITE; // reset volta pro WRITE, pronto pra escrever
+    // Força estado inicial
+    initial begin
+        estado_atual = IDLE;
+    end
+    // Always que controla o fluxo dos estados, note que o enable tá no posedge porque quando ele PRESSIONAR o botão, minha memória já vai pro estado WRITE para quando ele soltar, ele colocar a memória.
+    always @(posedge enable or negedge reset or negedge clear) begin
+        if (!reset || !clear) estado_atual <= IDLE; // reset volta pro IDLE, pronto pra escrever
         else estado_atual <= proximo_estado;
     end
-
     // Always que controla a mudança dos estados
     always @(*) begin
         case(estado_atual)
-            WRITE: begin
-                proximo_estado = DONE;
-            end
-            DONE: begin
-                proximo_estado = WRITE;
-            end
-            default: proximo_estado = WRITE;
+            IDLE: proximo_estado = WRITE;
+            WRITE: proximo_estado = IDLE;
+            default: proximo_estado = IDLE;
         endcase
     end
-
     // Always da lógica e inserção de dados na RAM
-    always @(posedge enable or posedge reset or posedge clear) begin
+    always @(negedge enable or negedge reset or negedge clear) begin
         // Zerar a memória caso soltar o botão reset ou o comando CLEAR
-        if (reset || clear) begin
+        if (!reset || !clear) begin
             ram[0]  <= 16'b0;
             ram[1]  <= 16'b0;
             ram[2]  <= 16'b0;
@@ -61,13 +57,9 @@ module memory (
         end
         else begin
             case (estado_atual)
-                WRITE: begin
-                    ram[write_addr] <= write_data;
-                end
-                DONE: begin
-                end
-                default: begin
-                end
+                IDLE:;
+                WRITE: ram[write_addr] <= write_data;
+                default:;
             endcase
         end
     end
