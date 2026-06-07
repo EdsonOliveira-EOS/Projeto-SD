@@ -8,7 +8,7 @@ module alu (
     input wire [15:0] value2,             // 16 bits — Valor 2 iterado.
     // OUTPUTS
     output reg [15:0] resultvalue,        // 16 bits — Resultado da obra. Por que não aumentar? Porque acima de 16 bits é para dar overflow e mostrar 9999 no display.
-    output reg        operationdone       // 1 bit — Sinaliza pra CPU que a operação foi realizada para ter transparência.
+    output reg        operationdone       // 1 bit   — Sinaliza pra CPU que a operação foi realizada para ter transparência.
 );
 // ————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 // Parametros e declaração para a FSM;

@@ -4,14 +4,14 @@ module memory (
     input wire           reset,          // Reset.
     input wire           clear,          // INSTRUÇÃO CLEAR (Que age direto na memória, achei melhor deixar um input só para ele ao invés de fazer a lógica na CPU).
     input wire           write_enabled,  // A memória SÓ deve agir caso a CPU deixar, sem isso os estados vão ficar alterando sem a CPU pedir.
-    input wire [3:0]     write_addr,     // 4 bits   — qual registrador escrever.
-    input wire [15:0]    write_data,     // 16 bits  — valor a escrever.
-    input wire [3:0]     read_addr_1,    // 4 bits   — 1º endereço para um registrador.
-    input wire [3:0]     read_addr_2,    // 4 bits   — 2º endereço para um registrador.
+    input wire [3:0]     write_addr,     // 4 bits  — qual registrador escrever.
+    input wire [15:0]    write_data,     // 16 bits — valor a escrever.
+    input wire [3:0]     read_addr_1,    // 4 bits  — 1º endereço para um registrador.
+    input wire [3:0]     read_addr_2,    // 4 bits  — 2º endereço para um registrador.
     // OUTPUTS
     output wire [15:0]   read_data_1,    // O valor de um registrador que a CPU precisar.
     output wire [15:0]   read_data_2,    // O valor de um segundo registrador que a CPU precisar.
-    output reg           writedone  // Valor para dizer que as memórias foram alocadas, bom para deixar transparente.
+    output reg           writedone       // Valor para dizer que as memórias foram alocadas, bom para deixar transparente.
 );  
 // ————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 // Parametros e declaração para a FSM;
