@@ -1,5 +1,5 @@
 module memory (
-    // INPUTS que eu vou receber na memória RAM
+    // INPUTS que eu vou receber na memória RAM.
     input wire           clk,            // Clock da FPGA (50MHZ).
     input wire           reset,          // Reset.
     input wire           clear,          // INSTRUÇÃO CLEAR (Que age direto na memória, achei melhor deixar um input só para ele ao invés de fazer a lógica na CPU).
@@ -14,18 +14,18 @@ module memory (
     output reg           writedone  // Valor para dizer que as memórias foram alocadas, bom para deixar transparente.
 );  
 // ————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
-    // Parametros e declaração para a FSM;
+// Parametros e declaração para a FSM;
     reg estado_atual, proximo_estado;
     parameter IDLE  = 1'b0, 
               WRITE = 1'b1;   // Meus estadinhos
     reg [15:0] ram [0:15];    // Declaração da RAM
 // ————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
-    // Always que controla o fluxo dos estados. 
+// Always que controla o fluxo dos estados. 
     always @(posedge clk or posedge reset) begin
         if (reset || clear) estado_atual <= IDLE;            // reset ou CLEAR volta pro IDLE, pronto pra escrever
         else                estado_atual <= proximo_estado;
     end
-    // Always que controla a mudança dos estados
+// Always que controla a mudança dos estados
     always @(*) begin
         case(estado_atual)
             IDLE:     proximo_estado = (write_enabled) ? WRITE : IDLE;
@@ -33,7 +33,7 @@ module memory (
             default:  proximo_estado = IDLE;
         endcase
     end
-    // Always da lógica e inserção de dados na RAM
+// Always da lógica e inserção de dados na RAM
     always @(posedge clk or posedge reset) begin
         // Zerar a memória caso reset ou o comando CLEAR
         if (reset || clear) begin
@@ -67,7 +67,7 @@ module memory (
         end
     end
 // ————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
-    // Entregar a memória que o sistema pode pedir para a RAM
+// Entregar a memória que o sistema pode pedir para a RAM
     assign read_data_1 = ram[read_addr_1];
     assign read_data_2 = ram[read_addr_2];
 endmodule

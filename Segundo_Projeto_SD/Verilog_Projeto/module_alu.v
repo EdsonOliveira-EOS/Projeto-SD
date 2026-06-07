@@ -11,17 +11,17 @@ module alu (
     output reg        operationdone       // 1 bit — Sinaliza pra CPU que a operação foi realizada para ter transparência.
 );
 // ————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
-    // Parametros e declaração para a FSM;
+// Parametros e declaração para a FSM;
     reg estado_atual, proximo_estado; 
     parameter IDLE       = 1'b0,
               ARITHMETIC = 1'b1;
 // ————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
-    // Always que controla o fluxo dos estados
+// Always que controla o fluxo dos estados
     always @(posedge clk or posedge reset) begin
         if (reset) estado_atual <= IDLE;
         else       estado_atual <= proximo_estado;
     end
-    // Always que controla a mudança dos estados
+// Always que controla a mudança dos estados
     always @(*) begin
         case (estado_atual)
             IDLE:       proximo_estado = (operation_enabled) ? ARITHMETIC : IDLE;
@@ -29,7 +29,7 @@ module alu (
             default:    proximo_estado = IDLE;
         endcase
     end
-    // Always da lógica e entrega do resultado dependendo do opcode.
+// Always da lógica e entrega do resultado dependendo do opcode.
     always @(posedge clk or posedge reset) begin
         if (reset) begin
             resultvalue   <= 16'h0;
