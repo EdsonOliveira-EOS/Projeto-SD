@@ -1,0 +1,57 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/mig/Documents/C-CODE/Projeto-SD/Segundo_Projeto_SD/Proj_quartus/simulation/qsim
+vmodule_mini_cpu
+Z1 !s110 1780935366
+!i10b 1
+!s100 f0i@aIUPP9Wd1NZzjGZhc1
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I:>7z=^n`7CDhZLV`5L?JN3
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1780935365
+8Proj_quartus.vo
+FProj_quartus.vo
+!i122 64
+L0 32 16145
+Z4 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z5 !s108 1780935366.000000
+!s107 Proj_quartus.vo|
+!s90 -work|work|Proj_quartus.vo|
+!i113 1
+Z6 o-work work
+Z7 tCvgOpt 0
+vmodule_mini_cpu_vlg_vec_tst
+R1
+!i10b 1
+!s100 5MgNz4MmUOg[YOmfiJ]X<3
+R2
+INMHd1ZaTWF1fXj]]Red>k3
+R3
+R0
+w1780935364
+8Waveform.vwf.vt
+FWaveform.vwf.vt
+!i122 65
+L0 30 185
+R4
+r1
+!s85 0
+31
+R5
+!s107 Waveform.vwf.vt|
+!s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R6
+R7

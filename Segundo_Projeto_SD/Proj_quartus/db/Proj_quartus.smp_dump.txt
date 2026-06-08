@@ -1,0 +1,12 @@
+
+State Machine - |module_mini_cpu|current_state
+Name current_state.STATE_MEM_WAIT current_state.STATE_MEM_WRITE current_state.STATE_ALU_WAIT current_state.STATE_ALU_START current_state.STATE_DECODE current_state.STATE_FETCH current_state.STATE_IDLE current_state.STATE_POWERED_OFF current_state.STATE_LCD_UPDATE 
+current_state.STATE_POWERED_OFF 0 0 0 0 0 0 0 0 0 
+current_state.STATE_IDLE 0 0 0 0 0 0 1 1 0 
+current_state.STATE_FETCH 0 0 0 0 0 1 0 1 0 
+current_state.STATE_DECODE 0 0 0 0 1 0 0 1 0 
+current_state.STATE_ALU_START 0 0 0 1 0 0 0 1 0 
+current_state.STATE_ALU_WAIT 0 0 1 0 0 0 0 1 0 
+current_state.STATE_MEM_WRITE 0 1 0 0 0 0 0 1 0 
+current_state.STATE_MEM_WAIT 1 0 0 0 0 0 0 1 0 
+current_state.STATE_LCD_UPDATE 0 0 0 0 0 0 0 1 1 

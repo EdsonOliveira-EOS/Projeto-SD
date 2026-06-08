@@ -23,13 +23,15 @@ module module_mini_cpu (
     wire [15:0] alu_resultvalue;
     wire        alu_operationdone;
 
+
     module_alu ULA (
         .clk(clk), .reset(reset), .operation_enabled(alu_operation_enabled),
         .opcode(alu_opcode), .value1(alu_value1), .value2(alu_value2),
         .resultvalue(alu_resultvalue), .operationdone(alu_operationdone)
     );
-     
-     memory MEMORY (
+	 
+	 
+	 memory MEMORY (
         .clk(clk), .reset(reset), .clear(mem_clear),
         .write_enabled(mem_write_enabled), .write_addr(mem_write_addr), .write_data(mem_write_data),
         .read_addr_1(mem_read_addr_1), .read_addr_2(mem_read_addr_2),
@@ -51,7 +53,6 @@ module module_mini_cpu (
     reg [3:0] r_src2;
     reg [15:0] immediate_extended;
 
-    // FSM Combinacional (Próximo Estado)
     always @(*) begin
         case (current_state)
             STATE_POWERED_OFF: begin
@@ -70,21 +71,23 @@ module module_mini_cpu (
             end
             
             STATE_DECODE: begin
-                if (instruction_register[17:15] == 3'b110)      // CLEAR
+                // Route execution path based on extracted opcode type 
+                if (opcode == 3'b110)      // CLEAR Command [cite: 94, 129]
                     next_state = STATE_MEM_WRITE; 
-                else if (instruction_register[17:15] == 3'b111) // DISPLAY
+                else if (opcode == 3'b111) // DISPLAY Command [cite: 94, 131]
                     next_state = STATE_LCD_UPDATE;
-                else if (instruction_register[17:15] == 3'b000) // LOAD
+                else if (opcode == 3'b000) // LOAD Command [cite: 94, 123]
                     next_state = STATE_MEM_WRITE;
-                else                                            // Aritméticas
+                else                       // Arithmetic Instructions [cite: 96, 106]
                     next_state = STATE_ALU_START;
-            end 
+            end
 
             STATE_ALU_START: begin
                 next_state = STATE_ALU_WAIT;
             end
 
             STATE_ALU_WAIT: begin
+                // Stay until ALU finishes operation pipeline
                 next_state = (alu_operationdone) ? STATE_MEM_WRITE : STATE_ALU_WAIT;
             end
 
@@ -93,10 +96,12 @@ module module_mini_cpu (
             end
 
             STATE_MEM_WAIT: begin
+                // Stay until memory block finishes register changes
                 next_state = (mem_writedone || opcode == 3'b110) ? STATE_LCD_UPDATE : STATE_MEM_WAIT;
             end
 
             STATE_LCD_UPDATE: begin
+                // Add your custom logic delay for the LCD driver state tracking here [cite: 43]
                 next_state = STATE_IDLE; 
             end
 
@@ -104,36 +109,18 @@ module module_mini_cpu (
         endcase
     end
     
-    // FSM Sequencial (Lógica de Controle e Sinais de Dados)
     always @(posedge clk or posedge reset) begin
         if (reset) begin
-            current_state         <= STATE_POWERED_OFF;
-            instruction_register  <= 18'b0;
-            mem_clear             <= 0;
-            opcode                <= 3'b0;
-            r_dest                <= 4'b0;
-            r_src1                <= 4'b0;
-            r_src2                <= 4'b0;
-            immediate_extended    <= 16'b0;
-            mem_write_enabled     <= 0;
-            mem_write_addr        <= 4'b0;
-            mem_write_data        <= 16'b0;
-            mem_read_addr_1       <= 4'b0;
-            mem_read_addr_2       <= 4'b0;
-            alu_operation_enabled <= 0;
-            alu_opcode            <= 3'b0;
-            alu_value1            <= 16'b0;
-            alu_value2            <= 16'b0;
-            lcd_rs                <= 0;
-            lcd_rw                <= 0;
-            lcd_en                <= 0;
-            lcd_data              <= 8'b0;
+            current_state <= STATE_POWERED_OFF;
+            instruction_register <= 18'b0;
+            mem_clear <= 0;
+            // ... clear operational signals
         end else begin
             current_state <= next_state;
             
             case (current_state)
                 STATE_POWERED_OFF: begin
-                    mem_clear <= 1; 
+                    mem_clear <= 1; // Zero out variables during shutdown [cite: 6, 75]
                 end
 
                 STATE_IDLE: begin
@@ -143,44 +130,37 @@ module module_mini_cpu (
                 end
 
                 STATE_FETCH: begin
-                    instruction_register <= switches; 
+                    instruction_register <= switches; // Latch inputs safely [cite: 80]
                 end
 
                 STATE_DECODE: begin
-                    opcode             <= instruction_register[17:15];
-                    r_dest             <= instruction_register[14:11];
-                    r_src1             <= instruction_register[10:7];
-                    r_src2             <= instruction_register[6:3];
-                    immediate_extended <= {9'b0, instruction_register[6:0]};
-                    
-                    // Dispara a busca nos registradores da RAM imediatamente aqui!
-                    mem_read_addr_1    <= instruction_register[10:7];
-                    mem_read_addr_2    <= instruction_register[6:3];
+                    // Extract instruction formats dynamically by verifying opcodes [cite: 88]
+                    // You will look into instruction_register to parse fields 
+                    // based on Type 1, Type 2, or Type 3 definitions.
                 end
 
                 STATE_ALU_START: begin
                     alu_operation_enabled <= 1;
                     alu_opcode            <= opcode;
-                end
-
-                STATE_ALU_WAIT: begin
-                    // Dados agora estão estáveis nas saídas da RAM
+                    
+                    // Route values based on instruction type context
+                    mem_read_addr_1       <= r_src1;
+                    mem_read_addr_2       <= r_src2;
+                    
+                    // Assign values to pass directly to your ALU input ports
                     alu_value1            <= mem_read_data_1;
-                    if (opcode >= 3'b001 && opcode <= 3'b101) begin
-                        alu_value2        <= mem_read_data_2;
-                    end else begin
-                        alu_value2        <= immediate_extended;
-                    end
+                    // If immediate type, pass immediate_extended; else use mem_read_data_2 [cite: 97, 107]
                 end
 
                 STATE_MEM_WRITE: begin
                     alu_operation_enabled <= 0;
                     if (opcode == 3'b110) begin
-                        mem_clear <= 1; 
+                        mem_clear <= 1; // Trigger memory clear block directly [cite: 130]
                     end else begin
-                        mem_write_enabled   <= 1;
-                        mem_write_addr      <= r_dest;
-                        mem_write_data      <= (opcode == 3'b000) ? immediate_extended : alu_resultvalue;
+                        mem_write_enabled <= 1;
+                        mem_write_addr    <= r_dest;
+                        // Select between raw data from LOAD or processed results from ALU [cite: 99, 124]
+                        mem_write_data    <= (opcode == 3'b000) ? immediate_extended : alu_resultvalue;
                     end
                 end
                 
@@ -188,26 +168,7 @@ module module_mini_cpu (
                     mem_write_enabled <= 0;
                     mem_clear         <= 0;
                 end
-
-                STATE_LCD_UPDATE: begin
-                    // Espaço reservado para o controle das portas do LCD
-                end
             endcase
         end
     end
-
-    // Detectores de borda para chaves físicas de comando
-    reg btn_ligar_d, btn_enviar_d;
-    always @(posedge clk or posedge reset) begin
-        if (reset) begin
-            btn_ligar_d  <= 1'b1; 
-            btn_enviar_d <= 1'b1;
-        end else begin
-            btn_ligar_d  <= btn_ligar;
-            btn_enviar_d <= btn_enviar;
-        end
-    end
-    
-    assign power_triggered = (btn_ligar == 1'b1 && btn_ligar_d == 1'b0);
-    assign send_triggered  = (btn_enviar == 1'b1 && btn_enviar_d == 1'b0);
 endmodule
