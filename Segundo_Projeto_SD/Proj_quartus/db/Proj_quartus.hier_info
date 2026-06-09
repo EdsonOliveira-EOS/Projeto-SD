@@ -1,10 +1,8 @@
 |module_mini_cpu
-clk => clk.IN2
-reset => reset.IN2
-btn_ligar => power_triggered.IN1
-btn_ligar => btn_ligar_d.DATAIN
-btn_enviar => send_triggered.IN1
-btn_enviar => btn_enviar_d.DATAIN
+clk => clk.IN5
+reset => reset.IN1
+btn_ligar => btn_ligar.IN1
+btn_enviar => btn_enviar.IN1
 switches[0] => instruction_register[0].DATAIN
 switches[1] => instruction_register[1].DATAIN
 switches[2] => instruction_register[2].DATAIN
@@ -23,17 +21,34 @@ switches[14] => instruction_register[14].DATAIN
 switches[15] => instruction_register[15].DATAIN
 switches[16] => instruction_register[16].DATAIN
 switches[17] => instruction_register[17].DATAIN
-lcd_rs <= <GND>
-lcd_rw <= <GND>
-lcd_en <= <GND>
-lcd_data[0] <= <GND>
-lcd_data[1] <= <GND>
-lcd_data[2] <= <GND>
-lcd_data[3] <= <GND>
-lcd_data[4] <= <GND>
-lcd_data[5] <= <GND>
-lcd_data[6] <= <GND>
-lcd_data[7] <= <GND>
+lcd_rs << <GND>
+lcd_rw << <GND>
+lcd_en << <GND>
+lcd_data[0] << <GND>
+lcd_data[1] << <GND>
+lcd_data[2] << <GND>
+lcd_data[3] << <GND>
+lcd_data[4] << <GND>
+lcd_data[5] << <GND>
+lcd_data[6] << <GND>
+lcd_data[7] << <GND>
+Temp_mem_1[0] << memory:MEMORY.read_data_1
+Temp_mem_1[1] << memory:MEMORY.read_data_1
+Temp_mem_1[2] << memory:MEMORY.read_data_1
+Temp_mem_1[3] << memory:MEMORY.read_data_1
+Temp_mem_1[4] << memory:MEMORY.read_data_1
+Temp_mem_1[5] << memory:MEMORY.read_data_1
+Temp_mem_1[6] << memory:MEMORY.read_data_1
+Temp_mem_1[7] << memory:MEMORY.read_data_1
+Temp_mem_1[8] << memory:MEMORY.read_data_1
+Temp_mem_1[9] << memory:MEMORY.read_data_1
+Temp_mem_1[10] << memory:MEMORY.read_data_1
+Temp_mem_1[11] << memory:MEMORY.read_data_1
+Temp_mem_1[12] << memory:MEMORY.read_data_1
+Temp_mem_1[13] << memory:MEMORY.read_data_1
+Temp_mem_1[14] << memory:MEMORY.read_data_1
+Temp_mem_1[15] << memory:MEMORY.read_data_1
+ON << ON~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |module_mini_cpu|module_alu:ULA
@@ -1212,5 +1227,89 @@ read_data_2[13] <= read_data_2.DB_MAX_OUTPUT_PORT_TYPE
 read_data_2[14] <= read_data_2.DB_MAX_OUTPUT_PORT_TYPE
 read_data_2[15] <= read_data_2.DB_MAX_OUTPUT_PORT_TYPE
 writedone <= writedone~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|module_mini_cpu|debouncer:db_ligar
+clk => btn_out~reg0.CLK
+clk => counter[0].CLK
+clk => counter[1].CLK
+clk => counter[2].CLK
+clk => counter[3].CLK
+clk => counter[4].CLK
+clk => counter[5].CLK
+clk => counter[6].CLK
+clk => counter[7].CLK
+clk => counter[8].CLK
+clk => counter[9].CLK
+clk => counter[10].CLK
+clk => counter[11].CLK
+clk => counter[12].CLK
+clk => counter[13].CLK
+clk => counter[14].CLK
+clk => counter[15].CLK
+clk => counter[16].CLK
+clk => counter[17].CLK
+clk => counter[18].CLK
+clk => counter[19].CLK
+clk => btn_sync_1.CLK
+clk => btn_sync_0.CLK
+btn_in => btn_sync_0.DATAIN
+btn_out <= btn_out~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|module_mini_cpu|debouncer:db_enviar
+clk => btn_out~reg0.CLK
+clk => counter[0].CLK
+clk => counter[1].CLK
+clk => counter[2].CLK
+clk => counter[3].CLK
+clk => counter[4].CLK
+clk => counter[5].CLK
+clk => counter[6].CLK
+clk => counter[7].CLK
+clk => counter[8].CLK
+clk => counter[9].CLK
+clk => counter[10].CLK
+clk => counter[11].CLK
+clk => counter[12].CLK
+clk => counter[13].CLK
+clk => counter[14].CLK
+clk => counter[15].CLK
+clk => counter[16].CLK
+clk => counter[17].CLK
+clk => counter[18].CLK
+clk => counter[19].CLK
+clk => btn_sync_1.CLK
+clk => btn_sync_0.CLK
+btn_in => btn_sync_0.DATAIN
+btn_out <= btn_out~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|module_mini_cpu|debouncer:db_rst
+clk => btn_out~reg0.CLK
+clk => counter[0].CLK
+clk => counter[1].CLK
+clk => counter[2].CLK
+clk => counter[3].CLK
+clk => counter[4].CLK
+clk => counter[5].CLK
+clk => counter[6].CLK
+clk => counter[7].CLK
+clk => counter[8].CLK
+clk => counter[9].CLK
+clk => counter[10].CLK
+clk => counter[11].CLK
+clk => counter[12].CLK
+clk => counter[13].CLK
+clk => counter[14].CLK
+clk => counter[15].CLK
+clk => counter[16].CLK
+clk => counter[17].CLK
+clk => counter[18].CLK
+clk => counter[19].CLK
+clk => btn_sync_1.CLK
+clk => btn_sync_0.CLK
+btn_in => btn_sync_0.DATAIN
+btn_out <= btn_out~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 

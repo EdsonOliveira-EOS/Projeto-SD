@@ -7,7 +7,9 @@ module module_mini_cpu (
     output reg        lcd_rs,
     output reg        lcd_rw,
     output reg        lcd_en,
-    output reg [7:0]  lcd_data
+    output reg [7:0]  lcd_data,
+	 output wire[15:0] Temp_mem_1,
+	 output reg ON = 0
 );
     reg         mem_write_enabled;
     reg  [3:0]  mem_write_addr;
@@ -24,13 +26,13 @@ module module_mini_cpu (
     wire        alu_operationdone;
 
     module_alu ULA (
-        .clk(clk), .reset(reset), .operation_enabled(alu_operation_enabled),
+        .clk(clk), .reset(reset_triggered), .operation_enabled(alu_operation_enabled),
         .opcode(alu_opcode), .value1(alu_value1), .value2(alu_value2),
         .resultvalue(alu_resultvalue), .operationdone(alu_operationdone)
     );
      
      memory MEMORY (
-        .clk(clk), .reset(reset), .clear(mem_clear),
+        .clk(clk), .reset(reset_triggered), .clear(mem_clear),
         .write_enabled(mem_write_enabled), .write_addr(mem_write_addr), .write_data(mem_write_data),
         .read_addr_1(mem_read_addr_1), .read_addr_2(mem_read_addr_2),
         .read_data_1(mem_read_data_1), .read_data_2(mem_read_data_2),
@@ -39,11 +41,12 @@ module module_mini_cpu (
 
     wire send_triggered; 
     wire power_triggered;
+	 wire reset_triggered;
 
     localparam STATE_POWERED_OFF = 4'd0, STATE_IDLE = 4'd1, STATE_FETCH = 4'd2, STATE_DECODE = 4'd3, 
     STATE_ALU_START = 4'd4, STATE_ALU_WAIT = 4'd5, STATE_MEM_WRITE = 4'd6, STATE_MEM_WAIT = 4'd7, STATE_LCD_UPDATE = 4'd8;
 
-    reg [3:0] current_state, next_state;
+    reg [3:0] current_state = STATE_POWERED_OFF, next_state;
     reg [17:0] instruction_register;
     reg [2:0] opcode;
     reg [3:0] r_dest;
@@ -51,14 +54,17 @@ module module_mini_cpu (
     reg [3:0] r_src2;
     reg [15:0] immediate_extended;
 
+	 assign Temp_mem_1 = mem_read_data_1;
     // FSM Combinacional (Próximo Estado)
     always @(*) begin
+	 
         case (current_state)
             STATE_POWERED_OFF: begin
                 next_state = (power_triggered) ? STATE_IDLE : STATE_POWERED_OFF;
             end
             
             STATE_IDLE: begin
+					 
                 if (power_triggered) 
                     next_state = STATE_POWERED_OFF;
                 else 
@@ -105,8 +111,8 @@ module module_mini_cpu (
     end
     
     // FSM Sequencial (Lógica de Controle e Sinais de Dados)
-    always @(posedge clk or posedge reset) begin
-        if (reset) begin
+    always @(posedge clk or posedge reset_triggered) begin
+        if (reset_triggered) begin
             current_state         <= STATE_POWERED_OFF;
             instruction_register  <= 18'b0;
             mem_clear             <= 0;
@@ -134,12 +140,14 @@ module module_mini_cpu (
             case (current_state)
                 STATE_POWERED_OFF: begin
                     mem_clear <= 1; 
+						  ON <= 0;
                 end
 
                 STATE_IDLE: begin
                     mem_clear             <= 0;
                     mem_write_enabled     <= 0;
                     alu_operation_enabled <= 0;
+						  ON <= 1;
                 end
 
                 STATE_FETCH: begin
@@ -166,7 +174,7 @@ module module_mini_cpu (
                 STATE_ALU_WAIT: begin
                     // Dados agora estão estáveis nas saídas da RAM
                     alu_value1            <= mem_read_data_1;
-                    if (opcode >= 3'b001 && opcode <= 3'b101) begin
+                    if (opcode == 3'b001 || opcode == 3'b011) begin
                         alu_value2        <= mem_read_data_2;
                     end else begin
                         alu_value2        <= immediate_extended;
@@ -196,18 +204,29 @@ module module_mini_cpu (
         end
     end
 
+	 
+	 wire clean_btn_ligar;
+	 wire clean_btn_enviar;
+	 wire clean_rst;
+
+	 debouncer db_ligar  (.clk(clk), .btn_in(btn_ligar),  .btn_out(clean_btn_ligar));
+	 debouncer db_enviar (.clk(clk), .btn_in(btn_enviar), .btn_out(clean_btn_enviar));
+	 debouncer db_rst (.clk(clk), .btn_in(reset), .btn_out(clean_rst));
     // Detectores de borda para chaves físicas de comando
-    reg btn_ligar_d, btn_enviar_d;
-    always @(posedge clk or posedge reset) begin
-        if (reset) begin
+    reg btn_ligar_d, btn_enviar_d, btn_reset_d;
+    always @(posedge clk or posedge reset_triggered) begin
+        if (reset_triggered) begin
             btn_ligar_d  <= 1'b1; 
             btn_enviar_d <= 1'b1;
+				btn_reset_d <= 1'b1;
         end else begin
             btn_ligar_d  <= btn_ligar;
             btn_enviar_d <= btn_enviar;
+				btn_reset_d <= reset;
         end
     end
     
-    assign power_triggered = (btn_ligar == 1'b1 && btn_ligar_d == 1'b0);
-    assign send_triggered  = (btn_enviar == 1'b1 && btn_enviar_d == 1'b0);
+    assign power_triggered = (btn_ligar & !btn_ligar_d);
+    assign send_triggered  = (btn_enviar & !btn_enviar_d);
+	 assign reset_triggered = (reset & !btn_reset_d);
 endmodule

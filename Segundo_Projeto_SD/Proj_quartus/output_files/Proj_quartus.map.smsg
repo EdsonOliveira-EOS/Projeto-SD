@@ -1,0 +1,1 @@
+Warning (10268): Verilog HDL information at module_mini_cpu.v(60): always construct contains both blocking and non-blocking assignments File: C:/Users/mhrs/Documents/Projeto-SD/Segundo_Projeto_SD/Proj_quartus/module_mini_cpu.v Line: 60

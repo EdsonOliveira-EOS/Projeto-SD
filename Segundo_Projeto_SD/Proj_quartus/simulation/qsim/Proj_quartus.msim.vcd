@@ -3,7 +3,7 @@ $comment
 		vcd file Proj_quartus.msim.vcd -direction
 $end
 $date
-	Mon Jun  8 13:16:06 2026
+	Tue Jun 09 13:59:51 2026
 $end
 $version
 	ModelSim Version 2020.1
@@ -18,1095 +18,1284 @@ $var reg 1 " btn_ligar $end
 $var reg 1 # clk $end
 $var reg 1 $ reset $end
 $var reg 18 % switches [17:0] $end
-$var wire 1 & lcd_data [7] $end
-$var wire 1 ' lcd_data [6] $end
-$var wire 1 ( lcd_data [5] $end
-$var wire 1 ) lcd_data [4] $end
-$var wire 1 * lcd_data [3] $end
-$var wire 1 + lcd_data [2] $end
-$var wire 1 , lcd_data [1] $end
-$var wire 1 - lcd_data [0] $end
-$var wire 1 . lcd_en $end
-$var wire 1 / lcd_rs $end
-$var wire 1 0 lcd_rw $end
-$var wire 1 1 mem_write_data_temp [15] $end
-$var wire 1 2 mem_write_data_temp [14] $end
-$var wire 1 3 mem_write_data_temp [13] $end
-$var wire 1 4 mem_write_data_temp [12] $end
-$var wire 1 5 mem_write_data_temp [11] $end
-$var wire 1 6 mem_write_data_temp [10] $end
-$var wire 1 7 mem_write_data_temp [9] $end
-$var wire 1 8 mem_write_data_temp [8] $end
-$var wire 1 9 mem_write_data_temp [7] $end
-$var wire 1 : mem_write_data_temp [6] $end
-$var wire 1 ; mem_write_data_temp [5] $end
-$var wire 1 < mem_write_data_temp [4] $end
-$var wire 1 = mem_write_data_temp [3] $end
-$var wire 1 > mem_write_data_temp [2] $end
-$var wire 1 ? mem_write_data_temp [1] $end
-$var wire 1 @ mem_write_data_temp [0] $end
+$var wire 1 & ON $end
+$var wire 1 ' Temp_mem_1 [15] $end
+$var wire 1 ( Temp_mem_1 [14] $end
+$var wire 1 ) Temp_mem_1 [13] $end
+$var wire 1 * Temp_mem_1 [12] $end
+$var wire 1 + Temp_mem_1 [11] $end
+$var wire 1 , Temp_mem_1 [10] $end
+$var wire 1 - Temp_mem_1 [9] $end
+$var wire 1 . Temp_mem_1 [8] $end
+$var wire 1 / Temp_mem_1 [7] $end
+$var wire 1 0 Temp_mem_1 [6] $end
+$var wire 1 1 Temp_mem_1 [5] $end
+$var wire 1 2 Temp_mem_1 [4] $end
+$var wire 1 3 Temp_mem_1 [3] $end
+$var wire 1 4 Temp_mem_1 [2] $end
+$var wire 1 5 Temp_mem_1 [1] $end
+$var wire 1 6 Temp_mem_1 [0] $end
+$var wire 1 7 Temp_mem_2 [15] $end
+$var wire 1 8 Temp_mem_2 [14] $end
+$var wire 1 9 Temp_mem_2 [13] $end
+$var wire 1 : Temp_mem_2 [12] $end
+$var wire 1 ; Temp_mem_2 [11] $end
+$var wire 1 < Temp_mem_2 [10] $end
+$var wire 1 = Temp_mem_2 [9] $end
+$var wire 1 > Temp_mem_2 [8] $end
+$var wire 1 ? Temp_mem_2 [7] $end
+$var wire 1 @ Temp_mem_2 [6] $end
+$var wire 1 A Temp_mem_2 [5] $end
+$var wire 1 B Temp_mem_2 [4] $end
+$var wire 1 C Temp_mem_2 [3] $end
+$var wire 1 D Temp_mem_2 [2] $end
+$var wire 1 E Temp_mem_2 [1] $end
+$var wire 1 F Temp_mem_2 [0] $end
+$var wire 1 G lcd_data [7] $end
+$var wire 1 H lcd_data [6] $end
+$var wire 1 I lcd_data [5] $end
+$var wire 1 J lcd_data [4] $end
+$var wire 1 K lcd_data [3] $end
+$var wire 1 L lcd_data [2] $end
+$var wire 1 M lcd_data [1] $end
+$var wire 1 N lcd_data [0] $end
+$var wire 1 O lcd_en $end
+$var wire 1 P lcd_rs $end
+$var wire 1 Q lcd_rw $end
 
 $scope module i1 $end
-$var wire 1 A gnd $end
-$var wire 1 B vcc $end
-$var wire 1 C unknown $end
-$var tri1 1 D devclrn $end
-$var tri1 1 E devpor $end
-$var tri1 1 F devoe $end
-$var wire 1 G ULA|Mult0|auto_generated|mac_out2~DATAOUT16 $end
-$var wire 1 H ULA|Mult0|auto_generated|mac_out2~DATAOUT17 $end
-$var wire 1 I ULA|Mult0|auto_generated|mac_out2~DATAOUT18 $end
-$var wire 1 J ULA|Mult0|auto_generated|mac_out2~DATAOUT19 $end
-$var wire 1 K ULA|Mult0|auto_generated|mac_out2~DATAOUT20 $end
-$var wire 1 L ULA|Mult0|auto_generated|mac_out2~DATAOUT21 $end
-$var wire 1 M ULA|Mult0|auto_generated|mac_out2~DATAOUT22 $end
-$var wire 1 N ULA|Mult0|auto_generated|mac_out2~DATAOUT23 $end
-$var wire 1 O ULA|Mult0|auto_generated|mac_out2~DATAOUT24 $end
-$var wire 1 P ULA|Mult0|auto_generated|mac_out2~DATAOUT25 $end
-$var wire 1 Q ULA|Mult0|auto_generated|mac_out2~DATAOUT26 $end
-$var wire 1 R ULA|Mult0|auto_generated|mac_out2~DATAOUT27 $end
-$var wire 1 S ULA|Mult0|auto_generated|mac_out2~DATAOUT28 $end
-$var wire 1 T ULA|Mult0|auto_generated|mac_out2~DATAOUT29 $end
-$var wire 1 U ULA|Mult0|auto_generated|mac_out2~DATAOUT30 $end
-$var wire 1 V ULA|Mult0|auto_generated|mac_out2~DATAOUT31 $end
-$var wire 1 W lcd_rs~output_o $end
-$var wire 1 X lcd_rw~output_o $end
-$var wire 1 Y lcd_en~output_o $end
-$var wire 1 Z lcd_data[0]~output_o $end
-$var wire 1 [ lcd_data[1]~output_o $end
-$var wire 1 \ lcd_data[2]~output_o $end
-$var wire 1 ] lcd_data[3]~output_o $end
-$var wire 1 ^ lcd_data[4]~output_o $end
-$var wire 1 _ lcd_data[5]~output_o $end
-$var wire 1 ` lcd_data[6]~output_o $end
-$var wire 1 a lcd_data[7]~output_o $end
-$var wire 1 b mem_write_data_temp[0]~output_o $end
-$var wire 1 c mem_write_data_temp[1]~output_o $end
-$var wire 1 d mem_write_data_temp[2]~output_o $end
-$var wire 1 e mem_write_data_temp[3]~output_o $end
-$var wire 1 f mem_write_data_temp[4]~output_o $end
-$var wire 1 g mem_write_data_temp[5]~output_o $end
-$var wire 1 h mem_write_data_temp[6]~output_o $end
-$var wire 1 i mem_write_data_temp[7]~output_o $end
-$var wire 1 j mem_write_data_temp[8]~output_o $end
-$var wire 1 k mem_write_data_temp[9]~output_o $end
-$var wire 1 l mem_write_data_temp[10]~output_o $end
-$var wire 1 m mem_write_data_temp[11]~output_o $end
-$var wire 1 n mem_write_data_temp[12]~output_o $end
-$var wire 1 o mem_write_data_temp[13]~output_o $end
-$var wire 1 p mem_write_data_temp[14]~output_o $end
-$var wire 1 q mem_write_data_temp[15]~output_o $end
-$var wire 1 r clk~input_o $end
-$var wire 1 s switches[0]~input_o $end
-$var wire 1 t reset~input_o $end
-$var wire 1 u btn_enviar~input_o $end
-$var wire 1 v btn_enviar_d~0_combout $end
-$var wire 1 w btn_enviar_d~q $end
-$var wire 1 x btn_ligar~input_o $end
-$var wire 1 y btn_ligar_d~0_combout $end
-$var wire 1 z btn_ligar_d~q $end
-$var wire 1 { power_triggered~combout $end
-$var wire 1 | Selector1~0_combout $end
-$var wire 1 } current_state.STATE_DECODE~q $end
-$var wire 1 ~ switches[17]~input_o $end
-$var wire 1 !! switches[16]~input_o $end
-$var wire 1 "! switches[15]~input_o $end
-$var wire 1 #! Selector5~0_combout $end
-$var wire 1 $! Selector3~0_combout $end
-$var wire 1 %! next_state.STATE_ALU_START~0_combout $end
-$var wire 1 &! current_state.STATE_ALU_START~q $end
-$var wire 1 '! ULA|WideOr0~0_combout $end
-$var wire 1 (! Selector8~0_combout $end
-$var wire 1 )! alu_operation_enabled~q $end
-$var wire 1 *! ULA|proximo_estado~0_combout $end
-$var wire 1 +! ULA|estado_atual~q $end
-$var wire 1 ,! ULA|operationdone~q $end
-$var wire 1 -! Selector2~0_combout $end
-$var wire 1 .! current_state.STATE_ALU_WAIT~q $end
-$var wire 1 /! Selector3~1_combout $end
-$var wire 1 0! current_state.STATE_MEM_WRITE~q $end
-$var wire 1 1! Equal3~0_combout $end
-$var wire 1 2! Selector7~0_combout $end
-$var wire 1 3! Selector7~1_combout $end
-$var wire 1 4! mem_write_enabled~q $end
-$var wire 1 5! MEMORY|proximo_estado~0_combout $end
-$var wire 1 6! current_state.STATE_POWERED_OFF~0_combout $end
-$var wire 1 7! current_state.STATE_POWERED_OFF~q $end
-$var wire 1 8! Selector6~0_combout $end
-$var wire 1 9! Selector6~1_combout $end
-$var wire 1 :! mem_clear~q $end
-$var wire 1 ;! MEMORY|estado_atual~q $end
-$var wire 1 <! MEMORY|writedone~0_combout $end
-$var wire 1 =! MEMORY|writedone~q $end
-$var wire 1 >! Selector4~0_combout $end
-$var wire 1 ?! current_state.STATE_MEM_WAIT~q $end
-$var wire 1 @! Selector5~1_combout $end
-$var wire 1 A! current_state.STATE_LCD_UPDATE~q $end
-$var wire 1 B! Selector1~1_combout $end
-$var wire 1 C! current_state.STATE_IDLE~q $end
-$var wire 1 D! next_state.STATE_FETCH~0_combout $end
-$var wire 1 E! current_state.STATE_FETCH~q $end
-$var wire 1 F! mem_write_data[5]~0_combout $end
-$var wire 1 G! MEMORY|ram~0_combout $end
-$var wire 1 H! switches[11]~input_o $end
-$var wire 1 I! switches[12]~input_o $end
-$var wire 1 J! switches[13]~input_o $end
-$var wire 1 K! MEMORY|Decoder0~0_combout $end
-$var wire 1 L! switches[14]~input_o $end
-$var wire 1 M! MEMORY|ram[5][1]~1_combout $end
-$var wire 1 N! MEMORY|ram[5][0]~q $end
-$var wire 1 O! switches[5]~input_o $end
-$var wire 1 P! MEMORY|Decoder0~1_combout $end
-$var wire 1 Q! MEMORY|ram[9][12]~2_combout $end
-$var wire 1 R! MEMORY|ram[9][0]~q $end
-$var wire 1 S! switches[6]~input_o $end
-$var wire 1 T! MEMORY|ram[1][14]~3_combout $end
-$var wire 1 U! MEMORY|ram[1][0]~q $end
-$var wire 1 V! alu_value2~0_combout $end
-$var wire 1 W! MEMORY|ram[13][14]~4_combout $end
-$var wire 1 X! MEMORY|ram[13][0]~q $end
-$var wire 1 Y! alu_value2~1_combout $end
-$var wire 1 Z! switches[3]~input_o $end
-$var wire 1 [! MEMORY|Decoder0~2_combout $end
-$var wire 1 \! MEMORY|ram[10][10]~5_combout $end
-$var wire 1 ]! MEMORY|ram[10][0]~q $end
-$var wire 1 ^! MEMORY|Decoder0~3_combout $end
-$var wire 1 _! MEMORY|ram[6][14]~6_combout $end
-$var wire 1 `! MEMORY|ram[6][0]~q $end
-$var wire 1 a! MEMORY|ram[2][5]~7_combout $end
-$var wire 1 b! MEMORY|ram[2][0]~q $end
-$var wire 1 c! alu_value2~2_combout $end
-$var wire 1 d! MEMORY|ram[14][8]~8_combout $end
-$var wire 1 e! MEMORY|ram[14][0]~q $end
-$var wire 1 f! alu_value2~3_combout $end
-$var wire 1 g! switches[4]~input_o $end
-$var wire 1 h! MEMORY|Decoder0~4_combout $end
-$var wire 1 i! MEMORY|ram[8][15]~9_combout $end
-$var wire 1 j! MEMORY|ram[8][0]~q $end
-$var wire 1 k! MEMORY|Decoder0~5_combout $end
-$var wire 1 l! MEMORY|ram[4][11]~10_combout $end
-$var wire 1 m! MEMORY|ram[4][0]~q $end
-$var wire 1 n! MEMORY|ram[0][7]~11_combout $end
-$var wire 1 o! MEMORY|ram[0][0]~q $end
-$var wire 1 p! alu_value2~4_combout $end
-$var wire 1 q! MEMORY|ram[12][2]~12_combout $end
-$var wire 1 r! MEMORY|ram[12][0]~q $end
-$var wire 1 s! alu_value2~5_combout $end
-$var wire 1 t! alu_value2~6_combout $end
-$var wire 1 u! MEMORY|Decoder0~6_combout $end
-$var wire 1 v! MEMORY|ram[7][12]~13_combout $end
-$var wire 1 w! MEMORY|ram[7][0]~q $end
-$var wire 1 x! MEMORY|Decoder0~7_combout $end
-$var wire 1 y! MEMORY|ram[11][13]~14_combout $end
-$var wire 1 z! MEMORY|ram[11][0]~q $end
-$var wire 1 {! MEMORY|ram[3][1]~15_combout $end
-$var wire 1 |! MEMORY|ram[3][0]~q $end
-$var wire 1 }! alu_value2~7_combout $end
-$var wire 1 ~! MEMORY|ram[15][11]~16_combout $end
-$var wire 1 !" MEMORY|ram[15][0]~q $end
-$var wire 1 "" alu_value2~8_combout $end
-$var wire 1 #" alu_value2~9_combout $end
-$var wire 1 $" always1~0_combout $end
-$var wire 1 %" alu_value2~10_combout $end
-$var wire 1 &" ULA|Add0~0_combout $end
-$var wire 1 '" switches[9]~input_o $end
-$var wire 1 (" switches[10]~input_o $end
-$var wire 1 )" MEMORY|read_data_1[0]~0_combout $end
-$var wire 1 *" MEMORY|read_data_1[0]~1_combout $end
-$var wire 1 +" switches[7]~input_o $end
-$var wire 1 ," MEMORY|read_data_1[0]~2_combout $end
-$var wire 1 -" MEMORY|read_data_1[0]~3_combout $end
-$var wire 1 ." switches[8]~input_o $end
-$var wire 1 /" MEMORY|read_data_1[0]~4_combout $end
-$var wire 1 0" MEMORY|read_data_1[0]~5_combout $end
-$var wire 1 1" MEMORY|read_data_1[0]~6_combout $end
-$var wire 1 2" MEMORY|read_data_1[0]~7_combout $end
-$var wire 1 3" MEMORY|read_data_1[0]~8_combout $end
-$var wire 1 4" MEMORY|read_data_1[0]~9_combout $end
-$var wire 1 5" ULA|resultvalue[0]~17_cout $end
-$var wire 1 6" ULA|resultvalue[0]~18_combout $end
-$var wire 1 7" switches[1]~input_o $end
-$var wire 1 8" MEMORY|ram[5][1]~q $end
-$var wire 1 9" MEMORY|ram[4][1]~q $end
-$var wire 1 :" alu_value2~11_combout $end
-$var wire 1 ;" MEMORY|ram[7][1]~q $end
-$var wire 1 <" alu_value2~12_combout $end
-$var wire 1 =" MEMORY|ram[9][1]~q $end
-$var wire 1 >" MEMORY|ram[10][1]~q $end
-$var wire 1 ?" MEMORY|ram[8][1]~q $end
-$var wire 1 @" alu_value2~13_combout $end
-$var wire 1 A" MEMORY|ram[11][1]~q $end
-$var wire 1 B" alu_value2~14_combout $end
-$var wire 1 C" MEMORY|ram[1][1]~q $end
-$var wire 1 D" MEMORY|ram[2][1]~q $end
-$var wire 1 E" MEMORY|ram[0][1]~q $end
-$var wire 1 F" alu_value2~15_combout $end
-$var wire 1 G" MEMORY|ram[3][1]~q $end
-$var wire 1 H" alu_value2~16_combout $end
-$var wire 1 I" alu_value2~17_combout $end
-$var wire 1 J" MEMORY|ram[14][1]~q $end
-$var wire 1 K" MEMORY|ram[13][1]~q $end
-$var wire 1 L" MEMORY|ram[12][1]~q $end
-$var wire 1 M" alu_value2~18_combout $end
-$var wire 1 N" MEMORY|ram[15][1]~q $end
-$var wire 1 O" alu_value2~19_combout $end
-$var wire 1 P" alu_value2~20_combout $end
-$var wire 1 Q" alu_value2~21_combout $end
-$var wire 1 R" ULA|Add0~1_combout $end
-$var wire 1 S" ULA|resultvalue[0]~19 $end
-$var wire 1 T" ULA|resultvalue[1]~22_combout $end
-$var wire 1 U" switches[2]~input_o $end
-$var wire 1 V" MEMORY|ram[10][2]~q $end
-$var wire 1 W" MEMORY|ram[2][2]~q $end
-$var wire 1 X" alu_value2~22_combout $end
-$var wire 1 Y" MEMORY|ram[14][2]~q $end
-$var wire 1 Z" alu_value2~23_combout $end
-$var wire 1 [" MEMORY|ram[9][2]~q $end
-$var wire 1 \" MEMORY|ram[5][2]~q $end
-$var wire 1 ]" MEMORY|ram[1][2]~q $end
-$var wire 1 ^" alu_value2~24_combout $end
-$var wire 1 _" MEMORY|ram[13][2]~q $end
-$var wire 1 `" alu_value2~25_combout $end
-$var wire 1 a" MEMORY|ram[4][2]~q $end
-$var wire 1 b" MEMORY|ram[8][2]~q $end
-$var wire 1 c" MEMORY|ram[0][2]~q $end
-$var wire 1 d" alu_value2~26_combout $end
-$var wire 1 e" MEMORY|ram[12][2]~q $end
-$var wire 1 f" alu_value2~27_combout $end
-$var wire 1 g" alu_value2~28_combout $end
-$var wire 1 h" MEMORY|ram[11][2]~q $end
-$var wire 1 i" MEMORY|ram[7][2]~q $end
-$var wire 1 j" MEMORY|ram[3][2]~q $end
-$var wire 1 k" alu_value2~29_combout $end
-$var wire 1 l" MEMORY|ram[15][2]~q $end
-$var wire 1 m" alu_value2~30_combout $end
-$var wire 1 n" alu_value2~31_combout $end
-$var wire 1 o" alu_value2~32_combout $end
-$var wire 1 p" ULA|Add0~2_combout $end
-$var wire 1 q" ULA|resultvalue[1]~23 $end
-$var wire 1 r" ULA|resultvalue[2]~24_combout $end
-$var wire 1 s" MEMORY|ram[9][3]~q $end
-$var wire 1 t" MEMORY|ram[8][3]~q $end
-$var wire 1 u" alu_value2~33_combout $end
-$var wire 1 v" MEMORY|ram[11][3]~q $end
-$var wire 1 w" alu_value2~34_combout $end
-$var wire 1 x" MEMORY|ram[5][3]~q $end
-$var wire 1 y" MEMORY|ram[6][3]~q $end
-$var wire 1 z" MEMORY|ram[4][3]~q $end
-$var wire 1 {" alu_value2~35_combout $end
-$var wire 1 |" MEMORY|ram[7][3]~q $end
-$var wire 1 }" alu_value2~36_combout $end
-$var wire 1 ~" MEMORY|ram[2][3]~q $end
-$var wire 1 !# MEMORY|ram[1][3]~q $end
-$var wire 1 "# MEMORY|ram[0][3]~q $end
-$var wire 1 ## alu_value2~37_combout $end
-$var wire 1 $# MEMORY|ram[3][3]~q $end
-$var wire 1 %# alu_value2~38_combout $end
-$var wire 1 &# alu_value2~39_combout $end
-$var wire 1 '# MEMORY|ram[13][3]~q $end
-$var wire 1 (# MEMORY|ram[14][3]~q $end
-$var wire 1 )# MEMORY|ram[12][3]~q $end
-$var wire 1 *# alu_value2~40_combout $end
-$var wire 1 +# MEMORY|ram[15][3]~q $end
-$var wire 1 ,# alu_value2~41_combout $end
-$var wire 1 -# alu_value2~42_combout $end
-$var wire 1 .# alu_value2~43_combout $end
-$var wire 1 /# ULA|Add0~3_combout $end
-$var wire 1 0# ULA|resultvalue[2]~25 $end
-$var wire 1 1# ULA|resultvalue[3]~26_combout $end
-$var wire 1 2# MEMORY|ram[9][4]~q $end
-$var wire 1 3# MEMORY|ram[1][4]~q $end
-$var wire 1 4# alu_value2~44_combout $end
-$var wire 1 5# MEMORY|ram[13][4]~q $end
-$var wire 1 6# alu_value2~45_combout $end
-$var wire 1 7# MEMORY|ram[10][4]~q $end
-$var wire 1 8# MEMORY|ram[6][4]~q $end
-$var wire 1 9# MEMORY|ram[2][4]~q $end
-$var wire 1 :# alu_value2~46_combout $end
-$var wire 1 ;# MEMORY|ram[14][4]~q $end
-$var wire 1 <# alu_value2~47_combout $end
-$var wire 1 =# MEMORY|ram[8][4]~q $end
-$var wire 1 ># MEMORY|ram[4][4]~q $end
-$var wire 1 ?# MEMORY|ram[0][4]~q $end
-$var wire 1 @# alu_value2~48_combout $end
-$var wire 1 A# MEMORY|ram[12][4]~q $end
-$var wire 1 B# alu_value2~49_combout $end
-$var wire 1 C# alu_value2~50_combout $end
-$var wire 1 D# MEMORY|ram[7][4]~q $end
-$var wire 1 E# MEMORY|ram[11][4]~q $end
-$var wire 1 F# MEMORY|ram[3][4]~q $end
-$var wire 1 G# alu_value2~51_combout $end
-$var wire 1 H# MEMORY|ram[15][4]~q $end
-$var wire 1 I# alu_value2~52_combout $end
-$var wire 1 J# alu_value2~53_combout $end
-$var wire 1 K# alu_value2~54_combout $end
-$var wire 1 L# ULA|Add0~4_combout $end
-$var wire 1 M# ULA|resultvalue[3]~27 $end
-$var wire 1 N# ULA|resultvalue[4]~28_combout $end
-$var wire 1 O# MEMORY|ram[14][5]~q $end
-$var wire 1 P# MEMORY|ram[13][5]~q $end
-$var wire 1 Q# MEMORY|ram[12][5]~q $end
-$var wire 1 R# alu_value2~55_combout $end
-$var wire 1 S# MEMORY|ram[15][5]~q $end
-$var wire 1 T# alu_value2~56_combout $end
-$var wire 1 U# MEMORY|ram[5][5]~q $end
-$var wire 1 V# MEMORY|ram[4][5]~q $end
-$var wire 1 W# alu_value2~57_combout $end
-$var wire 1 X# MEMORY|ram[7][5]~q $end
-$var wire 1 Y# MEMORY|ram[11][5]~q $end
-$var wire 1 Z# alu_value2~58_combout $end
-$var wire 1 [# alu_value2~59_combout $end
-$var wire 1 \# alu_value2~60_combout $end
-$var wire 1 ]# MEMORY|ram[1][5]~q $end
-$var wire 1 ^# MEMORY|ram[2][5]~q $end
-$var wire 1 _# MEMORY|ram[0][5]~q $end
-$var wire 1 `# alu_value2~61_combout $end
-$var wire 1 a# MEMORY|ram[3][5]~q $end
-$var wire 1 b# alu_value2~62_combout $end
-$var wire 1 c# MEMORY|ram[9][5]~q $end
-$var wire 1 d# MEMORY|ram[10][5]~q $end
-$var wire 1 e# MEMORY|ram[8][5]~q $end
-$var wire 1 f# alu_value2~63_combout $end
-$var wire 1 g# alu_value2~64_combout $end
-$var wire 1 h# alu_value2~65_combout $end
-$var wire 1 i# alu_value2~66_combout $end
-$var wire 1 j# ULA|Add0~5_combout $end
-$var wire 1 k# ULA|resultvalue[4]~29 $end
-$var wire 1 l# ULA|resultvalue[5]~30_combout $end
-$var wire 1 m# MEMORY|ram[10][6]~q $end
-$var wire 1 n# MEMORY|ram[2][6]~q $end
-$var wire 1 o# alu_value2~67_combout $end
-$var wire 1 p# MEMORY|ram[14][6]~q $end
-$var wire 1 q# alu_value2~68_combout $end
-$var wire 1 r# MEMORY|ram[9][6]~q $end
-$var wire 1 s# MEMORY|ram[5][6]~q $end
-$var wire 1 t# MEMORY|ram[1][6]~q $end
-$var wire 1 u# alu_value2~69_combout $end
-$var wire 1 v# MEMORY|ram[13][6]~q $end
-$var wire 1 w# alu_value2~70_combout $end
-$var wire 1 x# MEMORY|ram[4][6]~q $end
-$var wire 1 y# MEMORY|ram[8][6]~q $end
-$var wire 1 z# MEMORY|ram[0][6]~q $end
-$var wire 1 {# alu_value2~71_combout $end
-$var wire 1 |# MEMORY|ram[12][6]~q $end
-$var wire 1 }# alu_value2~72_combout $end
-$var wire 1 ~# alu_value2~73_combout $end
-$var wire 1 !$ MEMORY|ram[11][6]~q $end
-$var wire 1 "$ MEMORY|ram[7][6]~q $end
-$var wire 1 #$ MEMORY|ram[3][6]~q $end
-$var wire 1 $$ alu_value2~74_combout $end
-$var wire 1 %$ MEMORY|ram[15][6]~q $end
-$var wire 1 &$ alu_value2~75_combout $end
-$var wire 1 '$ alu_value2~76_combout $end
-$var wire 1 ($ alu_value2~77_combout $end
-$var wire 1 )$ ULA|Add0~6_combout $end
-$var wire 1 *$ ULA|resultvalue[5]~31 $end
-$var wire 1 +$ ULA|resultvalue[6]~32_combout $end
-$var wire 1 ,$ MEMORY|ram[9][7]~q $end
-$var wire 1 -$ MEMORY|ram[8][7]~q $end
-$var wire 1 .$ alu_value2~78_combout $end
-$var wire 1 /$ MEMORY|ram[11][7]~q $end
-$var wire 1 0$ alu_value2~79_combout $end
-$var wire 1 1$ MEMORY|ram[5][7]~q $end
-$var wire 1 2$ MEMORY|ram[6][7]~q $end
-$var wire 1 3$ MEMORY|ram[4][7]~q $end
-$var wire 1 4$ alu_value2~80_combout $end
-$var wire 1 5$ MEMORY|ram[7][7]~q $end
-$var wire 1 6$ alu_value2~81_combout $end
-$var wire 1 7$ MEMORY|ram[2][7]~q $end
-$var wire 1 8$ MEMORY|ram[1][7]~q $end
-$var wire 1 9$ MEMORY|ram[0][7]~q $end
-$var wire 1 :$ alu_value2~82_combout $end
-$var wire 1 ;$ MEMORY|ram[3][7]~q $end
-$var wire 1 <$ alu_value2~83_combout $end
-$var wire 1 =$ alu_value2~84_combout $end
-$var wire 1 >$ MEMORY|ram[13][7]~q $end
-$var wire 1 ?$ MEMORY|ram[14][7]~q $end
-$var wire 1 @$ MEMORY|ram[12][7]~q $end
-$var wire 1 A$ alu_value2~85_combout $end
-$var wire 1 B$ MEMORY|ram[15][7]~q $end
-$var wire 1 C$ alu_value2~86_combout $end
-$var wire 1 D$ alu_value2~87_combout $end
-$var wire 1 E$ alu_value2~88_combout $end
-$var wire 1 F$ ULA|Add0~7_combout $end
-$var wire 1 G$ ULA|resultvalue[6]~33 $end
-$var wire 1 H$ ULA|resultvalue[7]~34_combout $end
-$var wire 1 I$ MEMORY|ram[9][8]~q $end
-$var wire 1 J$ MEMORY|ram[1][8]~q $end
-$var wire 1 K$ alu_value2~89_combout $end
-$var wire 1 L$ MEMORY|ram[13][8]~q $end
-$var wire 1 M$ alu_value2~90_combout $end
-$var wire 1 N$ MEMORY|ram[10][8]~q $end
-$var wire 1 O$ MEMORY|ram[6][8]~q $end
-$var wire 1 P$ MEMORY|ram[2][8]~q $end
-$var wire 1 Q$ alu_value2~91_combout $end
-$var wire 1 R$ MEMORY|ram[14][8]~q $end
-$var wire 1 S$ alu_value2~92_combout $end
-$var wire 1 T$ MEMORY|ram[8][8]~q $end
-$var wire 1 U$ MEMORY|ram[4][8]~q $end
-$var wire 1 V$ MEMORY|ram[0][8]~q $end
-$var wire 1 W$ alu_value2~93_combout $end
-$var wire 1 X$ MEMORY|ram[12][8]~q $end
-$var wire 1 Y$ alu_value2~94_combout $end
-$var wire 1 Z$ alu_value2~95_combout $end
-$var wire 1 [$ MEMORY|ram[7][8]~q $end
-$var wire 1 \$ MEMORY|ram[11][8]~q $end
-$var wire 1 ]$ MEMORY|ram[3][8]~q $end
-$var wire 1 ^$ alu_value2~96_combout $end
-$var wire 1 _$ MEMORY|ram[15][8]~q $end
-$var wire 1 `$ alu_value2~97_combout $end
-$var wire 1 a$ alu_value2~98_combout $end
-$var wire 1 b$ alu_value2~99_combout $end
-$var wire 1 c$ ULA|Add0~8_combout $end
-$var wire 1 d$ ULA|resultvalue[7]~35 $end
-$var wire 1 e$ ULA|resultvalue[8]~36_combout $end
-$var wire 1 f$ MEMORY|ram[5][9]~q $end
-$var wire 1 g$ MEMORY|ram[4][9]~q $end
-$var wire 1 h$ alu_value2~100_combout $end
-$var wire 1 i$ MEMORY|ram[7][9]~q $end
-$var wire 1 j$ alu_value2~101_combout $end
-$var wire 1 k$ MEMORY|ram[9][9]~q $end
-$var wire 1 l$ MEMORY|ram[10][9]~q $end
-$var wire 1 m$ MEMORY|ram[8][9]~q $end
-$var wire 1 n$ alu_value2~102_combout $end
-$var wire 1 o$ MEMORY|ram[11][9]~q $end
-$var wire 1 p$ alu_value2~103_combout $end
-$var wire 1 q$ MEMORY|ram[1][9]~q $end
-$var wire 1 r$ MEMORY|ram[2][9]~q $end
-$var wire 1 s$ MEMORY|ram[0][9]~q $end
-$var wire 1 t$ alu_value2~104_combout $end
-$var wire 1 u$ MEMORY|ram[3][9]~q $end
-$var wire 1 v$ alu_value2~105_combout $end
-$var wire 1 w$ alu_value2~106_combout $end
-$var wire 1 x$ MEMORY|ram[14][9]~q $end
-$var wire 1 y$ MEMORY|ram[13][9]~q $end
-$var wire 1 z$ MEMORY|ram[12][9]~q $end
-$var wire 1 {$ alu_value2~107_combout $end
-$var wire 1 |$ MEMORY|ram[15][9]~q $end
-$var wire 1 }$ alu_value2~108_combout $end
-$var wire 1 ~$ alu_value2~109_combout $end
-$var wire 1 !% alu_value2~110_combout $end
-$var wire 1 "% ULA|Add0~9_combout $end
-$var wire 1 #% ULA|resultvalue[8]~37 $end
-$var wire 1 $% ULA|resultvalue[9]~38_combout $end
-$var wire 1 %% MEMORY|ram[10][10]~q $end
-$var wire 1 &% MEMORY|ram[2][10]~q $end
-$var wire 1 '% alu_value2~111_combout $end
-$var wire 1 (% MEMORY|ram[14][10]~q $end
-$var wire 1 )% alu_value2~112_combout $end
-$var wire 1 *% MEMORY|ram[9][10]~q $end
-$var wire 1 +% MEMORY|ram[5][10]~q $end
-$var wire 1 ,% MEMORY|ram[1][10]~q $end
-$var wire 1 -% alu_value2~113_combout $end
-$var wire 1 .% MEMORY|ram[13][10]~q $end
-$var wire 1 /% alu_value2~114_combout $end
-$var wire 1 0% MEMORY|ram[4][10]~q $end
-$var wire 1 1% MEMORY|ram[8][10]~q $end
-$var wire 1 2% MEMORY|ram[0][10]~q $end
-$var wire 1 3% alu_value2~115_combout $end
-$var wire 1 4% MEMORY|ram[12][10]~q $end
-$var wire 1 5% alu_value2~116_combout $end
-$var wire 1 6% alu_value2~117_combout $end
-$var wire 1 7% MEMORY|ram[11][10]~q $end
-$var wire 1 8% MEMORY|ram[7][10]~q $end
-$var wire 1 9% MEMORY|ram[3][10]~q $end
-$var wire 1 :% alu_value2~118_combout $end
-$var wire 1 ;% MEMORY|ram[15][10]~q $end
-$var wire 1 <% alu_value2~119_combout $end
-$var wire 1 =% alu_value2~120_combout $end
-$var wire 1 >% alu_value2~121_combout $end
-$var wire 1 ?% ULA|Add0~10_combout $end
-$var wire 1 @% ULA|resultvalue[9]~39 $end
-$var wire 1 A% ULA|resultvalue[10]~40_combout $end
-$var wire 1 B% MEMORY|ram[9][11]~q $end
-$var wire 1 C% MEMORY|ram[8][11]~q $end
-$var wire 1 D% alu_value2~122_combout $end
-$var wire 1 E% MEMORY|ram[11][11]~q $end
-$var wire 1 F% alu_value2~123_combout $end
-$var wire 1 G% MEMORY|ram[5][11]~q $end
-$var wire 1 H% MEMORY|ram[6][11]~q $end
-$var wire 1 I% MEMORY|ram[4][11]~q $end
-$var wire 1 J% alu_value2~124_combout $end
-$var wire 1 K% MEMORY|ram[7][11]~q $end
-$var wire 1 L% alu_value2~125_combout $end
-$var wire 1 M% MEMORY|ram[2][11]~q $end
-$var wire 1 N% MEMORY|ram[1][11]~q $end
-$var wire 1 O% MEMORY|ram[0][11]~q $end
-$var wire 1 P% alu_value2~126_combout $end
-$var wire 1 Q% MEMORY|ram[3][11]~q $end
-$var wire 1 R% alu_value2~127_combout $end
-$var wire 1 S% alu_value2~128_combout $end
-$var wire 1 T% MEMORY|ram[13][11]~q $end
-$var wire 1 U% MEMORY|ram[14][11]~q $end
-$var wire 1 V% MEMORY|ram[12][11]~q $end
-$var wire 1 W% alu_value2~129_combout $end
-$var wire 1 X% MEMORY|ram[15][11]~q $end
-$var wire 1 Y% alu_value2~130_combout $end
-$var wire 1 Z% alu_value2~131_combout $end
-$var wire 1 [% alu_value2~132_combout $end
-$var wire 1 \% ULA|Add0~11_combout $end
-$var wire 1 ]% ULA|resultvalue[10]~41 $end
-$var wire 1 ^% ULA|resultvalue[11]~42_combout $end
-$var wire 1 _% MEMORY|ram[9][12]~q $end
-$var wire 1 `% MEMORY|ram[1][12]~q $end
-$var wire 1 a% alu_value2~133_combout $end
-$var wire 1 b% MEMORY|ram[13][12]~q $end
-$var wire 1 c% alu_value2~134_combout $end
-$var wire 1 d% MEMORY|ram[10][12]~q $end
-$var wire 1 e% MEMORY|ram[6][12]~q $end
-$var wire 1 f% MEMORY|ram[2][12]~q $end
-$var wire 1 g% alu_value2~135_combout $end
-$var wire 1 h% MEMORY|ram[14][12]~q $end
-$var wire 1 i% alu_value2~136_combout $end
-$var wire 1 j% MEMORY|ram[8][12]~q $end
-$var wire 1 k% MEMORY|ram[4][12]~q $end
-$var wire 1 l% MEMORY|ram[0][12]~q $end
-$var wire 1 m% alu_value2~137_combout $end
-$var wire 1 n% MEMORY|ram[12][12]~q $end
-$var wire 1 o% alu_value2~138_combout $end
-$var wire 1 p% alu_value2~139_combout $end
-$var wire 1 q% MEMORY|ram[7][12]~q $end
-$var wire 1 r% MEMORY|ram[11][12]~q $end
-$var wire 1 s% MEMORY|ram[3][12]~q $end
-$var wire 1 t% alu_value2~140_combout $end
-$var wire 1 u% MEMORY|ram[15][12]~q $end
-$var wire 1 v% alu_value2~141_combout $end
-$var wire 1 w% alu_value2~142_combout $end
-$var wire 1 x% alu_value2~143_combout $end
-$var wire 1 y% ULA|Add0~12_combout $end
-$var wire 1 z% ULA|resultvalue[11]~43 $end
-$var wire 1 {% ULA|resultvalue[12]~44_combout $end
-$var wire 1 |% MEMORY|ram[5][13]~q $end
-$var wire 1 }% MEMORY|ram[4][13]~q $end
-$var wire 1 ~% alu_value2~144_combout $end
-$var wire 1 !& MEMORY|ram[7][13]~q $end
-$var wire 1 "& alu_value2~145_combout $end
-$var wire 1 #& MEMORY|ram[9][13]~q $end
-$var wire 1 $& MEMORY|ram[10][13]~q $end
-$var wire 1 %& MEMORY|ram[8][13]~q $end
-$var wire 1 && alu_value2~146_combout $end
-$var wire 1 '& MEMORY|ram[11][13]~q $end
-$var wire 1 (& alu_value2~147_combout $end
-$var wire 1 )& MEMORY|ram[1][13]~q $end
-$var wire 1 *& MEMORY|ram[2][13]~q $end
-$var wire 1 +& MEMORY|ram[0][13]~q $end
-$var wire 1 ,& alu_value2~148_combout $end
-$var wire 1 -& MEMORY|ram[3][13]~q $end
-$var wire 1 .& alu_value2~149_combout $end
-$var wire 1 /& alu_value2~150_combout $end
-$var wire 1 0& MEMORY|ram[14][13]~q $end
-$var wire 1 1& MEMORY|ram[13][13]~q $end
-$var wire 1 2& MEMORY|ram[12][13]~q $end
-$var wire 1 3& alu_value2~151_combout $end
-$var wire 1 4& MEMORY|ram[15][13]~q $end
-$var wire 1 5& alu_value2~152_combout $end
-$var wire 1 6& alu_value2~153_combout $end
-$var wire 1 7& alu_value2~154_combout $end
-$var wire 1 8& ULA|Add0~13_combout $end
-$var wire 1 9& ULA|resultvalue[12]~45 $end
-$var wire 1 :& ULA|resultvalue[13]~46_combout $end
-$var wire 1 ;& MEMORY|ram[10][14]~q $end
-$var wire 1 <& MEMORY|ram[2][14]~q $end
-$var wire 1 =& alu_value2~155_combout $end
-$var wire 1 >& MEMORY|ram[14][14]~q $end
-$var wire 1 ?& alu_value2~156_combout $end
-$var wire 1 @& MEMORY|ram[9][14]~q $end
-$var wire 1 A& MEMORY|ram[5][14]~q $end
-$var wire 1 B& MEMORY|ram[1][14]~q $end
-$var wire 1 C& alu_value2~157_combout $end
-$var wire 1 D& MEMORY|ram[13][14]~q $end
-$var wire 1 E& alu_value2~158_combout $end
-$var wire 1 F& MEMORY|ram[4][14]~q $end
-$var wire 1 G& MEMORY|ram[8][14]~q $end
-$var wire 1 H& MEMORY|ram[0][14]~q $end
-$var wire 1 I& alu_value2~159_combout $end
-$var wire 1 J& MEMORY|ram[12][14]~q $end
-$var wire 1 K& alu_value2~160_combout $end
-$var wire 1 L& alu_value2~161_combout $end
-$var wire 1 M& MEMORY|ram[11][14]~q $end
-$var wire 1 N& MEMORY|ram[7][14]~q $end
-$var wire 1 O& MEMORY|ram[3][14]~q $end
-$var wire 1 P& alu_value2~162_combout $end
-$var wire 1 Q& MEMORY|ram[15][14]~q $end
-$var wire 1 R& alu_value2~163_combout $end
-$var wire 1 S& alu_value2~164_combout $end
-$var wire 1 T& alu_value2~165_combout $end
-$var wire 1 U& ULA|Add0~14_combout $end
-$var wire 1 V& ULA|resultvalue[13]~47 $end
-$var wire 1 W& ULA|resultvalue[14]~48_combout $end
-$var wire 1 X& MEMORY|ram[9][15]~q $end
-$var wire 1 Y& MEMORY|ram[8][15]~q $end
-$var wire 1 Z& alu_value2~166_combout $end
-$var wire 1 [& MEMORY|ram[11][15]~q $end
-$var wire 1 \& alu_value2~167_combout $end
-$var wire 1 ]& MEMORY|ram[5][15]~q $end
-$var wire 1 ^& MEMORY|ram[6][15]~q $end
-$var wire 1 _& MEMORY|ram[4][15]~q $end
-$var wire 1 `& alu_value2~168_combout $end
-$var wire 1 a& MEMORY|ram[7][15]~q $end
-$var wire 1 b& alu_value2~169_combout $end
-$var wire 1 c& MEMORY|ram[2][15]~q $end
-$var wire 1 d& MEMORY|ram[1][15]~q $end
-$var wire 1 e& MEMORY|ram[0][15]~q $end
-$var wire 1 f& alu_value2~170_combout $end
-$var wire 1 g& MEMORY|ram[3][15]~q $end
-$var wire 1 h& alu_value2~171_combout $end
-$var wire 1 i& alu_value2~172_combout $end
-$var wire 1 j& MEMORY|ram[13][15]~q $end
-$var wire 1 k& MEMORY|ram[14][15]~q $end
-$var wire 1 l& MEMORY|ram[12][15]~q $end
-$var wire 1 m& alu_value2~173_combout $end
-$var wire 1 n& MEMORY|ram[15][15]~q $end
-$var wire 1 o& alu_value2~174_combout $end
-$var wire 1 p& alu_value2~175_combout $end
-$var wire 1 q& alu_value2~176_combout $end
-$var wire 1 r& ULA|Add0~15_combout $end
-$var wire 1 s& ULA|resultvalue[14]~49 $end
-$var wire 1 t& ULA|resultvalue[15]~50_combout $end
-$var wire 1 u& ULA|Mult0|auto_generated|mac_mult1~DATAOUT15 $end
-$var wire 1 v& ULA|Mult0|auto_generated|mac_mult1~DATAOUT16 $end
-$var wire 1 w& ULA|Mult0|auto_generated|mac_mult1~DATAOUT17 $end
-$var wire 1 x& ULA|Mult0|auto_generated|mac_mult1~DATAOUT18 $end
-$var wire 1 y& ULA|Mult0|auto_generated|mac_mult1~DATAOUT19 $end
-$var wire 1 z& ULA|Mult0|auto_generated|mac_mult1~DATAOUT20 $end
-$var wire 1 {& ULA|Mult0|auto_generated|mac_mult1~DATAOUT21 $end
-$var wire 1 |& ULA|Mult0|auto_generated|mac_mult1~DATAOUT22 $end
-$var wire 1 }& ULA|Mult0|auto_generated|mac_mult1~DATAOUT23 $end
-$var wire 1 ~& ULA|Mult0|auto_generated|mac_mult1~DATAOUT24 $end
-$var wire 1 !' ULA|Mult0|auto_generated|mac_mult1~DATAOUT25 $end
-$var wire 1 "' ULA|Mult0|auto_generated|mac_mult1~DATAOUT26 $end
-$var wire 1 #' ULA|Mult0|auto_generated|mac_mult1~DATAOUT27 $end
-$var wire 1 $' ULA|Mult0|auto_generated|mac_mult1~DATAOUT28 $end
-$var wire 1 %' ULA|Mult0|auto_generated|mac_mult1~DATAOUT29 $end
-$var wire 1 &' ULA|Mult0|auto_generated|mac_mult1~DATAOUT30 $end
-$var wire 1 '' ULA|Mult0|auto_generated|mac_mult1~DATAOUT31 $end
-$var wire 1 (' ULA|Mult0|auto_generated|mac_out2~DATAOUT15 $end
-$var wire 1 )' ULA|resultvalue[14]~20_combout $end
-$var wire 1 *' ULA|resultvalue[0]~21_combout $end
-$var wire 1 +' mem_write_data_temp~16_combout $end
-$var wire 1 ,' MEMORY|ram~31_combout $end
-$var wire 1 -' MEMORY|ram[10][15]~q $end
-$var wire 1 .' MEMORY|read_data_1[15]~150_combout $end
-$var wire 1 /' MEMORY|read_data_1[15]~151_combout $end
-$var wire 1 0' MEMORY|read_data_1[15]~152_combout $end
-$var wire 1 1' MEMORY|read_data_1[15]~153_combout $end
-$var wire 1 2' MEMORY|read_data_1[15]~154_combout $end
-$var wire 1 3' MEMORY|read_data_1[15]~155_combout $end
-$var wire 1 4' MEMORY|read_data_1[15]~156_combout $end
-$var wire 1 5' MEMORY|read_data_1[15]~157_combout $end
-$var wire 1 6' MEMORY|read_data_1[15]~158_combout $end
-$var wire 1 7' MEMORY|read_data_1[15]~159_combout $end
-$var wire 1 8' ULA|Mult0|auto_generated|mac_mult1~DATAOUT14 $end
-$var wire 1 9' ULA|Mult0|auto_generated|mac_out2~DATAOUT14 $end
-$var wire 1 :' mem_write_data_temp~15_combout $end
-$var wire 1 ;' MEMORY|ram~30_combout $end
-$var wire 1 <' MEMORY|ram[6][14]~q $end
-$var wire 1 =' MEMORY|read_data_1[14]~140_combout $end
-$var wire 1 >' MEMORY|read_data_1[14]~141_combout $end
-$var wire 1 ?' MEMORY|read_data_1[14]~142_combout $end
-$var wire 1 @' MEMORY|read_data_1[14]~143_combout $end
-$var wire 1 A' MEMORY|read_data_1[14]~144_combout $end
-$var wire 1 B' MEMORY|read_data_1[14]~145_combout $end
-$var wire 1 C' MEMORY|read_data_1[14]~146_combout $end
-$var wire 1 D' MEMORY|read_data_1[14]~147_combout $end
-$var wire 1 E' MEMORY|read_data_1[14]~148_combout $end
-$var wire 1 F' MEMORY|read_data_1[14]~149_combout $end
-$var wire 1 G' ULA|Mult0|auto_generated|mac_mult1~DATAOUT13 $end
-$var wire 1 H' ULA|Mult0|auto_generated|mac_out2~DATAOUT13 $end
-$var wire 1 I' mem_write_data_temp~14_combout $end
-$var wire 1 J' MEMORY|ram~29_combout $end
-$var wire 1 K' MEMORY|ram[6][13]~q $end
-$var wire 1 L' MEMORY|read_data_1[13]~130_combout $end
-$var wire 1 M' MEMORY|read_data_1[13]~131_combout $end
-$var wire 1 N' MEMORY|read_data_1[13]~132_combout $end
-$var wire 1 O' MEMORY|read_data_1[13]~133_combout $end
-$var wire 1 P' MEMORY|read_data_1[13]~134_combout $end
-$var wire 1 Q' MEMORY|read_data_1[13]~135_combout $end
-$var wire 1 R' MEMORY|read_data_1[13]~136_combout $end
-$var wire 1 S' MEMORY|read_data_1[13]~137_combout $end
-$var wire 1 T' MEMORY|read_data_1[13]~138_combout $end
-$var wire 1 U' MEMORY|read_data_1[13]~139_combout $end
-$var wire 1 V' ULA|Mult0|auto_generated|mac_mult1~DATAOUT12 $end
-$var wire 1 W' ULA|Mult0|auto_generated|mac_out2~DATAOUT12 $end
-$var wire 1 X' mem_write_data_temp~13_combout $end
-$var wire 1 Y' MEMORY|ram~28_combout $end
-$var wire 1 Z' MEMORY|ram[5][12]~q $end
-$var wire 1 [' MEMORY|read_data_1[12]~120_combout $end
-$var wire 1 \' MEMORY|read_data_1[12]~121_combout $end
-$var wire 1 ]' MEMORY|read_data_1[12]~122_combout $end
-$var wire 1 ^' MEMORY|read_data_1[12]~123_combout $end
-$var wire 1 _' MEMORY|read_data_1[12]~124_combout $end
-$var wire 1 `' MEMORY|read_data_1[12]~125_combout $end
-$var wire 1 a' MEMORY|read_data_1[12]~126_combout $end
-$var wire 1 b' MEMORY|read_data_1[12]~127_combout $end
-$var wire 1 c' MEMORY|read_data_1[12]~128_combout $end
-$var wire 1 d' MEMORY|read_data_1[12]~129_combout $end
-$var wire 1 e' ULA|Mult0|auto_generated|mac_mult1~DATAOUT11 $end
-$var wire 1 f' ULA|Mult0|auto_generated|mac_out2~DATAOUT11 $end
-$var wire 1 g' mem_write_data_temp~12_combout $end
-$var wire 1 h' MEMORY|ram~27_combout $end
-$var wire 1 i' MEMORY|ram[10][11]~q $end
-$var wire 1 j' MEMORY|read_data_1[11]~110_combout $end
-$var wire 1 k' MEMORY|read_data_1[11]~111_combout $end
-$var wire 1 l' MEMORY|read_data_1[11]~112_combout $end
-$var wire 1 m' MEMORY|read_data_1[11]~113_combout $end
-$var wire 1 n' MEMORY|read_data_1[11]~114_combout $end
-$var wire 1 o' MEMORY|read_data_1[11]~115_combout $end
-$var wire 1 p' MEMORY|read_data_1[11]~116_combout $end
-$var wire 1 q' MEMORY|read_data_1[11]~117_combout $end
-$var wire 1 r' MEMORY|read_data_1[11]~118_combout $end
-$var wire 1 s' MEMORY|read_data_1[11]~119_combout $end
-$var wire 1 t' ULA|Mult0|auto_generated|mac_mult1~DATAOUT10 $end
-$var wire 1 u' ULA|Mult0|auto_generated|mac_out2~DATAOUT10 $end
-$var wire 1 v' mem_write_data_temp~11_combout $end
-$var wire 1 w' MEMORY|ram~26_combout $end
-$var wire 1 x' MEMORY|ram[6][10]~q $end
-$var wire 1 y' MEMORY|read_data_1[10]~100_combout $end
-$var wire 1 z' MEMORY|read_data_1[10]~101_combout $end
-$var wire 1 {' MEMORY|read_data_1[10]~102_combout $end
-$var wire 1 |' MEMORY|read_data_1[10]~103_combout $end
-$var wire 1 }' MEMORY|read_data_1[10]~104_combout $end
-$var wire 1 ~' MEMORY|read_data_1[10]~105_combout $end
-$var wire 1 !( MEMORY|read_data_1[10]~106_combout $end
-$var wire 1 "( MEMORY|read_data_1[10]~107_combout $end
-$var wire 1 #( MEMORY|read_data_1[10]~108_combout $end
-$var wire 1 $( MEMORY|read_data_1[10]~109_combout $end
-$var wire 1 %( ULA|Mult0|auto_generated|mac_mult1~DATAOUT9 $end
-$var wire 1 &( ULA|Mult0|auto_generated|mac_out2~DATAOUT9 $end
-$var wire 1 '( mem_write_data_temp~10_combout $end
-$var wire 1 (( MEMORY|ram~25_combout $end
-$var wire 1 )( MEMORY|ram[6][9]~q $end
-$var wire 1 *( MEMORY|read_data_1[9]~90_combout $end
-$var wire 1 +( MEMORY|read_data_1[9]~91_combout $end
-$var wire 1 ,( MEMORY|read_data_1[9]~92_combout $end
-$var wire 1 -( MEMORY|read_data_1[9]~93_combout $end
-$var wire 1 .( MEMORY|read_data_1[9]~94_combout $end
-$var wire 1 /( MEMORY|read_data_1[9]~95_combout $end
-$var wire 1 0( MEMORY|read_data_1[9]~96_combout $end
-$var wire 1 1( MEMORY|read_data_1[9]~97_combout $end
-$var wire 1 2( MEMORY|read_data_1[9]~98_combout $end
-$var wire 1 3( MEMORY|read_data_1[9]~99_combout $end
-$var wire 1 4( ULA|Mult0|auto_generated|mac_mult1~DATAOUT8 $end
-$var wire 1 5( ULA|Mult0|auto_generated|mac_out2~DATAOUT8 $end
-$var wire 1 6( mem_write_data_temp~9_combout $end
-$var wire 1 7( MEMORY|ram~24_combout $end
-$var wire 1 8( MEMORY|ram[5][8]~q $end
-$var wire 1 9( MEMORY|read_data_1[8]~80_combout $end
-$var wire 1 :( MEMORY|read_data_1[8]~81_combout $end
-$var wire 1 ;( MEMORY|read_data_1[8]~82_combout $end
-$var wire 1 <( MEMORY|read_data_1[8]~83_combout $end
-$var wire 1 =( MEMORY|read_data_1[8]~84_combout $end
-$var wire 1 >( MEMORY|read_data_1[8]~85_combout $end
-$var wire 1 ?( MEMORY|read_data_1[8]~86_combout $end
-$var wire 1 @( MEMORY|read_data_1[8]~87_combout $end
-$var wire 1 A( MEMORY|read_data_1[8]~88_combout $end
-$var wire 1 B( MEMORY|read_data_1[8]~89_combout $end
-$var wire 1 C( ULA|Mult0|auto_generated|mac_mult1~DATAOUT7 $end
-$var wire 1 D( ULA|Mult0|auto_generated|mac_out2~DATAOUT7 $end
-$var wire 1 E( mem_write_data_temp~8_combout $end
-$var wire 1 F( MEMORY|ram~23_combout $end
-$var wire 1 G( MEMORY|ram[10][7]~q $end
-$var wire 1 H( MEMORY|read_data_1[7]~70_combout $end
-$var wire 1 I( MEMORY|read_data_1[7]~71_combout $end
-$var wire 1 J( MEMORY|read_data_1[7]~72_combout $end
-$var wire 1 K( MEMORY|read_data_1[7]~73_combout $end
-$var wire 1 L( MEMORY|read_data_1[7]~74_combout $end
-$var wire 1 M( MEMORY|read_data_1[7]~75_combout $end
-$var wire 1 N( MEMORY|read_data_1[7]~76_combout $end
-$var wire 1 O( MEMORY|read_data_1[7]~77_combout $end
-$var wire 1 P( MEMORY|read_data_1[7]~78_combout $end
-$var wire 1 Q( MEMORY|read_data_1[7]~79_combout $end
-$var wire 1 R( ULA|Mult0|auto_generated|mac_mult1~DATAOUT6 $end
-$var wire 1 S( ULA|Mult0|auto_generated|mac_out2~DATAOUT6 $end
-$var wire 1 T( Equal4~0_combout $end
-$var wire 1 U( mem_write_data_temp~7_combout $end
-$var wire 1 V( MEMORY|ram~22_combout $end
-$var wire 1 W( MEMORY|ram[6][6]~q $end
-$var wire 1 X( MEMORY|read_data_1[6]~60_combout $end
-$var wire 1 Y( MEMORY|read_data_1[6]~61_combout $end
-$var wire 1 Z( MEMORY|read_data_1[6]~62_combout $end
-$var wire 1 [( MEMORY|read_data_1[6]~63_combout $end
-$var wire 1 \( MEMORY|read_data_1[6]~64_combout $end
-$var wire 1 ]( MEMORY|read_data_1[6]~65_combout $end
-$var wire 1 ^( MEMORY|read_data_1[6]~66_combout $end
-$var wire 1 _( MEMORY|read_data_1[6]~67_combout $end
-$var wire 1 `( MEMORY|read_data_1[6]~68_combout $end
-$var wire 1 a( MEMORY|read_data_1[6]~69_combout $end
-$var wire 1 b( ULA|Mult0|auto_generated|mac_mult1~DATAOUT5 $end
-$var wire 1 c( ULA|Mult0|auto_generated|mac_out2~DATAOUT5 $end
-$var wire 1 d( mem_write_data_temp~6_combout $end
-$var wire 1 e( MEMORY|ram~21_combout $end
-$var wire 1 f( MEMORY|ram[6][5]~q $end
-$var wire 1 g( MEMORY|read_data_1[5]~50_combout $end
-$var wire 1 h( MEMORY|read_data_1[5]~51_combout $end
-$var wire 1 i( MEMORY|read_data_1[5]~52_combout $end
-$var wire 1 j( MEMORY|read_data_1[5]~53_combout $end
-$var wire 1 k( MEMORY|read_data_1[5]~54_combout $end
-$var wire 1 l( MEMORY|read_data_1[5]~55_combout $end
-$var wire 1 m( MEMORY|read_data_1[5]~56_combout $end
-$var wire 1 n( MEMORY|read_data_1[5]~57_combout $end
-$var wire 1 o( MEMORY|read_data_1[5]~58_combout $end
-$var wire 1 p( MEMORY|read_data_1[5]~59_combout $end
-$var wire 1 q( ULA|Mult0|auto_generated|mac_mult1~DATAOUT4 $end
-$var wire 1 r( ULA|Mult0|auto_generated|mac_out2~DATAOUT4 $end
-$var wire 1 s( mem_write_data_temp~5_combout $end
-$var wire 1 t( MEMORY|ram~20_combout $end
-$var wire 1 u( MEMORY|ram[5][4]~q $end
-$var wire 1 v( MEMORY|read_data_1[4]~40_combout $end
-$var wire 1 w( MEMORY|read_data_1[4]~41_combout $end
-$var wire 1 x( MEMORY|read_data_1[4]~42_combout $end
-$var wire 1 y( MEMORY|read_data_1[4]~43_combout $end
-$var wire 1 z( MEMORY|read_data_1[4]~44_combout $end
-$var wire 1 {( MEMORY|read_data_1[4]~45_combout $end
-$var wire 1 |( MEMORY|read_data_1[4]~46_combout $end
-$var wire 1 }( MEMORY|read_data_1[4]~47_combout $end
-$var wire 1 ~( MEMORY|read_data_1[4]~48_combout $end
-$var wire 1 !) MEMORY|read_data_1[4]~49_combout $end
-$var wire 1 ") ULA|Mult0|auto_generated|mac_mult1~DATAOUT3 $end
-$var wire 1 #) ULA|Mult0|auto_generated|mac_out2~DATAOUT3 $end
-$var wire 1 $) mem_write_data_temp~4_combout $end
-$var wire 1 %) MEMORY|ram~19_combout $end
-$var wire 1 &) MEMORY|ram[10][3]~q $end
-$var wire 1 ') MEMORY|read_data_1[3]~30_combout $end
-$var wire 1 () MEMORY|read_data_1[3]~31_combout $end
-$var wire 1 )) MEMORY|read_data_1[3]~32_combout $end
-$var wire 1 *) MEMORY|read_data_1[3]~33_combout $end
-$var wire 1 +) MEMORY|read_data_1[3]~34_combout $end
-$var wire 1 ,) MEMORY|read_data_1[3]~35_combout $end
-$var wire 1 -) MEMORY|read_data_1[3]~36_combout $end
-$var wire 1 .) MEMORY|read_data_1[3]~37_combout $end
-$var wire 1 /) MEMORY|read_data_1[3]~38_combout $end
-$var wire 1 0) MEMORY|read_data_1[3]~39_combout $end
-$var wire 1 1) ULA|Mult0|auto_generated|mac_mult1~DATAOUT2 $end
-$var wire 1 2) ULA|Mult0|auto_generated|mac_out2~DATAOUT2 $end
-$var wire 1 3) mem_write_data_temp~3_combout $end
-$var wire 1 4) MEMORY|ram~18_combout $end
-$var wire 1 5) MEMORY|ram[6][2]~q $end
-$var wire 1 6) MEMORY|read_data_1[2]~20_combout $end
-$var wire 1 7) MEMORY|read_data_1[2]~21_combout $end
-$var wire 1 8) MEMORY|read_data_1[2]~22_combout $end
-$var wire 1 9) MEMORY|read_data_1[2]~23_combout $end
-$var wire 1 :) MEMORY|read_data_1[2]~24_combout $end
-$var wire 1 ;) MEMORY|read_data_1[2]~25_combout $end
-$var wire 1 <) MEMORY|read_data_1[2]~26_combout $end
-$var wire 1 =) MEMORY|read_data_1[2]~27_combout $end
-$var wire 1 >) MEMORY|read_data_1[2]~28_combout $end
-$var wire 1 ?) MEMORY|read_data_1[2]~29_combout $end
-$var wire 1 @) ULA|Mult0|auto_generated|mac_mult1~DATAOUT1 $end
-$var wire 1 A) ULA|Mult0|auto_generated|mac_out2~DATAOUT1 $end
-$var wire 1 B) mem_write_data_temp~2_combout $end
-$var wire 1 C) MEMORY|ram~17_combout $end
-$var wire 1 D) MEMORY|ram[6][1]~q $end
-$var wire 1 E) MEMORY|read_data_1[1]~10_combout $end
-$var wire 1 F) MEMORY|read_data_1[1]~11_combout $end
-$var wire 1 G) MEMORY|read_data_1[1]~12_combout $end
-$var wire 1 H) MEMORY|read_data_1[1]~13_combout $end
-$var wire 1 I) MEMORY|read_data_1[1]~14_combout $end
-$var wire 1 J) MEMORY|read_data_1[1]~15_combout $end
-$var wire 1 K) MEMORY|read_data_1[1]~16_combout $end
-$var wire 1 L) MEMORY|read_data_1[1]~17_combout $end
-$var wire 1 M) MEMORY|read_data_1[1]~18_combout $end
-$var wire 1 N) MEMORY|read_data_1[1]~19_combout $end
-$var wire 1 O) ULA|Mult0|auto_generated|mac_mult1~dataout $end
-$var wire 1 P) ULA|Mult0|auto_generated|mac_out2~dataout $end
-$var wire 1 Q) mem_write_data_temp~0_combout $end
-$var wire 1 R) mem_write_data_temp[0]~1_combout $end
-$var wire 1 S) mem_write_data_temp[0]~reg0_q $end
-$var wire 1 T) mem_write_data_temp[1]~reg0_q $end
-$var wire 1 U) mem_write_data_temp[2]~reg0_q $end
-$var wire 1 V) mem_write_data_temp[3]~reg0_q $end
-$var wire 1 W) mem_write_data_temp[4]~reg0_q $end
-$var wire 1 X) mem_write_data_temp[5]~reg0_q $end
-$var wire 1 Y) mem_write_data_temp[6]~reg0_q $end
-$var wire 1 Z) mem_write_data_temp[7]~reg0_q $end
-$var wire 1 [) mem_write_data_temp[8]~reg0_q $end
-$var wire 1 \) mem_write_data_temp[9]~reg0_q $end
-$var wire 1 ]) mem_write_data_temp[10]~reg0_q $end
-$var wire 1 ^) mem_write_data_temp[11]~reg0_q $end
-$var wire 1 _) mem_write_data_temp[12]~reg0_q $end
-$var wire 1 `) mem_write_data_temp[13]~reg0_q $end
-$var wire 1 a) mem_write_data_temp[14]~reg0_q $end
-$var wire 1 b) mem_write_data_temp[15]~reg0_q $end
-$var wire 1 c) r_dest [3] $end
-$var wire 1 d) r_dest [2] $end
-$var wire 1 e) r_dest [1] $end
-$var wire 1 f) r_dest [0] $end
-$var wire 1 g) opcode [2] $end
-$var wire 1 h) opcode [1] $end
-$var wire 1 i) opcode [0] $end
-$var wire 1 j) immediate_extended [15] $end
-$var wire 1 k) immediate_extended [14] $end
-$var wire 1 l) immediate_extended [13] $end
-$var wire 1 m) immediate_extended [12] $end
-$var wire 1 n) immediate_extended [11] $end
-$var wire 1 o) immediate_extended [10] $end
-$var wire 1 p) immediate_extended [9] $end
-$var wire 1 q) immediate_extended [8] $end
-$var wire 1 r) immediate_extended [7] $end
-$var wire 1 s) immediate_extended [6] $end
-$var wire 1 t) immediate_extended [5] $end
-$var wire 1 u) immediate_extended [4] $end
-$var wire 1 v) immediate_extended [3] $end
-$var wire 1 w) immediate_extended [2] $end
-$var wire 1 x) immediate_extended [1] $end
-$var wire 1 y) immediate_extended [0] $end
-$var wire 1 z) alu_value1 [15] $end
-$var wire 1 {) alu_value1 [14] $end
-$var wire 1 |) alu_value1 [13] $end
-$var wire 1 }) alu_value1 [12] $end
-$var wire 1 ~) alu_value1 [11] $end
-$var wire 1 !* alu_value1 [10] $end
-$var wire 1 "* alu_value1 [9] $end
-$var wire 1 #* alu_value1 [8] $end
-$var wire 1 $* alu_value1 [7] $end
-$var wire 1 %* alu_value1 [6] $end
-$var wire 1 &* alu_value1 [5] $end
-$var wire 1 '* alu_value1 [4] $end
-$var wire 1 (* alu_value1 [3] $end
-$var wire 1 )* alu_value1 [2] $end
-$var wire 1 ** alu_value1 [1] $end
-$var wire 1 +* alu_value1 [0] $end
-$var wire 1 ,* ULA|resultvalue [15] $end
-$var wire 1 -* ULA|resultvalue [14] $end
-$var wire 1 .* ULA|resultvalue [13] $end
-$var wire 1 /* ULA|resultvalue [12] $end
-$var wire 1 0* ULA|resultvalue [11] $end
-$var wire 1 1* ULA|resultvalue [10] $end
-$var wire 1 2* ULA|resultvalue [9] $end
-$var wire 1 3* ULA|resultvalue [8] $end
-$var wire 1 4* ULA|resultvalue [7] $end
-$var wire 1 5* ULA|resultvalue [6] $end
-$var wire 1 6* ULA|resultvalue [5] $end
-$var wire 1 7* ULA|resultvalue [4] $end
-$var wire 1 8* ULA|resultvalue [3] $end
-$var wire 1 9* ULA|resultvalue [2] $end
-$var wire 1 :* ULA|resultvalue [1] $end
-$var wire 1 ;* ULA|resultvalue [0] $end
-$var wire 1 <* alu_opcode [2] $end
-$var wire 1 =* alu_opcode [1] $end
-$var wire 1 >* alu_opcode [0] $end
-$var wire 1 ?* instruction_register [17] $end
-$var wire 1 @* instruction_register [16] $end
-$var wire 1 A* instruction_register [15] $end
-$var wire 1 B* instruction_register [14] $end
-$var wire 1 C* instruction_register [13] $end
-$var wire 1 D* instruction_register [12] $end
-$var wire 1 E* instruction_register [11] $end
-$var wire 1 F* instruction_register [10] $end
-$var wire 1 G* instruction_register [9] $end
-$var wire 1 H* instruction_register [8] $end
-$var wire 1 I* instruction_register [7] $end
-$var wire 1 J* instruction_register [6] $end
-$var wire 1 K* instruction_register [5] $end
-$var wire 1 L* instruction_register [4] $end
-$var wire 1 M* instruction_register [3] $end
-$var wire 1 N* instruction_register [2] $end
-$var wire 1 O* instruction_register [1] $end
-$var wire 1 P* instruction_register [0] $end
-$var wire 1 Q* alu_value2 [15] $end
-$var wire 1 R* alu_value2 [14] $end
-$var wire 1 S* alu_value2 [13] $end
-$var wire 1 T* alu_value2 [12] $end
-$var wire 1 U* alu_value2 [11] $end
-$var wire 1 V* alu_value2 [10] $end
-$var wire 1 W* alu_value2 [9] $end
-$var wire 1 X* alu_value2 [8] $end
-$var wire 1 Y* alu_value2 [7] $end
-$var wire 1 Z* alu_value2 [6] $end
-$var wire 1 [* alu_value2 [5] $end
-$var wire 1 \* alu_value2 [4] $end
-$var wire 1 ]* alu_value2 [3] $end
-$var wire 1 ^* alu_value2 [2] $end
-$var wire 1 _* alu_value2 [1] $end
-$var wire 1 `* alu_value2 [0] $end
-$var wire 1 a* mem_read_addr_1 [3] $end
-$var wire 1 b* mem_read_addr_1 [2] $end
-$var wire 1 c* mem_read_addr_1 [1] $end
-$var wire 1 d* mem_read_addr_1 [0] $end
-$var wire 1 e* mem_write_data [15] $end
-$var wire 1 f* mem_write_data [14] $end
-$var wire 1 g* mem_write_data [13] $end
-$var wire 1 h* mem_write_data [12] $end
-$var wire 1 i* mem_write_data [11] $end
-$var wire 1 j* mem_write_data [10] $end
-$var wire 1 k* mem_write_data [9] $end
-$var wire 1 l* mem_write_data [8] $end
-$var wire 1 m* mem_write_data [7] $end
-$var wire 1 n* mem_write_data [6] $end
-$var wire 1 o* mem_write_data [5] $end
-$var wire 1 p* mem_write_data [4] $end
-$var wire 1 q* mem_write_data [3] $end
-$var wire 1 r* mem_write_data [2] $end
-$var wire 1 s* mem_write_data [1] $end
-$var wire 1 t* mem_write_data [0] $end
-$var wire 1 u* mem_write_addr [3] $end
-$var wire 1 v* mem_write_addr [2] $end
-$var wire 1 w* mem_write_addr [1] $end
-$var wire 1 x* mem_write_addr [0] $end
-$var wire 1 y* ULA|Mult0|auto_generated|mac_out2_DATAOUT_bus [31] $end
-$var wire 1 z* ULA|Mult0|auto_generated|mac_out2_DATAOUT_bus [30] $end
-$var wire 1 {* ULA|Mult0|auto_generated|mac_out2_DATAOUT_bus [29] $end
-$var wire 1 |* ULA|Mult0|auto_generated|mac_out2_DATAOUT_bus [28] $end
-$var wire 1 }* ULA|Mult0|auto_generated|mac_out2_DATAOUT_bus [27] $end
-$var wire 1 ~* ULA|Mult0|auto_generated|mac_out2_DATAOUT_bus [26] $end
-$var wire 1 !+ ULA|Mult0|auto_generated|mac_out2_DATAOUT_bus [25] $end
-$var wire 1 "+ ULA|Mult0|auto_generated|mac_out2_DATAOUT_bus [24] $end
-$var wire 1 #+ ULA|Mult0|auto_generated|mac_out2_DATAOUT_bus [23] $end
-$var wire 1 $+ ULA|Mult0|auto_generated|mac_out2_DATAOUT_bus [22] $end
-$var wire 1 %+ ULA|Mult0|auto_generated|mac_out2_DATAOUT_bus [21] $end
-$var wire 1 &+ ULA|Mult0|auto_generated|mac_out2_DATAOUT_bus [20] $end
-$var wire 1 '+ ULA|Mult0|auto_generated|mac_out2_DATAOUT_bus [19] $end
-$var wire 1 (+ ULA|Mult0|auto_generated|mac_out2_DATAOUT_bus [18] $end
-$var wire 1 )+ ULA|Mult0|auto_generated|mac_out2_DATAOUT_bus [17] $end
-$var wire 1 *+ ULA|Mult0|auto_generated|mac_out2_DATAOUT_bus [16] $end
-$var wire 1 ++ ULA|Mult0|auto_generated|mac_out2_DATAOUT_bus [15] $end
-$var wire 1 ,+ ULA|Mult0|auto_generated|mac_out2_DATAOUT_bus [14] $end
-$var wire 1 -+ ULA|Mult0|auto_generated|mac_out2_DATAOUT_bus [13] $end
-$var wire 1 .+ ULA|Mult0|auto_generated|mac_out2_DATAOUT_bus [12] $end
-$var wire 1 /+ ULA|Mult0|auto_generated|mac_out2_DATAOUT_bus [11] $end
-$var wire 1 0+ ULA|Mult0|auto_generated|mac_out2_DATAOUT_bus [10] $end
-$var wire 1 1+ ULA|Mult0|auto_generated|mac_out2_DATAOUT_bus [9] $end
-$var wire 1 2+ ULA|Mult0|auto_generated|mac_out2_DATAOUT_bus [8] $end
-$var wire 1 3+ ULA|Mult0|auto_generated|mac_out2_DATAOUT_bus [7] $end
-$var wire 1 4+ ULA|Mult0|auto_generated|mac_out2_DATAOUT_bus [6] $end
-$var wire 1 5+ ULA|Mult0|auto_generated|mac_out2_DATAOUT_bus [5] $end
-$var wire 1 6+ ULA|Mult0|auto_generated|mac_out2_DATAOUT_bus [4] $end
-$var wire 1 7+ ULA|Mult0|auto_generated|mac_out2_DATAOUT_bus [3] $end
-$var wire 1 8+ ULA|Mult0|auto_generated|mac_out2_DATAOUT_bus [2] $end
-$var wire 1 9+ ULA|Mult0|auto_generated|mac_out2_DATAOUT_bus [1] $end
-$var wire 1 :+ ULA|Mult0|auto_generated|mac_out2_DATAOUT_bus [0] $end
-$var wire 1 ;+ ULA|Mult0|auto_generated|mac_mult1_DATAOUT_bus [31] $end
-$var wire 1 <+ ULA|Mult0|auto_generated|mac_mult1_DATAOUT_bus [30] $end
-$var wire 1 =+ ULA|Mult0|auto_generated|mac_mult1_DATAOUT_bus [29] $end
-$var wire 1 >+ ULA|Mult0|auto_generated|mac_mult1_DATAOUT_bus [28] $end
-$var wire 1 ?+ ULA|Mult0|auto_generated|mac_mult1_DATAOUT_bus [27] $end
-$var wire 1 @+ ULA|Mult0|auto_generated|mac_mult1_DATAOUT_bus [26] $end
-$var wire 1 A+ ULA|Mult0|auto_generated|mac_mult1_DATAOUT_bus [25] $end
-$var wire 1 B+ ULA|Mult0|auto_generated|mac_mult1_DATAOUT_bus [24] $end
-$var wire 1 C+ ULA|Mult0|auto_generated|mac_mult1_DATAOUT_bus [23] $end
-$var wire 1 D+ ULA|Mult0|auto_generated|mac_mult1_DATAOUT_bus [22] $end
-$var wire 1 E+ ULA|Mult0|auto_generated|mac_mult1_DATAOUT_bus [21] $end
-$var wire 1 F+ ULA|Mult0|auto_generated|mac_mult1_DATAOUT_bus [20] $end
-$var wire 1 G+ ULA|Mult0|auto_generated|mac_mult1_DATAOUT_bus [19] $end
-$var wire 1 H+ ULA|Mult0|auto_generated|mac_mult1_DATAOUT_bus [18] $end
-$var wire 1 I+ ULA|Mult0|auto_generated|mac_mult1_DATAOUT_bus [17] $end
-$var wire 1 J+ ULA|Mult0|auto_generated|mac_mult1_DATAOUT_bus [16] $end
-$var wire 1 K+ ULA|Mult0|auto_generated|mac_mult1_DATAOUT_bus [15] $end
-$var wire 1 L+ ULA|Mult0|auto_generated|mac_mult1_DATAOUT_bus [14] $end
-$var wire 1 M+ ULA|Mult0|auto_generated|mac_mult1_DATAOUT_bus [13] $end
-$var wire 1 N+ ULA|Mult0|auto_generated|mac_mult1_DATAOUT_bus [12] $end
-$var wire 1 O+ ULA|Mult0|auto_generated|mac_mult1_DATAOUT_bus [11] $end
-$var wire 1 P+ ULA|Mult0|auto_generated|mac_mult1_DATAOUT_bus [10] $end
-$var wire 1 Q+ ULA|Mult0|auto_generated|mac_mult1_DATAOUT_bus [9] $end
-$var wire 1 R+ ULA|Mult0|auto_generated|mac_mult1_DATAOUT_bus [8] $end
-$var wire 1 S+ ULA|Mult0|auto_generated|mac_mult1_DATAOUT_bus [7] $end
-$var wire 1 T+ ULA|Mult0|auto_generated|mac_mult1_DATAOUT_bus [6] $end
-$var wire 1 U+ ULA|Mult0|auto_generated|mac_mult1_DATAOUT_bus [5] $end
-$var wire 1 V+ ULA|Mult0|auto_generated|mac_mult1_DATAOUT_bus [4] $end
-$var wire 1 W+ ULA|Mult0|auto_generated|mac_mult1_DATAOUT_bus [3] $end
-$var wire 1 X+ ULA|Mult0|auto_generated|mac_mult1_DATAOUT_bus [2] $end
-$var wire 1 Y+ ULA|Mult0|auto_generated|mac_mult1_DATAOUT_bus [1] $end
-$var wire 1 Z+ ULA|Mult0|auto_generated|mac_mult1_DATAOUT_bus [0] $end
+$var wire 1 R gnd $end
+$var wire 1 S vcc $end
+$var wire 1 T unknown $end
+$var tri1 1 U devclrn $end
+$var tri1 1 V devpor $end
+$var tri1 1 W devoe $end
+$var wire 1 X ULA|Mult0|auto_generated|mac_out2~DATAOUT16 $end
+$var wire 1 Y ULA|Mult0|auto_generated|mac_out2~DATAOUT17 $end
+$var wire 1 Z ULA|Mult0|auto_generated|mac_out2~DATAOUT18 $end
+$var wire 1 [ ULA|Mult0|auto_generated|mac_out2~DATAOUT19 $end
+$var wire 1 \ ULA|Mult0|auto_generated|mac_out2~DATAOUT20 $end
+$var wire 1 ] ULA|Mult0|auto_generated|mac_out2~DATAOUT21 $end
+$var wire 1 ^ ULA|Mult0|auto_generated|mac_out2~DATAOUT22 $end
+$var wire 1 _ ULA|Mult0|auto_generated|mac_out2~DATAOUT23 $end
+$var wire 1 ` ULA|Mult0|auto_generated|mac_out2~DATAOUT24 $end
+$var wire 1 a ULA|Mult0|auto_generated|mac_out2~DATAOUT25 $end
+$var wire 1 b ULA|Mult0|auto_generated|mac_out2~DATAOUT26 $end
+$var wire 1 c ULA|Mult0|auto_generated|mac_out2~DATAOUT27 $end
+$var wire 1 d ULA|Mult0|auto_generated|mac_out2~DATAOUT28 $end
+$var wire 1 e ULA|Mult0|auto_generated|mac_out2~DATAOUT29 $end
+$var wire 1 f ULA|Mult0|auto_generated|mac_out2~DATAOUT30 $end
+$var wire 1 g ULA|Mult0|auto_generated|mac_out2~DATAOUT31 $end
+$var wire 1 h ULA|Mult0|auto_generated|mac_out2~0 $end
+$var wire 1 i ULA|Mult0|auto_generated|mac_out2~1 $end
+$var wire 1 j ULA|Mult0|auto_generated|mac_out2~2 $end
+$var wire 1 k ULA|Mult0|auto_generated|mac_out2~3 $end
+$var wire 1 l lcd_rs~output_o $end
+$var wire 1 m lcd_rw~output_o $end
+$var wire 1 n lcd_en~output_o $end
+$var wire 1 o lcd_data[0]~output_o $end
+$var wire 1 p lcd_data[1]~output_o $end
+$var wire 1 q lcd_data[2]~output_o $end
+$var wire 1 r lcd_data[3]~output_o $end
+$var wire 1 s lcd_data[4]~output_o $end
+$var wire 1 t lcd_data[5]~output_o $end
+$var wire 1 u lcd_data[6]~output_o $end
+$var wire 1 v lcd_data[7]~output_o $end
+$var wire 1 w Temp_mem_1[0]~output_o $end
+$var wire 1 x Temp_mem_1[1]~output_o $end
+$var wire 1 y Temp_mem_1[2]~output_o $end
+$var wire 1 z Temp_mem_1[3]~output_o $end
+$var wire 1 { Temp_mem_1[4]~output_o $end
+$var wire 1 | Temp_mem_1[5]~output_o $end
+$var wire 1 } Temp_mem_1[6]~output_o $end
+$var wire 1 ~ Temp_mem_1[7]~output_o $end
+$var wire 1 !! Temp_mem_1[8]~output_o $end
+$var wire 1 "! Temp_mem_1[9]~output_o $end
+$var wire 1 #! Temp_mem_1[10]~output_o $end
+$var wire 1 $! Temp_mem_1[11]~output_o $end
+$var wire 1 %! Temp_mem_1[12]~output_o $end
+$var wire 1 &! Temp_mem_1[13]~output_o $end
+$var wire 1 '! Temp_mem_1[14]~output_o $end
+$var wire 1 (! Temp_mem_1[15]~output_o $end
+$var wire 1 )! Temp_mem_2[0]~output_o $end
+$var wire 1 *! Temp_mem_2[1]~output_o $end
+$var wire 1 +! Temp_mem_2[2]~output_o $end
+$var wire 1 ,! Temp_mem_2[3]~output_o $end
+$var wire 1 -! Temp_mem_2[4]~output_o $end
+$var wire 1 .! Temp_mem_2[5]~output_o $end
+$var wire 1 /! Temp_mem_2[6]~output_o $end
+$var wire 1 0! Temp_mem_2[7]~output_o $end
+$var wire 1 1! Temp_mem_2[8]~output_o $end
+$var wire 1 2! Temp_mem_2[9]~output_o $end
+$var wire 1 3! Temp_mem_2[10]~output_o $end
+$var wire 1 4! Temp_mem_2[11]~output_o $end
+$var wire 1 5! Temp_mem_2[12]~output_o $end
+$var wire 1 6! Temp_mem_2[13]~output_o $end
+$var wire 1 7! Temp_mem_2[14]~output_o $end
+$var wire 1 8! Temp_mem_2[15]~output_o $end
+$var wire 1 9! ON~output_o $end
+$var wire 1 :! clk~input_o $end
+$var wire 1 ;! clk~inputclkctrl_outclk $end
+$var wire 1 <! reset~input_o $end
+$var wire 1 =! btn_reset_d~0_combout $end
+$var wire 1 >! reset_triggered~combout $end
+$var wire 1 ?! btn_reset_d~q $end
+$var wire 1 @! switches[17]~input_o $end
+$var wire 1 A! instruction_register[17]~feeder_combout $end
+$var wire 1 B! btn_ligar~input_o $end
+$var wire 1 C! btn_ligar_d~0_combout $end
+$var wire 1 D! btn_ligar_d~q $end
+$var wire 1 E! power_triggered~combout $end
+$var wire 1 F! btn_enviar~input_o $end
+$var wire 1 G! btn_enviar_d~0_combout $end
+$var wire 1 H! btn_enviar_d~q $end
+$var wire 1 I! Selector1~0_combout $end
+$var wire 1 J! current_state.STATE_POWERED_OFF~0_combout $end
+$var wire 1 K! current_state.STATE_POWERED_OFF~q $end
+$var wire 1 L! switches[16]~input_o $end
+$var wire 1 M! instruction_register[16]~feeder_combout $end
+$var wire 1 N! switches[15]~input_o $end
+$var wire 1 O! instruction_register[15]~feeder_combout $end
+$var wire 1 P! current_state.STATE_DECODE~feeder_combout $end
+$var wire 1 Q! current_state.STATE_DECODE~q $end
+$var wire 1 R! Selector5~0_combout $end
+$var wire 1 S! Equal3~0_combout $end
+$var wire 1 T! Selector8~0_combout $end
+$var wire 1 U! Selector8~1_combout $end
+$var wire 1 V! mem_write_enabled~q $end
+$var wire 1 W! MEMORY|proximo_estado~0_combout $end
+$var wire 1 X! MEMORY|estado_atual~q $end
+$var wire 1 Y! MEMORY|writedone~0_combout $end
+$var wire 1 Z! MEMORY|writedone~q $end
+$var wire 1 [! Selector4~0_combout $end
+$var wire 1 \! current_state.STATE_MEM_WAIT~q $end
+$var wire 1 ]! Selector5~1_combout $end
+$var wire 1 ^! current_state.STATE_LCD_UPDATE~q $end
+$var wire 1 _! Selector1~1_combout $end
+$var wire 1 `! current_state.STATE_IDLE~q $end
+$var wire 1 a! next_state.STATE_FETCH~0_combout $end
+$var wire 1 b! current_state.STATE_FETCH~q $end
+$var wire 1 c! alu_opcode[2]~feeder_combout $end
+$var wire 1 d! next_state.STATE_ALU_START~0_combout $end
+$var wire 1 e! current_state.STATE_ALU_START~q $end
+$var wire 1 f! alu_opcode[0]~feeder_combout $end
+$var wire 1 g! alu_opcode[1]~feeder_combout $end
+$var wire 1 h! ULA|WideOr0~0_combout $end
+$var wire 1 i! Selector9~0_combout $end
+$var wire 1 j! alu_operation_enabled~q $end
+$var wire 1 k! ULA|proximo_estado~0_combout $end
+$var wire 1 l! ULA|estado_atual~q $end
+$var wire 1 m! ULA|operationdone~q $end
+$var wire 1 n! Selector2~0_combout $end
+$var wire 1 o! current_state.STATE_ALU_WAIT~q $end
+$var wire 1 p! Selector3~0_combout $end
+$var wire 1 q! Selector3~1_combout $end
+$var wire 1 r! current_state.STATE_MEM_WRITE~q $end
+$var wire 1 s! Selector6~0_combout $end
+$var wire 1 t! Selector6~1_combout $end
+$var wire 1 u! mem_clear~q $end
+$var wire 1 v! switches[0]~input_o $end
+$var wire 1 w! instruction_register[0]~feeder_combout $end
+$var wire 1 x! immediate_extended[0]~feeder_combout $end
+$var wire 1 y! always1~0_combout $end
+$var wire 1 z! switches[3]~input_o $end
+$var wire 1 {! instruction_register[3]~feeder_combout $end
+$var wire 1 |! switches[4]~input_o $end
+$var wire 1 }! instruction_register[4]~feeder_combout $end
+$var wire 1 ~! switches[14]~input_o $end
+$var wire 1 !" instruction_register[14]~feeder_combout $end
+$var wire 1 "" mem_write_data[0]~1_combout $end
+$var wire 1 #" switches[13]~input_o $end
+$var wire 1 $" instruction_register[13]~feeder_combout $end
+$var wire 1 %" switches[12]~input_o $end
+$var wire 1 &" instruction_register[12]~feeder_combout $end
+$var wire 1 '" switches[11]~input_o $end
+$var wire 1 (" MEMORY|Decoder0~2_combout $end
+$var wire 1 )" MEMORY|ram[8][1]~3_combout $end
+$var wire 1 *" MEMORY|ram[8][0]~q $end
+$var wire 1 +" MEMORY|read_data_2[0]~32_combout $end
+$var wire 1 ," MEMORY|Decoder0~0_combout $end
+$var wire 1 -" MEMORY|ram[10][0]~1_combout $end
+$var wire 1 ." MEMORY|ram[10][0]~q $end
+$var wire 1 /" MEMORY|Decoder0~3_combout $end
+$var wire 1 0" MEMORY|ram[11][14]~4_combout $end
+$var wire 1 1" MEMORY|ram[11][0]~q $end
+$var wire 1 2" MEMORY|read_data_2[0]~33_combout $end
+$var wire 1 3" switches[6]~input_o $end
+$var wire 1 4" immediate_extended[6]~feeder_combout $end
+$var wire 1 5" MEMORY|ram[15][0]~feeder_combout $end
+$var wire 1 6" MEMORY|Decoder0~7_combout $end
+$var wire 1 7" MEMORY|ram[15][8]~16_combout $end
+$var wire 1 8" MEMORY|ram[15][0]~q $end
+$var wire 1 9" MEMORY|Decoder0~4_combout $end
+$var wire 1 :" MEMORY|ram[13][9]~13_combout $end
+$var wire 1 ;" MEMORY|ram[13][0]~q $end
+$var wire 1 <" MEMORY|ram[12][0]~feeder_combout $end
+$var wire 1 =" MEMORY|Decoder0~6_combout $end
+$var wire 1 >" MEMORY|ram[12][2]~15_combout $end
+$var wire 1 ?" MEMORY|ram[12][0]~q $end
+$var wire 1 @" MEMORY|Decoder0~5_combout $end
+$var wire 1 A" MEMORY|ram[14][6]~14_combout $end
+$var wire 1 B" MEMORY|ram[14][0]~q $end
+$var wire 1 C" MEMORY|read_data_2[0]~39_combout $end
+$var wire 1 D" MEMORY|read_data_2[0]~40_combout $end
+$var wire 1 E" switches[5]~input_o $end
+$var wire 1 F" instruction_register[5]~feeder_combout $end
+$var wire 1 G" immediate_extended[5]~feeder_combout $end
+$var wire 1 H" MEMORY|ram[2][11]~9_combout $end
+$var wire 1 I" MEMORY|ram[2][0]~q $end
+$var wire 1 J" MEMORY|ram[3][1]~12_combout $end
+$var wire 1 K" MEMORY|ram[3][0]~q $end
+$var wire 1 L" MEMORY|ram[0][7]~11_combout $end
+$var wire 1 M" MEMORY|ram[0][0]~q $end
+$var wire 1 N" MEMORY|Decoder0~1_combout $end
+$var wire 1 O" MEMORY|ram[1][11]~10_combout $end
+$var wire 1 P" MEMORY|ram[1][0]~q $end
+$var wire 1 Q" MEMORY|read_data_2[0]~36_combout $end
+$var wire 1 R" MEMORY|read_data_2[0]~37_combout $end
+$var wire 1 S" MEMORY|ram[5][14]~5_combout $end
+$var wire 1 T" MEMORY|ram[5][0]~q $end
+$var wire 1 U" MEMORY|ram[7][2]~8_combout $end
+$var wire 1 V" MEMORY|ram[7][0]~q $end
+$var wire 1 W" MEMORY|ram[6][0]~feeder_combout $end
+$var wire 1 X" MEMORY|ram[6][5]~6_combout $end
+$var wire 1 Y" MEMORY|ram[6][0]~q $end
+$var wire 1 Z" MEMORY|ram[4][0]~feeder_combout $end
+$var wire 1 [" MEMORY|ram[4][4]~7_combout $end
+$var wire 1 \" MEMORY|ram[4][0]~q $end
+$var wire 1 ]" MEMORY|read_data_2[0]~34_combout $end
+$var wire 1 ^" MEMORY|read_data_2[0]~35_combout $end
+$var wire 1 _" MEMORY|read_data_2[0]~38_combout $end
+$var wire 1 `" MEMORY|read_data_2[0]~41_combout $end
+$var wire 1 a" alu_value2~18_combout $end
+$var wire 1 b" alu_value2[0]~_Duplicate_1_q $end
+$var wire 1 c" ULA|Add0~0_combout $end
+$var wire 1 d" alu_value1[0]~_Duplicate_1_q $end
+$var wire 1 e" ULA|resultvalue[0]~17_cout $end
+$var wire 1 f" ULA|resultvalue[0]~18_combout $end
+$var wire 1 g" switches[8]~input_o $end
+$var wire 1 h" instruction_register[8]~feeder_combout $end
+$var wire 1 i" switches[7]~input_o $end
+$var wire 1 j" switches[9]~input_o $end
+$var wire 1 k" instruction_register[9]~feeder_combout $end
+$var wire 1 l" switches[1]~input_o $end
+$var wire 1 m" instruction_register[1]~feeder_combout $end
+$var wire 1 n" alu_value1[1]~_Duplicate_1_q $end
+$var wire 1 o" MEMORY|ram[13][1]~feeder_combout $end
+$var wire 1 p" MEMORY|ram[13][1]~q $end
+$var wire 1 q" MEMORY|ram[1][1]~feeder_combout $end
+$var wire 1 r" MEMORY|ram[1][1]~q $end
+$var wire 1 s" MEMORY|ram[5][1]~q $end
+$var wire 1 t" MEMORY|read_data_2[1]~44_combout $end
+$var wire 1 u" MEMORY|ram[9][1]~feeder_combout $end
+$var wire 1 v" MEMORY|ram[9][14]~2_combout $end
+$var wire 1 w" MEMORY|ram[9][1]~q $end
+$var wire 1 x" MEMORY|read_data_2[1]~45_combout $end
+$var wire 1 y" MEMORY|ram[4][1]~q $end
+$var wire 1 z" MEMORY|ram[0][1]~q $end
+$var wire 1 {" MEMORY|ram[8][1]~q $end
+$var wire 1 |" MEMORY|read_data_2[1]~46_combout $end
+$var wire 1 }" MEMORY|read_data_2[1]~47_combout $end
+$var wire 1 ~" MEMORY|read_data_2[1]~48_combout $end
+$var wire 1 !# MEMORY|ram[11][1]~feeder_combout $end
+$var wire 1 "# MEMORY|ram[11][1]~q $end
+$var wire 1 ## MEMORY|ram[15][1]~feeder_combout $end
+$var wire 1 $# MEMORY|ram[15][1]~q $end
+$var wire 1 %# MEMORY|ram[7][1]~feeder_combout $end
+$var wire 1 &# MEMORY|ram[7][1]~q $end
+$var wire 1 '# MEMORY|ram[3][1]~q $end
+$var wire 1 (# MEMORY|read_data_2[1]~49_combout $end
+$var wire 1 )# MEMORY|read_data_2[1]~50_combout $end
+$var wire 1 *# MEMORY|ram[6][1]~q $end
+$var wire 1 +# MEMORY|ram[10][1]~feeder_combout $end
+$var wire 1 ,# MEMORY|ram[10][1]~q $end
+$var wire 1 -# MEMORY|ram[2][1]~q $end
+$var wire 1 .# MEMORY|read_data_2[1]~42_combout $end
+$var wire 1 /# MEMORY|ram[14][1]~feeder_combout $end
+$var wire 1 0# MEMORY|ram[14][1]~q $end
+$var wire 1 1# MEMORY|read_data_2[1]~43_combout $end
+$var wire 1 2# MEMORY|read_data_2[1]~51_combout $end
+$var wire 1 3# alu_value2~19_combout $end
+$var wire 1 4# alu_value2[1]~_Duplicate_1_q $end
+$var wire 1 5# ULA|Add0~1_combout $end
+$var wire 1 6# ULA|resultvalue[0]~19 $end
+$var wire 1 7# ULA|resultvalue[1]~22_combout $end
+$var wire 1 8# Equal4~0_combout $end
+$var wire 1 9# switches[2]~input_o $end
+$var wire 1 :# instruction_register[2]~feeder_combout $end
+$var wire 1 ;# alu_value1[2]~_Duplicate_1_q $end
+$var wire 1 <# MEMORY|ram[6][2]~q $end
+$var wire 1 =# MEMORY|ram[7][2]~q $end
+$var wire 1 ># MEMORY|ram[5][2]~feeder_combout $end
+$var wire 1 ?# MEMORY|ram[5][2]~q $end
+$var wire 1 @# MEMORY|ram[4][2]~feeder_combout $end
+$var wire 1 A# MEMORY|ram[4][2]~q $end
+$var wire 1 B# MEMORY|read_data_2[2]~52_combout $end
+$var wire 1 C# MEMORY|read_data_2[2]~53_combout $end
+$var wire 1 D# MEMORY|ram[13][2]~q $end
+$var wire 1 E# MEMORY|ram[12][2]~feeder_combout $end
+$var wire 1 F# MEMORY|ram[12][2]~q $end
+$var wire 1 G# MEMORY|read_data_2[2]~59_combout $end
+$var wire 1 H# MEMORY|ram[14][2]~q $end
+$var wire 1 I# MEMORY|read_data_2[2]~60_combout $end
+$var wire 1 J# MEMORY|ram[1][2]~q $end
+$var wire 1 K# MEMORY|ram[0][2]~q $end
+$var wire 1 L# MEMORY|ram[2][2]~feeder_combout $end
+$var wire 1 M# MEMORY|ram[2][2]~q $end
+$var wire 1 N# MEMORY|read_data_2[2]~56_combout $end
+$var wire 1 O# MEMORY|ram[3][2]~q $end
+$var wire 1 P# MEMORY|read_data_2[2]~57_combout $end
+$var wire 1 Q# MEMORY|ram[9][2]~feeder_combout $end
+$var wire 1 R# MEMORY|ram[9][2]~q $end
+$var wire 1 S# MEMORY|ram[11][2]~feeder_combout $end
+$var wire 1 T# MEMORY|ram[11][2]~q $end
+$var wire 1 U# MEMORY|ram[10][2]~feeder_combout $end
+$var wire 1 V# MEMORY|ram[10][2]~q $end
+$var wire 1 W# MEMORY|ram[8][2]~q $end
+$var wire 1 X# MEMORY|read_data_2[2]~54_combout $end
+$var wire 1 Y# MEMORY|read_data_2[2]~55_combout $end
+$var wire 1 Z# MEMORY|read_data_2[2]~58_combout $end
+$var wire 1 [# MEMORY|read_data_2[2]~61_combout $end
+$var wire 1 \# alu_value2~20_combout $end
+$var wire 1 ]# alu_value2[2]~_Duplicate_1_q $end
+$var wire 1 ^# ULA|Add0~2_combout $end
+$var wire 1 _# ULA|resultvalue[1]~23 $end
+$var wire 1 `# ULA|resultvalue[2]~24_combout $end
+$var wire 1 a# MEMORY|ram[5][3]~q $end
+$var wire 1 b# MEMORY|ram[13][3]~q $end
+$var wire 1 c# MEMORY|ram[9][3]~q $end
+$var wire 1 d# MEMORY|ram[1][3]~q $end
+$var wire 1 e# MEMORY|read_data_2[3]~62_combout $end
+$var wire 1 f# MEMORY|read_data_2[3]~63_combout $end
+$var wire 1 g# MEMORY|ram[3][3]~feeder_combout $end
+$var wire 1 h# MEMORY|ram[3][3]~q $end
+$var wire 1 i# MEMORY|ram[11][3]~q $end
+$var wire 1 j# MEMORY|read_data_2[3]~69_combout $end
+$var wire 1 k# MEMORY|ram[7][3]~feeder_combout $end
+$var wire 1 l# MEMORY|ram[7][3]~q $end
+$var wire 1 m# MEMORY|read_data_2[3]~70_combout $end
+$var wire 1 n# MEMORY|ram[8][3]~q $end
+$var wire 1 o# MEMORY|ram[12][3]~q $end
+$var wire 1 p# MEMORY|ram[4][3]~q $end
+$var wire 1 q# MEMORY|ram[0][3]~feeder_combout $end
+$var wire 1 r# MEMORY|ram[0][3]~q $end
+$var wire 1 s# MEMORY|read_data_2[3]~66_combout $end
+$var wire 1 t# MEMORY|read_data_2[3]~67_combout $end
+$var wire 1 u# MEMORY|ram[14][3]~feeder_combout $end
+$var wire 1 v# MEMORY|ram[14][3]~q $end
+$var wire 1 w# MEMORY|ram[10][3]~q $end
+$var wire 1 x# MEMORY|ram[6][3]~q $end
+$var wire 1 y# MEMORY|ram[2][3]~feeder_combout $end
+$var wire 1 z# MEMORY|ram[2][3]~q $end
+$var wire 1 {# MEMORY|read_data_2[3]~64_combout $end
+$var wire 1 |# MEMORY|read_data_2[3]~65_combout $end
+$var wire 1 }# MEMORY|read_data_2[3]~68_combout $end
+$var wire 1 ~# MEMORY|read_data_2[3]~71_combout $end
+$var wire 1 !$ alu_value2~21_combout $end
+$var wire 1 "$ alu_value2[3]~_Duplicate_1_q $end
+$var wire 1 #$ ULA|Add0~3_combout $end
+$var wire 1 $$ alu_value1[3]~_Duplicate_1_q $end
+$var wire 1 %$ ULA|resultvalue[2]~25 $end
+$var wire 1 &$ ULA|resultvalue[3]~26_combout $end
+$var wire 1 '$ switches[10]~input_o $end
+$var wire 1 ($ instruction_register[10]~feeder_combout $end
+$var wire 1 )$ MEMORY|ram[15][4]~q $end
+$var wire 1 *$ MEMORY|ram[13][4]~q $end
+$var wire 1 +$ MEMORY|ram[12][4]~q $end
+$var wire 1 ,$ MEMORY|ram[14][4]~q $end
+$var wire 1 -$ MEMORY|read_data_2[4]~79_combout $end
+$var wire 1 .$ MEMORY|read_data_2[4]~80_combout $end
+$var wire 1 /$ MEMORY|ram[0][4]~q $end
+$var wire 1 0$ MEMORY|ram[1][4]~q $end
+$var wire 1 1$ MEMORY|read_data_2[4]~76_combout $end
+$var wire 1 2$ MEMORY|ram[2][4]~feeder_combout $end
+$var wire 1 3$ MEMORY|ram[2][4]~q $end
+$var wire 1 4$ MEMORY|ram[3][4]~q $end
+$var wire 1 5$ MEMORY|read_data_2[4]~77_combout $end
+$var wire 1 6$ MEMORY|ram[5][4]~q $end
+$var wire 1 7$ MEMORY|ram[4][4]~feeder_combout $end
+$var wire 1 8$ MEMORY|ram[4][4]~q $end
+$var wire 1 9$ MEMORY|ram[6][4]~q $end
+$var wire 1 :$ MEMORY|read_data_2[4]~74_combout $end
+$var wire 1 ;$ MEMORY|read_data_2[4]~75_combout $end
+$var wire 1 <$ MEMORY|read_data_2[4]~78_combout $end
+$var wire 1 =$ MEMORY|ram[10][4]~feeder_combout $end
+$var wire 1 >$ MEMORY|ram[10][4]~q $end
+$var wire 1 ?$ MEMORY|ram[11][4]~feeder_combout $end
+$var wire 1 @$ MEMORY|ram[11][4]~q $end
+$var wire 1 A$ MEMORY|ram[8][4]~feeder_combout $end
+$var wire 1 B$ MEMORY|ram[8][4]~q $end
+$var wire 1 C$ MEMORY|ram[9][4]~feeder_combout $end
+$var wire 1 D$ MEMORY|ram[9][4]~q $end
+$var wire 1 E$ MEMORY|read_data_2[4]~72_combout $end
+$var wire 1 F$ MEMORY|read_data_2[4]~73_combout $end
+$var wire 1 G$ MEMORY|read_data_2[4]~81_combout $end
+$var wire 1 H$ alu_value2~22_combout $end
+$var wire 1 I$ alu_value2[4]~_Duplicate_1_q $end
+$var wire 1 J$ ULA|Add0~4_combout $end
+$var wire 1 K$ alu_value1[4]~_Duplicate_1_q $end
+$var wire 1 L$ ULA|resultvalue[3]~27 $end
+$var wire 1 M$ ULA|resultvalue[4]~28_combout $end
+$var wire 1 N$ alu_value1[5]~_Duplicate_1_q $end
+$var wire 1 O$ MEMORY|ram[11][5]~feeder_combout $end
+$var wire 1 P$ MEMORY|ram[11][5]~q $end
+$var wire 1 Q$ MEMORY|ram[7][5]~q $end
+$var wire 1 R$ MEMORY|ram[3][5]~feeder_combout $end
+$var wire 1 S$ MEMORY|ram[3][5]~q $end
+$var wire 1 T$ MEMORY|read_data_2[5]~89_combout $end
+$var wire 1 U$ MEMORY|read_data_2[5]~90_combout $end
+$var wire 1 V$ MEMORY|ram[6][5]~q $end
+$var wire 1 W$ MEMORY|ram[14][5]~q $end
+$var wire 1 X$ MEMORY|ram[2][5]~q $end
+$var wire 1 Y$ MEMORY|ram[10][5]~feeder_combout $end
+$var wire 1 Z$ MEMORY|ram[10][5]~q $end
+$var wire 1 [$ MEMORY|read_data_2[5]~82_combout $end
+$var wire 1 \$ MEMORY|read_data_2[5]~83_combout $end
+$var wire 1 ]$ MEMORY|ram[12][5]~feeder_combout $end
+$var wire 1 ^$ MEMORY|ram[12][5]~q $end
+$var wire 1 _$ MEMORY|ram[4][5]~q $end
+$var wire 1 `$ MEMORY|ram[8][5]~feeder_combout $end
+$var wire 1 a$ MEMORY|ram[8][5]~q $end
+$var wire 1 b$ MEMORY|ram[0][5]~feeder_combout $end
+$var wire 1 c$ MEMORY|ram[0][5]~q $end
+$var wire 1 d$ MEMORY|read_data_2[5]~86_combout $end
+$var wire 1 e$ MEMORY|read_data_2[5]~87_combout $end
+$var wire 1 f$ MEMORY|ram[9][5]~q $end
+$var wire 1 g$ MEMORY|ram[13][5]~feeder_combout $end
+$var wire 1 h$ MEMORY|ram[13][5]~q $end
+$var wire 1 i$ MEMORY|ram[5][5]~feeder_combout $end
+$var wire 1 j$ MEMORY|ram[5][5]~q $end
+$var wire 1 k$ MEMORY|ram[1][5]~q $end
+$var wire 1 l$ MEMORY|read_data_2[5]~84_combout $end
+$var wire 1 m$ MEMORY|read_data_2[5]~85_combout $end
+$var wire 1 n$ MEMORY|read_data_2[5]~88_combout $end
+$var wire 1 o$ MEMORY|read_data_2[5]~91_combout $end
+$var wire 1 p$ alu_value2~23_combout $end
+$var wire 1 q$ alu_value2[5]~_Duplicate_1_q $end
+$var wire 1 r$ ULA|Add0~5_combout $end
+$var wire 1 s$ ULA|resultvalue[4]~29 $end
+$var wire 1 t$ ULA|resultvalue[5]~30_combout $end
+$var wire 1 u$ MEMORY|ram[14][6]~feeder_combout $end
+$var wire 1 v$ MEMORY|ram[14][6]~q $end
+$var wire 1 w$ MEMORY|ram[15][6]~q $end
+$var wire 1 x$ MEMORY|ram[13][6]~feeder_combout $end
+$var wire 1 y$ MEMORY|ram[13][6]~q $end
+$var wire 1 z$ MEMORY|ram[12][6]~q $end
+$var wire 1 {$ MEMORY|read_data_2[6]~99_combout $end
+$var wire 1 |$ MEMORY|read_data_2[6]~100_combout $end
+$var wire 1 }$ MEMORY|ram[7][6]~q $end
+$var wire 1 ~$ MEMORY|ram[6][6]~q $end
+$var wire 1 !% MEMORY|ram[5][6]~feeder_combout $end
+$var wire 1 "% MEMORY|ram[5][6]~q $end
+$var wire 1 #% MEMORY|ram[4][6]~q $end
+$var wire 1 $% MEMORY|read_data_2[6]~92_combout $end
+$var wire 1 %% MEMORY|read_data_2[6]~93_combout $end
+$var wire 1 &% MEMORY|ram[1][6]~q $end
+$var wire 1 '% MEMORY|ram[3][6]~q $end
+$var wire 1 (% MEMORY|ram[2][6]~q $end
+$var wire 1 )% MEMORY|read_data_2[6]~96_combout $end
+$var wire 1 *% MEMORY|read_data_2[6]~97_combout $end
+$var wire 1 +% MEMORY|ram[9][6]~q $end
+$var wire 1 ,% MEMORY|ram[11][6]~q $end
+$var wire 1 -% MEMORY|ram[10][6]~q $end
+$var wire 1 .% MEMORY|ram[8][6]~q $end
+$var wire 1 /% MEMORY|read_data_2[6]~94_combout $end
+$var wire 1 0% MEMORY|read_data_2[6]~95_combout $end
+$var wire 1 1% MEMORY|read_data_2[6]~98_combout $end
+$var wire 1 2% MEMORY|read_data_2[6]~101_combout $end
+$var wire 1 3% alu_value2~24_combout $end
+$var wire 1 4% alu_value2[6]~_Duplicate_1_q $end
+$var wire 1 5% ULA|Add0~6_combout $end
+$var wire 1 6% alu_value1[6]~_Duplicate_1_q $end
+$var wire 1 7% ULA|resultvalue[5]~31 $end
+$var wire 1 8% ULA|resultvalue[6]~32_combout $end
+$var wire 1 9% alu_value1[7]~_Duplicate_1_q $end
+$var wire 1 :% MEMORY|ram[5][7]~q $end
+$var wire 1 ;% MEMORY|ram[1][7]~q $end
+$var wire 1 <% MEMORY|ram[9][7]~q $end
+$var wire 1 =% MEMORY|read_data_2[7]~102_combout $end
+$var wire 1 >% MEMORY|read_data_2[7]~103_combout $end
+$var wire 1 ?% MEMORY|ram[3][7]~q $end
+$var wire 1 @% MEMORY|ram[11][7]~feeder_combout $end
+$var wire 1 A% MEMORY|ram[11][7]~q $end
+$var wire 1 B% MEMORY|read_data_2[7]~109_combout $end
+$var wire 1 C% MEMORY|ram[15][7]~feeder_combout $end
+$var wire 1 D% MEMORY|ram[15][7]~q $end
+$var wire 1 E% MEMORY|ram[7][7]~q $end
+$var wire 1 F% MEMORY|read_data_2[7]~110_combout $end
+$var wire 1 G% MEMORY|ram[10][7]~q $end
+$var wire 1 H% MEMORY|ram[14][7]~feeder_combout $end
+$var wire 1 I% MEMORY|ram[14][7]~q $end
+$var wire 1 J% MEMORY|ram[2][7]~q $end
+$var wire 1 K% MEMORY|ram[6][7]~q $end
+$var wire 1 L% MEMORY|read_data_2[7]~104_combout $end
+$var wire 1 M% MEMORY|read_data_2[7]~105_combout $end
+$var wire 1 N% MEMORY|ram[8][7]~feeder_combout $end
+$var wire 1 O% MEMORY|ram[8][7]~q $end
+$var wire 1 P% MEMORY|ram[12][7]~q $end
+$var wire 1 Q% MEMORY|ram[4][7]~q $end
+$var wire 1 R% MEMORY|ram[0][7]~q $end
+$var wire 1 S% MEMORY|read_data_2[7]~106_combout $end
+$var wire 1 T% MEMORY|read_data_2[7]~107_combout $end
+$var wire 1 U% MEMORY|read_data_2[7]~108_combout $end
+$var wire 1 V% MEMORY|read_data_2[7]~111_combout $end
+$var wire 1 W% alu_value2~25_combout $end
+$var wire 1 X% alu_value2[7]~_Duplicate_1_q $end
+$var wire 1 Y% ULA|Add0~7_combout $end
+$var wire 1 Z% ULA|resultvalue[6]~33 $end
+$var wire 1 [% ULA|resultvalue[7]~34_combout $end
+$var wire 1 \% alu_value1[8]~_Duplicate_1_q $end
+$var wire 1 ]% MEMORY|ram[15][8]~q $end
+$var wire 1 ^% MEMORY|ram[13][8]~feeder_combout $end
+$var wire 1 _% MEMORY|ram[13][8]~q $end
+$var wire 1 `% MEMORY|ram[12][8]~feeder_combout $end
+$var wire 1 a% MEMORY|ram[12][8]~q $end
+$var wire 1 b% MEMORY|ram[14][8]~feeder_combout $end
+$var wire 1 c% MEMORY|ram[14][8]~q $end
+$var wire 1 d% MEMORY|read_data_2[8]~119_combout $end
+$var wire 1 e% MEMORY|read_data_2[8]~120_combout $end
+$var wire 1 f% MEMORY|ram[10][8]~q $end
+$var wire 1 g% MEMORY|ram[8][8]~q $end
+$var wire 1 h% MEMORY|ram[9][8]~q $end
+$var wire 1 i% MEMORY|read_data_2[8]~112_combout $end
+$var wire 1 j% MEMORY|read_data_2[8]~113_combout $end
+$var wire 1 k% MEMORY|ram[7][8]~feeder_combout $end
+$var wire 1 l% MEMORY|ram[7][8]~q $end
+$var wire 1 m% MEMORY|ram[5][8]~q $end
+$var wire 1 n% MEMORY|ram[6][8]~feeder_combout $end
+$var wire 1 o% MEMORY|ram[6][8]~q $end
+$var wire 1 p% MEMORY|ram[4][8]~feeder_combout $end
+$var wire 1 q% MEMORY|ram[4][8]~q $end
+$var wire 1 r% MEMORY|read_data_2[8]~114_combout $end
+$var wire 1 s% MEMORY|read_data_2[8]~115_combout $end
+$var wire 1 t% MEMORY|ram[2][8]~q $end
+$var wire 1 u% MEMORY|ram[3][8]~q $end
+$var wire 1 v% MEMORY|ram[0][8]~q $end
+$var wire 1 w% MEMORY|ram[1][8]~feeder_combout $end
+$var wire 1 x% MEMORY|ram[1][8]~q $end
+$var wire 1 y% MEMORY|read_data_2[8]~116_combout $end
+$var wire 1 z% MEMORY|read_data_2[8]~117_combout $end
+$var wire 1 {% MEMORY|read_data_2[8]~118_combout $end
+$var wire 1 |% MEMORY|read_data_2[8]~121_combout $end
+$var wire 1 }% alu_value2~26_combout $end
+$var wire 1 ~% alu_value2[8]~_Duplicate_1_q $end
+$var wire 1 !& ULA|Add0~8_combout $end
+$var wire 1 "& ULA|resultvalue[7]~35 $end
+$var wire 1 #& ULA|resultvalue[8]~36_combout $end
+$var wire 1 $& alu_value1[9]~_Duplicate_1_q $end
+$var wire 1 %& MEMORY|ram[6][9]~q $end
+$var wire 1 && MEMORY|ram[2][9]~q $end
+$var wire 1 '& MEMORY|ram[10][9]~feeder_combout $end
+$var wire 1 (& MEMORY|ram[10][9]~q $end
+$var wire 1 )& MEMORY|read_data_2[9]~122_combout $end
+$var wire 1 *& MEMORY|read_data_2[9]~123_combout $end
+$var wire 1 +& MEMORY|ram[15][9]~feeder_combout $end
+$var wire 1 ,& MEMORY|ram[15][9]~q $end
+$var wire 1 -& MEMORY|ram[11][9]~q $end
+$var wire 1 .& MEMORY|ram[3][9]~feeder_combout $end
+$var wire 1 /& MEMORY|ram[3][9]~q $end
+$var wire 1 0& MEMORY|ram[7][9]~feeder_combout $end
+$var wire 1 1& MEMORY|ram[7][9]~q $end
+$var wire 1 2& MEMORY|read_data_2[9]~129_combout $end
+$var wire 1 3& MEMORY|read_data_2[9]~130_combout $end
+$var wire 1 4& MEMORY|ram[12][9]~feeder_combout $end
+$var wire 1 5& MEMORY|ram[12][9]~q $end
+$var wire 1 6& MEMORY|ram[0][9]~q $end
+$var wire 1 7& MEMORY|ram[8][9]~feeder_combout $end
+$var wire 1 8& MEMORY|ram[8][9]~q $end
+$var wire 1 9& MEMORY|read_data_2[9]~126_combout $end
+$var wire 1 :& MEMORY|ram[4][9]~q $end
+$var wire 1 ;& MEMORY|read_data_2[9]~127_combout $end
+$var wire 1 <& MEMORY|ram[9][9]~q $end
+$var wire 1 =& MEMORY|ram[5][9]~q $end
+$var wire 1 >& MEMORY|ram[1][9]~q $end
+$var wire 1 ?& MEMORY|read_data_2[9]~124_combout $end
+$var wire 1 @& MEMORY|ram[13][9]~feeder_combout $end
+$var wire 1 A& MEMORY|ram[13][9]~q $end
+$var wire 1 B& MEMORY|read_data_2[9]~125_combout $end
+$var wire 1 C& MEMORY|read_data_2[9]~128_combout $end
+$var wire 1 D& MEMORY|read_data_2[9]~131_combout $end
+$var wire 1 E& alu_value2~27_combout $end
+$var wire 1 F& alu_value2[9]~_Duplicate_1_q $end
+$var wire 1 G& ULA|Add0~9_combout $end
+$var wire 1 H& ULA|resultvalue[8]~37 $end
+$var wire 1 I& ULA|resultvalue[9]~38_combout $end
+$var wire 1 J& MEMORY|ram[15][10]~q $end
+$var wire 1 K& MEMORY|ram[13][10]~q $end
+$var wire 1 L& MEMORY|ram[12][10]~q $end
+$var wire 1 M& MEMORY|read_data_2[10]~139_combout $end
+$var wire 1 N& MEMORY|read_data_2[10]~140_combout $end
+$var wire 1 O& MEMORY|ram[7][10]~q $end
+$var wire 1 P& MEMORY|ram[6][10]~q $end
+$var wire 1 Q& MEMORY|ram[4][10]~q $end
+$var wire 1 R& MEMORY|ram[5][10]~feeder_combout $end
+$var wire 1 S& MEMORY|ram[5][10]~q $end
+$var wire 1 T& MEMORY|read_data_2[10]~132_combout $end
+$var wire 1 U& MEMORY|read_data_2[10]~133_combout $end
+$var wire 1 V& MEMORY|ram[3][10]~feeder_combout $end
+$var wire 1 W& MEMORY|ram[3][10]~q $end
+$var wire 1 X& MEMORY|ram[1][10]~q $end
+$var wire 1 Y& MEMORY|ram[0][10]~q $end
+$var wire 1 Z& MEMORY|ram[2][10]~feeder_combout $end
+$var wire 1 [& MEMORY|ram[2][10]~q $end
+$var wire 1 \& MEMORY|read_data_2[10]~136_combout $end
+$var wire 1 ]& MEMORY|read_data_2[10]~137_combout $end
+$var wire 1 ^& MEMORY|ram[9][10]~q $end
+$var wire 1 _& MEMORY|ram[11][10]~q $end
+$var wire 1 `& MEMORY|ram[10][10]~q $end
+$var wire 1 a& MEMORY|ram[8][10]~q $end
+$var wire 1 b& MEMORY|read_data_2[10]~134_combout $end
+$var wire 1 c& MEMORY|read_data_2[10]~135_combout $end
+$var wire 1 d& MEMORY|read_data_2[10]~138_combout $end
+$var wire 1 e& MEMORY|read_data_2[10]~141_combout $end
+$var wire 1 f& alu_value2~28_combout $end
+$var wire 1 g& alu_value2[10]~_Duplicate_1_q $end
+$var wire 1 h& ULA|Add0~10_combout $end
+$var wire 1 i& alu_value1[10]~_Duplicate_1_q $end
+$var wire 1 j& ULA|resultvalue[9]~39 $end
+$var wire 1 k& ULA|resultvalue[10]~40_combout $end
+$var wire 1 l& MEMORY|ram[9][11]~q $end
+$var wire 1 m& MEMORY|ram[1][11]~q $end
+$var wire 1 n& MEMORY|read_data_2[11]~142_combout $end
+$var wire 1 o& MEMORY|ram[13][11]~q $end
+$var wire 1 p& MEMORY|ram[5][11]~q $end
+$var wire 1 q& MEMORY|read_data_2[11]~143_combout $end
+$var wire 1 r& MEMORY|ram[10][11]~feeder_combout $end
+$var wire 1 s& MEMORY|ram[10][11]~q $end
+$var wire 1 t& MEMORY|ram[14][11]~q $end
+$var wire 1 u& MEMORY|ram[2][11]~q $end
+$var wire 1 v& MEMORY|ram[6][11]~q $end
+$var wire 1 w& MEMORY|read_data_2[11]~144_combout $end
+$var wire 1 x& MEMORY|read_data_2[11]~145_combout $end
+$var wire 1 y& MEMORY|ram[12][11]~q $end
+$var wire 1 z& MEMORY|ram[0][11]~q $end
+$var wire 1 {& MEMORY|ram[4][11]~feeder_combout $end
+$var wire 1 |& MEMORY|ram[4][11]~q $end
+$var wire 1 }& MEMORY|read_data_2[11]~146_combout $end
+$var wire 1 ~& MEMORY|ram[8][11]~q $end
+$var wire 1 !' MEMORY|read_data_2[11]~147_combout $end
+$var wire 1 "' MEMORY|read_data_2[11]~148_combout $end
+$var wire 1 #' MEMORY|ram[15][11]~feeder_combout $end
+$var wire 1 $' MEMORY|ram[15][11]~q $end
+$var wire 1 %' MEMORY|ram[11][11]~q $end
+$var wire 1 &' MEMORY|ram[3][11]~q $end
+$var wire 1 '' MEMORY|read_data_2[11]~149_combout $end
+$var wire 1 (' MEMORY|read_data_2[11]~150_combout $end
+$var wire 1 )' MEMORY|read_data_2[11]~151_combout $end
+$var wire 1 *' alu_value2~29_combout $end
+$var wire 1 +' alu_value2[11]~_Duplicate_1_q $end
+$var wire 1 ,' ULA|Add0~11_combout $end
+$var wire 1 -' alu_value1[11]~_Duplicate_1_q $end
+$var wire 1 .' ULA|resultvalue[10]~41 $end
+$var wire 1 /' ULA|resultvalue[11]~42_combout $end
+$var wire 1 0' MEMORY|ram[11][12]~q $end
+$var wire 1 1' MEMORY|ram[10][12]~q $end
+$var wire 1 2' MEMORY|ram[9][12]~feeder_combout $end
+$var wire 1 3' MEMORY|ram[9][12]~q $end
+$var wire 1 4' MEMORY|ram[8][12]~q $end
+$var wire 1 5' MEMORY|read_data_2[12]~152_combout $end
+$var wire 1 6' MEMORY|read_data_2[12]~153_combout $end
+$var wire 1 7' MEMORY|ram[13][12]~q $end
+$var wire 1 8' MEMORY|ram[12][12]~q $end
+$var wire 1 9' MEMORY|ram[14][12]~feeder_combout $end
+$var wire 1 :' MEMORY|ram[14][12]~q $end
+$var wire 1 ;' MEMORY|read_data_2[12]~159_combout $end
+$var wire 1 <' MEMORY|read_data_2[12]~160_combout $end
+$var wire 1 =' MEMORY|ram[5][12]~feeder_combout $end
+$var wire 1 >' MEMORY|ram[5][12]~q $end
+$var wire 1 ?' MEMORY|ram[7][12]~q $end
+$var wire 1 @' MEMORY|ram[6][12]~feeder_combout $end
+$var wire 1 A' MEMORY|ram[6][12]~q $end
+$var wire 1 B' MEMORY|ram[4][12]~q $end
+$var wire 1 C' MEMORY|read_data_2[12]~154_combout $end
+$var wire 1 D' MEMORY|read_data_2[12]~155_combout $end
+$var wire 1 E' MEMORY|ram[2][12]~feeder_combout $end
+$var wire 1 F' MEMORY|ram[2][12]~q $end
+$var wire 1 G' MEMORY|ram[3][12]~q $end
+$var wire 1 H' MEMORY|ram[0][12]~q $end
+$var wire 1 I' MEMORY|ram[1][12]~q $end
+$var wire 1 J' MEMORY|read_data_2[12]~156_combout $end
+$var wire 1 K' MEMORY|read_data_2[12]~157_combout $end
+$var wire 1 L' MEMORY|read_data_2[12]~158_combout $end
+$var wire 1 M' MEMORY|read_data_2[12]~161_combout $end
+$var wire 1 N' alu_value2~30_combout $end
+$var wire 1 O' alu_value2[12]~_Duplicate_1_q $end
+$var wire 1 P' ULA|Add0~12_combout $end
+$var wire 1 Q' alu_value1[12]~_Duplicate_1feeder_combout $end
+$var wire 1 R' alu_value1[12]~_Duplicate_1_q $end
+$var wire 1 S' ULA|resultvalue[11]~43 $end
+$var wire 1 T' ULA|resultvalue[12]~44_combout $end
+$var wire 1 U' MEMORY|ram[15][13]~feeder_combout $end
+$var wire 1 V' MEMORY|ram[15][13]~q $end
+$var wire 1 W' MEMORY|ram[7][13]~feeder_combout $end
+$var wire 1 X' MEMORY|ram[7][13]~q $end
+$var wire 1 Y' MEMORY|ram[3][13]~q $end
+$var wire 1 Z' MEMORY|read_data_2[13]~169_combout $end
+$var wire 1 [' MEMORY|read_data_2[13]~170_combout $end
+$var wire 1 \' MEMORY|ram[6][13]~q $end
+$var wire 1 ]' MEMORY|ram[14][13]~feeder_combout $end
+$var wire 1 ^' MEMORY|ram[14][13]~q $end
+$var wire 1 _' MEMORY|ram[10][13]~feeder_combout $end
+$var wire 1 `' MEMORY|ram[10][13]~q $end
+$var wire 1 a' MEMORY|ram[2][13]~q $end
+$var wire 1 b' MEMORY|read_data_2[13]~162_combout $end
+$var wire 1 c' MEMORY|read_data_2[13]~163_combout $end
+$var wire 1 d' MEMORY|ram[12][13]~q $end
+$var wire 1 e' MEMORY|ram[4][13]~feeder_combout $end
+$var wire 1 f' MEMORY|ram[4][13]~q $end
+$var wire 1 g' MEMORY|ram[8][13]~feeder_combout $end
+$var wire 1 h' MEMORY|ram[8][13]~q $end
+$var wire 1 i' MEMORY|ram[0][13]~feeder_combout $end
+$var wire 1 j' MEMORY|ram[0][13]~q $end
+$var wire 1 k' MEMORY|read_data_2[13]~166_combout $end
+$var wire 1 l' MEMORY|read_data_2[13]~167_combout $end
+$var wire 1 m' MEMORY|ram[9][13]~feeder_combout $end
+$var wire 1 n' MEMORY|ram[9][13]~q $end
+$var wire 1 o' MEMORY|ram[13][13]~q $end
+$var wire 1 p' MEMORY|ram[5][13]~feeder_combout $end
+$var wire 1 q' MEMORY|ram[5][13]~q $end
+$var wire 1 r' MEMORY|ram[1][13]~q $end
+$var wire 1 s' MEMORY|read_data_2[13]~164_combout $end
+$var wire 1 t' MEMORY|read_data_2[13]~165_combout $end
+$var wire 1 u' MEMORY|read_data_2[13]~168_combout $end
+$var wire 1 v' MEMORY|read_data_2[13]~171_combout $end
+$var wire 1 w' alu_value2~31_combout $end
+$var wire 1 x' alu_value2[13]~_Duplicate_1_q $end
+$var wire 1 y' ULA|Add0~13_combout $end
+$var wire 1 z' alu_value1[13]~_Duplicate_1_q $end
+$var wire 1 {' ULA|resultvalue[12]~45 $end
+$var wire 1 |' ULA|resultvalue[13]~46_combout $end
+$var wire 1 }' MEMORY|ram[14][14]~feeder_combout $end
+$var wire 1 ~' MEMORY|ram[14][14]~q $end
+$var wire 1 !( MEMORY|ram[13][14]~q $end
+$var wire 1 "( MEMORY|ram[12][14]~q $end
+$var wire 1 #( MEMORY|read_data_2[14]~179_combout $end
+$var wire 1 $( MEMORY|read_data_2[14]~180_combout $end
+$var wire 1 %( MEMORY|ram[6][14]~q $end
+$var wire 1 &( MEMORY|ram[7][14]~feeder_combout $end
+$var wire 1 '( MEMORY|ram[7][14]~q $end
+$var wire 1 (( MEMORY|ram[5][14]~feeder_combout $end
+$var wire 1 )( MEMORY|ram[5][14]~q $end
+$var wire 1 *( MEMORY|ram[4][14]~q $end
+$var wire 1 +( MEMORY|read_data_2[14]~172_combout $end
+$var wire 1 ,( MEMORY|read_data_2[14]~173_combout $end
+$var wire 1 -( MEMORY|ram[1][14]~q $end
+$var wire 1 .( MEMORY|ram[3][14]~q $end
+$var wire 1 /( MEMORY|ram[0][14]~q $end
+$var wire 1 0( MEMORY|ram[2][14]~feeder_combout $end
+$var wire 1 1( MEMORY|ram[2][14]~q $end
+$var wire 1 2( MEMORY|read_data_2[14]~176_combout $end
+$var wire 1 3( MEMORY|read_data_2[14]~177_combout $end
+$var wire 1 4( MEMORY|ram[9][14]~q $end
+$var wire 1 5( MEMORY|ram[11][14]~q $end
+$var wire 1 6( MEMORY|ram[10][14]~q $end
+$var wire 1 7( MEMORY|ram[8][14]~feeder_combout $end
+$var wire 1 8( MEMORY|ram[8][14]~q $end
+$var wire 1 9( MEMORY|read_data_2[14]~174_combout $end
+$var wire 1 :( MEMORY|read_data_2[14]~175_combout $end
+$var wire 1 ;( MEMORY|read_data_2[14]~178_combout $end
+$var wire 1 <( MEMORY|read_data_2[14]~181_combout $end
+$var wire 1 =( alu_value2~32_combout $end
+$var wire 1 >( alu_value2[14]~_Duplicate_1_q $end
+$var wire 1 ?( ULA|Add0~14_combout $end
+$var wire 1 @( alu_value1[14]~_Duplicate_1_q $end
+$var wire 1 A( ULA|resultvalue[13]~47 $end
+$var wire 1 B( ULA|resultvalue[14]~48_combout $end
+$var wire 1 C( alu_value1[15]~_Duplicate_1_q $end
+$var wire 1 D( MEMORY|ram[15][15]~feeder_combout $end
+$var wire 1 E( MEMORY|ram[15][15]~q $end
+$var wire 1 F( MEMORY|ram[7][15]~feeder_combout $end
+$var wire 1 G( MEMORY|ram[7][15]~q $end
+$var wire 1 H( MEMORY|ram[3][15]~feeder_combout $end
+$var wire 1 I( MEMORY|ram[3][15]~q $end
+$var wire 1 J( MEMORY|ram[11][15]~q $end
+$var wire 1 K( MEMORY|read_data_2[15]~189_combout $end
+$var wire 1 L( MEMORY|read_data_2[15]~190_combout $end
+$var wire 1 M( MEMORY|ram[5][15]~q $end
+$var wire 1 N( MEMORY|ram[9][15]~q $end
+$var wire 1 O( MEMORY|ram[1][15]~q $end
+$var wire 1 P( MEMORY|read_data_2[15]~182_combout $end
+$var wire 1 Q( MEMORY|read_data_2[15]~183_combout $end
+$var wire 1 R( MEMORY|ram[10][15]~feeder_combout $end
+$var wire 1 S( MEMORY|ram[10][15]~q $end
+$var wire 1 T( MEMORY|ram[14][15]~q $end
+$var wire 1 U( MEMORY|ram[2][15]~q $end
+$var wire 1 V( MEMORY|ram[6][15]~q $end
+$var wire 1 W( MEMORY|read_data_2[15]~184_combout $end
+$var wire 1 X( MEMORY|read_data_2[15]~185_combout $end
+$var wire 1 Y( MEMORY|ram[12][15]~q $end
+$var wire 1 Z( MEMORY|ram[4][15]~q $end
+$var wire 1 [( MEMORY|ram[0][15]~q $end
+$var wire 1 \( MEMORY|read_data_2[15]~186_combout $end
+$var wire 1 ]( MEMORY|ram[8][15]~feeder_combout $end
+$var wire 1 ^( MEMORY|ram[8][15]~q $end
+$var wire 1 _( MEMORY|read_data_2[15]~187_combout $end
+$var wire 1 `( MEMORY|read_data_2[15]~188_combout $end
+$var wire 1 a( MEMORY|read_data_2[15]~191_combout $end
+$var wire 1 b( alu_value2~33_combout $end
+$var wire 1 c( alu_value2[15]~_Duplicate_1_q $end
+$var wire 1 d( ULA|Add0~15_combout $end
+$var wire 1 e( ULA|resultvalue[14]~49 $end
+$var wire 1 f( ULA|resultvalue[15]~50_combout $end
+$var wire 1 g( ULA|Mult0|auto_generated|mac_mult1~DATAOUT15 $end
+$var wire 1 h( ULA|Mult0|auto_generated|mac_mult1~DATAOUT16 $end
+$var wire 1 i( ULA|Mult0|auto_generated|mac_mult1~DATAOUT17 $end
+$var wire 1 j( ULA|Mult0|auto_generated|mac_mult1~DATAOUT18 $end
+$var wire 1 k( ULA|Mult0|auto_generated|mac_mult1~DATAOUT19 $end
+$var wire 1 l( ULA|Mult0|auto_generated|mac_mult1~DATAOUT20 $end
+$var wire 1 m( ULA|Mult0|auto_generated|mac_mult1~DATAOUT21 $end
+$var wire 1 n( ULA|Mult0|auto_generated|mac_mult1~DATAOUT22 $end
+$var wire 1 o( ULA|Mult0|auto_generated|mac_mult1~DATAOUT23 $end
+$var wire 1 p( ULA|Mult0|auto_generated|mac_mult1~DATAOUT24 $end
+$var wire 1 q( ULA|Mult0|auto_generated|mac_mult1~DATAOUT25 $end
+$var wire 1 r( ULA|Mult0|auto_generated|mac_mult1~DATAOUT26 $end
+$var wire 1 s( ULA|Mult0|auto_generated|mac_mult1~DATAOUT27 $end
+$var wire 1 t( ULA|Mult0|auto_generated|mac_mult1~DATAOUT28 $end
+$var wire 1 u( ULA|Mult0|auto_generated|mac_mult1~DATAOUT29 $end
+$var wire 1 v( ULA|Mult0|auto_generated|mac_mult1~DATAOUT30 $end
+$var wire 1 w( ULA|Mult0|auto_generated|mac_mult1~DATAOUT31 $end
+$var wire 1 x( ULA|Mult0|auto_generated|mac_mult1~0 $end
+$var wire 1 y( ULA|Mult0|auto_generated|mac_mult1~1 $end
+$var wire 1 z( ULA|Mult0|auto_generated|mac_mult1~2 $end
+$var wire 1 {( ULA|Mult0|auto_generated|mac_mult1~3 $end
+$var wire 1 |( ULA|Mult0|auto_generated|mac_out2~DATAOUT15 $end
+$var wire 1 }( ULA|resultvalue[12]~20_combout $end
+$var wire 1 ~( ULA|resultvalue[0]~21_combout $end
+$var wire 1 !) mem_write_data~16_combout $end
+$var wire 1 ") MEMORY|ram~31_combout $end
+$var wire 1 #) MEMORY|ram[13][15]~q $end
+$var wire 1 $) MEMORY|read_data_1[15]~180_combout $end
+$var wire 1 %) MEMORY|read_data_1[15]~181_combout $end
+$var wire 1 &) MEMORY|read_data_1[15]~187_combout $end
+$var wire 1 ') MEMORY|read_data_1[15]~188_combout $end
+$var wire 1 () MEMORY|read_data_1[15]~182_combout $end
+$var wire 1 )) MEMORY|read_data_1[15]~183_combout $end
+$var wire 1 *) MEMORY|read_data_1[15]~184_combout $end
+$var wire 1 +) MEMORY|read_data_1[15]~185_combout $end
+$var wire 1 ,) MEMORY|read_data_1[15]~186_combout $end
+$var wire 1 -) MEMORY|read_data_1[15]~189_combout $end
+$var wire 1 .) MEMORY|read_data_1[15]~203_combout $end
+$var wire 1 /) ULA|Mult0|auto_generated|mac_mult1~DATAOUT14 $end
+$var wire 1 0) ULA|Mult0|auto_generated|mac_out2~DATAOUT14 $end
+$var wire 1 1) mem_write_data~15_combout $end
+$var wire 1 2) MEMORY|ram~30_combout $end
+$var wire 1 3) MEMORY|ram[15][14]~feeder_combout $end
+$var wire 1 4) MEMORY|ram[15][14]~q $end
+$var wire 1 5) MEMORY|read_data_1[14]~177_combout $end
+$var wire 1 6) MEMORY|read_data_1[14]~178_combout $end
+$var wire 1 7) MEMORY|read_data_1[14]~170_combout $end
+$var wire 1 8) MEMORY|read_data_1[14]~171_combout $end
+$var wire 1 9) MEMORY|read_data_1[14]~174_combout $end
+$var wire 1 :) MEMORY|read_data_1[14]~175_combout $end
+$var wire 1 ;) MEMORY|read_data_1[14]~172_combout $end
+$var wire 1 <) MEMORY|read_data_1[14]~173_combout $end
+$var wire 1 =) MEMORY|read_data_1[14]~176_combout $end
+$var wire 1 >) MEMORY|read_data_1[14]~179_combout $end
+$var wire 1 ?) MEMORY|read_data_1[14]~202_combout $end
+$var wire 1 @) ULA|Mult0|auto_generated|mac_mult1~DATAOUT13 $end
+$var wire 1 A) ULA|Mult0|auto_generated|mac_out2~DATAOUT13 $end
+$var wire 1 B) mem_write_data~14_combout $end
+$var wire 1 C) MEMORY|ram~29_combout $end
+$var wire 1 D) MEMORY|ram[11][13]~q $end
+$var wire 1 E) MEMORY|read_data_1[13]~167_combout $end
+$var wire 1 F) MEMORY|read_data_1[13]~168_combout $end
+$var wire 1 G) MEMORY|read_data_1[13]~164_combout $end
+$var wire 1 H) MEMORY|read_data_1[13]~165_combout $end
+$var wire 1 I) MEMORY|read_data_1[13]~162_combout $end
+$var wire 1 J) MEMORY|read_data_1[13]~163_combout $end
+$var wire 1 K) MEMORY|read_data_1[13]~166_combout $end
+$var wire 1 L) MEMORY|read_data_1[13]~160_combout $end
+$var wire 1 M) MEMORY|read_data_1[13]~161_combout $end
+$var wire 1 N) MEMORY|read_data_1[13]~169_combout $end
+$var wire 1 O) MEMORY|read_data_1[13]~201_combout $end
+$var wire 1 P) ULA|Mult0|auto_generated|mac_mult1~DATAOUT12 $end
+$var wire 1 Q) ULA|Mult0|auto_generated|mac_out2~DATAOUT12 $end
+$var wire 1 R) mem_write_data~13_combout $end
+$var wire 1 S) MEMORY|ram~28_combout $end
+$var wire 1 T) MEMORY|ram[15][12]~feeder_combout $end
+$var wire 1 U) MEMORY|ram[15][12]~q $end
+$var wire 1 V) MEMORY|read_data_1[12]~157_combout $end
+$var wire 1 W) MEMORY|read_data_1[12]~158_combout $end
+$var wire 1 X) MEMORY|read_data_1[12]~150_combout $end
+$var wire 1 Y) MEMORY|read_data_1[12]~151_combout $end
+$var wire 1 Z) MEMORY|read_data_1[12]~154_combout $end
+$var wire 1 [) MEMORY|read_data_1[12]~155_combout $end
+$var wire 1 \) MEMORY|read_data_1[12]~152_combout $end
+$var wire 1 ]) MEMORY|read_data_1[12]~153_combout $end
+$var wire 1 ^) MEMORY|read_data_1[12]~156_combout $end
+$var wire 1 _) MEMORY|read_data_1[12]~159_combout $end
+$var wire 1 `) MEMORY|read_data_1[12]~200_combout $end
+$var wire 1 a) ULA|Mult0|auto_generated|mac_mult1~DATAOUT11 $end
+$var wire 1 b) ULA|Mult0|auto_generated|mac_out2~DATAOUT11 $end
+$var wire 1 c) mem_write_data~12_combout $end
+$var wire 1 d) MEMORY|ram~27_combout $end
+$var wire 1 e) MEMORY|ram[7][11]~q $end
+$var wire 1 f) MEMORY|read_data_1[11]~147_combout $end
+$var wire 1 g) MEMORY|read_data_1[11]~148_combout $end
+$var wire 1 h) MEMORY|read_data_1[11]~140_combout $end
+$var wire 1 i) MEMORY|read_data_1[11]~141_combout $end
+$var wire 1 j) MEMORY|read_data_1[11]~142_combout $end
+$var wire 1 k) MEMORY|read_data_1[11]~143_combout $end
+$var wire 1 l) MEMORY|read_data_1[11]~144_combout $end
+$var wire 1 m) MEMORY|read_data_1[11]~145_combout $end
+$var wire 1 n) MEMORY|read_data_1[11]~146_combout $end
+$var wire 1 o) MEMORY|read_data_1[11]~149_combout $end
+$var wire 1 p) MEMORY|read_data_1[11]~199_combout $end
+$var wire 1 q) ULA|Mult0|auto_generated|mac_mult1~DATAOUT10 $end
+$var wire 1 r) ULA|Mult0|auto_generated|mac_out2~DATAOUT10 $end
+$var wire 1 s) mem_write_data~11_combout $end
+$var wire 1 t) MEMORY|ram~26_combout $end
+$var wire 1 u) MEMORY|ram[14][10]~q $end
+$var wire 1 v) MEMORY|read_data_1[10]~137_combout $end
+$var wire 1 w) MEMORY|read_data_1[10]~138_combout $end
+$var wire 1 x) MEMORY|read_data_1[10]~130_combout $end
+$var wire 1 y) MEMORY|read_data_1[10]~131_combout $end
+$var wire 1 z) MEMORY|read_data_1[10]~134_combout $end
+$var wire 1 {) MEMORY|read_data_1[10]~135_combout $end
+$var wire 1 |) MEMORY|read_data_1[10]~132_combout $end
+$var wire 1 }) MEMORY|read_data_1[10]~133_combout $end
+$var wire 1 ~) MEMORY|read_data_1[10]~136_combout $end
+$var wire 1 !* MEMORY|read_data_1[10]~139_combout $end
+$var wire 1 "* MEMORY|read_data_1[10]~198_combout $end
+$var wire 1 #* ULA|Mult0|auto_generated|mac_mult1~DATAOUT9 $end
+$var wire 1 $* ULA|Mult0|auto_generated|mac_out2~DATAOUT9 $end
+$var wire 1 %* mem_write_data~10_combout $end
+$var wire 1 &* MEMORY|ram~25_combout $end
+$var wire 1 '* MEMORY|ram[14][9]~q $end
+$var wire 1 (* MEMORY|read_data_1[9]~120_combout $end
+$var wire 1 )* MEMORY|read_data_1[9]~121_combout $end
+$var wire 1 ** MEMORY|read_data_1[9]~127_combout $end
+$var wire 1 +* MEMORY|read_data_1[9]~128_combout $end
+$var wire 1 ,* MEMORY|read_data_1[9]~124_combout $end
+$var wire 1 -* MEMORY|read_data_1[9]~125_combout $end
+$var wire 1 .* MEMORY|read_data_1[9]~122_combout $end
+$var wire 1 /* MEMORY|read_data_1[9]~123_combout $end
+$var wire 1 0* MEMORY|read_data_1[9]~126_combout $end
+$var wire 1 1* MEMORY|read_data_1[9]~129_combout $end
+$var wire 1 2* MEMORY|read_data_1[9]~197_combout $end
+$var wire 1 3* ULA|Mult0|auto_generated|mac_mult1~DATAOUT8 $end
+$var wire 1 4* ULA|Mult0|auto_generated|mac_out2~DATAOUT8 $end
+$var wire 1 5* mem_write_data~9_combout $end
+$var wire 1 6* MEMORY|ram~24_combout $end
+$var wire 1 7* MEMORY|ram[11][8]~q $end
+$var wire 1 8* MEMORY|read_data_1[8]~110_combout $end
+$var wire 1 9* MEMORY|read_data_1[8]~111_combout $end
+$var wire 1 :* MEMORY|read_data_1[8]~114_combout $end
+$var wire 1 ;* MEMORY|read_data_1[8]~115_combout $end
+$var wire 1 <* MEMORY|read_data_1[8]~112_combout $end
+$var wire 1 =* MEMORY|read_data_1[8]~113_combout $end
+$var wire 1 >* MEMORY|read_data_1[8]~116_combout $end
+$var wire 1 ?* MEMORY|read_data_1[8]~117_combout $end
+$var wire 1 @* MEMORY|read_data_1[8]~118_combout $end
+$var wire 1 A* MEMORY|read_data_1[8]~119_combout $end
+$var wire 1 B* MEMORY|read_data_1[8]~196_combout $end
+$var wire 1 C* ULA|Mult0|auto_generated|mac_mult1~DATAOUT7 $end
+$var wire 1 D* ULA|Mult0|auto_generated|mac_out2~DATAOUT7 $end
+$var wire 1 E* mem_write_data~8_combout $end
+$var wire 1 F* MEMORY|ram~23_combout $end
+$var wire 1 G* MEMORY|ram[13][7]~feeder_combout $end
+$var wire 1 H* MEMORY|ram[13][7]~q $end
+$var wire 1 I* MEMORY|read_data_1[7]~100_combout $end
+$var wire 1 J* MEMORY|read_data_1[7]~101_combout $end
+$var wire 1 K* MEMORY|read_data_1[7]~107_combout $end
+$var wire 1 L* MEMORY|read_data_1[7]~108_combout $end
+$var wire 1 M* MEMORY|read_data_1[7]~102_combout $end
+$var wire 1 N* MEMORY|read_data_1[7]~103_combout $end
+$var wire 1 O* MEMORY|read_data_1[7]~104_combout $end
+$var wire 1 P* MEMORY|read_data_1[7]~105_combout $end
+$var wire 1 Q* MEMORY|read_data_1[7]~106_combout $end
+$var wire 1 R* MEMORY|read_data_1[7]~109_combout $end
+$var wire 1 S* MEMORY|read_data_1[7]~195_combout $end
+$var wire 1 T* ULA|Mult0|auto_generated|mac_mult1~DATAOUT6 $end
+$var wire 1 U* ULA|Mult0|auto_generated|mac_out2~DATAOUT6 $end
+$var wire 1 V* mem_write_data~7_combout $end
+$var wire 1 W* MEMORY|ram~22_combout $end
+$var wire 1 X* MEMORY|ram[0][6]~q $end
+$var wire 1 Y* MEMORY|read_data_1[6]~90_combout $end
+$var wire 1 Z* MEMORY|read_data_1[6]~91_combout $end
+$var wire 1 [* MEMORY|read_data_1[6]~92_combout $end
+$var wire 1 \* MEMORY|read_data_1[6]~88_combout $end
+$var wire 1 ]* MEMORY|read_data_1[6]~89_combout $end
+$var wire 1 ^* MEMORY|read_data_1[6]~93_combout $end
+$var wire 1 _* MEMORY|read_data_1[6]~94_combout $end
+$var wire 1 `* MEMORY|read_data_1[6]~95_combout $end
+$var wire 1 a* MEMORY|read_data_1[6]~96_combout $end
+$var wire 1 b* MEMORY|read_data_1[6]~97_combout $end
+$var wire 1 c* MEMORY|read_data_1[6]~98_combout $end
+$var wire 1 d* MEMORY|read_data_1[6]~99_combout $end
+$var wire 1 e* ULA|Mult0|auto_generated|mac_mult1~DATAOUT5 $end
+$var wire 1 f* ULA|Mult0|auto_generated|mac_out2~DATAOUT5 $end
+$var wire 1 g* mem_write_data~6_combout $end
+$var wire 1 h* MEMORY|ram~21_combout $end
+$var wire 1 i* MEMORY|ram[15][5]~q $end
+$var wire 1 j* MEMORY|read_data_1[5]~85_combout $end
+$var wire 1 k* MEMORY|read_data_1[5]~86_combout $end
+$var wire 1 l* MEMORY|read_data_1[5]~78_combout $end
+$var wire 1 m* MEMORY|read_data_1[5]~79_combout $end
+$var wire 1 n* MEMORY|read_data_1[5]~80_combout $end
+$var wire 1 o* MEMORY|read_data_1[5]~81_combout $end
+$var wire 1 p* MEMORY|read_data_1[5]~82_combout $end
+$var wire 1 q* MEMORY|read_data_1[5]~83_combout $end
+$var wire 1 r* MEMORY|read_data_1[5]~84_combout $end
+$var wire 1 s* MEMORY|read_data_1[5]~87_combout $end
+$var wire 1 t* MEMORY|read_data_1[5]~194_combout $end
+$var wire 1 u* ULA|Mult0|auto_generated|mac_mult1~DATAOUT4 $end
+$var wire 1 v* ULA|Mult0|auto_generated|mac_out2~DATAOUT4 $end
+$var wire 1 w* mem_write_data~5_combout $end
+$var wire 1 x* MEMORY|ram~20_combout $end
+$var wire 1 y* MEMORY|ram[7][4]~q $end
+$var wire 1 z* MEMORY|read_data_1[4]~68_combout $end
+$var wire 1 {* MEMORY|read_data_1[4]~69_combout $end
+$var wire 1 |* MEMORY|read_data_1[4]~70_combout $end
+$var wire 1 }* MEMORY|read_data_1[4]~76_combout $end
+$var wire 1 ~* MEMORY|read_data_1[4]~204_combout $end
+$var wire 1 !+ MEMORY|read_data_1[4]~74_combout $end
+$var wire 1 "+ MEMORY|read_data_1[4]~75_combout $end
+$var wire 1 #+ MEMORY|read_data_1[4]~205_combout $end
+$var wire 1 $+ MEMORY|read_data_1[4]~71_combout $end
+$var wire 1 %+ MEMORY|read_data_1[4]~72_combout $end
+$var wire 1 &+ MEMORY|read_data_1[4]~73_combout $end
+$var wire 1 '+ MEMORY|read_data_1[4]~77_combout $end
+$var wire 1 (+ ULA|Mult0|auto_generated|mac_mult1~DATAOUT3 $end
+$var wire 1 )+ ULA|Mult0|auto_generated|mac_out2~DATAOUT3 $end
+$var wire 1 *+ mem_write_data~4_combout $end
+$var wire 1 ++ MEMORY|ram~19_combout $end
+$var wire 1 ,+ MEMORY|ram[15][3]~feeder_combout $end
+$var wire 1 -+ MEMORY|ram[15][3]~q $end
+$var wire 1 .+ MEMORY|read_data_1[3]~65_combout $end
+$var wire 1 /+ MEMORY|read_data_1[3]~66_combout $end
+$var wire 1 0+ MEMORY|read_data_1[3]~58_combout $end
+$var wire 1 1+ MEMORY|read_data_1[3]~59_combout $end
+$var wire 1 2+ MEMORY|read_data_1[3]~62_combout $end
+$var wire 1 3+ MEMORY|read_data_1[3]~63_combout $end
+$var wire 1 4+ MEMORY|read_data_1[3]~60_combout $end
+$var wire 1 5+ MEMORY|read_data_1[3]~61_combout $end
+$var wire 1 6+ MEMORY|read_data_1[3]~64_combout $end
+$var wire 1 7+ MEMORY|read_data_1[3]~67_combout $end
+$var wire 1 8+ MEMORY|read_data_1[3]~193_combout $end
+$var wire 1 9+ ULA|Mult0|auto_generated|mac_mult1~DATAOUT2 $end
+$var wire 1 :+ ULA|Mult0|auto_generated|mac_out2~DATAOUT2 $end
+$var wire 1 ;+ mem_write_data~3_combout $end
+$var wire 1 <+ MEMORY|ram~18_combout $end
+$var wire 1 =+ MEMORY|ram[15][2]~feeder_combout $end
+$var wire 1 >+ MEMORY|ram[15][2]~q $end
+$var wire 1 ?+ MEMORY|read_data_1[2]~55_combout $end
+$var wire 1 @+ MEMORY|read_data_1[2]~56_combout $end
+$var wire 1 A+ MEMORY|read_data_1[2]~48_combout $end
+$var wire 1 B+ MEMORY|read_data_1[2]~49_combout $end
+$var wire 1 C+ MEMORY|read_data_1[2]~52_combout $end
+$var wire 1 D+ MEMORY|read_data_1[2]~53_combout $end
+$var wire 1 E+ MEMORY|read_data_1[2]~50_combout $end
+$var wire 1 F+ MEMORY|read_data_1[2]~51_combout $end
+$var wire 1 G+ MEMORY|read_data_1[2]~54_combout $end
+$var wire 1 H+ MEMORY|read_data_1[2]~57_combout $end
+$var wire 1 I+ MEMORY|read_data_1[2]~192_combout $end
+$var wire 1 J+ ULA|Mult0|auto_generated|mac_mult1~DATAOUT1 $end
+$var wire 1 K+ ULA|Mult0|auto_generated|mac_out2~DATAOUT1 $end
+$var wire 1 L+ mem_write_data~2_combout $end
+$var wire 1 M+ MEMORY|ram~17_combout $end
+$var wire 1 N+ MEMORY|ram[12][1]~q $end
+$var wire 1 O+ MEMORY|read_data_1[1]~42_combout $end
+$var wire 1 P+ MEMORY|read_data_1[1]~43_combout $end
+$var wire 1 Q+ MEMORY|read_data_1[1]~40_combout $end
+$var wire 1 R+ MEMORY|read_data_1[1]~41_combout $end
+$var wire 1 S+ MEMORY|read_data_1[1]~44_combout $end
+$var wire 1 T+ MEMORY|read_data_1[1]~45_combout $end
+$var wire 1 U+ MEMORY|read_data_1[1]~46_combout $end
+$var wire 1 V+ MEMORY|read_data_1[1]~38_combout $end
+$var wire 1 W+ MEMORY|read_data_1[1]~39_combout $end
+$var wire 1 X+ MEMORY|read_data_1[1]~47_combout $end
+$var wire 1 Y+ MEMORY|read_data_1[1]~191_combout $end
+$var wire 1 Z+ ULA|Mult0|auto_generated|mac_mult1~dataout $end
+$var wire 1 [+ ULA|Mult0|auto_generated|mac_out2~dataout $end
+$var wire 1 \+ mem_write_data~0_combout $end
+$var wire 1 ]+ MEMORY|ram~0_combout $end
+$var wire 1 ^+ MEMORY|ram[9][0]~q $end
+$var wire 1 _+ MEMORY|read_data_1[0]~28_combout $end
+$var wire 1 `+ MEMORY|read_data_1[0]~29_combout $end
+$var wire 1 a+ MEMORY|read_data_1[0]~30_combout $end
+$var wire 1 b+ MEMORY|read_data_1[0]~31_combout $end
+$var wire 1 c+ MEMORY|read_data_1[0]~32_combout $end
+$var wire 1 d+ MEMORY|read_data_1[0]~33_combout $end
+$var wire 1 e+ MEMORY|read_data_1[0]~34_combout $end
+$var wire 1 f+ MEMORY|read_data_1[0]~35_combout $end
+$var wire 1 g+ MEMORY|read_data_1[0]~36_combout $end
+$var wire 1 h+ MEMORY|read_data_1[0]~37_combout $end
+$var wire 1 i+ MEMORY|read_data_1[0]~190_combout $end
+$var wire 1 j+ MEMORY|read_data_2[0]~192_combout $end
+$var wire 1 k+ MEMORY|read_data_2[1]~193_combout $end
+$var wire 1 l+ MEMORY|read_data_2[2]~194_combout $end
+$var wire 1 m+ MEMORY|read_data_2[3]~195_combout $end
+$var wire 1 n+ MEMORY|read_data_2[4]~196_combout $end
+$var wire 1 o+ MEMORY|read_data_2[5]~197_combout $end
+$var wire 1 p+ MEMORY|read_data_2[6]~198_combout $end
+$var wire 1 q+ MEMORY|read_data_2[7]~199_combout $end
+$var wire 1 r+ MEMORY|read_data_2[8]~200_combout $end
+$var wire 1 s+ MEMORY|read_data_2[9]~201_combout $end
+$var wire 1 t+ MEMORY|read_data_2[10]~202_combout $end
+$var wire 1 u+ MEMORY|read_data_2[11]~203_combout $end
+$var wire 1 v+ MEMORY|read_data_2[12]~204_combout $end
+$var wire 1 w+ MEMORY|read_data_2[13]~205_combout $end
+$var wire 1 x+ MEMORY|read_data_2[14]~206_combout $end
+$var wire 1 y+ MEMORY|read_data_2[15]~207_combout $end
+$var wire 1 z+ Selector7~0_combout $end
+$var wire 1 {+ ON~reg0_q $end
+$var wire 1 |+ ULA|resultvalue [15] $end
+$var wire 1 }+ ULA|resultvalue [14] $end
+$var wire 1 ~+ ULA|resultvalue [13] $end
+$var wire 1 !, ULA|resultvalue [12] $end
+$var wire 1 ", ULA|resultvalue [11] $end
+$var wire 1 #, ULA|resultvalue [10] $end
+$var wire 1 $, ULA|resultvalue [9] $end
+$var wire 1 %, ULA|resultvalue [8] $end
+$var wire 1 &, ULA|resultvalue [7] $end
+$var wire 1 ', ULA|resultvalue [6] $end
+$var wire 1 (, ULA|resultvalue [5] $end
+$var wire 1 ), ULA|resultvalue [4] $end
+$var wire 1 *, ULA|resultvalue [3] $end
+$var wire 1 +, ULA|resultvalue [2] $end
+$var wire 1 ,, ULA|resultvalue [1] $end
+$var wire 1 -, ULA|resultvalue [0] $end
+$var wire 1 ., mem_read_addr_1 [3] $end
+$var wire 1 /, mem_read_addr_1 [2] $end
+$var wire 1 0, mem_read_addr_1 [1] $end
+$var wire 1 1, mem_read_addr_1 [0] $end
+$var wire 1 2, immediate_extended [15] $end
+$var wire 1 3, immediate_extended [14] $end
+$var wire 1 4, immediate_extended [13] $end
+$var wire 1 5, immediate_extended [12] $end
+$var wire 1 6, immediate_extended [11] $end
+$var wire 1 7, immediate_extended [10] $end
+$var wire 1 8, immediate_extended [9] $end
+$var wire 1 9, immediate_extended [8] $end
+$var wire 1 :, immediate_extended [7] $end
+$var wire 1 ;, immediate_extended [6] $end
+$var wire 1 <, immediate_extended [5] $end
+$var wire 1 =, immediate_extended [4] $end
+$var wire 1 >, immediate_extended [3] $end
+$var wire 1 ?, immediate_extended [2] $end
+$var wire 1 @, immediate_extended [1] $end
+$var wire 1 A, immediate_extended [0] $end
+$var wire 1 B, mem_write_data [15] $end
+$var wire 1 C, mem_write_data [14] $end
+$var wire 1 D, mem_write_data [13] $end
+$var wire 1 E, mem_write_data [12] $end
+$var wire 1 F, mem_write_data [11] $end
+$var wire 1 G, mem_write_data [10] $end
+$var wire 1 H, mem_write_data [9] $end
+$var wire 1 I, mem_write_data [8] $end
+$var wire 1 J, mem_write_data [7] $end
+$var wire 1 K, mem_write_data [6] $end
+$var wire 1 L, mem_write_data [5] $end
+$var wire 1 M, mem_write_data [4] $end
+$var wire 1 N, mem_write_data [3] $end
+$var wire 1 O, mem_write_data [2] $end
+$var wire 1 P, mem_write_data [1] $end
+$var wire 1 Q, mem_write_data [0] $end
+$var wire 1 R, mem_write_addr [3] $end
+$var wire 1 S, mem_write_addr [2] $end
+$var wire 1 T, mem_write_addr [1] $end
+$var wire 1 U, mem_write_addr [0] $end
+$var wire 1 V, instruction_register [17] $end
+$var wire 1 W, instruction_register [16] $end
+$var wire 1 X, instruction_register [15] $end
+$var wire 1 Y, instruction_register [14] $end
+$var wire 1 Z, instruction_register [13] $end
+$var wire 1 [, instruction_register [12] $end
+$var wire 1 \, instruction_register [11] $end
+$var wire 1 ], instruction_register [10] $end
+$var wire 1 ^, instruction_register [9] $end
+$var wire 1 _, instruction_register [8] $end
+$var wire 1 `, instruction_register [7] $end
+$var wire 1 a, instruction_register [6] $end
+$var wire 1 b, instruction_register [5] $end
+$var wire 1 c, instruction_register [4] $end
+$var wire 1 d, instruction_register [3] $end
+$var wire 1 e, instruction_register [2] $end
+$var wire 1 f, instruction_register [1] $end
+$var wire 1 g, instruction_register [0] $end
+$var wire 1 h, alu_opcode [2] $end
+$var wire 1 i, alu_opcode [1] $end
+$var wire 1 j, alu_opcode [0] $end
+$var wire 1 k, opcode [2] $end
+$var wire 1 l, opcode [1] $end
+$var wire 1 m, opcode [0] $end
+$var wire 1 n, r_dest [3] $end
+$var wire 1 o, r_dest [2] $end
+$var wire 1 p, r_dest [1] $end
+$var wire 1 q, r_dest [0] $end
+$var wire 1 r, ULA|Mult0|auto_generated|mac_out2_DATAOUT_bus [35] $end
+$var wire 1 s, ULA|Mult0|auto_generated|mac_out2_DATAOUT_bus [34] $end
+$var wire 1 t, ULA|Mult0|auto_generated|mac_out2_DATAOUT_bus [33] $end
+$var wire 1 u, ULA|Mult0|auto_generated|mac_out2_DATAOUT_bus [32] $end
+$var wire 1 v, ULA|Mult0|auto_generated|mac_out2_DATAOUT_bus [31] $end
+$var wire 1 w, ULA|Mult0|auto_generated|mac_out2_DATAOUT_bus [30] $end
+$var wire 1 x, ULA|Mult0|auto_generated|mac_out2_DATAOUT_bus [29] $end
+$var wire 1 y, ULA|Mult0|auto_generated|mac_out2_DATAOUT_bus [28] $end
+$var wire 1 z, ULA|Mult0|auto_generated|mac_out2_DATAOUT_bus [27] $end
+$var wire 1 {, ULA|Mult0|auto_generated|mac_out2_DATAOUT_bus [26] $end
+$var wire 1 |, ULA|Mult0|auto_generated|mac_out2_DATAOUT_bus [25] $end
+$var wire 1 }, ULA|Mult0|auto_generated|mac_out2_DATAOUT_bus [24] $end
+$var wire 1 ~, ULA|Mult0|auto_generated|mac_out2_DATAOUT_bus [23] $end
+$var wire 1 !- ULA|Mult0|auto_generated|mac_out2_DATAOUT_bus [22] $end
+$var wire 1 "- ULA|Mult0|auto_generated|mac_out2_DATAOUT_bus [21] $end
+$var wire 1 #- ULA|Mult0|auto_generated|mac_out2_DATAOUT_bus [20] $end
+$var wire 1 $- ULA|Mult0|auto_generated|mac_out2_DATAOUT_bus [19] $end
+$var wire 1 %- ULA|Mult0|auto_generated|mac_out2_DATAOUT_bus [18] $end
+$var wire 1 &- ULA|Mult0|auto_generated|mac_out2_DATAOUT_bus [17] $end
+$var wire 1 '- ULA|Mult0|auto_generated|mac_out2_DATAOUT_bus [16] $end
+$var wire 1 (- ULA|Mult0|auto_generated|mac_out2_DATAOUT_bus [15] $end
+$var wire 1 )- ULA|Mult0|auto_generated|mac_out2_DATAOUT_bus [14] $end
+$var wire 1 *- ULA|Mult0|auto_generated|mac_out2_DATAOUT_bus [13] $end
+$var wire 1 +- ULA|Mult0|auto_generated|mac_out2_DATAOUT_bus [12] $end
+$var wire 1 ,- ULA|Mult0|auto_generated|mac_out2_DATAOUT_bus [11] $end
+$var wire 1 -- ULA|Mult0|auto_generated|mac_out2_DATAOUT_bus [10] $end
+$var wire 1 .- ULA|Mult0|auto_generated|mac_out2_DATAOUT_bus [9] $end
+$var wire 1 /- ULA|Mult0|auto_generated|mac_out2_DATAOUT_bus [8] $end
+$var wire 1 0- ULA|Mult0|auto_generated|mac_out2_DATAOUT_bus [7] $end
+$var wire 1 1- ULA|Mult0|auto_generated|mac_out2_DATAOUT_bus [6] $end
+$var wire 1 2- ULA|Mult0|auto_generated|mac_out2_DATAOUT_bus [5] $end
+$var wire 1 3- ULA|Mult0|auto_generated|mac_out2_DATAOUT_bus [4] $end
+$var wire 1 4- ULA|Mult0|auto_generated|mac_out2_DATAOUT_bus [3] $end
+$var wire 1 5- ULA|Mult0|auto_generated|mac_out2_DATAOUT_bus [2] $end
+$var wire 1 6- ULA|Mult0|auto_generated|mac_out2_DATAOUT_bus [1] $end
+$var wire 1 7- ULA|Mult0|auto_generated|mac_out2_DATAOUT_bus [0] $end
+$var wire 1 8- ULA|Mult0|auto_generated|mac_mult1_DATAOUT_bus [35] $end
+$var wire 1 9- ULA|Mult0|auto_generated|mac_mult1_DATAOUT_bus [34] $end
+$var wire 1 :- ULA|Mult0|auto_generated|mac_mult1_DATAOUT_bus [33] $end
+$var wire 1 ;- ULA|Mult0|auto_generated|mac_mult1_DATAOUT_bus [32] $end
+$var wire 1 <- ULA|Mult0|auto_generated|mac_mult1_DATAOUT_bus [31] $end
+$var wire 1 =- ULA|Mult0|auto_generated|mac_mult1_DATAOUT_bus [30] $end
+$var wire 1 >- ULA|Mult0|auto_generated|mac_mult1_DATAOUT_bus [29] $end
+$var wire 1 ?- ULA|Mult0|auto_generated|mac_mult1_DATAOUT_bus [28] $end
+$var wire 1 @- ULA|Mult0|auto_generated|mac_mult1_DATAOUT_bus [27] $end
+$var wire 1 A- ULA|Mult0|auto_generated|mac_mult1_DATAOUT_bus [26] $end
+$var wire 1 B- ULA|Mult0|auto_generated|mac_mult1_DATAOUT_bus [25] $end
+$var wire 1 C- ULA|Mult0|auto_generated|mac_mult1_DATAOUT_bus [24] $end
+$var wire 1 D- ULA|Mult0|auto_generated|mac_mult1_DATAOUT_bus [23] $end
+$var wire 1 E- ULA|Mult0|auto_generated|mac_mult1_DATAOUT_bus [22] $end
+$var wire 1 F- ULA|Mult0|auto_generated|mac_mult1_DATAOUT_bus [21] $end
+$var wire 1 G- ULA|Mult0|auto_generated|mac_mult1_DATAOUT_bus [20] $end
+$var wire 1 H- ULA|Mult0|auto_generated|mac_mult1_DATAOUT_bus [19] $end
+$var wire 1 I- ULA|Mult0|auto_generated|mac_mult1_DATAOUT_bus [18] $end
+$var wire 1 J- ULA|Mult0|auto_generated|mac_mult1_DATAOUT_bus [17] $end
+$var wire 1 K- ULA|Mult0|auto_generated|mac_mult1_DATAOUT_bus [16] $end
+$var wire 1 L- ULA|Mult0|auto_generated|mac_mult1_DATAOUT_bus [15] $end
+$var wire 1 M- ULA|Mult0|auto_generated|mac_mult1_DATAOUT_bus [14] $end
+$var wire 1 N- ULA|Mult0|auto_generated|mac_mult1_DATAOUT_bus [13] $end
+$var wire 1 O- ULA|Mult0|auto_generated|mac_mult1_DATAOUT_bus [12] $end
+$var wire 1 P- ULA|Mult0|auto_generated|mac_mult1_DATAOUT_bus [11] $end
+$var wire 1 Q- ULA|Mult0|auto_generated|mac_mult1_DATAOUT_bus [10] $end
+$var wire 1 R- ULA|Mult0|auto_generated|mac_mult1_DATAOUT_bus [9] $end
+$var wire 1 S- ULA|Mult0|auto_generated|mac_mult1_DATAOUT_bus [8] $end
+$var wire 1 T- ULA|Mult0|auto_generated|mac_mult1_DATAOUT_bus [7] $end
+$var wire 1 U- ULA|Mult0|auto_generated|mac_mult1_DATAOUT_bus [6] $end
+$var wire 1 V- ULA|Mult0|auto_generated|mac_mult1_DATAOUT_bus [5] $end
+$var wire 1 W- ULA|Mult0|auto_generated|mac_mult1_DATAOUT_bus [4] $end
+$var wire 1 X- ULA|Mult0|auto_generated|mac_mult1_DATAOUT_bus [3] $end
+$var wire 1 Y- ULA|Mult0|auto_generated|mac_mult1_DATAOUT_bus [2] $end
+$var wire 1 Z- ULA|Mult0|auto_generated|mac_mult1_DATAOUT_bus [1] $end
+$var wire 1 [- ULA|Mult0|auto_generated|mac_mult1_DATAOUT_bus [0] $end
 $upscope $end
 $upscope $end
 $enddefinitions $end
@@ -1115,8 +1304,18 @@ $dumpvars
 1!
 1"
 1#
-0$
+1$
 b0 %
+0&
+06
+05
+04
+03
+02
+01
+00
+0/
+0.
 0-
 0,
 0+
@@ -1124,10 +1323,12 @@ b0 %
 0)
 0(
 0'
-0&
-0.
-0/
-00
+0F
+0E
+0D
+0C
+0B
+0A
 0@
 0?
 0>
@@ -1138,35 +1339,23 @@ b0 %
 09
 08
 07
-06
-05
-04
-03
-02
-01
-0A
-1B
-xC
-1D
-1E
-1F
-0G
-0H
-0I
-0J
-0K
-0L
-0M
 0N
+0M
+0L
+0K
+0J
+0I
+0H
+0G
 0O
 0P
 0Q
 0R
-0S
-0T
-0U
-0V
-0W
+1S
+xT
+1U
+1V
+1W
 0X
 0Y
 0Z
@@ -1193,13 +1382,13 @@ xC
 0o
 0p
 0q
-1r
+0r
 0s
 0t
-1u
+0u
 0v
 0w
-1x
+0x
 0y
 0z
 0{
@@ -1229,21 +1418,21 @@ xC
 05!
 06!
 07!
-18!
-19!
-0:!
-0;!
-0<!
+08!
+09!
+1:!
+1;!
+1<!
 0=!
 0>!
 0?!
 0@!
 0A!
-0B!
+1B!
 0C!
 0D!
 0E!
-0F!
+1F!
 0G!
 0H!
 0I!
@@ -1288,13 +1477,13 @@ xC
 0p!
 0q!
 0r!
-0s!
-0t!
+1s!
+1t!
 0u!
 0v!
 0w!
 0x!
-0y!
+1y!
 0z!
 0{!
 0|!
@@ -1303,7 +1492,7 @@ xC
 0!"
 0""
 0#"
-1$"
+0$"
 0%"
 0&"
 0'"
@@ -1320,8 +1509,8 @@ xC
 02"
 03"
 04"
-15"
-16"
+05"
+06"
 07"
 08"
 09"
@@ -1350,7 +1539,7 @@ xC
 0P"
 0Q"
 0R"
-1S"
+0S"
 0T"
 0U"
 0V"
@@ -1368,8 +1557,8 @@ xC
 0b"
 0c"
 0d"
-0e"
-0f"
+1e"
+1f"
 0g"
 0h"
 0i"
@@ -1409,15 +1598,15 @@ xC
 0-#
 0.#
 0/#
-10#
+00#
 01#
 02#
 03#
 04#
 05#
-06#
+16#
 07#
-08#
+18#
 09#
 0:#
 0;#
@@ -1453,7 +1642,7 @@ xC
 0Y#
 0Z#
 0[#
-1\#
+0\#
 0]#
 0^#
 0_#
@@ -1468,7 +1657,7 @@ xC
 0h#
 0i#
 0j#
-1k#
+0k#
 0l#
 0m#
 0n#
@@ -1492,7 +1681,7 @@ xC
 0"$
 0#$
 0$$
-0%$
+1%$
 0&$
 0'$
 0($
@@ -1526,7 +1715,7 @@ xC
 0D$
 0E$
 0F$
-1G$
+0G$
 0H$
 0I$
 0J$
@@ -1570,7 +1759,7 @@ xC
 0p$
 0q$
 0r$
-0s$
+1s$
 0t$
 0u$
 0v$
@@ -1584,7 +1773,7 @@ xC
 0~$
 0!%
 0"%
-1#%
+0#%
 0$%
 0%%
 0&%
@@ -1639,10 +1828,10 @@ xC
 0W%
 0X%
 0Y%
-0Z%
+1Z%
 0[%
 0\%
-1]%
+0]%
 0^%
 0_%
 0`%
@@ -1700,7 +1889,7 @@ xC
 06&
 07&
 08&
-19&
+09&
 0:&
 0;&
 0<&
@@ -1715,7 +1904,7 @@ xC
 0E&
 0F&
 0G&
-0H&
+1H&
 0I&
 0J&
 0K&
@@ -1758,7 +1947,7 @@ xC
 0p&
 0q&
 0r&
-1s&
+0s&
 0t&
 0u&
 0v&
@@ -1783,7 +1972,7 @@ xC
 0+'
 0,'
 0-'
-0.'
+1.'
 0/'
 00'
 01'
@@ -1860,7 +2049,7 @@ xC
 0x'
 0y'
 0z'
-0{'
+1{'
 0|'
 0}'
 0~'
@@ -1915,7 +2104,7 @@ xC
 0Q(
 0R(
 0S(
-1T(
+0T(
 0U(
 0V(
 0W(
@@ -1932,7 +2121,7 @@ xC
 0b(
 0c(
 0d(
-0e(
+1e(
 0f(
 0g(
 0h(
@@ -2024,1006 +2213,1470 @@ xC
 0`)
 0a)
 0b)
-0f)
-0e)
-0d)
 0c)
-0i)
-0h)
+0d)
+0e)
+0f)
 0g)
-0y)
-0x)
-0w)
-0v)
-0u)
-0t)
+0h)
+0i)
+0j)
+0k)
+0l)
+0m)
+0n)
+0o)
+0p)
+0q)
+0r)
 0s)
-zr)
-zq)
-zp)
-zo)
-zn)
-zm)
-zl)
-zk)
-zj)
-0+*
-0**
-0)*
-0(*
-0'*
-0&*
-0%*
-0$*
-0#*
-0"*
-0!*
-0~)
-0})
-0|)
-0{)
+0t)
+0u)
+0v)
+0w)
+0x)
+0y)
 0z)
-0;*
-0:*
-09*
-08*
-07*
-06*
-05*
-04*
-03*
-02*
-01*
-00*
-0/*
-0.*
-0-*
+0{)
+0|)
+0})
+0~)
+0!*
+0"*
+0#*
+0$*
+0%*
+0&*
+0'*
+0(*
+0)*
+0**
+0+*
 0,*
-0>*
-0=*
+0-*
+0.*
+0/*
+00*
+01*
+02*
+03*
+04*
+05*
+06*
+07*
+08*
+09*
+0:*
+0;*
 0<*
-0P*
-0O*
-0N*
-0M*
-0L*
-0K*
-0J*
-0I*
-0H*
-0G*
-0F*
-0E*
-0D*
-0C*
-0B*
-0A*
-0@*
+0=*
+0>*
 0?*
-0`*
-0_*
-0^*
-0]*
-0\*
-0[*
-0Z*
-0Y*
-0X*
-0W*
-0V*
-0U*
-0T*
-0S*
-0R*
+0@*
+0A*
+0B*
+0C*
+0D*
+0E*
+0F*
+0G*
+0H*
+0I*
+0J*
+0K*
+0L*
+0M*
+0N*
+0O*
+0P*
 0Q*
-0d*
-0c*
-0b*
+0R*
+0S*
+0T*
+0U*
+0V*
+0W*
+0X*
+0Y*
+0Z*
+0[*
+0\*
+0]*
+0^*
+0_*
+0`*
 0a*
-0t*
-0s*
-0r*
-0q*
-0p*
-0o*
-0n*
-0m*
-0l*
-0k*
-0j*
-0i*
-0h*
-0g*
-0f*
+0b*
+0c*
+0d*
 0e*
-0x*
-0w*
-0v*
+0f*
+0g*
+0h*
+0i*
+0j*
+0k*
+0l*
+0m*
+0n*
+0o*
+0p*
+0q*
+0r*
+0s*
+0t*
 0u*
-0:+
-09+
-08+
-07+
-06+
-05+
-04+
-03+
-02+
-01+
-00+
-0/+
-0.+
-0-+
-0,+
-0++
-0*+
-0)+
-0(+
-0'+
-0&+
-0%+
-0$+
-0#+
-0"+
-0!+
-0~*
-0}*
-0|*
-0{*
-0z*
+0v*
+0w*
+0x*
 0y*
-0Z+
-0Y+
-0X+
-0W+
-0V+
-0U+
-0T+
-0S+
-0R+
-0Q+
-0P+
-0O+
-0N+
-0M+
-0L+
-0K+
-0J+
-0I+
-0H+
-0G+
-0F+
-0E+
-0D+
-0C+
-0B+
-0A+
-0@+
-0?+
-0>+
-0=+
-0<+
+0z*
+0{*
+1|*
+0}*
+0~*
+0!+
+0"+
+0#+
+0$+
+0%+
+0&+
+0'+
+0(+
+0)+
+0*+
+0++
+0,+
+0-+
+0.+
+0/+
+00+
+01+
+02+
+03+
+04+
+05+
+06+
+07+
+08+
+09+
+0:+
 0;+
+0<+
+0=+
+0>+
+0?+
+0@+
+0A+
+0B+
+0C+
+0D+
+0E+
+0F+
+0G+
+0H+
+0I+
+0J+
+0K+
+0L+
+0M+
+0N+
+0O+
+0P+
+0Q+
+0R+
+0S+
+0T+
+0U+
+0V+
+0W+
+0X+
+0Y+
+0Z+
+0[+
+0\+
+0]+
+0^+
+0_+
+0`+
+0a+
+0b+
+0c+
+0d+
+0e+
+0f+
+0g+
+0h+
+0i+
+0j+
+0k+
+0l+
+0m+
+0n+
+0o+
+0p+
+0q+
+0r+
+0s+
+0t+
+0u+
+0v+
+0w+
+0x+
+0y+
+0z+
+0{+
+0-,
+0,,
+0+,
+0*,
+0),
+0(,
+0',
+0&,
+0%,
+0$,
+0#,
+0",
+0!,
+0~+
+0}+
+0|+
+01,
+00,
+0/,
+0.,
+0A,
+0@,
+0?,
+0>,
+0=,
+0<,
+0;,
+z:,
+z9,
+z8,
+z7,
+z6,
+z5,
+z4,
+z3,
+z2,
+0Q,
+0P,
+0O,
+0N,
+0M,
+0L,
+0K,
+0J,
+0I,
+0H,
+0G,
+0F,
+0E,
+0D,
+0C,
+0B,
+0U,
+0T,
+0S,
+0R,
+0g,
+0f,
+0e,
+0d,
+0c,
+0b,
+0a,
+0`,
+0_,
+0^,
+0],
+0\,
+0[,
+0Z,
+0Y,
+0X,
+0W,
+0V,
+0j,
+0i,
+0h,
+0m,
+0l,
+0k,
+0q,
+0p,
+0o,
+0n,
+07-
+06-
+05-
+04-
+03-
+02-
+01-
+00-
+0/-
+0.-
+0--
+0,-
+0+-
+0*-
+0)-
+0(-
+0'-
+0&-
+0%-
+0$-
+0#-
+0"-
+0!-
+0~,
+0},
+0|,
+0{,
+0z,
+0y,
+0x,
+0w,
+0v,
+0u,
+0t,
+0s,
+0r,
+0[-
+0Z-
+0Y-
+0X-
+0W-
+0V-
+0U-
+0T-
+0S-
+0R-
+0Q-
+0P-
+0O-
+0N-
+0M-
+0L-
+0K-
+0J-
+0I-
+0H-
+0G-
+0F-
+0E-
+0D-
+0C-
+0B-
+0A-
+0@-
+0?-
+0>-
+0=-
+0<-
+0;-
+0:-
+09-
+08-
 $end
 #3000
 0#
-0r
+0:!
+0;!
 #8000
 1#
-1r
 1:!
-1~!
-1{!
-1y!
-1v!
-1q!
-1n!
-1l!
-1i!
-1d!
-1a!
-1_!
-1\!
-1W!
-1T!
-1Q!
-1M!
+1;!
+1u!
+1v"
+1["
+1X"
+1U"
+1S"
+1O"
+1L"
+1J"
+1H"
+1A"
+1>"
+1:"
+17"
+10"
+1-"
+1)"
 #10000
 0"
-0x
-1y
+0B!
+1C!
 #13000
 0#
-0r
+0:!
+0;!
 #18000
 1#
-1r
-1z
+1:!
+1;!
+1D!
 #20000
 1"
-1x
-1{
-16!
-0y
 1B!
+1E!
+1J!
+0C!
+1_!
 #23000
 0#
-0r
+0:!
+0;!
 #28000
 1#
-1r
-1C!
-17!
-0z
-08!
-0{
-0B!
-1|
-09!
-1B!
-#30000
-0!
-b1000 %
-b1010 %
-0u
-17"
-1Z!
-1v
+1:!
+1;!
+1`!
+1K!
+0D!
+0s!
+0E!
+1z+
+0_!
+1I!
+0t!
+1_!
 #33000
 0#
-0r
+0:!
+0;!
 #38000
 1#
-1r
-0:!
-1w
-0~!
-0{!
-0y!
-0v!
-0q!
-0n!
-0l!
-0i!
-0d!
-0a!
-0_!
-0\!
-0W!
-0T!
-0Q!
-0M!
-#40000
-1!
-b10 %
-b0 %
-1u
+1:!
+1;!
+0u!
+1{+
+19!
+0v"
+0["
+0X"
+0U"
+0S"
+0O"
+0L"
+0J"
+0H"
+0A"
+0>"
+0:"
 07"
-0Z!
-0|
-1D!
-0v
-0B!
+00"
+0-"
+0)"
+1&
 #43000
 0#
-0r
+0:!
+0;!
 #48000
 1#
-1r
-0C!
-0w
-1E!
-0D!
-#50000
-b100000 %
-0!
-b101000 %
-b101010 %
-0u
-17"
-1Z!
-1O!
-1v
+1:!
+1;!
 #53000
 0#
-0r
+0:!
+0;!
 #58000
 1#
-1r
-1}
-1w
-1O*
-1M*
-1K*
-0E!
-1$!
-1/!
-#60000
-b1010 %
-1!
-b10 %
-b0 %
-1u
-07"
-0Z!
-0O!
-0v
+1:!
+1;!
 #63000
 0#
-0r
+0:!
+0;!
 #68000
 1#
-1r
-1x)
-1v)
-1t)
-10!
-0}
-0w
-1R)
-1F!
-0$!
-1B)
-1Q"
-1$)
-1.#
-1d(
-1i#
-1>!
-13!
-0/!
+1:!
+1;!
 #73000
 0#
-0r
+0:!
+0;!
 #78000
 1#
-1r
-1s*
-1q*
-1o*
-1?!
-14!
-00!
-1X)
-1V)
-1T)
-1c
-1e
-1g
-0R)
-0F!
-1;
-1=
-1?
-1C)
-1%)
-1e(
-15!
-03!
-#80000
-b10000 %
-0!
-b11000 %
-0u
-1Z!
-1g!
-1v
+1:!
+1;!
 #83000
 0#
-0r
+0:!
+0;!
 #88000
 1#
-1r
+1:!
 1;!
-04!
-1w
-1h!
-1<!
-05!
-1n!
 #90000
+0!
 b1000 %
-1!
-b0 %
-1u
-0Z!
-0g!
-0v
+b1010 %
+0F!
+1l"
+1z!
+1G!
+1m"
+1{!
 #93000
 0#
-0r
+0:!
+0;!
 #98000
 1#
-1r
-1_#
-1"#
-1E"
-1=!
-0;!
-0w
-1k(
-1+)
-1I)
-0h!
-1@!
-0>!
-0<!
-1l(
-1,)
-1J)
-0n!
-1m(
-1-)
-1K)
-1p(
-10)
-1N)
+1:!
+1;!
+1H!
 #100000
-b10000 %
-0!
-b11000 %
-0u
-1Z!
-1g!
-1v
+1!
+1F!
+0I!
+1a!
+0G!
+0_!
 #103000
 0#
-0r
+0:!
+0;!
 #108000
 1#
-1r
-1A!
-0?!
-0=!
-1w
-1B!
-0@!
-#110000
-b1000 %
-1!
-b0 %
-1u
-0Z!
-0g!
-0v
+1:!
+1;!
+1b!
+0`!
+0H!
+1P!
+0a!
 #113000
 0#
-0r
+0:!
+0;!
 #118000
 1#
-1r
-1C!
-0A!
-0w
-1|
-0B!
-1B!
+1:!
+1;!
+1f,
+1d,
+0b!
+1Q!
+1p!
+0P!
+1q!
 #123000
 0#
-0r
+0:!
+0;!
 #128000
 1#
-1r
+1:!
+1;!
+1@,
+1>,
+1r!
+0Q!
+1L+
+13#
+1""
+0p!
+1*+
+1!$
+1[!
+1U!
+0q!
 #133000
 0#
-0r
+0:!
+0;!
 #138000
 1#
-1r
+1:!
+1;!
+1P,
+1N,
+0r!
+1\!
+1V!
+1M+
+1++
+0""
+0U!
+1W!
+1/#
+1+#
+1%#
+1##
+1!#
+1u"
+1q"
+1o"
+1,+
+1y#
+1u#
+1q#
+1k#
+1g#
 #143000
 0#
-0r
+0:!
+0;!
 #148000
 1#
-1r
+1:!
+1;!
+1X!
+0V!
+1("
+1Y!
+0W!
+1L"
 #153000
 0#
-0r
+0:!
+0;!
 #158000
 1#
-1r
+1:!
+1;!
+1r#
+1z"
+1Z!
+0X!
+12+
+1s#
+1O+
+1|"
+0("
+1]!
+0[!
+0Y!
+13+
+1t#
+1P+
+1}"
+0L"
+16+
+1S+
+17+
+1X+
+18+
+1Y+
+1x
+1z
+13
+15
+#160000
+b10 %
+b0 %
+0l"
+0z!
+0m"
+0{!
 #163000
 0#
-0r
+0:!
+0;!
 #168000
 1#
-1r
+1:!
+1;!
+1^!
+0\!
+0Z!
+1_!
+0]!
 #173000
 0#
-0r
+0:!
+0;!
 #178000
 1#
-1r
+1:!
+1;!
+1`!
+0^!
+1I!
+0_!
+1_!
 #183000
 0#
-0r
+0:!
+0;!
 #188000
 1#
-1r
+1:!
+1;!
 #193000
 0#
-0r
+0:!
+0;!
 #198000
 1#
-1r
+1:!
+1;!
 #203000
 0#
-0r
+0:!
+0;!
 #208000
 1#
-1r
+1:!
+1;!
 #213000
 0#
-0r
+0:!
+0;!
 #218000
 1#
-1r
+1:!
+1;!
 #223000
 0#
-0r
+0:!
+0;!
 #228000
 1#
-1r
+1:!
+1;!
 #233000
 0#
-0r
+0:!
+0;!
 #238000
 1#
-1r
+1:!
+1;!
 #243000
 0#
-0r
+0:!
+0;!
 #248000
 1#
-1r
+1:!
+1;!
 #253000
 0#
-0r
+0:!
+0;!
 #258000
 1#
-1r
+1:!
+1;!
+#260000
+0$
+0<!
+1=!
 #263000
 0#
-0r
+0:!
+0;!
 #268000
 1#
-1r
+1:!
+1;!
+1?!
+#270000
+1$
+1<!
+1>!
+0Y+
+08+
+0=!
+0z
+0x
+0|*
+05
+03
+0?!
+0K!
+0`!
+0d,
+0>,
+0f,
+0@,
+0N,
+0P,
+0>!
+1s!
+0I!
+1}#
+1~"
+0L+
+03#
+0++
+0M+
+1Y+
+18+
+0z+
+0J!
+0*+
+0!$
+1z
+1x
+1|*
+1~#
+12#
+15
+13
+1t!
+0_!
+0,+
+0y#
+0u#
+0q#
+0k#
+0g#
+0/#
+0+#
+0%#
+0##
+0!#
+0u"
+0q"
+0o"
+1m+
+1k+
+1*!
+1,!
+1C
+1E
 #273000
 0#
-0r
+0:!
+0;!
 #278000
 1#
-1r
+1:!
+1;!
+1u!
+0{+
+09!
+1v"
+1["
+1X"
+1U"
+1S"
+1O"
+1L"
+1J"
+1H"
+1A"
+1>"
+1:"
+17"
+10"
+1-"
+1)"
+0&
 #283000
 0#
-0r
+0:!
+0;!
 #288000
 1#
-1r
+1:!
+1;!
+0r#
+0z"
+02+
+0s#
+0O+
+0|"
+03+
+0t#
+0P+
+0}"
+06+
+0}#
+0S+
+0~"
+07+
+0~#
+0X+
+02#
+08+
+0m+
+0Y+
+0k+
+0*!
+0x
+0,!
+0z
+03
+0C
+05
+0E
 #293000
 0#
-0r
+0:!
+0;!
 #298000
 1#
-1r
+1:!
+1;!
 #303000
 0#
-0r
+0:!
+0;!
 #308000
 1#
-1r
+1:!
+1;!
 #313000
 0#
-0r
+0:!
+0;!
 #318000
 1#
-1r
+1:!
+1;!
 #323000
 0#
-0r
+0:!
+0;!
 #328000
 1#
-1r
+1:!
+1;!
 #333000
 0#
-0r
+0:!
+0;!
 #338000
 1#
-1r
+1:!
+1;!
 #343000
 0#
-0r
+0:!
+0;!
 #348000
 1#
-1r
+1:!
+1;!
 #353000
 0#
-0r
+0:!
+0;!
 #358000
 1#
-1r
+1:!
+1;!
 #363000
 0#
-0r
+0:!
+0;!
 #368000
 1#
-1r
+1:!
+1;!
 #373000
 0#
-0r
+0:!
+0;!
 #378000
 1#
-1r
+1:!
+1;!
 #383000
 0#
-0r
+0:!
+0;!
 #388000
 1#
-1r
+1:!
+1;!
 #393000
 0#
-0r
+0:!
+0;!
 #398000
 1#
-1r
+1:!
+1;!
 #403000
 0#
-0r
+0:!
+0;!
 #408000
 1#
-1r
+1:!
+1;!
 #413000
 0#
-0r
+0:!
+0;!
 #418000
 1#
-1r
+1:!
+1;!
 #423000
 0#
-0r
+0:!
+0;!
 #428000
 1#
-1r
+1:!
+1;!
 #433000
 0#
-0r
+0:!
+0;!
 #438000
 1#
-1r
+1:!
+1;!
 #443000
 0#
-0r
+0:!
+0;!
 #448000
 1#
-1r
+1:!
+1;!
 #453000
 0#
-0r
+0:!
+0;!
 #458000
 1#
-1r
+1:!
+1;!
 #463000
 0#
-0r
+0:!
+0;!
 #468000
 1#
-1r
+1:!
+1;!
 #473000
 0#
-0r
+0:!
+0;!
 #478000
 1#
-1r
+1:!
+1;!
 #483000
 0#
-0r
+0:!
+0;!
 #488000
 1#
-1r
+1:!
+1;!
 #493000
 0#
-0r
+0:!
+0;!
 #498000
 1#
-1r
+1:!
+1;!
 #503000
 0#
-0r
+0:!
+0;!
 #508000
 1#
-1r
+1:!
+1;!
 #513000
 0#
-0r
+0:!
+0;!
 #518000
 1#
-1r
+1:!
+1;!
 #523000
 0#
-0r
+0:!
+0;!
 #528000
 1#
-1r
+1:!
+1;!
 #533000
 0#
-0r
+0:!
+0;!
 #538000
 1#
-1r
+1:!
+1;!
 #543000
 0#
-0r
+0:!
+0;!
 #548000
 1#
-1r
+1:!
+1;!
 #553000
 0#
-0r
+0:!
+0;!
 #558000
 1#
-1r
+1:!
+1;!
 #563000
 0#
-0r
+0:!
+0;!
 #568000
 1#
-1r
+1:!
+1;!
 #573000
 0#
-0r
+0:!
+0;!
 #578000
 1#
-1r
+1:!
+1;!
 #583000
 0#
-0r
+0:!
+0;!
 #588000
 1#
-1r
+1:!
+1;!
 #593000
 0#
-0r
+0:!
+0;!
 #598000
 1#
-1r
+1:!
+1;!
 #603000
 0#
-0r
+0:!
+0;!
 #608000
 1#
-1r
+1:!
+1;!
 #613000
 0#
-0r
+0:!
+0;!
 #618000
 1#
-1r
+1:!
+1;!
 #623000
 0#
-0r
+0:!
+0;!
 #628000
 1#
-1r
+1:!
+1;!
 #633000
 0#
-0r
+0:!
+0;!
 #638000
 1#
-1r
+1:!
+1;!
 #643000
 0#
-0r
+0:!
+0;!
 #648000
 1#
-1r
+1:!
+1;!
 #653000
 0#
-0r
+0:!
+0;!
 #658000
 1#
-1r
+1:!
+1;!
 #663000
 0#
-0r
+0:!
+0;!
 #668000
 1#
-1r
+1:!
+1;!
 #673000
 0#
-0r
+0:!
+0;!
 #678000
 1#
-1r
+1:!
+1;!
 #683000
 0#
-0r
+0:!
+0;!
 #688000
 1#
-1r
+1:!
+1;!
 #693000
 0#
-0r
+0:!
+0;!
 #698000
 1#
-1r
+1:!
+1;!
 #703000
 0#
-0r
+0:!
+0;!
 #708000
 1#
-1r
+1:!
+1;!
 #713000
 0#
-0r
+0:!
+0;!
 #718000
 1#
-1r
+1:!
+1;!
 #723000
 0#
-0r
+0:!
+0;!
 #728000
 1#
-1r
+1:!
+1;!
 #733000
 0#
-0r
+0:!
+0;!
 #738000
 1#
-1r
+1:!
+1;!
 #743000
 0#
-0r
+0:!
+0;!
 #748000
 1#
-1r
+1:!
+1;!
 #753000
 0#
-0r
+0:!
+0;!
 #758000
 1#
-1r
+1:!
+1;!
 #763000
 0#
-0r
+0:!
+0;!
 #768000
 1#
-1r
+1:!
+1;!
 #773000
 0#
-0r
+0:!
+0;!
 #778000
 1#
-1r
+1:!
+1;!
 #783000
 0#
-0r
+0:!
+0;!
 #788000
 1#
-1r
+1:!
+1;!
 #793000
 0#
-0r
+0:!
+0;!
 #798000
 1#
-1r
+1:!
+1;!
 #803000
 0#
-0r
+0:!
+0;!
 #808000
 1#
-1r
+1:!
+1;!
 #813000
 0#
-0r
+0:!
+0;!
 #818000
 1#
-1r
+1:!
+1;!
 #823000
 0#
-0r
+0:!
+0;!
 #828000
 1#
-1r
+1:!
+1;!
 #833000
 0#
-0r
+0:!
+0;!
 #838000
 1#
-1r
+1:!
+1;!
 #843000
 0#
-0r
+0:!
+0;!
 #848000
 1#
-1r
+1:!
+1;!
 #853000
 0#
-0r
+0:!
+0;!
 #858000
 1#
-1r
+1:!
+1;!
 #863000
 0#
-0r
+0:!
+0;!
 #868000
 1#
-1r
+1:!
+1;!
 #873000
 0#
-0r
+0:!
+0;!
 #878000
 1#
-1r
+1:!
+1;!
 #883000
 0#
-0r
+0:!
+0;!
 #888000
 1#
-1r
+1:!
+1;!
 #893000
 0#
-0r
+0:!
+0;!
 #898000
 1#
-1r
+1:!
+1;!
 #903000
 0#
-0r
+0:!
+0;!
 #908000
 1#
-1r
+1:!
+1;!
 #913000
 0#
-0r
+0:!
+0;!
 #918000
 1#
-1r
+1:!
+1;!
 #923000
 0#
-0r
+0:!
+0;!
 #928000
 1#
-1r
+1:!
+1;!
 #933000
 0#
-0r
+0:!
+0;!
 #938000
 1#
-1r
+1:!
+1;!
 #943000
 0#
-0r
+0:!
+0;!
 #948000
 1#
-1r
+1:!
+1;!
 #953000
 0#
-0r
+0:!
+0;!
 #958000
 1#
-1r
+1:!
+1;!
 #963000
 0#
-0r
+0:!
+0;!
 #968000
 1#
-1r
+1:!
+1;!
 #973000
 0#
-0r
+0:!
+0;!
 #978000
 1#
-1r
+1:!
+1;!
 #983000
 0#
-0r
+0:!
+0;!
 #988000
 1#
-1r
+1:!
+1;!
 #993000
 0#
-0r
+0:!
+0;!
 #998000
 1#
-1r
+1:!
+1;!
 #1000000

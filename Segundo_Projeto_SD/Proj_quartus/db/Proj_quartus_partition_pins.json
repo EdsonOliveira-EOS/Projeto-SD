@@ -2,7 +2,164 @@
 	"partitions" : [
 		{
 			"name" : "Top",
-			"pins" : []
+			"pins" : [
+				{
+					"name" : "Temp_mem_1[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Temp_mem_1[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Temp_mem_1[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Temp_mem_1[3]",
+					"strict" : false
+				},
+				{
+					"name" : "Temp_mem_1[4]",
+					"strict" : false
+				},
+				{
+					"name" : "Temp_mem_1[5]",
+					"strict" : false
+				},
+				{
+					"name" : "Temp_mem_1[6]",
+					"strict" : false
+				},
+				{
+					"name" : "Temp_mem_1[7]",
+					"strict" : false
+				},
+				{
+					"name" : "Temp_mem_1[8]",
+					"strict" : false
+				},
+				{
+					"name" : "Temp_mem_1[9]",
+					"strict" : false
+				},
+				{
+					"name" : "Temp_mem_1[10]",
+					"strict" : false
+				},
+				{
+					"name" : "Temp_mem_1[11]",
+					"strict" : false
+				},
+				{
+					"name" : "Temp_mem_1[12]",
+					"strict" : false
+				},
+				{
+					"name" : "Temp_mem_1[13]",
+					"strict" : false
+				},
+				{
+					"name" : "Temp_mem_1[14]",
+					"strict" : false
+				},
+				{
+					"name" : "Temp_mem_1[15]",
+					"strict" : false
+				},
+				{
+					"name" : "ON",
+					"strict" : false
+				},
+				{
+					"name" : "reset",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "switches[8]",
+					"strict" : false
+				},
+				{
+					"name" : "switches[7]",
+					"strict" : false
+				},
+				{
+					"name" : "switches[10]",
+					"strict" : false
+				},
+				{
+					"name" : "switches[9]",
+					"strict" : false
+				},
+				{
+					"name" : "btn_enviar",
+					"strict" : false
+				},
+				{
+					"name" : "btn_ligar",
+					"strict" : false
+				},
+				{
+					"name" : "switches[0]",
+					"strict" : false
+				},
+				{
+					"name" : "switches[17]",
+					"strict" : false
+				},
+				{
+					"name" : "switches[16]",
+					"strict" : false
+				},
+				{
+					"name" : "switches[15]",
+					"strict" : false
+				},
+				{
+					"name" : "switches[14]",
+					"strict" : false
+				},
+				{
+					"name" : "switches[11]",
+					"strict" : false
+				},
+				{
+					"name" : "switches[12]",
+					"strict" : false
+				},
+				{
+					"name" : "switches[13]",
+					"strict" : false
+				},
+				{
+					"name" : "switches[1]",
+					"strict" : false
+				},
+				{
+					"name" : "switches[2]",
+					"strict" : false
+				},
+				{
+					"name" : "switches[3]",
+					"strict" : false
+				},
+				{
+					"name" : "switches[4]",
+					"strict" : false
+				},
+				{
+					"name" : "switches[5]",
+					"strict" : false
+				},
+				{
+					"name" : "switches[6]",
+					"strict" : false
+				}
+			]
 		}
 	]
 }

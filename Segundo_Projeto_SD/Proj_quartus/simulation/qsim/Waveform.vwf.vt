@@ -19,7 +19,7 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "06/08/2026 13:16:04"
+// Generated on "06/09/2026 13:59:48"
                                                                                 
 // Verilog Test Bench (with test vectors) for design :                          module_mini_cpu
 // 
@@ -36,15 +36,20 @@ reg clk;
 reg reset;
 reg [17:0] switches;
 // wires                                               
+wire ON;
+wire [15:0] Temp_mem_1;
+wire [15:0] Temp_mem_2;
 wire [7:0] lcd_data;
 wire lcd_en;
 wire lcd_rs;
 wire lcd_rw;
-wire [15:0] mem_write_data_temp;
 
 // assign statements (if any)                          
 module_mini_cpu i1 (
 // port map - connection between master ports and signals/registers   
+	.ON(ON),
+	.Temp_mem_1(Temp_mem_1),
+	.Temp_mem_2(Temp_mem_2),
 	.btn_enviar(btn_enviar),
 	.btn_ligar(btn_ligar),
 	.clk(clk),
@@ -52,7 +57,6 @@ module_mini_cpu i1 (
 	.lcd_en(lcd_en),
 	.lcd_rs(lcd_rs),
 	.lcd_rw(lcd_rw),
-	.mem_write_data_temp(mem_write_data_temp),
 	.reset(reset),
 	.switches(switches)
 );
@@ -65,13 +69,7 @@ end
 initial
 begin
 	btn_enviar = 1'b1;
-	btn_enviar = #30000 1'b0;
-	btn_enviar = #10000 1'b1;
-	btn_enviar = #10000 1'b0;
-	btn_enviar = #10000 1'b1;
-	btn_enviar = #20000 1'b0;
-	btn_enviar = #10000 1'b1;
-	btn_enviar = #10000 1'b0;
+	btn_enviar = #90000 1'b0;
 	btn_enviar = #10000 1'b1;
 end 
 
@@ -81,6 +79,118 @@ begin
 	btn_ligar = 1'b1;
 	btn_ligar = #10000 1'b0;
 	btn_ligar = #10000 1'b1;
+end 
+
+// switches[17]
+initial
+begin
+	switches[17] = 1'b0;
+end 
+
+// switches[16]
+initial
+begin
+	switches[16] = 1'b0;
+end 
+
+// switches[15]
+initial
+begin
+	switches[15] = 1'b0;
+end 
+
+// switches[14]
+initial
+begin
+	switches[14] = 1'b0;
+end 
+
+// switches[13]
+initial
+begin
+	switches[13] = 1'b0;
+end 
+
+// switches[12]
+initial
+begin
+	switches[12] = 1'b0;
+end 
+
+// switches[11]
+initial
+begin
+	switches[11] = 1'b0;
+end 
+
+// switches[10]
+initial
+begin
+	switches[10] = 1'b0;
+end 
+
+// switches[9]
+initial
+begin
+	switches[9] = 1'b0;
+end 
+
+// switches[8]
+initial
+begin
+	switches[8] = 1'b0;
+end 
+
+// switches[7]
+initial
+begin
+	switches[7] = 1'b0;
+end 
+
+// switches[6]
+initial
+begin
+	switches[6] = 1'b0;
+end 
+
+// switches[5]
+initial
+begin
+	switches[5] = 1'b0;
+end 
+
+// switches[4]
+initial
+begin
+	switches[4] = 1'b0;
+end 
+
+// switches[3]
+initial
+begin
+	switches[3] = 1'b0;
+	switches[3] = #90000 1'b1;
+	switches[3] = #70000 1'b0;
+end 
+
+// switches[2]
+initial
+begin
+	switches[2] = 1'b0;
+end 
+
+// switches[1]
+initial
+begin
+	switches[1] = 1'b0;
+	switches[1] = #90000 1'b1;
+	switches[1] = #70000 1'b0;
+end 
+
+// switches[0]
+initial
+begin
+	switches[0] = 1'b0;
 end 
 
 // clk
@@ -97,119 +207,13 @@ begin
 	clk = 1'b0;
 	clk = #5000 1'b1;
 end 
-// switches[ 17 ]
-initial
-begin
-	switches[17] = 1'b0;
-end 
-// switches[ 16 ]
-initial
-begin
-	switches[16] = 1'b0;
-end 
-// switches[ 15 ]
-initial
-begin
-	switches[15] = 1'b0;
-end 
-// switches[ 14 ]
-initial
-begin
-	switches[14] = 1'b0;
-end 
-// switches[ 13 ]
-initial
-begin
-	switches[13] = 1'b0;
-end 
-// switches[ 12 ]
-initial
-begin
-	switches[12] = 1'b0;
-end 
-// switches[ 11 ]
-initial
-begin
-	switches[11] = 1'b0;
-end 
-// switches[ 10 ]
-initial
-begin
-	switches[10] = 1'b0;
-end 
-// switches[ 9 ]
-initial
-begin
-	switches[9] = 1'b0;
-end 
-// switches[ 8 ]
-initial
-begin
-	switches[8] = 1'b0;
-end 
-// switches[ 7 ]
-initial
-begin
-	switches[7] = 1'b0;
-end 
-// switches[ 6 ]
-initial
-begin
-	switches[6] = 1'b0;
-end 
-// switches[ 5 ]
-initial
-begin
-	switches[5] = 1'b0;
-	switches[5] = #50000 1'b1;
-	switches[5] = #10000 1'b0;
-end 
-// switches[ 4 ]
-initial
-begin
-	switches[4] = 1'b0;
-	switches[4] = #80000 1'b1;
-	switches[4] = #10000 1'b0;
-	switches[4] = #10000 1'b1;
-	switches[4] = #10000 1'b0;
-end 
-// switches[ 3 ]
-initial
-begin
-	switches[3] = 1'b0;
-	switches[3] = #30000 1'b1;
-	switches[3] = #10000 1'b0;
-	switches[3] = #10000 1'b1;
-	switches[3] = #10000 1'b0;
-	switches[3] = #20000 1'b1;
-	switches[3] = #10000 1'b0;
-	switches[3] = #10000 1'b1;
-	switches[3] = #10000 1'b0;
-end 
-// switches[ 2 ]
-initial
-begin
-	switches[2] = 1'b0;
-end 
-// switches[ 1 ]
-initial
-begin
-	switches[1] = 1'b0;
-	switches[1] = #30000 1'b1;
-	switches[1] = #10000 1'b0;
-	switches[1] = #10000 1'b1;
-	switches[1] = #10000 1'b0;
-end 
-// switches[ 0 ]
-initial
-begin
-	switches[0] = 1'b0;
-end 
 
 // reset
 initial
 begin
-	reset = 1'b0;
+	reset = 1'b1;
+	reset = #260000 1'b0;
+	reset = #10000 1'b1;
 end 
 endmodule
 
