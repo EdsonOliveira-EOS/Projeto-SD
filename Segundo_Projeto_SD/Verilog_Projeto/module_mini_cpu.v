@@ -43,7 +43,7 @@ module module_mini_cpu (
         .start_print(current_state == STATE_LCD_UPDATE),
         .opcode(opcode),
         .dest_reg(r_dest),
-        .resultvalue(alu_resultvalue),
+        .resultvalue(mem_read_data_1),
         .LCD_RS(lcd_rs),
         .LCD_RW(lcd_rw),
         .LCD_EN(lcd_en),
@@ -112,8 +112,9 @@ module module_mini_cpu (
             end
 
             STATE_LCD_UPDATE: begin
-                // Add your custom logic delay for the LCD driver state tracking here [cite: 43]
-                next_state = STATE_IDLE; 
+                if (opcode == 3'b111) begin  
+                    mem_read_addr_1 <= r_dest; 
+                end
             end
 
             default: next_state = STATE_POWERED_OFF;
