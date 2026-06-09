@@ -165,7 +165,7 @@ module lcd_controller (
         else begin
             if (estado_atual != ST_default &&
                 estado_atual != ST_feito) begin
-                if (clk_counter < 20'd50)
+                if (clk_counter < 20'd500)
                     LCD_EN <= 1'b1;
                 else
                     LCD_EN <= 1'b0;
