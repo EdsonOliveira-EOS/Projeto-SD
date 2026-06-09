@@ -4,12 +4,12 @@ module module_mini_cpu (
     input wire        btn_ligar,     
     input wire        btn_enviar,    
     input wire [17:0] switches,      
-    output reg        lcd_rs,
-    output reg        lcd_rw,
-    output reg        lcd_en,
-    output reg [7:0]  lcd_data,
-	 output wire[15:0] Temp_mem_1,
-	 output reg ON = 0
+    output wire       lcd_rs,        // Mudado para wire pois agora quem controla é o submódulo
+    output wire       lcd_rw,        // Mudado para wire
+    output wire       lcd_en,        // Mudado para wire
+    output wire [7:0] lcd_data,      // Mudado para wire
+    output wire[15:0] Temp_mem_1,
+    output reg        ON = 0
 );
     reg         mem_write_enabled;
     reg  [3:0]  mem_write_addr;
@@ -25,13 +25,17 @@ module module_mini_cpu (
     wire [15:0] alu_resultvalue;
     wire        alu_operationdone;
 
+    // Sinais de controle exclusivos para o LCD
+    reg         lcd_start_print;
+    wire        lcd_ready;
+
     module_alu ULA (
         .clk(clk), .reset(reset_triggered), .operation_enabled(alu_operation_enabled),
         .opcode(alu_opcode), .value1(alu_value1), .value2(alu_value2),
         .resultvalue(alu_resultvalue), .operationdone(alu_operationdone)
     );
      
-     memory MEMORY (
+    memory MEMORY (
         .clk(clk), .reset(reset_triggered), .clear(mem_clear),
         .write_enabled(mem_write_enabled), .write_addr(mem_write_addr), .write_data(mem_write_data),
         .read_addr_1(mem_read_addr_1), .read_addr_2(mem_read_addr_2),
@@ -39,9 +43,24 @@ module module_mini_cpu (
         .writedone(mem_writedone)
     );
 
+    // INSTANCIAÇÃO DO CONTROLADOR DO LCD
+    lcd_controller LCD_DRIVER (
+        .clk(clk),
+        .reset(reset_triggered),
+        .start_print(lcd_start_print),
+        .opcode(opcode),
+        .dest_reg(r_dest),
+        .resultvalue((opcode == 3'b000) ? immediate_extended : alu_resultvalue), // Passa o dado correto que foi computado
+        .LCD_RS(lcd_rs),
+        .LCD_RW(lcd_rw),
+        .LCD_EN(lcd_en),
+        .LCD_DATA(lcd_data),
+        .lcd_ready(lcd_ready) // Nova porta de controle de feedback para a CPU
+    );
+
     wire send_triggered; 
     wire power_triggered;
-	 wire reset_triggered;
+    wire reset_triggered;
 
     localparam STATE_POWERED_OFF = 4'd0, STATE_IDLE = 4'd1, STATE_FETCH = 4'd2, STATE_DECODE = 4'd3, 
     STATE_ALU_START = 4'd4, STATE_ALU_WAIT = 4'd5, STATE_MEM_WRITE = 4'd6, STATE_MEM_WAIT = 4'd7, STATE_LCD_UPDATE = 4'd8;
@@ -54,17 +73,16 @@ module module_mini_cpu (
     reg [3:0] r_src2;
     reg [15:0] immediate_extended;
 
-	 assign Temp_mem_1 = mem_read_data_1;
+    assign Temp_mem_1 = mem_read_data_1;
+
     // FSM Combinacional (Próximo Estado)
     always @(*) begin
-	 
         case (current_state)
             STATE_POWERED_OFF: begin
                 next_state = (power_triggered) ? STATE_IDLE : STATE_POWERED_OFF;
             end
             
             STATE_IDLE: begin
-					 
                 if (power_triggered) 
                     next_state = STATE_POWERED_OFF;
                 else 
@@ -103,7 +121,8 @@ module module_mini_cpu (
             end
 
             STATE_LCD_UPDATE: begin
-                next_state = STATE_IDLE; 
+                // A CPU agora espera o sinal de pronto do módulo do LCD para poder voltar ao IDLE
+                next_state = (lcd_ready) ? STATE_IDLE : STATE_LCD_UPDATE; 
             end
 
             default: next_state = STATE_POWERED_OFF;
@@ -130,24 +149,22 @@ module module_mini_cpu (
             alu_opcode            <= 3'b0;
             alu_value1            <= 16'b0;
             alu_value2            <= 16'b0;
-            lcd_rs                <= 0;
-            lcd_rw                <= 0;
-            lcd_en                <= 0;
-            lcd_data              <= 8'b0;
+            lcd_start_print       <= 0;
         end else begin
             current_state <= next_state;
             
             case (current_state)
                 STATE_POWERED_OFF: begin
                     mem_clear <= 1; 
-						  ON <= 0;
+                    ON        <= 0;
                 end
 
                 STATE_IDLE: begin
                     mem_clear             <= 0;
                     mem_write_enabled     <= 0;
                     alu_operation_enabled <= 0;
-						  ON <= 1;
+                    lcd_start_print       <= 0; // Garante que o sinal de start caia ao retornar
+                    ON                    <= 1;
                 end
 
                 STATE_FETCH: begin
@@ -161,7 +178,6 @@ module module_mini_cpu (
                     r_src2             <= instruction_register[6:3];
                     immediate_extended <= {9'b0, instruction_register[6:0]};
                     
-                    // Dispara a busca nos registradores da RAM imediatamente aqui!
                     mem_read_addr_1    <= instruction_register[10:7];
                     mem_read_addr_2    <= instruction_register[6:3];
                 end
@@ -172,7 +188,6 @@ module module_mini_cpu (
                 end
 
                 STATE_ALU_WAIT: begin
-                    // Dados agora estão estáveis nas saídas da RAM
                     alu_value1            <= mem_read_data_1;
                     if (opcode == 3'b001 || opcode == 3'b011) begin
                         alu_value2        <= mem_read_data_2;
@@ -198,35 +213,34 @@ module module_mini_cpu (
                 end
 
                 STATE_LCD_UPDATE: begin
-                    // Espaço reservado para o controle das portas do LCD
+                    lcd_start_print <= 1; // Ativa a impressão física na tela
                 end
             endcase
         end
     end
 
-	 
-	 wire clean_btn_ligar;
-	 wire clean_btn_enviar;
-	 wire clean_rst;
+    wire clean_btn_ligar;
+    wire clean_btn_enviar;
+    wire clean_rst;
 
-	 debouncer db_ligar  (.clk(clk), .btn_in(btn_ligar),  .btn_out(clean_btn_ligar));
-	 debouncer db_enviar (.clk(clk), .btn_in(btn_enviar), .btn_out(clean_btn_enviar));
-	 debouncer db_rst (.clk(clk), .btn_in(reset), .btn_out(clean_rst));
-    // Detectores de borda para chaves físicas de comando
+    debouncer db_ligar  (.clk(clk), .btn_in(btn_ligar),  .btn_out(clean_btn_ligar));
+    debouncer db_enviar (.clk(clk), .btn_in(btn_enviar), .btn_out(clean_btn_enviar));
+    debouncer db_rst    (.clk(clk), .btn_in(reset),      .btn_out(clean_rst));
+
     reg btn_ligar_d, btn_enviar_d, btn_reset_d;
     always @(posedge clk or posedge reset_triggered) begin
         if (reset_triggered) begin
             btn_ligar_d  <= 1'b1; 
             btn_enviar_d <= 1'b1;
-				btn_reset_d <= 1'b1;
+            btn_reset_d  <= 1'b1;
         end else begin
             btn_ligar_d  <= btn_ligar;
             btn_enviar_d <= btn_enviar;
-				btn_reset_d <= reset;
+            btn_reset_d  <= reset;
         end
     end
     
     assign power_triggered = (btn_ligar & !btn_ligar_d);
     assign send_triggered  = (btn_enviar & !btn_enviar_d);
-	 assign reset_triggered = (reset & !btn_reset_d);
+    assign reset_triggered = (reset & !btn_reset_d);
 endmodule

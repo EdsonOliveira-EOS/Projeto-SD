@@ -10,23 +10,23 @@ z2
 cModel Technology
 d/home/mig/Documents/C-CODE/Projeto-SD/Segundo_Projeto_SD/Proj_quartus/simulation/qsim
 vhard_block
-Z0 !s110 1781024390
+Z0 !s110 1781028703
 !i10b 1
-!s100 Mn`<JzO@<bhCP1^eXK88R1
+!s100 ?ScXXB`m2CA57E7dNP:HI1
 Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
-I]:LAEb;_o;jMK7oBPN;1z0
+I=37j]VPA4hd]CK=601::12
 Z2 VDg1SIo80bB@j0V0VzS_@n1
 Z3 dC:/Users/mhrs/Documents/Projeto-SD/Segundo_Projeto_SD/Proj_quartus/simulation/qsim
-Z4 w1781024389
+Z4 w1781028702
 Z5 8Proj_quartus.vo
 Z6 FProj_quartus.vo
-!i122 134
-L0 20010 34
+!i122 144
+L0 38577 34
 Z7 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z8 !s108 1781024390.000000
+Z8 !s108 1781028703.000000
 Z9 !s107 Proj_quartus.vo|
 Z10 !s90 -work|work|Proj_quartus.vo|
 !i113 1
@@ -35,16 +35,16 @@ Z12 tCvgOpt 0
 vmodule_mini_cpu
 R0
 !i10b 1
-!s100 >GWB@E]0UM^Okd<7A8eB=2
+!s100 51B[TEhoW3LnX5<`J0cO;0
 R1
-I^L0mkcdmodXk2jS2b]cL=3
+I0b<P7mFNicYhznhITff@h2
 R2
 R3
 R4
 R5
 R6
-!i122 134
-L0 32 19977
+!i122 144
+L0 32 38544
 R7
 r1
 !s85 0
@@ -58,16 +58,16 @@ R12
 vmodule_mini_cpu_vlg_vec_tst
 R0
 !i10b 1
-!s100 HI]Laf:Gm`T<nVoFR6^=d1
+!s100 A]9:fR2jh448_C904lC<d3
 R1
-ISbl_`o0;jlf4Nomm>OcW<0
+IjQ8^L^mQOCGbclVJ9Ub2G2
 R2
 R3
-R4
+w1781028701
 8Waveform.vwf.vt
 FWaveform.vwf.vt
-!i122 135
-L0 30 189
+!i122 145
+L0 30 193
 R7
 r1
 !s85 0

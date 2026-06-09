@@ -28,11 +28,11 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details, at
     Info: https://fpgasoftware.intel.com/eula.
-    Info: Processing started: Tue Jun  9 13:59:48 2026
+    Info: Processing started: Tue Jun  9 15:11:41 2026
 Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off Proj_quartus -c Proj_quartus --vector_source=C:/Users/mhrs/Documents/Projeto-SD/Segundo_Projeto_SD/Proj_quartus/Waveform.vwf --testbench_file=C:/Users/mhrs/Documents/Projeto-SD/Segundo_Projeto_SD/Proj_quartus/simulation/qsim/Waveform.vwf.vt
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 
-test bench files
+g (201005): Ignoring output pin "lcd_data[4]" in vector source file when writing test bench files
 
 Completed successfully. 
 
@@ -61,14 +61,14 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details, at
     Info: https://fpgasoftware.intel.com/eula.
-    Info: Processing started: Tue Jun  9 13:59:49 2026
+    Info: Processing started: Tue Jun  9 15:11:41 2026
 Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=C:/Users/mhrs/Documents/Projeto-SD/Segundo_Projeto_SD/Proj_quartus/simulation/qsim/ Proj_quartus -c Proj_quartus
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (204019): Generated file Proj_quartus.vo in folder "C:/Users/mhrs/Documents/Projeto-SD/Segundo_Projeto_SD/Proj_quartus/simulation/qsim//" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
     Info: Peak virtual memory: 4685 megabytes
-    Info: Processing ended: Tue Jun  9 13:59:49 2026
-    Info: Elapsed time: 00:00:00
+    Info: Processing ended: Tue Jun  9 15:11:42 2026
+    Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
 Completed successfully. 
@@ -95,7 +95,7 @@ Reading pref.tcl
 
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
 
-# Start time: 13:59:50 on Jun 09,2026
+# Start time: 15:11:43 on Jun 09,2026
 # vlog -work work Proj_quartus.vo 
 
 # -- Compiling module module_mini_cpu
@@ -107,13 +107,13 @@ Reading pref.tcl
 # Top level modules:
 # 	module_mini_cpu
 
-# End time: 13:59:50 on Jun 09,2026, Elapsed time: 0:00:00
+# End time: 15:11:43 on Jun 09,2026, Elapsed time: 0:00:00
 
 # Errors: 0, Warnings: 0
 
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
 
-# Start time: 13:59:50 on Jun 09,2026
+# Start time: 15:11:43 on Jun 09,2026
 # vlog -work work Waveform.vwf.vt 
 
 # -- Compiling module module_mini_cpu_vlg_vec_tst
@@ -123,12 +123,12 @@ Reading pref.tcl
 # Top level modules:
 # 	module_mini_cpu_vlg_vec_tst
 
-# End time: 13:59:50 on Jun 09,2026, Elapsed time: 0:00:00
+# End time: 15:11:43 on Jun 09,2026, Elapsed time: 0:00:00
 
 # Errors: 0, Warnings: 0
 
 # vsim -c -t 1ps -L cycloneive_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.module_mini_cpu_vlg_vec_tst 
-# Start time: 13:59:50 on Jun 09,2026
+# Start time: 15:11:43 on Jun 09,2026
 # Loading work.module_mini_cpu_vlg_vec_tst
 # Loading work.module_mini_cpu
 # Loading work.hard_block
@@ -148,10 +148,10 @@ Reading pref.tcl
 
 # after#26
 
-# ** Note: $finish    : Waveform.vwf.vt(65)
+# ** Note: $finish    : Waveform.vwf.vt(63)
 #    Time: 1 us  Iteration: 0  Instance: /module_mini_cpu_vlg_vec_tst
 
-# End time: 13:59:51 on Jun 09,2026, Elapsed time: 0:00:01
+# End time: 15:11:44 on Jun 09,2026, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 
 Completed successfully. 
@@ -164,7 +164,7 @@ Reading C:/Users/mhrs/Documents/Projeto-SD/Segundo_Projeto_SD/Proj_quartus/simul
 
 Processing channel transitions... 
 
-Writing the resulting VWF to C:/Users/mhrs/Documents/Projeto-SD/Segundo_Projeto_SD/Proj_quartus/simulation/qsim/Proj_quartus_20260609135951.sim.vwf
+Writing the resulting VWF to C:/Users/mhrs/Documents/Projeto-SD/Segundo_Projeto_SD/Proj_quartus/simulation/qsim/Proj_quartus_20260609151144.sim.vwf
 
 Finished VCD to VWF conversion.
 
