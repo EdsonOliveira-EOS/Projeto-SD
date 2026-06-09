@@ -4,12 +4,11 @@ module module_mini_cpu (
     input wire        btn_ligar,     
     input wire        btn_enviar,    
     input wire [17:0] switches,      
-    output reg        lcd_rs,
-    output reg        lcd_rw,
-    output reg        lcd_en,
-    output reg [7:0]  lcd_data,
-	 output wire[15:0] Temp_mem_1,
-	 output reg ON = 0
+    output wire       lcd_rs,       
+    output wire       lcd_rw,        
+    output wire       lcd_en,        
+    output wire [7:0] lcd_data,
+    output reg        ON = 0
 );
     reg         mem_write_enabled;
     reg  [3:0]  mem_write_addr;
@@ -39,6 +38,22 @@ module module_mini_cpu (
         .writedone(mem_writedone)
     );
 
+    lcd_controller LCD_DRIVER (
+        .clk(clk),
+        .reset(reset_triggered),
+        .system_on(ON),           
+        .start_print(lcd_start_print),
+        .valid_instr(valid_instr), 
+        .opcode(opcode),
+        .dest_reg(r_dest),
+        .resultvalue((opcode == 3'b000) ? immediate_extended : (opcode == 3'b111) ? mem_read_data_1 : alu_resultvalue),
+        .LCD_RS(lcd_rs),
+        .LCD_RW(lcd_rw),
+        .LCD_EN(lcd_en),
+        .LCD_DATA(lcd_data),
+        .lcd_ready(lcd_ready) 
+    );
+
     wire send_triggered; 
     wire power_triggered;
 	 wire reset_triggered;
@@ -54,8 +69,6 @@ module module_mini_cpu (
     reg [3:0] r_src2;
     reg [15:0] immediate_extended;
 
-	 assign Temp_mem_1 = mem_read_data_1;
-    // FSM Combinacional (Próximo Estado)
     always @(*) begin
 	 
         case (current_state)
@@ -130,17 +143,21 @@ module module_mini_cpu (
             alu_opcode            <= 3'b0;
             alu_value1            <= 16'b0;
             alu_value2            <= 16'b0;
-            lcd_rs                <= 0;
-            lcd_rw                <= 0;
-            lcd_en                <= 0;
-            lcd_data              <= 8'b0;
+            valid_instr           <= 0;
+            ON                    <= 0; 
         end else begin
             current_state <= next_state;
             
             case (current_state)
                 STATE_POWERED_OFF: begin
-                    mem_clear <= 1; 
-						  ON <= 0;
+                    mem_clear   <= 1; 
+                    ON          <= 0;  
+                    valid_instr <= 0; 
+                end
+                
+                STATE_BOOT_DISPLAY: begin
+                    mem_clear <= 0;
+                    ON        <= 1;
                 end
 
                 STATE_IDLE: begin
@@ -198,7 +215,7 @@ module module_mini_cpu (
                 end
 
                 STATE_LCD_UPDATE: begin
-                    // Espaço reservado para o controle das portas do LCD
+                    
                 end
             endcase
         end
