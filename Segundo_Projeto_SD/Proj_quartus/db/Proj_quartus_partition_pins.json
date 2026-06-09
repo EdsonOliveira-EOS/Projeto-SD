@@ -120,19 +120,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "switches[12]",
+					"name" : "btn_ligar",
 					"strict" : false
 				},
 				{
-					"name" : "switches[8]",
-					"strict" : false
-				},
-				{
-					"name" : "switches[15]",
-					"strict" : false
-				},
-				{
-					"name" : "switches[17]",
+					"name" : "btn_enviar",
 					"strict" : false
 				},
 				{
@@ -140,11 +132,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "switches[11]",
+					"name" : "switches[17]",
 					"strict" : false
 				},
 				{
-					"name" : "switches[7]",
+					"name" : "switches[15]",
 					"strict" : false
 				},
 				{
@@ -152,7 +144,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "switches[10]",
+					"name" : "switches[11]",
+					"strict" : false
+				},
+				{
+					"name" : "switches[12]",
 					"strict" : false
 				},
 				{
@@ -160,7 +156,19 @@
 					"strict" : false
 				},
 				{
+					"name" : "switches[10]",
+					"strict" : false
+				},
+				{
 					"name" : "switches[9]",
+					"strict" : false
+				},
+				{
+					"name" : "switches[8]",
+					"strict" : false
+				},
+				{
+					"name" : "switches[7]",
 					"strict" : false
 				},
 				{
@@ -189,14 +197,6 @@
 				},
 				{
 					"name" : "switches[0]",
-					"strict" : false
-				},
-				{
-					"name" : "btn_ligar",
-					"strict" : false
-				},
-				{
-					"name" : "btn_enviar",
 					"strict" : false
 				}
 			]
