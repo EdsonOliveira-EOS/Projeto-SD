@@ -37,6 +37,19 @@ module module_mini_cpu (
         .resultvalue(alu_resultvalue), .operationdone(alu_operationdone)
     );
 
+    lcd_controller my_lcd (
+        .clk(clk),
+        .reset(reset),
+        .start_print(current_state == STATE_LCD_UPDATE),
+        .opcode(opcode),
+        .dest_reg(r_dest),
+        .resultvalue(alu_resultvalue),
+        .LCD_RS(lcd_rs),
+        .LCD_RW(lcd_rw),
+        .LCD_EN(lcd_en),
+        .LCD_DATA(lcd_data)
+    );
+
     wire send_triggered; 
     wire power_triggered;
 
