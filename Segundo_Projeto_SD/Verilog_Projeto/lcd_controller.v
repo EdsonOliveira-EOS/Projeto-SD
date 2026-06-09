@@ -19,6 +19,7 @@ module lcd_controller (
     reg        tick; 
     reg [3:0]  char_index; // Ponteiro de qual caractere estamos enviando
     reg [3:0]  estado_atual, prox_estado;
+    reg [4:0]  powerup_delay;
 
     parameter ST_default     = 4'd0,
               ST_init1       = 4'd1,
@@ -45,10 +46,10 @@ module lcd_controller (
     // Controle do contador de clock e do char_index
     always @(posedge clk or posedge reset) begin
         if (reset) begin
-            
-            clk_counter <= 20'b0;
-            tick        <= 1'b0;
-            char_index  <= 4'b0;
+            clk_counter   <= 20'b0;
+            tick          <= 1'b0;
+            char_index    <= 4'b0;
+            powerup_delay <= 5'd0;
         end else begin
             if (clk_counter == 20'd49999) begin // Gerador de tick de 1ms
                 clk_counter <= 20'b0;
@@ -58,10 +59,13 @@ module lcd_controller (
                 tick        <= 1'b0;
             end
             if (tick) begin
-                if (estado_atual == ST_escrever_L1 || estado_atual == ST_escrever_L2)
+                if (powerup_delay < 5'd20)
+                    powerup_delay <= powerup_delay + 1'b1;
+                if (estado_atual == ST_escrever_L1 ||
+                    estado_atual == ST_escrever_L2)
                     char_index <= char_index + 1'b1;
                 else
-                    char_index <= 4'b0; // Zera ao mudar de linha ou sair da escrita
+                    char_index <= 4'b0;
             end
         end
     end
@@ -90,11 +94,14 @@ module lcd_controller (
             ST_clr:       prox_estado = ST_wait_clr1;
             ST_wait_clr1: prox_estado = ST_wait_clr2;
             ST_wait_clr2: prox_estado = ST_avancar;
-            ST_default: prox_estado = start_print ? ST_init1 : ST_default;
-            ST_init1:   prox_estado = ST_init2;
-            ST_init2:   prox_estado = ST_init3;
-            ST_init3:   prox_estado = ST_iniciar;
-            ST_iniciar: prox_estado = ST_clr;
+            ST_default: if (powerup_delay < 5'd20)
+                          prox_estado = ST_default;
+                        else
+                          prox_estado = start_print ? ST_init1 : ST_default;
+            ST_init1:     prox_estado = ST_init2;
+            ST_init2:     prox_estado = ST_init3;
+            ST_init3:     prox_estado = ST_iniciar;
+            ST_iniciar:   prox_estado = ST_clr;
             ST_avancar:   prox_estado = ST_escrever_L1;
             
             // Espera escrever todos os 16 caracteres da Linha 1
