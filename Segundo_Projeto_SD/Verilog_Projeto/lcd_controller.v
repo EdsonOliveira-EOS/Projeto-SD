@@ -7,12 +7,12 @@ module lcd_controller (
     input wire [15:0]  resultvalue,       // valor armazenado na memory
 
     output reg         LCD_RS,            // 0: Comando / 1: Caractere
-    output wire        LCD_RW,            // --------------------------------------
-    output reg         LCD_EN,            // Sinal de Enable                      |
-    output reg  [7:0]  LCD_DATA           // Barramento de dados de 8 bits        |
-);                                                                               //
-                                                                                //
-    assign LCD_RW = 1'b0; // Sempre escrita  <---------------------------------
+    output wire        LCD_RW,
+    output reg         LCD_EN,            // Sinal de Enable
+    output reg  [7:0]  LCD_DATA           // Barramento de dados de 8 bits
+);
+
+    assign LCD_RW = 1'b0; // Sempre escrita
 
     // TICK DE 1ms
     reg [19:0] clk_counter;
@@ -20,6 +20,9 @@ module lcd_controller (
     reg [3:0]  char_index; // Ponteiro de qual caractere estamos enviando
     reg [3:0]  estado_atual, prox_estado;
     reg [4:0]  powerup_delay;
+    
+    // NOVO: flag para saber se já recebeu o primeiro start_print
+    reg primeira_vez;  // <---- ADICIONAR
 
     parameter ST_default     = 4'd0,
               ST_init1       = 4'd1,
@@ -33,12 +36,15 @@ module lcd_controller (
               ST_escrever_L2 = 4'd9,
               ST_feito       = 4'd10,
               ST_wait_clr1   = 4'd11,
-              ST_wait_clr2   = 4'd12;
+              ST_wait_clr2   = 4'd12,
+              ST_mostrar_tracos = 4'd13;
 
     // Registrador de Estado
     always @(posedge clk or posedge reset) begin
-        if (reset) 
-            estado_atual <= ST_default;
+        if (reset) begin
+            estado_atual <= ST_mostrar_tracos;  // começa mostrando traços
+            primeira_vez <= 1'b0;
+        end
         else if (tick) 
             estado_atual <= prox_estado;
     end
@@ -59,7 +65,7 @@ module lcd_controller (
                 tick        <= 1'b0;
             end
             if (tick) begin
-                if (powerup_delay < 5'd20)
+                if (powerup_delay < 5'd20 && estado_atual != ST_mostrar_tracos)
                     powerup_delay <= powerup_delay + 1'b1;
                 if (estado_atual == ST_escrever_L1 ||
                     estado_atual == ST_escrever_L2)
@@ -77,7 +83,7 @@ module lcd_controller (
 
     wire sinal_negativo = resultvalue[15]; // O bit 15 indica se é negativo
     wire [15:0] valor_absoluto = sinal_negativo ? (~resultvalue + 1'b1) : resultvalue;
-    wire [7:0]  ascii_s        = sinal_negativo ? 8'h2D : 8'h20; 
+    wire [7:0]  ascii_s        = sinal_negativo ? 8'h2D : 8'h2B; 
     wire [15:0] display_val = (valor_absoluto > 16'd9999) ? 16'd9999 : valor_absoluto;
     
     wire [7:0]  ascii_m      = 8'h30 + ((display_val / 1000) % 10);    // Decodificador B->D
@@ -91,6 +97,16 @@ module lcd_controller (
         LCD_DATA    = 8'h20;  
 
         case (estado_atual)
+            // NOVO: estado que mostra traços e zeros
+            ST_mostrar_tracos: begin
+                if (powerup_delay >= 5'd20) begin
+                    if (start_print)
+                        prox_estado = ST_init1;
+                    else
+                        prox_estado = ST_mostrar_tracos;
+                end
+            end
+            
             ST_clr:       prox_estado = ST_wait_clr1;
             ST_wait_clr1: prox_estado = ST_wait_clr2;
             ST_wait_clr2: prox_estado = ST_avancar;
@@ -104,11 +120,9 @@ module lcd_controller (
             ST_iniciar:   prox_estado = ST_clr;
             ST_avancar:   prox_estado = ST_escrever_L1;
             
-            // Espera escrever todos os 16 caracteres da Linha 1
             ST_escrever_L1: if (char_index == 4'd15) prox_estado = ST_mover_L2; 
             ST_mover_L2:                             prox_estado = ST_escrever_L2;
             
-            // Espera escrever todos os 16 caracteres da Linha 2
             ST_escrever_L2: if (char_index == 4'd15)  prox_estado = ST_feito;
             
             ST_feito: prox_estado = start_print ? ST_feito : ST_default;
@@ -117,6 +131,29 @@ module lcd_controller (
 
         // CONTEÚDO DA TELA
         case (estado_atual)
+            ST_mostrar_tracos: begin
+                // Mostra "----     [----]" e "+0000" enquanto espera
+                LCD_RS = 1'b1;
+                case (char_index)
+                    4'd0:  LCD_DATA = "-";
+                    4'd1:  LCD_DATA = "-";
+                    4'd2:  LCD_DATA = "-";
+                    4'd3:  LCD_DATA = "-";
+                    4'd10: LCD_DATA = "[";
+                    4'd11: LCD_DATA = "-";
+                    4'd12: LCD_DATA = "-";
+                    4'd13: LCD_DATA = "-";
+                    4'd14: LCD_DATA = "-";
+                    4'd15: LCD_DATA = "]";
+                    4'd0 + 16: LCD_DATA = "+";
+                    4'd1 + 16: LCD_DATA = "0";
+                    4'd2 + 16: LCD_DATA = "0";
+                    4'd3 + 16: LCD_DATA = "0";
+                    4'd4 + 16: LCD_DATA = "0";
+                    default: LCD_DATA = 8'h20;
+                endcase
+            end
+            
             ST_init1:    begin LCD_RS = 1'b0; LCD_DATA = 8'h38; end
             ST_init2:    begin LCD_RS = 1'b0; LCD_DATA = 8'h38; end
             ST_init3:    begin LCD_RS = 1'b0; LCD_DATA = 8'h38; end
@@ -140,19 +177,19 @@ module lcd_controller (
                     4'd13: LCD_DATA = r_bit1;
                     4'd14: LCD_DATA = r_bit0;
                     4'd15: LCD_DATA = "]";
-                    default: LCD_DATA = 8'h20; // Preenche o meio com espaços " "
+                    default: LCD_DATA = 8'h20;
                 endcase
             end
 
             ST_escrever_L2: begin
                 LCD_RS = 1'b1;
                 case (char_index)
-                    4'd11:   LCD_DATA = ascii_s; // Sinal: '-' ou ' '
+                    4'd11:   LCD_DATA = ascii_s; // Sinal: '-' ou '+'
                     4'd12:   LCD_DATA = ascii_m; // Milhar
                     4'd13:   LCD_DATA = ascii_c; // Centena
                     4'd14:   LCD_DATA = ascii_d; // Dezena
                     4'd15:   LCD_DATA = ascii_u; // Unidade
-                    default: LCD_DATA = 8'h20;   // Preenche o início com espaços " "
+                    default: LCD_DATA = 8'h20;
                 endcase
             end
         endcase
@@ -164,7 +201,8 @@ module lcd_controller (
         end
         else begin
             if (estado_atual != ST_default &&
-                estado_atual != ST_feito) begin
+                estado_atual != ST_feito &&
+                estado_atual != ST_mostrar_tracos) begin
                 if (clk_counter < 20'd500)
                     LCD_EN <= 1'b1;
                 else
