@@ -21,18 +21,18 @@ switches[14] => instruction_register[14].DATAIN
 switches[15] => instruction_register[15].DATAIN
 switches[16] => instruction_register[16].DATAIN
 switches[17] => instruction_register[17].DATAIN
-lcd_rs <= lcd_controller:LCD_DRIVER.LCD_RS
-lcd_rw <= lcd_controller:LCD_DRIVER.LCD_RW
-lcd_en <= lcd_controller:LCD_DRIVER.LCD_EN
-lcd_data[0] <= lcd_controller:LCD_DRIVER.LCD_DATA[0]
-lcd_data[1] <= lcd_controller:LCD_DRIVER.LCD_DATA[1]
-lcd_data[2] <= lcd_controller:LCD_DRIVER.LCD_DATA[2]
-lcd_data[3] <= lcd_controller:LCD_DRIVER.LCD_DATA[3]
-lcd_data[4] <= lcd_controller:LCD_DRIVER.LCD_DATA[4]
-lcd_data[5] <= lcd_controller:LCD_DRIVER.LCD_DATA[5]
-lcd_data[6] <= lcd_controller:LCD_DRIVER.LCD_DATA[6]
-lcd_data[7] <= lcd_controller:LCD_DRIVER.LCD_DATA[7]
-ON <= ON~reg0.DB_MAX_OUTPUT_PORT_TYPE
+lcd_rs << lcd_controller:LCD_DRIVER.LCD_RS
+lcd_rw << lcd_controller:LCD_DRIVER.LCD_RW
+lcd_en << lcd_controller:LCD_DRIVER.LCD_EN
+lcd_data[0] << lcd_controller:LCD_DRIVER.LCD_DATA[0]
+lcd_data[1] << lcd_controller:LCD_DRIVER.LCD_DATA[1]
+lcd_data[2] << lcd_controller:LCD_DRIVER.LCD_DATA[2]
+lcd_data[3] << lcd_controller:LCD_DRIVER.LCD_DATA[3]
+lcd_data[4] << lcd_controller:LCD_DRIVER.LCD_DATA[4]
+lcd_data[5] << lcd_controller:LCD_DRIVER.LCD_DATA[5]
+lcd_data[6] << lcd_controller:LCD_DRIVER.LCD_DATA[6]
+lcd_data[7] << lcd_controller:LCD_DRIVER.LCD_DATA[7]
+ON << ON~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |module_mini_cpu|module_alu:ULA
@@ -1291,9 +1291,12 @@ valid_instr => LCD_DATA.OUTPUTSELECT
 valid_instr => LCD_DATA.OUTPUTSELECT
 opcode[0] => Decoder0.IN1
 opcode[0] => Decoder1.IN2
+opcode[0] => Equal3.IN0
 opcode[1] => Decoder1.IN1
+opcode[1] => Equal3.IN2
 opcode[2] => Decoder0.IN0
 opcode[2] => Decoder1.IN0
+opcode[2] => Equal3.IN1
 dest_reg[0] => Mux6.IN19
 dest_reg[1] => Mux6.IN18
 dest_reg[2] => Mux6.IN17
@@ -1347,7 +1350,7 @@ resultvalue[15] => valor_absoluto[0].OUTPUTSELECT
 resultvalue[15] => Add2.IN17
 resultvalue[15] => Mux12.IN14
 resultvalue[15] => Mux13.IN14
-LCD_RS <= WideOr32.DB_MAX_OUTPUT_PORT_TYPE
+LCD_RS <= WideOr33.DB_MAX_OUTPUT_PORT_TYPE
 LCD_RW <= <GND>
 LCD_EN <= LCD_EN~reg0.DB_MAX_OUTPUT_PORT_TYPE
 LCD_DATA[0] <= Selector23.DB_MAX_OUTPUT_PORT_TYPE

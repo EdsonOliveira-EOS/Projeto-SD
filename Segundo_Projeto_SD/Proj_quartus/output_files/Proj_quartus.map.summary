@@ -1,10 +1,10 @@
-Analysis & Synthesis Status : Successful - Wed Jun 10 12:16:00 2026
+Analysis & Synthesis Status : Successful - Wed Jun 10 12:47:52 2026
 Quartus Prime Version : 21.1.1 Build 850 06/23/2022 SJ Lite Edition
 Revision Name : Proj_quartus
 Top-level Entity Name : module_mini_cpu
 Family : Cyclone IV E
-Total logic elements : 2,132
-    Total combinational functions : 1,849
+Total logic elements : 2,134
+    Total combinational functions : 1,851
     Dedicated logic registers : 499
 Total registers : 499
 Total pins : 34

@@ -162,15 +162,27 @@ module lcd_controller (
 
             ST_escrever_L2: begin
                 LCD_RS = 1'b1;
-                case (char_index)
-                    4'd10:   LCD_DATA = ascii_s;  
-                    4'd11:   LCD_DATA = ascii_dm; 
-                    4'd12:   LCD_DATA = ascii_m;  
-                    4'd13:   LCD_DATA = ascii_c;  
-                    4'd14:   LCD_DATA = ascii_d;  
-                    4'd15:   LCD_DATA = ascii_u;  
-                    default: LCD_DATA = 8'h20;    
-                endcase
+                if(opcode == 3'b110)begin
+                    case (char_index)
+                        4'd10:   LCD_DATA = 8'h2B;  
+                        4'd11:   LCD_DATA = 8'h30; 
+                        4'd12:   LCD_DATA = 8'h30;  
+                        4'd13:   LCD_DATA = 8'h30;  
+                        4'd14:   LCD_DATA = 8'h30;  
+                        4'd15:   LCD_DATA = 8'h30;  
+                        default: LCD_DATA = 8'h20;    
+                    endcase
+                end else begin
+                    case (char_index)
+                        4'd10:   LCD_DATA = ascii_s;  
+                        4'd11:   LCD_DATA = ascii_dm; 
+                        4'd12:   LCD_DATA = ascii_m;  
+                        4'd13:   LCD_DATA = ascii_c;  
+                        4'd14:   LCD_DATA = ascii_d;  
+                        4'd15:   LCD_DATA = ascii_u;  
+                        default: LCD_DATA = 8'h20;    
+                    endcase
+                end
             end
         endcase
     end
