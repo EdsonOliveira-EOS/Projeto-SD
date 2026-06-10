@@ -1,4 +1,4 @@
-module alu (
+module module_alu (
     // INPUTS recebidos na ULA
     input wire        clk,                // Clock da FPGA (50MHZ).
     input wire        reset,              // Reset.
