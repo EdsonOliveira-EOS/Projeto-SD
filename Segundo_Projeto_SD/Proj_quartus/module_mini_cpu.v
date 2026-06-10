@@ -95,7 +95,7 @@ module module_mini_cpu (
                     next_state = STATE_LCD_UPDATE;
                 else if (instruction_register[17:15] == 3'b000) // LOAD
                     next_state = STATE_MEM_WRITE;
-                else                                            // Aritméticas
+                else                                            // Aritm
                     next_state = STATE_ALU_START;
             end 
 
@@ -123,7 +123,7 @@ module module_mini_cpu (
         endcase
     end
     
-    // FSM Sequencial (Lógica de Controle e Sinais de Dados)
+    // FSM Sequencial 
     always @(posedge clk or posedge reset_triggered) begin
         if (reset_triggered) begin
             current_state         <= STATE_POWERED_OFF;
@@ -178,7 +178,6 @@ module module_mini_cpu (
                     r_src2             <= instruction_register[6:3];
                     immediate_extended <= {9'b0, instruction_register[6:0]};
                     
-                    // Dispara a busca nos registradores da RAM imediatamente aqui!
                     mem_read_addr_1    <= instruction_register[10:7];
                     mem_read_addr_2    <= instruction_register[6:3];
                 end
@@ -189,7 +188,6 @@ module module_mini_cpu (
                 end
 
                 STATE_ALU_WAIT: begin
-                    // Dados agora estão estáveis nas saídas da RAM
                     alu_value1            <= mem_read_data_1;
                     if (opcode == 3'b001 || opcode == 3'b011) begin
                         alu_value2        <= mem_read_data_2;
@@ -222,14 +220,13 @@ module module_mini_cpu (
     end
 
 	 
-	 wire clean_btn_ligar;
-	 wire clean_btn_enviar;
-	 wire clean_rst;
+    wire clean_btn_ligar;
+    wire clean_btn_enviar;
+    wire clean_rst;
 
-	 debouncer db_ligar  (.clk(clk), .btn_in(btn_ligar),  .btn_out(clean_btn_ligar));
-	 debouncer db_enviar (.clk(clk), .btn_in(btn_enviar), .btn_out(clean_btn_enviar));
-	 debouncer db_rst (.clk(clk), .btn_in(reset), .btn_out(clean_rst));
-    // Detectores de borda para chaves físicas de comando
+    debouncer db_ligar  (.clk(clk), .btn_in(btn_ligar),  .btn_out(clean_btn_ligar));
+    debouncer db_enviar (.clk(clk), .btn_in(btn_enviar), .btn_out(clean_btn_enviar));
+    debouncer db_rst (.clk(clk), .btn_in(reset), .btn_out(clean_rst));
     reg btn_ligar_d, btn_enviar_d, btn_reset_d;
     always @(posedge clk or posedge reset_triggered) begin
         if (reset_triggered) begin
@@ -245,5 +242,5 @@ module module_mini_cpu (
     
     assign power_triggered = (btn_ligar & !btn_ligar_d);
     assign send_triggered  = (btn_enviar & !btn_enviar_d);
-	 assign reset_triggered = (reset & !btn_reset_d);
+    assign reset_triggered = (reset & !btn_reset_d);
 endmodule
