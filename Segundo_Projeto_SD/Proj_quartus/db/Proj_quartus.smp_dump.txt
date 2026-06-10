@@ -1,12 +1,31 @@
 
 State Machine - |module_mini_cpu|current_state
-Name current_state.STATE_MEM_WAIT current_state.STATE_MEM_WRITE current_state.STATE_ALU_WAIT current_state.STATE_ALU_START current_state.STATE_DECODE current_state.STATE_FETCH current_state.STATE_IDLE current_state.STATE_POWERED_OFF current_state.STATE_LCD_UPDATE 
-current_state.STATE_POWERED_OFF 0 0 0 0 0 0 0 0 0 
-current_state.STATE_IDLE 0 0 0 0 0 0 1 1 0 
-current_state.STATE_FETCH 0 0 0 0 0 1 0 1 0 
-current_state.STATE_DECODE 0 0 0 0 1 0 0 1 0 
-current_state.STATE_ALU_START 0 0 0 1 0 0 0 1 0 
-current_state.STATE_ALU_WAIT 0 0 1 0 0 0 0 1 0 
-current_state.STATE_MEM_WRITE 0 1 0 0 0 0 0 1 0 
-current_state.STATE_MEM_WAIT 1 0 0 0 0 0 0 1 0 
-current_state.STATE_LCD_UPDATE 0 0 0 0 0 0 0 1 1 
+Name current_state.STATE_BOOT_DISPLAY current_state.STATE_LCD_UPDATE current_state.STATE_MEM_WAIT current_state.STATE_MEM_WRITE current_state.STATE_ALU_WAIT current_state.STATE_ALU_START current_state.STATE_DECODE current_state.STATE_FETCH current_state.STATE_IDLE current_state.STATE_POWERED_OFF 
+current_state.STATE_POWERED_OFF 0 0 0 0 0 0 0 0 0 0 
+current_state.STATE_IDLE 0 0 0 0 0 0 0 0 1 1 
+current_state.STATE_FETCH 0 0 0 0 0 0 0 1 0 1 
+current_state.STATE_DECODE 0 0 0 0 0 0 1 0 0 1 
+current_state.STATE_ALU_START 0 0 0 0 0 1 0 0 0 1 
+current_state.STATE_ALU_WAIT 0 0 0 0 1 0 0 0 0 1 
+current_state.STATE_MEM_WRITE 0 0 0 1 0 0 0 0 0 1 
+current_state.STATE_MEM_WAIT 0 0 1 0 0 0 0 0 0 1 
+current_state.STATE_LCD_UPDATE 0 1 0 0 0 0 0 0 0 1 
+current_state.STATE_BOOT_DISPLAY 1 0 0 0 0 0 0 0 0 1 
+
+State Machine - |module_mini_cpu|lcd_controller:LCD_DRIVER|estado_atual
+Name estado_atual.ST_OFF estado_atual.ST_SHUTDOWN estado_atual.ST_wait_clr2 estado_atual.ST_wait_clr1 estado_atual.ST_feito estado_atual.ST_escrever_L2 estado_atual.ST_mover_L2 estado_atual.ST_escrever_L1 estado_atual.ST_avancar estado_atual.ST_clr estado_atual.ST_iniciar estado_atual.ST_init3 estado_atual.ST_init2 estado_atual.ST_default estado_atual.ST_init1 
+estado_atual.ST_init1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+estado_atual.ST_default 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
+estado_atual.ST_init2 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
+estado_atual.ST_init3 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
+estado_atual.ST_iniciar 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
+estado_atual.ST_clr 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
+estado_atual.ST_avancar 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+estado_atual.ST_escrever_L1 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
+estado_atual.ST_mover_L2 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
+estado_atual.ST_escrever_L2 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
+estado_atual.ST_feito 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
+estado_atual.ST_wait_clr1 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
+estado_atual.ST_wait_clr2 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
+estado_atual.ST_SHUTDOWN 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 
+estado_atual.ST_OFF 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 

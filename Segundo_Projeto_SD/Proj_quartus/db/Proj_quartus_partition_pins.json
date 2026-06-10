@@ -4,67 +4,43 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "Temp_mem_1[0]",
+					"name" : "lcd_rs",
 					"strict" : false
 				},
 				{
-					"name" : "Temp_mem_1[1]",
+					"name" : "lcd_en",
 					"strict" : false
 				},
 				{
-					"name" : "Temp_mem_1[2]",
+					"name" : "lcd_data[0]",
 					"strict" : false
 				},
 				{
-					"name" : "Temp_mem_1[3]",
+					"name" : "lcd_data[1]",
 					"strict" : false
 				},
 				{
-					"name" : "Temp_mem_1[4]",
+					"name" : "lcd_data[2]",
 					"strict" : false
 				},
 				{
-					"name" : "Temp_mem_1[5]",
+					"name" : "lcd_data[3]",
 					"strict" : false
 				},
 				{
-					"name" : "Temp_mem_1[6]",
+					"name" : "lcd_data[4]",
 					"strict" : false
 				},
 				{
-					"name" : "Temp_mem_1[7]",
+					"name" : "lcd_data[5]",
 					"strict" : false
 				},
 				{
-					"name" : "Temp_mem_1[8]",
+					"name" : "lcd_data[6]",
 					"strict" : false
 				},
 				{
-					"name" : "Temp_mem_1[9]",
-					"strict" : false
-				},
-				{
-					"name" : "Temp_mem_1[10]",
-					"strict" : false
-				},
-				{
-					"name" : "Temp_mem_1[11]",
-					"strict" : false
-				},
-				{
-					"name" : "Temp_mem_1[12]",
-					"strict" : false
-				},
-				{
-					"name" : "Temp_mem_1[13]",
-					"strict" : false
-				},
-				{
-					"name" : "Temp_mem_1[14]",
-					"strict" : false
-				},
-				{
-					"name" : "Temp_mem_1[15]",
+					"name" : "lcd_data[7]",
 					"strict" : false
 				},
 				{
@@ -72,47 +48,15 @@
 					"strict" : false
 				},
 				{
-					"name" : "reset",
-					"strict" : false
-				},
-				{
 					"name" : "clk",
 					"strict" : false
 				},
 				{
-					"name" : "switches[8]",
-					"strict" : false
-				},
-				{
-					"name" : "switches[7]",
-					"strict" : false
-				},
-				{
-					"name" : "switches[10]",
-					"strict" : false
-				},
-				{
-					"name" : "switches[9]",
-					"strict" : false
-				},
-				{
-					"name" : "btn_enviar",
-					"strict" : false
-				},
-				{
-					"name" : "btn_ligar",
-					"strict" : false
-				},
-				{
-					"name" : "switches[0]",
+					"name" : "switches[16]",
 					"strict" : false
 				},
 				{
 					"name" : "switches[17]",
-					"strict" : false
-				},
-				{
-					"name" : "switches[16]",
 					"strict" : false
 				},
 				{
@@ -136,19 +80,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "switches[1]",
-					"strict" : false
-				},
-				{
-					"name" : "switches[2]",
-					"strict" : false
-				},
-				{
-					"name" : "switches[3]",
-					"strict" : false
-				},
-				{
-					"name" : "switches[4]",
+					"name" : "switches[6]",
 					"strict" : false
 				},
 				{
@@ -156,7 +88,51 @@
 					"strict" : false
 				},
 				{
-					"name" : "switches[6]",
+					"name" : "switches[4]",
+					"strict" : false
+				},
+				{
+					"name" : "switches[3]",
+					"strict" : false
+				},
+				{
+					"name" : "switches[2]",
+					"strict" : false
+				},
+				{
+					"name" : "switches[1]",
+					"strict" : false
+				},
+				{
+					"name" : "switches[0]",
+					"strict" : false
+				},
+				{
+					"name" : "switches[8]",
+					"strict" : false
+				},
+				{
+					"name" : "switches[7]",
+					"strict" : false
+				},
+				{
+					"name" : "switches[10]",
+					"strict" : false
+				},
+				{
+					"name" : "switches[9]",
+					"strict" : false
+				},
+				{
+					"name" : "btn_ligar",
+					"strict" : false
+				},
+				{
+					"name" : "reset",
+					"strict" : false
+				},
+				{
+					"name" : "btn_enviar",
 					"strict" : false
 				}
 			]

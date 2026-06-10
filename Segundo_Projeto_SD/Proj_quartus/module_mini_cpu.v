@@ -7,22 +7,28 @@ module module_mini_cpu (
     output wire       lcd_rs,       
     output wire       lcd_rw,        
     output wire       lcd_en,        
-    output wire [7:0] lcd_data,
+    output wire [7:0] lcd_data,      
     output reg        ON = 0
 );
-    reg         mem_write_enabled;
-    reg  [3:0]  mem_write_addr;
+    reg        mem_write_enabled;
+    reg  [3:0] mem_write_addr;
     reg  [15:0] mem_write_data;
     reg  [3:0]  mem_read_addr_1, mem_read_addr_2;
     wire [15:0] mem_read_data_1, mem_read_data_2;
     wire        mem_writedone;
-    reg         mem_clear;
+    reg        mem_clear;
 
-    reg         alu_operation_enabled;
+    reg        alu_operation_enabled;
     reg  [2:0]  alu_opcode;
     reg  [15:0] alu_value1, alu_value2;
     wire [15:0] alu_resultvalue;
     wire        alu_operationdone;
+
+    wire        lcd_start_print;
+    wire        lcd_ready;
+    reg        valid_instr = 0; 
+
+    assign lcd_start_print = (current_state == STATE_LCD_UPDATE) || (current_state == STATE_BOOT_DISPLAY);
 
     module_alu ULA (
         .clk(clk), .reset(reset_triggered), .operation_enabled(alu_operation_enabled),
@@ -30,7 +36,7 @@ module module_mini_cpu (
         .resultvalue(alu_resultvalue), .operationdone(alu_operationdone)
     );
      
-     memory MEMORY (
+    memory MEMORY (
         .clk(clk), .reset(reset_triggered), .clear(mem_clear),
         .write_enabled(mem_write_enabled), .write_addr(mem_write_addr), .write_data(mem_write_data),
         .read_addr_1(mem_read_addr_1), .read_addr_2(mem_read_addr_2),
@@ -41,12 +47,13 @@ module module_mini_cpu (
     lcd_controller LCD_DRIVER (
         .clk(clk),
         .reset(reset_triggered),
-        .system_on(ON),           
+        .system_on(ON),            
         .start_print(lcd_start_print),
         .valid_instr(valid_instr), 
         .opcode(opcode),
         .dest_reg(r_dest),
-        .resultvalue((opcode == 3'b000) ? immediate_extended : (opcode == 3'b111) ? mem_read_data_1 : alu_resultvalue),
+        .resultvalue((opcode == 3'b000) ? immediate_extended : 
+                     (opcode == 3'b111) ? mem_read_data_1 : alu_resultvalue),
         .LCD_RS(lcd_rs),
         .LCD_RW(lcd_rw),
         .LCD_EN(lcd_en),
@@ -56,10 +63,11 @@ module module_mini_cpu (
 
     wire send_triggered; 
     wire power_triggered;
-	 wire reset_triggered;
+    wire reset_triggered;
 
     localparam STATE_POWERED_OFF = 4'd0, STATE_IDLE = 4'd1, STATE_FETCH = 4'd2, STATE_DECODE = 4'd3, 
-    STATE_ALU_START = 4'd4, STATE_ALU_WAIT = 4'd5, STATE_MEM_WRITE = 4'd6, STATE_MEM_WAIT = 4'd7, STATE_LCD_UPDATE = 4'd8;
+    STATE_ALU_START = 4'd4, STATE_ALU_WAIT = 4'd5, STATE_MEM_WRITE = 4'd6, STATE_MEM_WAIT = 4'd7, 
+    STATE_LCD_UPDATE = 4'd8, STATE_BOOT_DISPLAY = 4'd9; 
 
     reg [3:0] current_state = STATE_POWERED_OFF, next_state;
     reg [17:0] instruction_register;
@@ -70,60 +78,33 @@ module module_mini_cpu (
     reg [15:0] immediate_extended;
 
     always @(*) begin
-	 
         case (current_state)
-            STATE_POWERED_OFF: begin
-                next_state = (power_triggered) ? STATE_IDLE : STATE_POWERED_OFF;
-            end
-            
-            STATE_IDLE: begin
-					 
-                if (power_triggered) 
-                    next_state = STATE_POWERED_OFF;
-                else 
-                    next_state = (send_triggered) ? STATE_FETCH : STATE_IDLE;
-            end
-            
-            STATE_FETCH: begin
-                next_state = STATE_DECODE;
-            end
+            STATE_POWERED_OFF: next_state = (power_triggered) ? STATE_BOOT_DISPLAY : STATE_POWERED_OFF;
+            STATE_BOOT_DISPLAY:next_state = (lcd_ready) ? STATE_IDLE : STATE_BOOT_DISPLAY; 
+            STATE_IDLE:        next_state = (power_triggered) ? STATE_POWERED_OFF : ((send_triggered) ? STATE_FETCH : STATE_IDLE);
+            STATE_FETCH:       next_state = STATE_DECODE;
             
             STATE_DECODE: begin
-                if (instruction_register[17:15] == 3'b110)      // CLEAR
+                if (instruction_register[17:15] == 3'b110)      
                     next_state = STATE_MEM_WRITE; 
-                else if (instruction_register[17:15] == 3'b111) // DISPLAY
+                else if (instruction_register[17:15] == 3'b111) 
                     next_state = STATE_LCD_UPDATE;
-                else if (instruction_register[17:15] == 3'b000) // LOAD
+                else if (instruction_register[17:15] == 3'b000) 
                     next_state = STATE_MEM_WRITE;
-                else                                            // Aritm
+                else                                            
                     next_state = STATE_ALU_START;
             end 
 
-            STATE_ALU_START: begin
-                next_state = STATE_ALU_WAIT;
-            end
-
-            STATE_ALU_WAIT: begin
-                next_state = (alu_operationdone) ? STATE_MEM_WRITE : STATE_ALU_WAIT;
-            end
-
-            STATE_MEM_WRITE: begin
-                next_state = STATE_MEM_WAIT;
-            end
-
-            STATE_MEM_WAIT: begin
-                next_state = (mem_writedone || opcode == 3'b110) ? STATE_LCD_UPDATE : STATE_MEM_WAIT;
-            end
-
-            STATE_LCD_UPDATE: begin
-                next_state = STATE_IDLE; 
-            end
+            STATE_ALU_START: next_state = STATE_ALU_WAIT;
+            STATE_ALU_WAIT:  next_state = (alu_operationdone) ? STATE_MEM_WRITE : STATE_ALU_WAIT;
+            STATE_MEM_WRITE: next_state = STATE_MEM_WAIT;
+            STATE_MEM_WAIT:  next_state = (mem_writedone || opcode == 3'b110) ? STATE_LCD_UPDATE : STATE_MEM_WAIT;
+            STATE_LCD_UPDATE:next_state = (lcd_ready) ? STATE_IDLE : STATE_LCD_UPDATE; 
 
             default: next_state = STATE_POWERED_OFF;
         endcase
     end
     
-    // FSM Sequencial 
     always @(posedge clk or posedge reset_triggered) begin
         if (reset_triggered) begin
             current_state         <= STATE_POWERED_OFF;
@@ -164,11 +145,12 @@ module module_mini_cpu (
                     mem_clear             <= 0;
                     mem_write_enabled     <= 0;
                     alu_operation_enabled <= 0;
-						  ON <= 1;
+                    ON                    <= 1;
                 end
 
                 STATE_FETCH: begin
                     instruction_register <= switches; 
+                    valid_instr          <= 1; 
                 end
 
                 STATE_DECODE: begin
@@ -176,10 +158,15 @@ module module_mini_cpu (
                     r_dest             <= instruction_register[14:11];
                     r_src1             <= instruction_register[10:7];
                     r_src2             <= instruction_register[6:3];
-                    immediate_extended <= {9'b0, instruction_register[6:0]};
                     
-                    mem_read_addr_1    <= instruction_register[10:7];
-                    mem_read_addr_2    <= instruction_register[6:3];
+                    immediate_extended <= instruction_register[6] ? (~{10'b0, instruction_register[5:0]} + 1'b1) : {10'b0, instruction_register[5:0]};
+                    
+                    if (instruction_register[17:15] == 3'b111)
+                        mem_read_addr_1 <= instruction_register[14:11]; 
+                    else
+                        mem_read_addr_1 <= instruction_register[10:7];  
+
+                    mem_read_addr_2 <= instruction_register[6:3];
                 end
 
                 STATE_ALU_START: begin
@@ -188,11 +175,11 @@ module module_mini_cpu (
                 end
 
                 STATE_ALU_WAIT: begin
-                    alu_value1            <= mem_read_data_1;
+                    alu_value1 <= mem_read_data_1;
                     if (opcode == 3'b001 || opcode == 3'b011) begin
-                        alu_value2        <= mem_read_data_2;
+                        alu_value2 <= mem_read_data_2;
                     end else begin
-                        alu_value2        <= immediate_extended;
+                        alu_value2 <= immediate_extended;
                     end
                 end
 
@@ -213,34 +200,35 @@ module module_mini_cpu (
                 end
 
                 STATE_LCD_UPDATE: begin
-                    
+                   
                 end
             endcase
         end
     end
 
-	 
     wire clean_btn_ligar;
     wire clean_btn_enviar;
     wire clean_rst;
 
+    
     debouncer db_ligar  (.clk(clk), .btn_in(btn_ligar),  .btn_out(clean_btn_ligar));
     debouncer db_enviar (.clk(clk), .btn_in(btn_enviar), .btn_out(clean_btn_enviar));
-    debouncer db_rst (.clk(clk), .btn_in(reset), .btn_out(clean_rst));
+    debouncer db_rst    (.clk(clk), .btn_in(reset),      .btn_out(clean_rst));
+
     reg btn_ligar_d, btn_enviar_d, btn_reset_d;
     always @(posedge clk or posedge reset_triggered) begin
         if (reset_triggered) begin
             btn_ligar_d  <= 1'b1; 
             btn_enviar_d <= 1'b1;
-				btn_reset_d <= 1'b1;
+            btn_reset_d  <= 1'b1;
         end else begin
-            btn_ligar_d  <= btn_ligar;
-            btn_enviar_d <= btn_enviar;
-				btn_reset_d <= reset;
+            btn_ligar_d  <= clean_btn_ligar; 
+            btn_enviar_d <= clean_btn_enviar;
+            btn_reset_d  <= clean_rst;
         end
     end
     
-    assign power_triggered = (btn_ligar & !btn_ligar_d);
-    assign send_triggered  = (btn_enviar & !btn_enviar_d);
-    assign reset_triggered = (reset & !btn_reset_d);
+    assign power_triggered = (clean_btn_ligar  & !btn_ligar_d);
+    assign send_triggered  = (clean_btn_enviar & !btn_enviar_d);
+    assign reset_triggered = ON ? (clean_btn_ligar & !btn_ligar_d) : (clean_rst & !btn_reset_d);
 endmodule
