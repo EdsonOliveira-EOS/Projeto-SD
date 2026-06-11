@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Proj_quartus
-Wed Jun 10 12:47:52 2026
+Thu Jun 11 11:53:26 2026
 Quartus Prime Version 21.1.1 Build 850 06/23/2022 SJ Lite Edition
 
 
@@ -61,7 +61,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Wed Jun 10 12:47:52 2026       ;
+; Analysis & Synthesis Status        ; Successful - Thu Jun 11 11:53:26 2026       ;
 ; Quartus Prime Version              ; 21.1.1 Build 850 06/23/2022 SJ Lite Edition ;
 ; Revision Name                      ; Proj_quartus                                ;
 ; Top-level Entity Name              ; module_mini_cpu                             ;
@@ -770,7 +770,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 21.1.1 Build 850 06/23/2022 SJ Lite Edition
-    Info: Processing started: Wed Jun 10 12:47:42 2026
+    Info: Processing started: Thu Jun 11 11:53:16 2026
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Proj_quartus -c Proj_quartus
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
@@ -918,9 +918,9 @@ Info (21057): Implemented 2188 device resources after synthesis - the final reso
     Info (21061): Implemented 2152 logic cells
     Info (21062): Implemented 2 DSP elements
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 12 warnings
-    Info: Peak virtual memory: 4904 megabytes
-    Info: Processing ended: Wed Jun 10 12:47:52 2026
+    Info: Peak virtual memory: 4896 megabytes
+    Info: Processing ended: Thu Jun 11 11:53:26 2026
     Info: Elapsed time: 00:00:10
-    Info: Total CPU time (on all processors): 00:00:21
+    Info: Total CPU time (on all processors): 00:00:22
 
 

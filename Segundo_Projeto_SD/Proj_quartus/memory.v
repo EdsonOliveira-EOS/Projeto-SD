@@ -46,10 +46,22 @@ module memory (
 // 3. Lógica síncrona de escrita e limpeza da RAM
     always @(posedge clk) begin
         if (clear) begin
-            // Inicialização síncrona usando um loop que o Quartus consegue desenrolar perfeitamente
-            for (i = 0; i < 16; i = i + 1) begin
-                ram[i] <= 16'b0;
-            end
+            ram[0] <= 16'b0;
+            ram[1] <= 16'b0;
+            ram[2] <= 16'b0;
+            ram[3] <= 16'b0;
+            ram[4] <= 16'b0;
+            ram[5] <= 16'b0;
+            ram[6] <= 16'b0;
+            ram[7] <= 16'b0;
+            ram[8] <= 16'b0;
+            ram[9] <= 16'b0;
+            ram[10] <= 16'b0;
+            ram[11] <= 16'b0;
+            ram[12] <= 16'b0;
+            ram[13] <= 16'b0;
+            ram[14] <= 16'b0;
+            ram[15] <= 16'b0;
             writedone <= 0;
         end
         else begin

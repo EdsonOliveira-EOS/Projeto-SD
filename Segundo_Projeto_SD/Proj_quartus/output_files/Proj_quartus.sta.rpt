@@ -1,5 +1,5 @@
 Timing Analyzer report for Proj_quartus
-Wed Jun 10 12:48:16 2026
+Thu Jun 11 11:53:52 2026
 Quartus Prime Version 21.1.1 Build 850 06/23/2022 SJ Lite Edition
 
 
@@ -107,14 +107,14 @@ https://fpgasoftware.intel.com/eula.
 ; Number detected on machine ; 16          ;
 ; Maximum allowed            ; 16          ;
 ;                            ;             ;
-; Average used               ; 1.39        ;
+; Average used               ; 1.41        ;
 ; Maximum used               ; 16          ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
 ;     Processor 2            ;   6.3%      ;
-;     Processor 3            ;   3.9%      ;
-;     Processors 4-16        ;   2.2%      ;
+;     Processor 3            ;   4.0%      ;
+;     Processors 4-16        ;   2.3%      ;
 +----------------------------+-------------+
 
 
@@ -1920,7 +1920,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus Prime Timing Analyzer
     Info: Version 21.1.1 Build 850 06/23/2022 SJ Lite Edition
-    Info: Processing started: Wed Jun 10 12:48:14 2026
+    Info: Processing started: Thu Jun 11 11:53:50 2026
 Info: Command: quartus_sta Proj_quartus -c Proj_quartus
 Info: qsta_default_script.tcl version: #1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
@@ -2021,8 +2021,8 @@ Info (332114): Report Metastability: Found 3 synchronizer chains.
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus Prime Timing Analyzer was successful. 0 errors, 5 warnings
-    Info: Peak virtual memory: 5050 megabytes
-    Info: Processing ended: Wed Jun 10 12:48:16 2026
+    Info: Peak virtual memory: 5042 megabytes
+    Info: Processing ended: Thu Jun 11 11:53:52 2026
     Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:03
 
